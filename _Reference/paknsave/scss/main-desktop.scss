@@ -1,0 +1,47 @@
+/*
+ * Stylesheet for footstuffs project 2015
+ *
+ * Contents 
+ * -------------------------------
+ * - 00.  References
+ *	
+ * @author Bart Wang & Phil Kent
+ * @date Nov 2015
+ */
+
+$main-breakpoint: 990px;
+$mobile-breakpoint: 480px;
+
+// lib stuff
+@import "desktop/bootstrap/variables";
+@import "desktop/bootstrap/mixins";
+
+// shared elements
+@import "shared/elements/mixins";
+@import "shared/elements/colours";
+@import "shared/elements/fonts";
+@import "shared/elements/spacing-system";
+
+// components
+@import "shared/components/general";
+@import "shared/components/alert-box";
+@import "shared/components/buttons";
+@import "shared/components/card";
+@import "shared/components/modal";
+@import "shared/components/form";
+@import "shared/components/switch";
+@import "shared/components/dropdown";
+@import "shared/components/checkbox";
+@import "shared/components/table";
+@import "shared/components/accordion";
+@import "shared/components/notifications";
+@import "shared/components/slider";
+@import "shared/components/icons";
+@import "shared/components/vouchers";
+// page level style
+@import "desktop/page-desktop";
+
+/* ------------------------------
+ * 02. Generic styles 
+ * ----------------------------- */
+

@@ -1,0 +1,99 @@
+.contact{
+	.inner{
+		padding: 10px 0 20px;
+	}
+	aside{
+		position:relative;
+		z-index:111;
+		width:38%;
+		float:right;
+		text-align: center;
+		a{
+			width:61px;
+			height:60px;
+			display:inline-block;
+			background:url(../images/icons.png) no-repeat 0 0;
+			margin:3px 3px 0 9px;
+			&.pdf{
+				background-position:0 -60px;
+			}
+		}
+	}
+	ul{
+		position:relative;
+		z-index:99;
+		li{
+			padding:10px 0 10px 10px;
+			font-size: 14px;
+			a{
+				padding-left: 20px;
+				color:#14a1d0;
+			}
+			&.link{
+				padding: 5px 0 0 10px;
+				&.linkedin{
+					a{
+						background: url(../images/icon-linkedin.png) no-repeat 0 2px;
+					}
+				}
+				&.stackoverflow{
+					a{
+						background: url(../images/icon-stackoverflow.png) no-repeat 0 2px;
+					}
+				}
+				&.github{
+					a{
+						background: url(../images/icon-github.png) no-repeat 0 2px;
+					}
+				}
+			}
+			
+		}
+	}
+	@media screen and (max-width:980px){
+		.inner{
+			padding: 10px 2.5% 20px;
+		}
+	}
+	@media screen and (max-width:768px){
+		ul{
+			li{
+				label{
+					font-size:15px;
+					line-height: 17px;
+					padding-right:0;
+					display: block;
+				}
+			}
+		}
+	}
+}
+.contact label{
+	padding-right:9px;
+	font-weight:bold;
+	display: inline-block;
+	line-height: 24px;
+}
+.contact ul span{
+	cursor:pointer;
+	color:#009EE3;
+	text-decoration:underline;
+	line-height: 24px;
+}
+.contact ul em{
+	display:none;
+	line-height: 24px;
+	display: inline-block;
+}
+.contact-bg{
+	width:195px; height:160px; position:absolute; bottom:0; right:5%;
+	opacity:0.3; z-index:98;
+}
+.download{
+	width:170px;
+	margin: 0 auto;
+	text-align: left;
+}
+.download .heading{
+	padding-left: 12px;
+}

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<link rel="stylesheet" href="../css/mobile/jquery.mobile-1.3.0.css">
+		<link rel="stylesheet" href="../css/mobile/bootstrap/bootstrap.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/mobile/jquery.qtip.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/main-mobile.css" type="text/css"/>
+
+
+	</head>
+	<body id="notification">
+
+		<div data-role="page">
+
+			<div class="header subpage" data-role="header">
+				<p class="arrow">
+					<a href="account-manage.html" data-transition="slide" data-direction="reverse">
+						<img src="../images/icons/mobile-arrow-header-back.svg" class="inject-me" />
+					</a>
+				</p>
+				<h1>My alerts</h1>
+			</div>
+
+			<div class="content" data-role="main" class="ui-content">
+
+				<!-- page content start here -->
+
+				<h4 class="sub-title margin-sp20-top">Change how and what you get notifications about</h4>
+				<hr>
+				
+				<div class="row">
+					<div class="col-xs-12 clearfix">
+						<h3>Communication</h3>
+			            <ul class="icons no-margin">
+							<li class="clearfix"><span class="icon icon-text"></span><strong>I have subscribed to receive text updates from PAK'nSAVE</strong></li>
+							<li><span class="icon icon-email"></span><strong>I have subscribed to receive email updates from PAK'nSAVE</strong></li>
+						</ul>
+					</div>
+				</div>
+				
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-12 clearfix">
+						<h3>How you get notified</h3>
+						<h4 class="margin-sp30-top">Send text notifications to</h4>
+						<p class="card-number margin-sp10-top"><strong>+ 6 4 &nbsp; 2 7 3 &nbsp; 7 9 8 9 2 1</strong></p>
+						<h4 class="margin-sp30-top">Send email notifications to</h4>
+						<p class="margin-sp10-top"><strong>jon.shopper@mail.com</strong></p>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-12 clearfix">
+						<h3>What you get notified about</h3>
+						
+						<table class="table notified-tips margin-sp30-top">
+						  <thead>
+						    <tr>
+						      <!-- <th class="table-col-1">Notification</th> -->
+						      <th class="table-col-2">
+								<img class="icon grey inject-me v-middle" src="../images/icons/PnS_website.svg"/>
+						      	Website
+						      </th>
+						      <th class="table-col-3">
+						      	<img class="icon grey inject-me v-middle" src="../images/icons/PnS_text.svg"/>
+						      	Text
+						      </th>
+						      <th class="table-col-4">
+						      	<img class="icon grey inject-me v-middle" src="../images/icons/PnS_email.svg"/>
+						      	Email
+						      </th>
+						    </tr>
+						  </thead>
+						  
+						</table>
+
+						<!-- Your account -->
+						<h4>Your account</h4>
+						<hr class="margin-sp10-top">
+						<p>Forgotten password requests.</p>
+
+						<div class="row row-eq-height margin-sp20-top data-roll">
+							<div class="col-xs-12">
+								<div class="col-xs-4">
+									<img class="icon inject-me" src="../images/icons/PnS_website.svg"/>
+									<img class="icon big inject-me" src="../images/icons/PnS_confirm.svg"/>
+								</div>
+								<div class="col-xs-4">
+									<img class="icon grey inject-me" src="../images/icons/PnS_text.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+								<div class="col-xs-4 last">
+									<img class="icon grey inject-me" src="../images/icons/PnS_email.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+							</div>
+						</div>
+						<hr class="margin-sp10-bottom">	
+						<p class="small grey">All other notifications will be shown in the website only.</p>
+
+
+						<!-- Household -->
+						<h4 class="margin-sp20-top">Households</h4>
+						<hr class="margin-sp10-top">
+						<p>Join household invitations.</p>
+
+						<div class="row row-eq-height margin-sp20-top data-roll">
+							<div class="col-xs-12">
+								<div class="col-xs-4">
+									<img class="icon inject-me" src="../images/icons/PnS_website.svg"/>
+									<img class="icon big inject-me" src="../images/icons/PnS_confirm.svg"/>
+								</div>
+								<div class="col-xs-4">
+									<img class="icon grey inject-me" src="../images/icons/PnS_text.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+								<div class="col-xs-4 last">
+									<img class="icon grey inject-me" src="../images/icons/PnS_email.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+							</div>
+						</div>
+						<hr class="margin-sp10-bottom">	
+						<p class="small grey">All other notifications will be shown in the website only.</p>
+
+
+						<!-- PAK’nSAVE Dollars -->
+						<h4 class="margin-sp20-top">PAK’nSAVE Dollars</h4>
+						<hr class="margin-sp10-top">
+						<p>PAK’nSAVE Dollars added.</p>
+
+						<div class="row row-eq-height margin-sp20-top data-roll">
+							<div class="col-xs-12">
+								<div class="col-xs-4">
+									<img class="icon inject-me" src="../images/icons/PnS_website.svg"/>
+									<img class="icon big inject-me" src="../images/icons/PnS_confirm.svg"/>
+								</div>
+								<div class="col-xs-4">
+									<img class="icon grey inject-me" src="../images/icons/PnS_text.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+								<div class="col-xs-4 last">
+									<img class="icon grey inject-me" src="../images/icons/PnS_email.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+							</div>
+						</div>
+						<hr class="margin-sp10-bottom">
+						
+						<p>PAK’nSAVE Dollars due to expire.</p>
+
+						<div class="row row-eq-height margin-sp20-top data-roll">
+							<div class="col-xs-12">
+								<div class="col-xs-4">
+									<img class="icon inject-me" src="../images/icons/PnS_website.svg"/>
+									<img class="icon big inject-me" src="../images/icons/PnS_confirm.svg"/>
+								</div>
+								<div class="col-xs-4">
+									<img class="icon grey inject-me" src="../images/icons/PnS_text.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+								<div class="col-xs-4 last">
+									<img class="icon grey inject-me" src="../images/icons/PnS_email.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+							</div>
+						</div>
+						<hr class="margin-sp10-bottom">
+
+						<p class="small grey">All other notifications will be shown in the website only.</p>
+
+
+
+						<!-- Fuel -->
+						<h4 class="margin-sp20-top">Fuel</h4>
+						<hr class="margin-sp10-top">
+						<p>Fuel Bonus Time.</p>
+
+						<div class="row row-eq-height margin-sp20-top data-roll">
+							<div class="col-xs-12">
+								<div class="col-xs-4">
+									<img class="icon inject-me" src="../images/icons/PnS_website.svg"/>
+									<img class="icon big inject-me" src="../images/icons/PnS_confirm.svg"/>
+								</div>
+								<div class="col-xs-4">
+									<img class="icon grey inject-me" src="../images/icons/PnS_text.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+								<div class="col-xs-4 last">
+									<img class="icon grey inject-me" src="../images/icons/PnS_email.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+							</div>
+						</div>
+						<hr class="margin-sp10-bottom">
+						
+						<p>Fuel Bonus due to expire.</p>
+
+						<div class="row row-eq-height margin-sp20-top data-roll">
+							<div class="col-xs-12">
+								<div class="col-xs-4">
+									<img class="icon inject-me" src="../images/icons/PnS_website.svg"/>
+									<img class="icon big inject-me" src="../images/icons/PnS_confirm.svg"/>
+								</div>
+								<div class="col-xs-4">
+									<img class="icon grey inject-me" src="../images/icons/PnS_text.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+								<div class="col-xs-4 last">
+									<img class="icon grey inject-me" src="../images/icons/PnS_email.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+							</div>
+						</div>
+						<hr class="margin-sp10-bottom">
+
+						<p>Printed Fuel voucher due to expire.</p>
+
+						<div class="row row-eq-height margin-sp20-top data-roll">
+							<div class="col-xs-12">
+								<div class="col-xs-4">
+									<img class="icon inject-me" src="../images/icons/PnS_website.svg"/>
+									<img class="icon big inject-me" src="../images/icons/PnS_confirm.svg"/>
+								</div>
+								<div class="col-xs-4">
+									<img class="icon grey inject-me" src="../images/icons/PnS_text.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+								<div class="col-xs-4 last">
+									<img class="icon grey inject-me" src="../images/icons/PnS_email.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+							</div>
+						</div>
+						<hr class="margin-sp10-bottom">
+
+						<p class="small grey">All other notifications will be shown in the website only.</p>
+						
+						
+						<!-- Prizes -->
+						<h4 class="margin-sp20-top">Prizes</h4>
+						<hr class="margin-sp10-top">
+						<p>Prizes due to expire.</p>
+
+						<div class="row row-eq-height margin-sp20-top data-roll">
+							<div class="col-xs-12">
+								<div class="col-xs-4">
+									<img class="icon inject-me" src="../images/icons/PnS_website.svg"/>
+									<img class="icon big inject-me" src="../images/icons/PnS_confirm.svg"/>
+								</div>
+								<div class="col-xs-4">
+									<img class="icon grey inject-me" src="../images/icons/PnS_text.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+								<div class="col-xs-4 last">
+									<img class="icon grey inject-me" src="../images/icons/PnS_email.svg"/>
+									<input type="checkbox" data-off-text="Off" data-on-text="On" checked="false" name="on-off" checked>
+								</div>
+							</div>
+						</div>
+						<hr class="margin-sp10-bottom">	
+						<p class="small grey">All other notifications will be shown in the website only.</p>
+						
+
+						<hr class="row margin-sp30-top">
+
+						<div class="row margin-sp30-top">
+							<div class="col-xs-12 clearfix">
+								<button type="button" class="btn secondary pull-left">Cancel</button>
+							</div>
+							<div class="col-xs-12 clearfix margin-sp20-top">	
+								<button type="button" class="btn pull-left">save changes</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+				<!-- Additional info -->
+				<div class="header subpage margin-sp40-top" data-role="header" style="margin: 0 -20px;">
+					<p class="arrow">
+						<a href="#" data-transition="slide" data-direction="reverse">
+							<img src="../images/icons/mobile-arrow-header-back.svg" class="inject-me" />
+						</a>
+					</p>
+					<h1>My preferences</h1>
+				</div>
+
+				<h4 class="sub-title margin-sp20-top">Copy TBC</h4>
+				<hr>
+
+				<h3>Copy TBC</h3>
+				<h4 class="margin-sp20-top">Copy TBC</h4>
+
+				<div class="row margin-sp20-top">
+					<div class="col-xs-12 clearfix no-padding">
+
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox4" class="styled" type="checkbox" checked>
+			                    <label for="checkbox4">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox5" class="styled" type="checkbox" checked>
+			                    <label for="checkbox5">Option</label>
+			                </div>
+						</div>
+						
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox6" class="styled" type="checkbox" checked>
+			                    <label for="checkbox6">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox7" class="styled" type="checkbox" checked>
+			                    <label for="checkbox7">Option</label>
+			                </div>
+						</div>
+						
+					</div>
+				</div>
+
+
+				<h4 class="margin-sp20-top">Copy TBC</h4>
+
+				<div class="row margin-sp20-top">
+					<div class="col-xs-12 clearfix no-padding">
+
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox8" class="styled" type="checkbox" checked>
+			                    <label for="checkbox8">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox9" class="styled" type="checkbox" checked>
+			                    <label for="checkbox9">Option</label>
+			                </div>
+						</div>
+						
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox10" class="styled" type="checkbox" checked>
+			                    <label for="checkbox10">Option</label>
+			                </div>
+						</div>
+						
+					</div>
+				</div>
+
+				
+				<h4 class="margin-sp20-top">Copy TBC</h4>
+
+				<div class="row margin-sp20-top">
+					<div class="col-xs-12 clearfix no-padding">
+
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox11" class="styled" type="checkbox" checked>
+			                    <label for="checkbox11">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox12" class="styled" type="checkbox" checked>
+			                    <label for="checkbox12">Option</label>
+			                </div>
+						</div>
+						
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox13" class="styled" type="checkbox" checked>
+			                    <label for="checkbox13">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox14" class="styled" type="checkbox" checked>
+			                    <label for="checkbox14">Option</label>
+			                </div>
+						</div>
+						
+					</div>
+				</div>
+
+				<hr>
+					
+				
+				<!-- Radio button list -->
+				<h3 class="margin-sp20-top">Copy TBC</h3>
+				<div class="row margin-sp20-top">
+					<div class="col-xs-12 clearfix no-padding">
+
+						<div class="col-xs-6">
+							<div class="radio radio-success">
+								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+								<label for="optionsRadios1">Option 1</label>
+							</div>
+						
+							<div class="radio radio-success">
+								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+								<label for="optionsRadios2">Option 2</label>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="radio radio-success">
+								<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+								<label for="optionsRadios3">Option 3</label>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<hr>
+				
+				<!-- Checkbox group -->
+				<h3 class="margin-sp20-top">Copy TBC</h3>
+				<h4 class="margin-sp20-top">Copy TBC</h4>
+
+
+				<div class="row margin-sp20-top">
+					<div class="col-xs-12 clearfix no-padding">
+
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox15" class="styled" type="checkbox" checked>
+			                    <label for="checkbox15">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox16" class="styled" type="checkbox" checked>
+			                    <label for="checkbox16">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox17" class="styled" type="checkbox" checked>
+			                    <label for="checkbox17">Option</label>
+			                </div>
+						<!-- </div>
+
+						<div class="col-xs-6"> -->
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox18" class="styled" type="checkbox" checked>
+			                    <label for="checkbox18">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox19" class="styled" type="checkbox" checked>
+			                    <label for="checkbox19">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox20" class="styled" type="checkbox" checked>
+			                    <label for="checkbox20">Option</label>
+			                </div>
+						</div>
+
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox21" class="styled" type="checkbox" checked>
+			                    <label for="checkbox21">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox22" class="styled" type="checkbox" checked>
+			                    <label for="checkbox22">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox23" class="styled" type="checkbox" checked>
+			                    <label for="checkbox23">Option</label>
+			                </div>
+						<!-- </div>
+
+						<div class="col-xs-6"> -->
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox24" class="styled" type="checkbox" checked>
+			                    <label for="checkbox24">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox25" class="styled" type="checkbox" checked>
+			                    <label for="checkbox25">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox26" class="styled" type="checkbox" checked>
+			                    <label for="checkbox26">Option</label>
+			                </div>
+						</div>
+						
+					</div>
+				</div>
+				
+
+
+				<!-- Checkbox group 02-->
+				<h4 class="margin-sp20-top">Copy TBC</h4>
+
+
+				<div class="row margin-sp20-top">
+					<div class="col-xs-12 clearfix no-padding">
+
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox27" class="styled" type="checkbox" checked>
+			                    <label for="checkbox27">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox28" class="styled" type="checkbox" checked>
+			                    <label for="checkbox28">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox29" class="styled" type="checkbox" checked>
+			                    <label for="checkbox29">Option</label>
+			                </div>
+
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox30" class="styled" type="checkbox" checked>
+			                    <label for="checkbox30">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox31" class="styled" type="checkbox" checked>
+			                    <label for="checkbox31">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox32" class="styled" type="checkbox" checked>
+			                    <label for="checkbox32">Option</label>
+			                </div>
+						</div>
+
+						<div class="col-xs-6">
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox33" class="styled" type="checkbox" checked>
+			                    <label for="checkbox33">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox34" class="styled" type="checkbox" checked>
+			                    <label for="checkbox34">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox35" class="styled" type="checkbox" checked>
+			                    <label for="checkbox35">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox36" class="styled" type="checkbox" checked>
+			                    <label for="checkbox36">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox37" class="styled" type="checkbox" checked>
+			                    <label for="checkbox37">Option</label>
+			                </div>
+						
+							<div class="checkbox checkbox-success">
+			                    <input id="checkbox38" class="styled" type="checkbox" checked>
+			                    <label for="checkbox38">Option</label>
+			                </div>
+						</div>
+						
+					</div>
+				</div>
+
+				<hr>
+
+				<!-- Dropdown -->
+				<h3 class="margin-sp20-top">Copy TBC</h3>
+				<h4 class="margin-sp20-top">Copy TBC</h4>
+				
+				<div class="row margin-sp20-top">
+					<div class="col-xs-12 clearfix no-padding">
+						<div class="col-xs-6">
+
+							<div class="form-group">
+								<select data-role="none" class="form-control dropdown">
+									<option value="" class="label">Select</option>
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+									<option value="4">Option 4</option>
+								</select>
+							</div>
+
+
+						</div>
+					</div>
+				</div>	
+				
+
+				<hr class="margin-sp30-top">
+
+				<div class="row margin-sp30-top">
+					<div class="col-xs-12 clearfix">
+						<button type="button" class="btn secondary pull-left">Cancel</button>
+					</div>
+					<div class="col-xs-12 clearfix">
+						<button type="button" class="btn pull-left margin-sp20-top">save changes</button>
+					</div>
+				</div>
+
+				<!-- page content ends here -->
+
+				
+
+
+			</div>
+
+			<div class="footer mobile-footer" data-role="footer">
+		    	<img class="icon logo" src="../images/icons/logo-PAK.svg" />
+				<p class="small">&copy; PAK'nSAVE 2015</p>
+			</div>
+		</div> 
+	
+		<!-- <script type="text/javascript" src="../js/mobile/jquery-1.7.1.min.js"></script> -->
+		<script type="text/javascript" src="../js/desktop/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../js/mobile/jquery-ui-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../js/mobile/jquery.mobile-1.3.0.min.js"></script>
+		<script type="text/javascript" src="../js/shared/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/shared/bootstrap-switch.min.js"></script>
+		<script type="text/javascript" src="../js/shared/jquery.easydropdown.min.js"></script>
+		<script type="text/javascript" src="../js/shared/jquery.qtip.min.js"></script>
+		<!-- <script type="text/javascript" src="../js/shared/svg-injector.min.js"></script> -->
+		<script type="text/javascript" src="../js/shared/pnstooltip.js"></script>
+		<script type="text/javascript" src="../js/shared/ie9-placeholder-shim.js"></script>
+		
+		<script type="text/javascript">
+			// var mySVGsToInject = document.querySelectorAll('img.inject-me');
+			// SVGInjector(mySVGsToInject, {
+			//     pngFallback: 'images/png'
+			// });
+
+			$("[name='yes-no']").bootstrapSwitch();
+			$("[name='on-off']").bootstrapSwitch();
+			$("[name='lock-unlock']").bootstrapSwitch();
+			$("[name='lock-unlock']").parent().parent().addClass('lock-unlock');
+
+			$('.pnstooltip').pnstooltip();
+			setTimeout(function(){ $.placeholder.shim(); }, 1000);
+			
+			$(document).bind('mobileinit',function(){
+				$.mobile.page.prototype.options.keepNative = "select, label, checkbox, input.foo, textarea.bar";
+			});
+
+			$(document).ready(function($){
+				setTimeout(function(){ $.placeholder.shim(); }, 1000);
+				//Add class to dropdown wrapper so we know when something has been selected
+				
+				$('select').change(function() {
+					$(this).parent().parent().addClass('clicked');
+					li.closest('.dropdown').addClass('clicked');
+					//Show date of birth as completed if all 3 dropdowns habve been clicked
+					if(li.closest('.dob').length > 0){
+						var dob = li.closest('.dob');
+						var finished = true;
+						dob.find('.dropdown').each(function(){
+							if(!$(this).hasClass('clicked')){
+								finished = false;
+							}
+						});
+						if(finished){
+							dob.find('.completed').removeClass('hidden');
+						}
+					}
+
+				});
+			});
+		</script>	
+	</body>
+</html>

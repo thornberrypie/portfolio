@@ -1,0 +1,212 @@
+.work{
+	background:#999 url(../images/feather.jpg) no-repeat right top;
+	color:#000; overflow:hidden; z-index:93; padding:16px 0 0;
+	position:relative; z-index:97;
+	border-top:1px solid #81C7E3; border-bottom:1px solid #81C7E3;
+	#sitebg-wrap{
+
+	}
+	.inner{
+		z-index:95;
+		p{
+			color: white;
+			padding:10px 0 12px;
+		}
+	}
+	#siteinfo{
+		font:normal 15px/24px "Open Sans";
+		display:block;
+		a{
+			color: white;
+			font-style: italic;
+			&:hover{
+				color: black;
+			}
+			strong &{
+				font-size: 17px;
+			}
+		}
+	}
+	ul{
+		color: white;
+		display:block;
+		margin:24px 0 0;
+		li{
+			@include border-radius(6px);
+			width:169px;
+			height:133px;
+			float:left;
+			display:block;
+			position:relative;
+			cursor:pointer;
+			overflow:hidden;
+			margin:0 78px 54px 0;
+			border:1px solid #666;
+			text-align:center;
+			p{
+				@include text-shadow(1px 1px #000);
+				@include absolute();
+				z-index:77;
+				line-height:37px;
+				font-size:18px;
+				font-weight:bold;
+				sup{
+					position:relative;
+					top:8px;
+					font-size:14px; 
+					font-style:italic;
+				}
+			}
+			span{
+				@include absolute();
+				@include border-radius(6px);
+			}
+			.layer{
+				background:#333;
+				z-index:44;
+				opacity:0.82;
+			}
+			.img{
+				z-index:33;
+				background:url(../images/thumbs-169x133-nov2015.jpg) no-repeat 0 0;
+			}
+			.button{
+				background:url(../images/play.png) no-repeat center;
+				z-index:39;
+			}
+			.bg1{
+				background:url(../images/diag-left.png) no-repeat 0 0;
+				z-index:55;
+			}
+			.bg2{
+				background:url(../images/diag-right.png) no-repeat 0 0;
+				z-index:55;
+			}
+			.info{
+				display:none;
+				font-size:55px;
+			}
+			&.active{
+				.img{
+					opacity:0.5;
+				}
+				.button{
+					background:url(../images/pause.png) no-repeat center;
+					opacity:0.55;
+				}
+				&.over{
+					.button{
+						opacity:1;
+					}
+				}
+				&.paused{
+					.button{
+						background:url(../images/play.png) no-repeat center;
+						z-index:39;
+					}
+				}
+			}
+			&.site4, &.site8, &.site12{
+				margin-right:0;
+			}
+			&.sff .img{
+				background-position:0 0;
+			}
+			&.scopevisio .img{
+				background-position:-169px 0;
+			}
+			&.liftoff .img{
+				background-position:-338px 0;
+			}
+			&.toptobottom .img{
+				background-position:-507px 0;
+			}
+			&.coats .img{
+				background-position:-676px 0;
+			}
+			&.mc .img{
+				background-position:-845px 0px;
+			}
+			&.nzso .img{
+				background-position:0 -133px;
+			}
+			&.hito .img{
+				background-position:-169px -133px;
+			}
+			&.fingertapps .img{
+				background-position:-338px -133px;
+			}
+			&.overland .img{
+				background-position:-507px -133px;
+			}
+			&.ffs .img{
+				background-position:-676px -133px;
+			}
+			&.stoptober .img{
+				background-position:-845px -133px;
+			}
+		}
+	}
+	@media screen and (max-width:980px){
+		ul{
+			margin:16px 0 0;
+			li{
+				margin:0 3% 27px 0;
+				.button{
+					display:none;
+				}
+				&.site4, &.site8, &.site12{
+					margin-right: 3%;
+				}
+			}
+		}
+	}
+	@media screen and (max-width:600px){
+		ul{
+			text-align:center;
+			li{
+				margin-left:10%;
+				margin-right:0;
+				&.site1, &.site, &.site10{
+					margin-right:0;
+				}
+			}
+		}
+	}
+	@media screen and (max-width:480px){
+		ul{
+			li{
+				margin-left:auto;
+				margin-right:auto !important;
+				float:none;
+			}
+		}
+	}
+}
+
+
+#sitebg{
+	width:1000%; height:100%; overflow:hidden; position:absolute; top:0; left:0;
+	background:url(../images/websites1y515.jpg) repeat center 0;
+	opacity:0.07; z-index:94; display:block;
+	&.site5-bg, &.site6-bg, &.site7-bg, &.site8-bg{
+		background-image:url(../images/websites2y515.jpg);
+	}
+	&.site9-bg, &.site10-bg, &.site11-bg, &.site12-bg{
+		background-image:url(../images/websites3y515.jpg);
+	}
+	&.site1-bg, &.site5-bg, &.site9-bg{
+		background-position:center 47px;
+	}
+	&.site2-bg, &.site6-bg, &.site10-bg{
+		background-position:center -468px;
+	}
+	&.site3-bg, &.site7-bg, &.site11-bg{
+		background-position:center -983px;
+	}
+	&.site4-bg, &.site8-bg, &.site12-bg{
+		background-position:center -1498px;
+	}
+}
+
+

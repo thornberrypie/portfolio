@@ -1,0 +1,100 @@
+@media screen and (max-width:980px){
+	.inner, fieldset.currentStatus, .home-left{
+		width:100%; float:none; box-sizing: border-box;
+	}
+	.inner{
+		padding:0 2.5%;
+	}
+	.home-left{
+		width:40%;
+	}
+	.home-right h3{
+		width:99%;
+	}
+	fieldset.currentStatus{
+		width:95%;
+	}
+	.download{
+		text-align:left;
+	}
+	p.intro{
+		font-size: 14px;
+	}
+	nav{
+		right: 30px;
+		
+	}
+}
+@media screen and (max-width:768px){
+
+	.home{
+		margin:102px 0 0;
+	}
+	.home-right{
+		display:none;
+	}
+	.home-left{
+		width:92%;
+	}
+	header h2{
+		padding-left: 0;
+	}
+	header .inner{
+		width:100%;
+		padding:0;
+	}
+	.hgroup{
+		padding-left: 30px;
+	}
+
+}
+@media screen and (max-width:680px){
+	nav{
+		padding-top: 20px;
+		float: none;
+		margin: 0 auto;
+		width:300px;
+		right: 0;
+	}
+	.hgroup{
+		float:none;
+	}
+	aside{
+		width:95%; float:none;
+	}
+	header .inner{
+		text-align: center;
+	}
+	.hgroup{
+		padding-left: 0;
+	}
+	.home{
+		margin: 146px 0 0;
+	}
+}
+@media screen and (max-width:480px){
+	fieldset.currentStatus{
+		width:90%;
+	}
+	.currentStatus .boldi{
+		text-align:center;
+		padding-right:5px;
+	}
+	.contact label{ display:block;}
+	.contact-bg{ right:0;}
+	.contact aside{
+		float: none;
+		width: 100%;
+	}
+	.contact li{
+		padding: 10px;
+		text-align: center;
+	}
+	.download{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	.download .heading{
+		padding-left: 0;
+	}
+}

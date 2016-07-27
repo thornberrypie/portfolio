@@ -1,0 +1,104 @@
+/*
+ * Stylesheet for footstuffs project 2015
+ *
+ * Contents 
+ * -------------------------------
+ * - 00.  References
+ *	
+ * @author Bart Wang & Phil Kent
+ * @date Nov 2015
+ */
+
+$main-breakpoint: 990px;
+$mobile-breakpoint: 480px;
+
+// lib stuff
+@import "mobile/bootstrap/variables";
+@import "mobile/bootstrap/mixins";
+
+// shared elements
+@import "shared/elements/mixins";
+@import "shared/elements/colours";
+@import "shared/elements/fonts";
+@import "shared/elements/spacing-system";
+
+// components
+@import "shared/components/general";
+@import "shared/components/alert-box";
+@import "shared/components/buttons";
+@import "shared/components/card";
+@import "shared/components/modal";
+@import "shared/components/form";
+@import "shared/components/switch";
+@import "shared/components/dropdown";
+@import "shared/components/checkbox";
+@import "shared/components/table";
+@import "shared/components/notifications";
+@import "shared/components/slider";
+@import "shared/components/icons";
+@import "shared/components/vouchers";
+
+// page level style
+@import "mobile/page-mobile";
+
+/* ------------------------------
+ * 02. Generic styles 
+ * ----------------------------- */
+
+body {
+	background: $main-background;
+}
+.inline {
+	display: inline !important;
+}
+
+.block {
+	display: block !important;
+}
+
+.ui-shadow-inset {
+	box-shadow: none;
+	display: inline;
+}
+
+.pull-up-text {
+	margin-top: -20px;
+	padding-right: 30px;
+}
+
+.pull-up-icon {
+	margin-top: -26px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.nav.nav-pills.nav-stacked li a:hover {
+	border-bottom: none;
+}
+
+.actions{
+	.btn{
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+.header.subpage h1{
+	color: white;
+}
+
+.card {
+	.card-header, .inner-card {
+	    padding: 20px;
+	}
+}
+.pnstooltip:hover #XMLID_62_ {
+	fill: #FFD600;
+	opacity: 1;
+}
+
+.pnstooltip:hover #XMLID_4905_ path {
+	fill: black;
+}

@@ -1,0 +1,65 @@
+html, body, h1, h2, ul {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #343434;
+  font-family: Roboto, Arial, sans-serif; }
+
+img {
+  max-width: 120px;
+  height: auto; }
+
+h1 {
+  padding: 12px 0 0;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  color: white; }
+  h1 a:hover, h1 a:focus {
+    color: white; }
+
+h2 {
+  font-size: 1.4em;
+  margin: 12px 0;
+  min-height: 72px; }
+
+#header.navbar {
+  min-height: 95px; }
+  #header.navbar .nav {
+    margin: 0; }
+    #header.navbar .nav a {
+      padding-left: 0 !important; }
+  #header.navbar .navbar-brand {
+    display: none; }
+
+#main {
+  padding-top: 180px; }
+  #main #searchResults {
+    padding-top: 24px; }
+
+#searchform {
+  padding: 6px 0 12px; }
+  #searchform #searchbox {
+    width: auto;
+    float: left;
+    margin-right: 3px; }
+
+.pagenum {
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #343434; }
+
+.btn-more {
+  margin-bottom: 45px; }
+
+.btn:focus {
+  background: black; }
+
+.navbar-toggle {
+  margin-right: 0; }
+
+@media screen and (max-width: 768px) {
+  #main {
+    padding-top: 126.0px; } }
+
+/*# sourceMappingURL=style.css.map */

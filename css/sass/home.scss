@@ -1,0 +1,33 @@
+.home{
+	background:#D9D9D7 url(../images/fern-leaf.jpg) no-repeat 0 100%;
+	padding:12px 0;
+	margin:102px 0 0;
+	border-top:1px solid #81C7E3;
+	border-bottom:1px solid #81C7E3;
+}
+.home-left{ width:47%; float:left; font-size:15px; padding-left:1%;}
+.home-right{
+	width:48%; float:right; min-height:313px; min-width:340px;
+	position:relative;
+}
+p.intro{
+	color: #333;
+	padding-left: 36px;
+}
+p.intro span{ display:none;}
+.home-right h3{
+	width:90%; height:266px; display:block;
+	position:absolute; top:36px; right: 0;
+}
+.home-right h3 span{ display:none; position:absolute; line-height:32px;}
+.currentStatus{
+	width:96%;
+	float:left;
+	display:block;
+	border-radius:7px;
+	margin:10px 0 6px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #cdcdcd;
+	background:linear-gradient(135deg, #75cdf5, #fff);
+}

@@ -1,0 +1,512 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100% !important;
+}
+
+body{
+	background-color: #000000;
+	font-family: Arial, sans-serif;
+	color: $body-grey;
+}
+
+.page-container{
+	background-color: $main-background;
+}
+
+.nolink {
+	cursor: default;
+}
+
+
+hr {
+	border-top: 1px solid $divider-grey;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.icon:not(.pnstooltip) {
+	width: 22px;
+	.st0{
+		opacity: 1;
+	}
+		
+	&.grey .st0{
+		opacity: 1;
+		fill: $divider-dark-grey;
+
+		&:hover path, &:hover{
+			fill: $divider-grey;
+		}
+	}
+}
+
+
+.container-fluid {
+	width: 960px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+	h1, h2, h3, h4 {
+		margin: 0;
+	}
+
+	.page-content {
+		padding-left: 45px;
+	}
+}
+
+.header {
+	background: $yellow;
+	height: 60px;
+	border-top: 1px solid $yellow;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid black;
+	text-shadow: none;
+
+	span {
+		color: black;
+		line-height: 60px;
+	}
+
+	&.subpage {
+		background: black;
+		border-top: 1px solid black;
+
+		p.arrow {
+			margin: 0;
+			position: absolute;
+		}
+
+		a {
+			color: $dark-yellow !important;
+			text-decoration: none;
+			line-height: 60px;
+			float: left;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		h1 {
+			color: $dark-yellow;
+			margin: 0;
+			line-height: 60px;
+		}
+	}
+}
+
+.desktop-header {
+	height: 130px;
+	border-bottom: 6px solid black;
+
+	.logo {
+		width: 300px;
+		height: 91px;
+		margin-top: -35px;
+	}
+
+	.icon {
+		width: 25px;
+		margin-top: 12px;
+
+		&:hover circle {
+			fill: black;
+		}
+
+		&:hover path, &:hover #XMLID_931_ {
+			fill: $dark-yellow;
+		}
+	}
+
+	.nav {
+		width: 960px;
+		margin: 0 auto;
+
+		li {
+			line-height: normal;
+			margin-top: 35px;
+
+			a {
+				@extend .texgyreheroscn-bold;
+				font-size: 17px;
+				border-bottom: none;
+				color: black !important;
+				line-height: 20px;
+				margin: 15px 28px 0 20px;
+				text-transform: uppercase;
+
+				&.pnslogo {
+					
+					.logo {
+						.st0 {
+							opacity: 1;
+						}
+					}
+
+					&:hover {
+						border-bottom: none;
+					}
+				}
+
+				&:hover {
+					border-bottom: 6px solid black;
+				}
+
+				&.icons {
+					margin: 0 10px;
+
+					&:hover {
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.nav {
+	position: relative;
+	
+	&.sidebar {
+		li:hover {
+			background-color: transparent;
+		}
+	}
+
+	&.hamburger {
+		text-align: center;
+		background-color: $yellow;
+		text-transform: uppercase;
+
+		li {
+			a {
+				@extend .texgyreheroscn-bold;
+
+				border: none;
+				color: black !important;
+				display: inline;
+				font-size: 23px;
+				font-weight: normal;
+
+				&:hover {
+					border-bottom: 6px solid black;
+				}
+			}
+		}
+	}
+
+	li {
+		height: 50px;
+		line-height: 50px;
+		
+		&:hover, &:focus {
+			background-color: $yellow;
+		}
+
+		a {
+			@extend .texgyreheroscn-bold;
+			padding: 0;
+			margin: 0 10px;
+			color: #666666 !important;
+			text-shadow: none;
+			border-radius: 0;
+			border-bottom: 1px solid #e7e7e7;
+			font-size: 17px;
+			font-weight: normal;
+
+			&.first {
+				border-top: 1px solid #e7e7e7;
+			}
+
+			&:hover, &:focus {
+				background-color: transparent;
+				border-bottom: 2px solid $yellow;
+			}		
+
+			&.active {
+				border-bottom: 2px solid $yellow;
+				color: black !important;
+				background-color: transparent !important;
+			}
+		}
+
+		.glyphicon {
+			float: right;
+			line-height: 50px;
+		}
+	}
+}
+
+.content {
+	clear: both;
+	text-shadow: none;
+	padding: 20px;
+}
+
+.footer {
+	background: black;
+	height: 50px;
+	text-shadow: none;
+
+	p.small {
+		color: #929191;
+		line-height: 50px;
+		float: right;
+		padding-right: 25px;
+	}
+}
+
+.desktop-footer {
+	height: 137px;
+	width: 100%;
+
+	.logo {
+		width: 150px;
+	}
+
+	.nzowned {
+		width: 150px;
+	}
+
+	.nav {
+		width: 960px;
+		margin: 0 auto;
+		background-image: url('../../images/icons/logo-nzowned.svg');
+		background-position: center right;
+		background-repeat: no-repeat;
+		height: 130px;
+
+		li {
+			margin-top: 40px;
+
+			&:hover, &:focus {
+				background-color: transparent;
+			}
+
+			&.smaller {
+				a {
+					font-family: Arial, Calibri, sans-serif;
+					text-transform: none;
+					color: #929191 !important;
+					font-size: 10px;
+					line-height: 55px;
+					margin: 0 10px;
+				}
+			}
+
+			a {
+				@extend .texgyreheroscn-bold;
+				text-transform: uppercase;
+				color: #e6e6e6 !important;
+				border-bottom: none;
+				margin: 0 15px;
+
+				&.nolink:hover {
+					text-decoration: none;
+				}
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+// page level style
+
+h2.page-summary{
+	
+	color: $light-grey;
+	font-size: 17px;
+	margin-top: 14px;
+	
+	.pnstooltip{
+		line-height: 1;
+		
+		svg{
+			height: 100%;
+			margin-left: 14px;
+			vertical-align: middle;
+		}
+		
+	}
+}
+
+p.page-explanation{
+	
+	color: $body-grey;
+	font-size: 14px;
+	width: 464px;
+	margin-top: 3px;
+}
+
+.action-link{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #414141;
+	font-size: 10px;
+}
+
+.card-number {
+	word-spacing: 1px;
+}
+
+.center-block {
+	float: none !important;
+}
+
+small {
+	display: inline !important;
+}
+
+.inline {
+	display: inline !important;
+}
+
+.block {
+	display: block !important;
+}
+
+#notification {
+	.table-col-1 {
+		width: 55%;
+		padding-left: 0;
+	}
+	.table-col-2 {
+		width: 15%;
+		img.icon {
+			width: 40px;
+		}
+	}
+	.table-col-3 {
+		width: 15%;
+	}
+	.table-col-4 {
+		width: 15%;
+	}
+	table.dashed tr {
+		height: 55px;
+	}
+	.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+		padding: 8px 0;
+	}
+	.table > tbody > tr > td {
+		border-bottom: 1px solid #ddd !important;
+	}
+
+	.table {
+		tbody {
+			tr {
+			    background-color: transparent;
+			    td{
+					border-top: 1px solid #ddd !important;
+			    }
+			    span {
+      				width: auto;
+			    }
+			}
+		}
+
+		&.dashed {
+			thead{
+				tr {
+					th {
+						border-bottom: 1px dashed #ddd !important;
+	  					border-top: 1px dashed #ddd !important;
+	  					vertical-align: middle !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   .desktop-footer .nav{background-position: 40px 100%;}
+}
+
+%inner-page{
+	h1{
+		margin-top: -10px;
+	}
+
+	.form-group{
+		padding: 0;
+
+		input[type=text], .dropdown{
+			width: 470px;
+		}
+	}
+}
+
+.page-households{
+	button.invite{
+		margin-right: 18px;
+	}
+}
+
+.page-security{	
+	@extend %inner-page;
+	
+}
+
+.page-summary{
+	@extend %inner-page;
+}
+
+#myModal-02 {
+	.icon-account {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+// Register page style
+.page-register {
+	.login-link {
+		a {
+			display: inline-block;
+			margin: 15px 28px 0 10px !important;
+		}
+	}
+
+	.step-progress-bar {
+		padding: 0 70px;
+	}
+
+	label {
+	  font-family: Arial,Calibri,sans-serif !important;
+	  letter-spacing: normal !important;
+	}
+
+}
+.qtip-close {
+	  display: none;
+}
+
+@media screen and (max-width: $mobile-breakpoint){
+	.voucher-wrap {
+	  margin: 20px auto;
+	}
+
+	.notifications ul li:hover .icon{
+	  display: block;
+	}
+
+	.notifications ul li.active .icon {
+		display: none;
+	}
+
+	.notifications ul li:hover .icon-hidden {
+	  display: none;
+	}
+
+	.notifications ul li.active .icon-hidden {
+		display: block;
+	}
+}
+

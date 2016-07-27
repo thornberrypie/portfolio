@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<link rel="stylesheet" href="../css/mobile/jquery.mobile-1.3.0.css">
+		<link rel="stylesheet" href="../css/mobile/jquery.mobile-1.3.0.css">
+		<link rel="stylesheet" href="../css/mobile/bootstrap/bootstrap.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/mobile/jquery.qtip.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/main-mobile.css" type="text/css"/>
+
+
+	</head>
+	<body id="sticky-club-card">
+
+		<div data-role="page">
+			<div class="header subpage" data-role="header">
+				<p class="arrow">
+					<a href="account-manage.html" data-transition="slide" data-direction="reverse">
+						<img src="../images/icons/mobile-arrow-header-back.svg" class="inject-me" />
+					</a>
+				</p>
+				<h1>My tag details</h1>
+			</div>
+
+			<div class="content" data-role="main" class="ui-content">
+				 <div class="row">
+					<div class="col-xs-12 clearfix">
+						<h4 class="sub-title margin-sp20-top">Manage your Sticky Club Tag</h4>
+						<hr>
+
+						<h4 class="v-middle">Your tag number</h4>
+						<div class="v-middle margin-sp10-left">
+							<span class="pnstooltip">
+								<span class="pnstooltip-content noshow">Lorem ipsum dolor sit amet, ei fugit dicam insolens sit. Mel odio principes te. Consul oblique eam no, quod justo dictas vis ne, timeam gloriatur usu ut. An recusabo eleifend sed, ea autem atomorum nec. Idque interpretaris cu eum. Sed ne amet novum.</span>
+							</span>
+							
+						</div>
+					</div>
+				</div>
+				
+				<p class="card-number margin-sp10-top"><strong>8 9 7 5 4 4 2 5 8 9 7 5 4 4 2 5</strong></p>
+
+				<hr>
+					<div class="row">
+						<div class="col-xs-12 clearfix">
+							<h4>Lock your tag</h4>
+							<div class="clearfix margin-sp20-top">
+								<p class="v-middle no-margin">
+									<input type="checkbox" data-off-text="&nbsp;&nbsp;&nbsp;" data-on-text="&nbsp;&nbsp;&nbsp;" checked="false" name="lock-unlock" checked>
+								</p>
+								<p class="v-middle margin-sp10-left">Temporarily lock your tag</p>
+							</div>
+						</div>
+					</div>
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-12 clearfix data-roll">
+						<button type="button" class="btn secondary">Replace your tag</button>
+						<div class="text"><br>You'll need a new tag from PAK'nSAVE</div>
+					</div>
+				</div>
+				<hr>
+				<div class="row actions">
+					<div class="col-xs-12 clearfix">
+						<button type="button" class="btn secondary">Cancel</button>
+						<button type="button" class="btn">Save changes</button>
+					</div>
+				</div>	
+			</div>
+
+			<div class="footer mobile-footer" data-role="footer">
+		    	<img class="icon logo" src="../images/icons/logo-PAK.svg" />
+				<p class="small">&copy; PAK'nSAVE 2015</p>
+			</div>
+		</div> 
+	
+		<!-- <script type="text/javascript" src="../js/mobile/jquery-1.7.1.min.js"></script> -->
+		<script type="text/javascript" src="../js/desktop/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../js/mobile/jquery-ui-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../js/mobile/jquery.mobile-1.3.0.min.js"></script>
+		<script type="text/javascript" src="../js/shared/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/shared/bootstrap-switch.min.js"></script>
+		<script type="text/javascript" src="../js/shared/jquery.easydropdown.min.js"></script>
+		<script type="text/javascript" src="../js/shared/jquery.qtip.min.js"></script>
+		<!-- <script type="text/javascript" src="../js/shared/svg-injector.min.js"></script> -->
+		<script type="text/javascript" src="../js/shared/pnstooltip.js"></script>
+		<script type="text/javascript" src="../js/shared/ie9-placeholder-shim.js"></script>
+
+		<script>
+			$("[name='yes-no']").bootstrapSwitch();
+			$("[name='on-off']").bootstrapSwitch();
+			$("[name='lock-unlock']").bootstrapSwitch();
+			$("[name='lock-unlock']").parent().parent().addClass('lock-unlock');
+			setTimeout(function(){ $.placeholder.shim(); }, 1000);
+
+			$('.pnstooltip').pnstooltip({
+				positionMy: 'top left',
+				positionAt: 'bottom right',
+
+			});
+			
+			
+		</script>	
+	</body>
+</html>

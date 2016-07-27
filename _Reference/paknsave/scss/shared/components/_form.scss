@@ -1,0 +1,435 @@
+input, label {
+    outline: none !important;  
+    
+    &:focus {
+        outline: none !important;     
+    }
+
+    &:before, &:after{
+        &:focus {
+            outline: none !important;
+            box-shadow: none;
+        }    
+    }
+}
+
+label {
+    &.placeholder{
+        z-index: 1 !important;
+    }
+    .form-group &{
+        // @extend .texgyreheroscn-regular;
+        // letter-spacing: 1px;
+    }
+}
+
+input [type="radio"] {
+    &:focus {
+        outline: none !important;     
+    }
+
+    &:before, &:after{
+        &:focus {
+            outline: none !important;     
+        }    
+    }
+}
+
+.two-col{
+    .radio{
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding-right: 30px;
+    }
+}
+
+.form-group {
+    margin: 0;
+    padding: 25px 0 0;
+    clear: both;
+    .completed{
+        width: 22px;
+        height: 22px;
+        display: block;
+        position: relative;
+        top: -7px;
+        background: url(../images/icons/PnS_confirm.svg) no-repeat 0 0;
+    }
+    &.form-pinput{
+        label{
+            display: block;
+        }
+        .completed{
+            top: 2px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+    }
+    .inner-card &:first-child{
+        padding-top: 0;
+    }
+}
+
+.form-control {
+    border-radius: 0;
+    padding: 11px 12px 8px;
+    box-shadow: none;
+    height: auto;
+    color: $body-grey;
+
+    &.pinput{
+        font-size:24px;
+        padding: 7px 0 7px 9px;
+        line-height: 24px;
+        max-height: 43px;
+        letter-spacing: 8px;
+        font-family: Geneva;
+        display: inline-block;
+        background: white url(../images/bg-pinput4.gif) no-repeat 28px 6px;
+        &.pinput4{
+            width: 110px;
+        }
+        &.pinput8{
+            width: 204px;
+            background-image: url(../images/bg-pinput8.gif);
+        }
+        &.success{
+            background: $yellow;
+        }
+    }
+
+    &[type=text]{
+        height: 40px;
+    }
+
+    &::-moz-placeholder{
+        color: $body-grey;
+    }
+    &::-webkit-input-placeholder{
+        color: $body-grey;
+    }
+    &:-ms-input-placeholder{
+        color: $body-grey;
+    }
+
+}
+
+.password-group{
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    .form-control.password{
+        float: left;
+        width: 264px;
+        height: 100%;
+        letter-spacing: 5px;
+        padding-right: 42px;
+    }
+    .status{
+        position: relative;
+        float: left;
+        width: 88px;
+        background: $yellow;
+        height: 100%;
+        line-height: 40px;
+        color: black;
+        font-size: 11px;
+        padding-left: 10px;
+        .icon{
+            height: 22px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        &.status-strong .icon{
+            background: url(../images/icons/PnS_smile.svg) no-repeat 0 0;
+        }
+        &.status-fair .icon{
+            background: url(../images/icons/PnS_happy.svg) no-repeat 0 0;
+        }
+        &.status-weak .icon{
+            background: url(../images/icons/PnS_angry.svg) no-repeat 0 0;
+        }
+    }
+    .tick{
+        width: 22px;
+        height: 22px;
+        background: url(../images/icons/PnS_confirm.svg) no-repeat 0 0 / cover;
+        content: " ";
+        position: absolute;
+        display: block;
+        top: 9px;
+        // left: 232px;
+        right: 28%;
+    }
+    &.valid{
+        .form-control.password{
+            background-color: $yellow;
+        }
+    }
+}
+
+/*@-moz-document url-prefix() {
+    .password-group .status{
+        height: 41px;
+    }
+}*/
+
+.has-focus .form-control, .form-control:focus{
+    border-color: black;
+    box-shadow: none;
+}
+
+.has-success .form-control {
+    background-image: url('../images/icons/PnS_confirm.svg');
+    background-color: $yellow;
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    background-position: right center;
+
+    border-color: $yellow;
+    box-shadow: none;
+    padding-right: 40px;
+
+    &:focus {
+        border-color: $dark-yellow;
+        box-shadow: none;
+    }
+}
+
+.has-error {
+    .form-control {
+        background-image: url('../images/icons/PnS_alert-red.svg');
+        background-repeat: no-repeat;
+        background-size: 22px auto;
+        background-position: 98% center;
+        border-color: $red;
+        color: $red;
+        box-shadow: none;
+        padding-right: 40px;
+
+        &:focus {
+            border-color: $red;
+            box-shadow: none;
+        }
+    }
+
+    .help-block, .help-block p, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+        color: $red;
+    }
+
+}
+
+ul.step-list {
+
+    padding: 0;
+    margin-bottom: 0;
+
+    .step-block {
+        list-style: none;
+        text-align: center;
+
+        .step-wrap{
+            margin: 0 auto;
+            display: table;
+        }
+
+        .step-number {
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: table-cell;
+            font-weight: bold;
+            vertical-align: middle;
+
+            .glyphicon {
+                font-size: 16px;
+                top: 2px;
+            }
+            h4{
+                line-height: 34px;
+                margin: 0;
+            }
+        }
+
+        .text{
+            white-space: nowrap;
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 10px;
+            font-weight: bold;
+            color: $light-grey;
+        }
+
+        &.activated {
+            .step-number {
+                background: $yellow;    
+            }
+            .text {
+                color: $body-grey;
+            }
+        }
+
+        &.done {
+            .step-number {
+                background: $grey;
+                h4, span {
+                    color: $off-white;
+                }
+            }
+            .text{
+                color: #ccc;
+            }
+        }
+
+        &.disabled {
+            .step-number {
+                background: $divider-dark-grey;
+                
+                h4, span {
+                    color: $off-white;
+                }
+                
+            }
+        }
+    }
+    
+    &.inline-list {
+        .step-block {
+            display: flex;    
+        }   
+    }
+}
+
+.noshow {
+    display: none; 
+}
+
+.pnstooltip {
+    margin-left: 10px;
+    cursor: pointer;
+    
+    small{
+        color: $body-grey;
+        position: relative;
+        top: 1px;
+        font-size: 78%;
+    }
+}
+
+.pnstooltipbox {
+    .qtip-default, .qtip-content {
+        background-color: white;
+        border: 3px solid #000001;
+    }
+}
+
+.pnstooltip-content{
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+}
+
+.ui-popup {
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: none;
+    border-radius:0;
+    margin-top: -50px;
+    position: relative;
+    &:after{
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #000;
+        bottom:-8px;
+        left: 48%;
+        display: block;
+        position:absolute;
+    }
+}
+
+.radio:not(.disabled), .checkbox:not(.disabled){
+    &:hover{
+        label{
+            &:before{
+                border-color: black;
+            }
+        }
+    }
+}
+
+input.form-control:not([disabled]), textarea, .dropdown{
+    &:hover{
+        border-color: black;
+    }
+}
+
+.has-success input.form-control{
+    &:hover{
+        border-color: $yellow;
+    }
+}
+
+.has-error input.form-control{
+    &:hover{
+        border-color: $red;
+    }
+}
+
+@media screen and (max-width: $main-breakpoint){
+    body.components-library{
+        .step-list{
+            .step-block{
+                .step-wrap{
+                    .step-number{
+                        display: block;
+                        margin: 0 auto 5px;
+                        width: 30px;
+                        height: 30px;
+                        h4{
+                            line-height: 30px;
+                        }
+                        .glyphicon{
+                            top: 7px;
+                        }
+                    }
+                    .text{
+                        display: block;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 12px;
+                        padding-left: 0;
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+        .bootstrap-switch{
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 460px){
+    .password-group{
+        .form-control.password{
+            width: 55%;
+        }
+        .tick{
+            right: 48%;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+    .form-control.pinput {
+      letter-spacing: 12px;
+    }
+} 

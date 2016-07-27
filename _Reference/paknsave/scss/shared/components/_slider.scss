@@ -1,0 +1,172 @@
+.fuel-discounts{
+	text-align: center;
+	h2, h3{
+		padding-bottom: 10px;
+	}
+}
+.balance{
+	font-size:75px;
+	letter-spacing: -6px;
+	.value{
+		font-size: 160px;
+		line-height: 160px;
+		font-weight: bold;
+	}
+	.inner{
+		display: inline-block;
+		position: relative;
+		.cents{
+			position: relative;
+			right: 10px;
+		}
+		.whats-this{
+			letter-spacing: 0;
+			position: absolute;
+			right: -120px;
+			bottom: 0;
+			width: 120px;
+			display: block;
+		}
+	}
+	
+}
+.slider-wrap{
+	background: white;
+	padding: 30px 0;
+	div{
+		text-align: left;
+		&.actions{
+			text-align: right;
+			padding-top: 20px;
+			.btn{
+				margin-right: 15px;
+			}
+		}
+	}
+	h2{
+		padding-bottom: 10px;
+	}
+	p{
+		padding-right: 30px;
+	}
+	.make-a-voucher{
+		padding-left: 15px;
+	}
+	.slider-inner{
+		padding-top: 66px;
+		.ui-widget-content .ui-state-default{
+			width: 31px;
+			height: 32px;
+			background: url(../images/icons/PnS_slider.svg) no-repeat 0 0;
+			border: 0;
+		}
+		.ui-slider-horizontal .ui-slider-handle{
+			top: -18px;
+			margin-left: -15px;
+		}
+		.ui-widget{
+			font-size: 0.2em;
+		}
+		*:focus{
+			outline: none;
+		}
+		.min, .max{
+			width: 25px;
+			display: block;
+			position: absolute;
+			top: 58px;
+			font-size: 10px;
+			line-height: 12px;
+			color: #929196;
+			span{
+				font-weight: bold;
+				font-size: 14px;
+				display: block;
+				color: #333;
+			}
+		}
+		.min{
+			left: -30px;
+		}
+		.max{
+			right: -30px;
+		}
+		&:hover{
+			.ui-widget-content .ui-state-default{
+				background-image: url(../images/icons/PnS_slider_rollover.svg);
+			}
+		}
+	}
+	.currentval{
+		width: 55px;
+		height: 55px;
+		background: $yellow;
+		border-radius: 55px;
+		display: block;
+		position: absolute;
+		top: -63px;
+		left: -12px;
+		line-height: 54px;
+		text-align: center;
+		font-size: 12px;
+		color: black;
+		.val{
+			font-size: 30px;
+			letter-spacing: -1px;
+			padding-right: 2px;
+		}
+		&:after{
+			width: 0; 
+			height: 0; 
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-top: 16px solid $yellow;
+			content: " ";
+			display: block;
+			position: absolute;
+			bottom: -8px;
+			left: 19px;
+		}
+	}
+	.yellow-line{
+		position: absolute;
+		top: -2px;
+		left: -1px;
+		height: 3px;
+		display: block;
+		background: $yellow;
+	}
+}
+
+@media screen and (max-width: $main-breakpoint){
+	.slider-wrap{
+		width: 300px;
+		.make-a-voucher{
+			padding: 0 0 25px;
+		}
+		p{
+			padding-right: 0;
+		}
+		.slider-inner{
+			.slider{
+				width: 176px;
+				margin: 0 auto;
+			}
+			.min{
+				left: 15px;
+			}
+			.max{
+				right: 15px;
+			}
+		}
+		div{
+			text-align: center;
+			&.actions{
+				text-align: center;
+				.btn{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

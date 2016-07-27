@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" zoomAndPan="disable" >
+	<defs id="svgEditorDefs">
+		<path id="svgEditorClosePathDefs" stroke="black" fill="khaki" style="stroke-width: 1px; vector-effect: non-scaling-stroke;"/>
+	</defs>
+	<rect id="svgEditorBackground" x="0" y="0" width="16" height="16" style="fill: none; stroke: none;"/>
+	<path stroke="#ffd700" id="e3_shape" style="vector-effect: non-scaling-stroke; stroke-width: 1px;" transform="matrix(-1.48672 0.00835532 -0.00832622 -1.49191 345.157 247.896)" fill="#ffd700" d="M 228.7 161.819 l -3.72501 -3.72501 c -0.457062 -0.427551 -1.07085 0.376663 -0.753861 0.663071 l 3.10248 3.07887 l -3.12282 3.07217 c -0.242676 0.248032 0.446259 1.07384 0.7742 0.685883 l 3.72501 -3.72501 Z"/>
+</svg>

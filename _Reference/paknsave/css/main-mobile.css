@@ -1,0 +1,3156 @@
+@charset "UTF-8";
+/*
+ * Stylesheet for footstuffs project 2015
+ *
+ * Contents 
+ * -------------------------------
+ * - 00.  References
+ *	
+ * @author Bart Wang & Phil Kent
+ * @date Nov 2015
+ */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* Primary colours */
+/* line 31, ../scss/shared/elements/_colours.scss */
+.grey {
+  color: #414141; }
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+@font-face {
+  font-family: 'texgyreheroscn-regular';
+  src: url("../fonts/texgyreheroscn_regular_macroman/texgyreheroscn-regular-webfont.eot?#iefix");
+  src: url("../fonts/texgyreheroscn_regular_macroman/texgyreheroscn-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/texgyreheroscn_regular_macroman/texgyreheroscn-regular-webfont.svg#texgyreheroscnbold") format("svg"), url("../fonts/texgyreheroscn_regular_macroman/texgyreheroscn-regular-webfont.woff") format("woff"), url("../fonts/texgyreheroscn_regular_macroman/texgyreheroscn-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'texgyreheroscn-bold';
+  src: url("../fonts/texgyreheroscn-bold-macroman/texgyreheroscn-bold-webfont.eot?#iefix");
+  src: url("../fonts/texgyreheroscn-bold-macroman/texgyreheroscn-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/texgyreheroscn-bold-macroman/texgyreheroscn-bold-webfont.svg#texgyreheroscnbold") format("svg"), url("../fonts/texgyreheroscn-bold-macroman/texgyreheroscn-bold-webfont.woff") format("woff"), url("../fonts/texgyreheroscn-bold-macroman/texgyreheroscn-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* ------------------------------------ */
+/* ! 02. Typography                     */
+/* ------------------------------------ */
+/* Font stack */
+/* line 35, ../scss/shared/elements/_fonts.scss */
+.texgyreheroscn-regular, .ui-body-a h1, .ui-body-a h2, .ui-body-a h3, .ui-body-a .notifications .mid a, .notifications .mid .ui-body-a a, .ui-body-a h4, .ui-body-a h5, .ui-body-a input, .ui-body-a select, .ui-body-a textarea, .ui-body-a button, .ui-body-b h1, .ui-body-b h2, .ui-body-b h3, .ui-body-b .notifications .mid a, .notifications .mid .ui-body-b a, .ui-body-b h4, .ui-body-b h5, .ui-body-b input, .ui-body-b select, .ui-body-b textarea, .ui-body-b button, .ui-body-c h1, .ui-body-c h2, .ui-body-c h3, .ui-body-c .notifications .mid a, .notifications .mid .ui-body-c a, .ui-body-c h4, .ui-body-c h5, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button {
+  font-family: texgyreheroscn-regular, Arial, Calibri, sans-serif; }
+
+/* line 38, ../scss/shared/elements/_fonts.scss */
+.texgyreheroscn-bold, h1, h2, h3, .notifications .mid a, h4, h5, .btn, .voucher-wrap .cta, .nav.hamburger li a, .nav li a {
+  font-family: texgyreheroscn-bold, Arial, Calibri, sans-serif; }
+
+/* line 42, ../scss/shared/elements/_fonts.scss */
+.ui-body-a .texgyreheroscn-bold, .ui-body-a h1, .ui-body-a h2, .ui-body-a h3, .ui-body-a .notifications .mid a, .notifications .mid .ui-body-a a, .ui-body-a h4, .ui-body-a h5, .ui-body-a .btn, .ui-body-a .voucher-wrap .cta, .voucher-wrap .ui-body-a .cta, .ui-body-a .nav li a, .nav li .ui-body-a a, .ui-body-b .texgyreheroscn-bold, .ui-body-b h1, .ui-body-b h2, .ui-body-b h3, .ui-body-b .notifications .mid a, .notifications .mid .ui-body-b a, .ui-body-b h4, .ui-body-b h5, .ui-body-b .btn, .ui-body-b .voucher-wrap .cta, .voucher-wrap .ui-body-b .cta, .ui-body-b .nav li a, .nav li .ui-body-b a, .ui-body-c .texgyreheroscn-bold, .ui-body-c h1, .ui-body-c h2, .ui-body-c h3, .ui-body-c .notifications .mid a, .notifications .mid .ui-body-c a, .ui-body-c h4, .ui-body-c h5, .ui-body-c .btn, .ui-body-c .voucher-wrap .cta, .voucher-wrap .ui-body-c .cta, .ui-body-c .nav li a, .nav li .ui-body-c a {
+  font-family: texgyreheroscn-bold, Arial, Calibri, sans-serif; }
+
+/* line 47, ../scss/shared/elements/_fonts.scss */
+p {
+  font-family: Arial, Calibri, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #414141;
+  margin: 0; }
+  /* line 54, ../scss/shared/elements/_fonts.scss */
+  p.small {
+    font-size: 10px;
+    line-height: 12px; }
+  /* line 59, ../scss/shared/elements/_fonts.scss */
+  p.grey {
+    color: #929191; }
+
+/* line 65, ../scss/shared/elements/_fonts.scss */
+a {
+  color: black; }
+  /* line 68, ../scss/shared/elements/_fonts.scss */
+  a:hover {
+    color: black; }
+
+/* line 81, ../scss/shared/elements/_fonts.scss */
+h1, h2, h3, .notifications .mid a, h4, h5 {
+  color: #000000; }
+
+/* line 86, ../scss/shared/elements/_fonts.scss */
+h1 {
+  font-size: 40px;
+  line-height: 1.2; }
+
+/* line 91, ../scss/shared/elements/_fonts.scss */
+h2 {
+  font-size: 30px;
+  line-height: 32px; }
+
+/* line 96, ../scss/shared/elements/_fonts.scss */
+h3, .notifications .mid a {
+  font-size: 23px;
+  line-height: 27px; }
+
+/* line 101, ../scss/shared/elements/_fonts.scss */
+h4 {
+  font-size: 17px;
+  line-height: 20px; }
+  /* line 105, ../scss/shared/elements/_fonts.scss */
+  h4.sub-title {
+    color: #666666; }
+
+/* line 110, ../scss/shared/elements/_fonts.scss */
+h5 {
+  font-size: 15px;
+  line-height: 18px; }
+
+/* line 115, ../scss/shared/elements/_fonts.scss */
+.text-color-grey {
+  color: #B5B5B5; }
+
+/* line 118, ../scss/shared/elements/_fonts.scss */
+.text-color-dark-grey {
+  color: #2d2d2d; }
+
+/* line 121, ../scss/shared/elements/_fonts.scss */
+.text-color-body-grey {
+  color: #414141; }
+
+/* line 124, ../scss/shared/elements/_fonts.scss */
+.text-color-dark-body-grey {
+  color: #3F3F3F; }
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* line 6, ../scss/shared/elements/_spacing-system.scss */
+.no-margin {
+  margin: 0 !important; }
+
+/* line 10, ../scss/shared/elements/_spacing-system.scss */
+.no-padding {
+  padding: 0 !important; }
+
+/* line 14, ../scss/shared/elements/_spacing-system.scss */
+.no-left-padding, #notification .data-roll .col-xs-4 {
+  padding-left: 0 !important; }
+
+/* line 18, ../scss/shared/elements/_spacing-system.scss */
+.no-right-padding, #notification .data-roll .col-xs-4.last {
+  padding-right: 0 !important; }
+
+/* line 22, ../scss/shared/elements/_spacing-system.scss */
+.v-middle {
+  vertical-align: middle;
+  display: inline-block; }
+
+/* line 28, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp5 {
+  margin: 5px !important; }
+
+/* line 31, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp5-left {
+  margin-left: 5px !important; }
+
+/* line 34, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp5-right {
+  margin-right: 5px !important; }
+
+/* line 37, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp5-top {
+  margin-top: 5px !important; }
+
+/* line 40, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp5-bottom {
+  margin-bottom: 5px !important; }
+
+/* line 45, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp10 {
+  margin: 10px !important; }
+
+/* line 48, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp10-left {
+  margin-left: 10px !important; }
+
+/* line 51, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp10-right {
+  margin-right: 10px !important; }
+
+/* line 54, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp10-top {
+  margin-top: 10px !important; }
+
+/* line 57, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp10-bottom {
+  margin-bottom: 10px !important; }
+
+/* line 62, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp15 {
+  margin: 15px !important; }
+
+/* line 65, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp15-left {
+  margin-left: 15px !important; }
+
+/* line 68, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp15-right {
+  margin-right: 15px !important; }
+
+/* line 71, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp15-top {
+  margin-top: 15px !important; }
+
+/* line 74, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp15-bottom {
+  margin-bottom: 15px !important; }
+
+/* line 79, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp20 {
+  margin: 20px !important; }
+
+/* line 82, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp20-left {
+  margin-left: 20px !important; }
+
+/* line 85, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp20-right {
+  margin-right: 20px !important; }
+
+/* line 88, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp20-top {
+  margin-top: 20px !important; }
+
+/* line 91, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp20-bottom {
+  margin-bottom: 20px !important; }
+
+/* line 96, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp25 {
+  margin: 25px !important; }
+
+/* line 99, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp25-left {
+  margin-left: 25px !important; }
+
+/* line 102, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp25-right {
+  margin-right: 25px !important; }
+
+/* line 105, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp25-top {
+  margin-top: 25px !important; }
+
+/* line 108, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp25-bottom {
+  margin-bottom: 25px !important; }
+
+/* line 113, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp30 {
+  margin: 30px !important; }
+
+/* line 116, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp30-left {
+  margin-left: 30px !important; }
+
+/* line 119, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp30-right {
+  margin-right: 30px !important; }
+
+/* line 122, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp30-top {
+  margin-top: 30px !important; }
+
+/* line 125, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp30-bottom {
+  margin-bottom: 30px !important; }
+
+/* line 129, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp40 {
+  margin: 40px !important; }
+
+/* line 132, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp40-left {
+  margin-left: 40px !important; }
+
+/* line 135, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp40-right {
+  margin-right: 40px !important; }
+
+/* line 138, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp40-top {
+  margin-top: 40px !important; }
+
+/* line 141, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp40-bottom {
+  margin-bottom: 40px !important; }
+
+/* line 145, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp50 {
+  margin: 50px !important; }
+
+/* line 148, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp50-left {
+  margin-left: 50px !important; }
+
+/* line 151, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp50-right {
+  margin-right: 50px !important; }
+
+/* line 154, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp50-top {
+  margin-top: 50px !important; }
+
+/* line 157, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp50-bottom {
+  margin-bottom: 50px !important; }
+
+/* line 161, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp60 {
+  margin: 60px !important; }
+
+/* line 164, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp60-left {
+  margin-left: 50px !important; }
+
+/* line 167, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp60-right {
+  margin-right: 60px !important; }
+
+/* line 170, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp60-top {
+  margin-top: 60px !important; }
+
+/* line 173, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp60-bottom {
+  margin-bottom: 60px !important; }
+
+/* line 178, ../scss/shared/elements/_spacing-system.scss */
+.margin-sp100-bottom {
+  margin-bottom: 100px !important; }
+
+/* line 1, ../scss/shared/components/_general.scss */
+a {
+  text-decoration: none !important;
+  border-bottom: 1px solid black; }
+  /* line 4, ../scss/shared/components/_general.scss */
+  a:hover {
+    border-color: #ffd600; }
+
+/* line 10, ../scss/shared/components/_general.scss */
+.yellow a:hover {
+  border-color: white; }
+
+/* line 15, ../scss/shared/components/_general.scss */
+label {
+  color: #414141; }
+
+/* line 19, ../scss/shared/components/_general.scss */
+.tip-wrap {
+  position: relative; }
+  /* line 21, ../scss/shared/components/_general.scss */
+  .tip-wrap .text {
+    position: absolute;
+    top: 0;
+    left: 30px; }
+
+/* line 27, ../scss/shared/components/_general.scss */
+.pnstooltip {
+  position: relative;
+  display: inline-block;
+  /*img{
+  	width: 22px;
+  	height: 22px;
+  	border: 0;
+  	max-width: 22px;
+  }*/ }
+
+/* line 39, ../scss/shared/components/_general.scss */
+body.components-library {
+  background: #f2f2f2; }
+  /* line 41, ../scss/shared/components/_general.scss */
+  body.components-library .components-header {
+    padding-top: 40px; }
+    /* line 43, ../scss/shared/components/_general.scss */
+    body.components-library .components-header .mobile {
+      display: none; }
+  /* line 48, ../scss/shared/components/_general.scss */
+  body.components-library .container-fluid.components-wrap {
+    margin-top: 0; }
+  /* line 52, ../scss/shared/components/_general.scss */
+  body.components-library .bg-white {
+    background: white; }
+  /* line 55, ../scss/shared/components/_general.scss */
+  body.components-library .icon {
+    display: block;
+    height: 22px; }
+  /* line 59, ../scss/shared/components/_general.scss */
+  body.components-library .card.invite {
+    margin: 0; }
+  /* line 62, ../scss/shared/components/_general.scss */
+  body.components-library .tooltips {
+    padding-top: 30px; }
+    /* line 65, ../scss/shared/components/_general.scss */
+    body.components-library .tooltips .pull-left .pnstooltip {
+      margin-left: 0; }
+  /* line 70, ../scss/shared/components/_general.scss */
+  body.components-library .row {
+    position: relative;
+    z-index: 1; }
+    /* line 73, ../scss/shared/components/_general.scss */
+    body.components-library .row.noti-row, body.components-library .row.forms-row {
+      z-index: 2; }
+
+@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+  /* line 82, ../scss/shared/components/_general.scss */
+  .btn, .voucher-wrap .cta {
+    line-height: 2;
+    padding-top: 6px; }
+
+  /* line 86, ../scss/shared/components/_general.scss */
+  .alert h4 {
+    line-height: 28px; } }
+@media screen and (max-width: 990px) {
+  /* line 94, ../scss/shared/components/_general.scss */
+  body.components-library h4, body.components-library .h4, body.components-library h5, body.components-library .h5 {
+    margin: 0; }
+  /* line 97, ../scss/shared/components/_general.scss */
+  body.components-library .container-fluid {
+    width: 100%; }
+  /* line 101, ../scss/shared/components/_general.scss */
+  body.components-library .components-header .mobile {
+    display: block; }
+  /* line 104, ../scss/shared/components/_general.scss */
+  body.components-library .components-header .desktop {
+    display: none; } }
+/* line 1, ../scss/shared/components/_alert-box.scss */
+.alert {
+  color: white;
+  border-radius: 0;
+  padding: 10px 10px 10px 40px;
+  background: #666;
+  position: relative; }
+  /* line 8, ../scss/shared/components/_alert-box.scss */
+  .alert p {
+    color: white; }
+  /* line 12, ../scss/shared/components/_alert-box.scss */
+  .alert h4 {
+    margin: 0; }
+  /* line 16, ../scss/shared/components/_alert-box.scss */
+  .alert:before {
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: " ";
+    background: url("../images/icons/PnS_alert-white.svg") no-repeat;
+    background-size: cover; }
+  /* line 28, ../scss/shared/components/_alert-box.scss */
+  .alert.alert-danger {
+    background-color: #ee3524; }
+  /* line 32, ../scss/shared/components/_alert-box.scss */
+  .alert.alert-warning {
+    background-color: #ee7d00; }
+  /* line 36, ../scss/shared/components/_alert-box.scss */
+  .alert.alert-info, .alert.alert-success {
+    background-color: #009ee2; }
+    /* line 38, ../scss/shared/components/_alert-box.scss */
+    .alert.alert-info:before, .alert.alert-success:before {
+      background-image: url("../images/icons/icon-confirm-white.svg"); }
+  /* line 44, ../scss/shared/components/_alert-box.scss */
+  .alert.alert-general:before {
+    background-image: url("../images/icons/PnS_info_white.svg"); }
+
+/* line 32, ../scss/shared/components/_buttons.scss */
+.btn, .voucher-wrap .cta {
+  font-size: 17px;
+  padding: 0 30px;
+  line-height: 2.2;
+  text-transform: uppercase;
+  background: black;
+  color: #ffd600 !important; }
+  /* line 36, ../scss/shared/components/_buttons.scss */
+  .btn:hover, .voucher-wrap .cta:hover {
+    background: #ffd600;
+    color: black !important; }
+  /* line 45, ../scss/shared/components/_buttons.scss */
+  .btn:focus, .voucher-wrap .cta:focus {
+    color: #ffd600;
+    outline: 0 !important; }
+  /* line 50, ../scss/shared/components/_buttons.scss */
+  .btn.disabled, .voucher-wrap .disabled.cta {
+    background: #e6e6e6;
+    color: white !important;
+    cursor: not-allowed;
+    pointer-events: visible;
+    opacity: 1;
+    color: white !important;
+    text-shadow: none !important; }
+  /* line 60, ../scss/shared/components/_buttons.scss */
+  .btn.secondary, .voucher-wrap .secondary.cta {
+    background: #d3d3d3;
+    color: black !important; }
+    /* line 63, ../scss/shared/components/_buttons.scss */
+    .btn.secondary:hover, .voucher-wrap .secondary.cta:hover {
+      background: #ffd600;
+      color: black !important; }
+  /* line 68, ../scss/shared/components/_buttons.scss */
+  .btn.theme-contrast, .voucher-wrap .theme-contrast.cta {
+    border: 2px solid transparent; }
+    /* line 71, ../scss/shared/components/_buttons.scss */
+    .btn.theme-contrast:hover, .voucher-wrap .theme-contrast.cta:hover {
+      border: 2px solid black; }
+    /* line 75, ../scss/shared/components/_buttons.scss */
+    .btn.theme-contrast.disabled, .voucher-wrap .theme-contrast.disabled.cta {
+      background: #f1c009;
+      color: #ffd600 !important;
+      color: #ffd600 !important; }
+      /* line 78, ../scss/shared/components/_buttons.scss */
+      .btn.theme-contrast.disabled:hover, .voucher-wrap .theme-contrast.disabled.cta:hover {
+        border: 2px solid #f1c009; }
+    /* line 83, ../scss/shared/components/_buttons.scss */
+    .btn.theme-contrast.secondary, .voucher-wrap .theme-contrast.secondary.cta {
+      background: #f1c009;
+      color: black !important; }
+      /* line 86, ../scss/shared/components/_buttons.scss */
+      .btn.theme-contrast.secondary:hover, .voucher-wrap .theme-contrast.secondary.cta:hover {
+        background: #ffd600;
+        color: black !important; }
+
+@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+  /* line 95, ../scss/shared/components/_buttons.scss */
+  .btn, .voucher-wrap .cta {
+    line-height: 2;
+    padding-top: 6px; } }
+/* line 1, ../scss/shared/components/_card.scss */
+.card {
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  /*a:hover{
+  	color: $yellow;
+  	small, span{
+  		color: black;
+  	}
+  }*/ }
+  /* line 5, ../scss/shared/components/_card.scss */
+  .card .card-header {
+    position: relative;
+    padding: 20px 30px;
+    border-bottom: 1px dashed #e6e6e6; }
+    /* line 10, ../scss/shared/components/_card.scss */
+    .card .card-header h1, .card .card-header h2, .card .card-header h3, .card .card-header .notifications .mid a, .notifications .mid .card .card-header a, .card .card-header h4, .card .card-header h5, .card .card-header p {
+      margin: 0; }
+    /* line 14, ../scss/shared/components/_card.scss */
+    .card .card-header p {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      margin-top: -9px; }
+    /* line 21, ../scss/shared/components/_card.scss */
+    .card .card-header small {
+      float: right; }
+  /* line 26, ../scss/shared/components/_card.scss */
+  .card .card-footer {
+    padding: 20px 30px;
+    border-top: 1px dashed #e6e6e6; }
+    /* line 30, ../scss/shared/components/_card.scss */
+    .card .card-footer h1, .card .card-footer h2, .card .card-footer h3, .card .card-footer .notifications .mid a, .notifications .mid .card .card-footer a, .card .card-footer h4, .card .card-footer h5, .card .card-footer p {
+      margin: 0; }
+    /* line 33, ../scss/shared/components/_card.scss */
+    .card .card-footer.yellow {
+      background: #ffd600;
+      border-top: 0; }
+  /* line 39, ../scss/shared/components/_card.scss */
+  .card .inner-card {
+    padding: 20px 30px;
+    position: relative; }
+    /* line 42, ../scss/shared/components/_card.scss */
+    .card .inner-card .col-md-6 {
+      padding: 0; }
+      /* line 44, ../scss/shared/components/_card.scss */
+      .card .inner-card .col-md-6:nth-child(odd) {
+        padding-right: 15px; }
+      /* line 47, ../scss/shared/components/_card.scss */
+      .card .inner-card .col-md-6:nth-child(even) {
+        padding-left: 15px; }
+    /* line 51, ../scss/shared/components/_card.scss */
+    .card .inner-card .col-xs-12 {
+      padding: 0; }
+  /* line 56, ../scss/shared/components/_card.scss */
+  .card .cta-panel {
+    background: #ffd600;
+    padding: 20px;
+    position: relative; }
+    /* line 61, ../scss/shared/components/_card.scss */
+    .card .cta-panel p {
+      margin: 0; }
+    /* line 65, ../scss/shared/components/_card.scss */
+    .card .cta-panel .btn.theme-contrast.secondary, .card .cta-panel .voucher-wrap .theme-contrast.secondary.cta, .voucher-wrap .card .cta-panel .theme-contrast.secondary.cta {
+      top: 50%;
+      position: absolute;
+      margin-top: -20px;
+      left: 20px; }
+  /* line 77, ../scss/shared/components/_card.scss */
+  .card.white {
+    background: white; }
+  /* line 81, ../scss/shared/components/_card.scss */
+  .card.grey {
+    background: #f8f8f8; }
+  /* line 85, ../scss/shared/components/_card.scss */
+  .card.yellow {
+    background: #ffd600; }
+    /* line 87, ../scss/shared/components/_card.scss */
+    .card.yellow hr {
+      border-bottom: 1px dashed #999999; }
+  /* line 91, ../scss/shared/components/_card.scss */
+  .card.transparency {
+    box-shadow: none; }
+  /* line 96, ../scss/shared/components/_card.scss */
+  .card.invite small {
+    color: #949292; }
+    /* line 98, ../scss/shared/components/_card.scss */
+    .card.invite small.expiry {
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: right;
+      line-height: 16px; }
+  /* line 107, ../scss/shared/components/_card.scss */
+  .card.invite .card-header h4 {
+    background: url(../images/icons/PnS_alert.svg) no-repeat 0 0;
+    padding-left: 30px;
+    line-height: 22px;
+    float: left; }
+  /* line 113, ../scss/shared/components/_card.scss */
+  .card.invite .card-header small {
+    float: right; }
+  /* line 117, ../scss/shared/components/_card.scss */
+  .card.invite .inner {
+    padding-left: 36px;
+    position: relative; }
+    /* line 120, ../scss/shared/components/_card.scss */
+    .card.invite .inner h5 {
+      margin-bottom: 0; }
+    /* line 123, ../scss/shared/components/_card.scss */
+    .card.invite .inner .icon {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      left: -2px; }
+    /* line 130, ../scss/shared/components/_card.scss */
+    .card.invite .inner .text {
+      padding-top: 5px; }
+      /* line 132, ../scss/shared/components/_card.scss */
+      .card.invite .inner .text strong {
+        padding-left: 30px; }
+  /* line 145, ../scss/shared/components/_card.scss */
+  .card.accordion-card .card-header {
+    padding: 20px 15px; }
+
+@media screen and (max-width: 990px) {
+  /* line 154, ../scss/shared/components/_card.scss */
+  .card .inner-card .col-md-6 {
+    padding: 0 !important; }
+  /* line 171, ../scss/shared/components/_card.scss */
+  .card.invite .inner h5, .card.invite .inner small.expiry {
+    width: 50%; }
+  /* line 174, ../scss/shared/components/_card.scss */
+  .card.invite .inner small.expiry {
+    top: -15px; }
+  /* line 177, ../scss/shared/components/_card.scss */
+  .card.invite .inner small.email {
+    display: block; }
+  /* line 180, ../scss/shared/components/_card.scss */
+  .card.invite .inner .text strong {
+    display: block;
+    padding-left: 0; } }
+/* line 1, ../scss/shared/components/_modal.scss */
+.modal {
+  text-align: center;
+  padding: 0 !important; }
+  /* line 5, ../scss/shared/components/_modal.scss */
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+    /* Adjusts for spacing */ }
+  /* line 13, ../scss/shared/components/_modal.scss */
+  .modal .modal-dialog {
+    width: 470px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle; }
+    /* line 20, ../scss/shared/components/_modal.scss */
+    .modal .modal-dialog .modal-content {
+      border-radius: 0;
+      background: #f8f8f8; }
+      /* line 24, ../scss/shared/components/_modal.scss */
+      .modal .modal-dialog .modal-content .modal-header {
+        border-bottom: 1px dashed #e6e6e6; }
+        /* line 26, ../scss/shared/components/_modal.scss */
+        .modal .modal-dialog .modal-content .modal-header .close {
+          background: transparent url("../images/icons/PnS_close_black.svg") no-repeat scroll 0 0;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          margin-top: 0;
+          outline: none; }
+    /* line 39, ../scss/shared/components/_modal.scss */
+    .modal .modal-dialog .modal-footer {
+      position: relative;
+      background: #ffd600;
+      border-top: 0;
+      padding: 30px 20px; }
+
+/* line 52, ../scss/shared/components/_modal.scss */
+.modal-backdrop {
+  opacity: 0.7 !important; }
+
+/* line 1, ../scss/shared/components/_form.scss */
+input, label {
+  outline: none !important; }
+  /* line 4, ../scss/shared/components/_form.scss */
+  input:focus, label:focus {
+    outline: none !important; }
+  /* line 9, ../scss/shared/components/_form.scss */
+  input:before:focus, input:after:focus, label:before:focus, label:after:focus {
+    outline: none !important;
+    box-shadow: none; }
+
+/* line 17, ../scss/shared/components/_form.scss */
+label.placeholder {
+  z-index: 1 !important; }
+
+/* line 27, ../scss/shared/components/_form.scss */
+input [type="radio"]:focus {
+  outline: none !important; }
+/* line 32, ../scss/shared/components/_form.scss */
+input [type="radio"]:before:focus, input [type="radio"]:after:focus {
+  outline: none !important; }
+
+/* line 39, ../scss/shared/components/_form.scss */
+.two-col .radio {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 30px; }
+
+/* line 47, ../scss/shared/components/_form.scss */
+.form-group {
+  margin: 0;
+  padding: 25px 0 0;
+  clear: both; }
+  /* line 51, ../scss/shared/components/_form.scss */
+  .form-group .completed {
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: relative;
+    top: -7px;
+    background: url(../images/icons/PnS_confirm.svg) no-repeat 0 0; }
+  /* line 60, ../scss/shared/components/_form.scss */
+  .form-group.form-pinput label {
+    display: block; }
+  /* line 63, ../scss/shared/components/_form.scss */
+  .form-group.form-pinput .completed {
+    top: 2px;
+    margin-left: 5px;
+    display: inline-block; }
+  /* line 69, ../scss/shared/components/_form.scss */
+  .inner-card .form-group:first-child {
+    padding-top: 0; }
+
+/* line 74, ../scss/shared/components/_form.scss */
+.form-control {
+  border-radius: 0;
+  padding: 11px 12px 8px;
+  box-shadow: none;
+  height: auto;
+  color: #414141; }
+  /* line 81, ../scss/shared/components/_form.scss */
+  .form-control.pinput {
+    font-size: 24px;
+    padding: 7px 0 7px 9px;
+    line-height: 24px;
+    max-height: 43px;
+    letter-spacing: 8px;
+    font-family: Geneva;
+    display: inline-block;
+    background: white url(../images/bg-pinput4.gif) no-repeat 28px 6px; }
+    /* line 90, ../scss/shared/components/_form.scss */
+    .form-control.pinput.pinput4 {
+      width: 110px; }
+    /* line 93, ../scss/shared/components/_form.scss */
+    .form-control.pinput.pinput8 {
+      width: 204px;
+      background-image: url(../images/bg-pinput8.gif); }
+    /* line 97, ../scss/shared/components/_form.scss */
+    .form-control.pinput.success {
+      background: #ffd600; }
+  /* line 102, ../scss/shared/components/_form.scss */
+  .form-control[type=text] {
+    height: 40px; }
+  /* line 106, ../scss/shared/components/_form.scss */
+  .form-control::-moz-placeholder {
+    color: #414141; }
+  /* line 109, ../scss/shared/components/_form.scss */
+  .form-control::-webkit-input-placeholder {
+    color: #414141; }
+  /* line 112, ../scss/shared/components/_form.scss */
+  .form-control:-ms-input-placeholder {
+    color: #414141; }
+
+/* line 118, ../scss/shared/components/_form.scss */
+.password-group {
+  height: 40px;
+  position: relative;
+  display: inline-block; }
+  /* line 122, ../scss/shared/components/_form.scss */
+  .password-group .form-control.password {
+    float: left;
+    width: 264px;
+    height: 100%;
+    letter-spacing: 5px;
+    padding-right: 42px; }
+  /* line 129, ../scss/shared/components/_form.scss */
+  .password-group .status {
+    position: relative;
+    float: left;
+    width: 88px;
+    background: #ffd600;
+    height: 100%;
+    line-height: 40px;
+    color: black;
+    font-size: 11px;
+    padding-left: 10px; }
+    /* line 139, ../scss/shared/components/_form.scss */
+    .password-group .status .icon {
+      height: 22px;
+      position: absolute;
+      top: 10px;
+      right: 10px; }
+    /* line 145, ../scss/shared/components/_form.scss */
+    .password-group .status.status-strong .icon {
+      background: url(../images/icons/PnS_smile.svg) no-repeat 0 0; }
+    /* line 148, ../scss/shared/components/_form.scss */
+    .password-group .status.status-fair .icon {
+      background: url(../images/icons/PnS_happy.svg) no-repeat 0 0; }
+    /* line 151, ../scss/shared/components/_form.scss */
+    .password-group .status.status-weak .icon {
+      background: url(../images/icons/PnS_angry.svg) no-repeat 0 0; }
+  /* line 155, ../scss/shared/components/_form.scss */
+  .password-group .tick {
+    width: 22px;
+    height: 22px;
+    background: url(../images/icons/PnS_confirm.svg) no-repeat 0 0/cover;
+    content: " ";
+    position: absolute;
+    display: block;
+    top: 9px;
+    right: 28%; }
+  /* line 167, ../scss/shared/components/_form.scss */
+  .password-group.valid .form-control.password {
+    background-color: #ffd600; }
+
+/*@-moz-document url-prefix() {
+    .password-group .status{
+        height: 41px;
+    }
+}*/
+/* line 179, ../scss/shared/components/_form.scss */
+.has-focus .form-control, .form-control:focus {
+  border-color: black;
+  box-shadow: none; }
+
+/* line 184, ../scss/shared/components/_form.scss */
+.has-success .form-control {
+  background-image: url("../images/icons/PnS_confirm.svg");
+  background-color: #ffd600;
+  background-repeat: no-repeat;
+  background-size: 30px auto;
+  background-position: right center;
+  border-color: #ffd600;
+  box-shadow: none;
+  padding-right: 40px; }
+  /* line 195, ../scss/shared/components/_form.scss */
+  .has-success .form-control:focus {
+    border-color: #f1c009;
+    box-shadow: none; }
+
+/* line 202, ../scss/shared/components/_form.scss */
+.has-error .form-control {
+  background-image: url("../images/icons/PnS_alert-red.svg");
+  background-repeat: no-repeat;
+  background-size: 22px auto;
+  background-position: 98% center;
+  border-color: #ee3524;
+  color: #ee3524;
+  box-shadow: none;
+  padding-right: 40px; }
+  /* line 212, ../scss/shared/components/_form.scss */
+  .has-error .form-control:focus {
+    border-color: #ee3524;
+    box-shadow: none; }
+/* line 218, ../scss/shared/components/_form.scss */
+.has-error .help-block, .has-error .help-block p, .has-error .has-error .control-label, .has-error .has-error .radio, .has-error .has-error .checkbox, .has-error .has-error .radio-inline, .has-error .has-error .checkbox-inline {
+  color: #ee3524; }
+
+/* line 224, ../scss/shared/components/_form.scss */
+ul.step-list {
+  padding: 0;
+  margin-bottom: 0; }
+  /* line 229, ../scss/shared/components/_form.scss */
+  ul.step-list .step-block {
+    list-style: none;
+    text-align: center; }
+    /* line 233, ../scss/shared/components/_form.scss */
+    ul.step-list .step-block .step-wrap {
+      margin: 0 auto;
+      display: table; }
+    /* line 238, ../scss/shared/components/_form.scss */
+    ul.step-list .step-block .step-number {
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: table-cell;
+      font-weight: bold;
+      vertical-align: middle; }
+      /* line 246, ../scss/shared/components/_form.scss */
+      ul.step-list .step-block .step-number .glyphicon {
+        font-size: 16px;
+        top: 2px; }
+      /* line 250, ../scss/shared/components/_form.scss */
+      ul.step-list .step-block .step-number h4 {
+        line-height: 34px;
+        margin: 0; }
+    /* line 256, ../scss/shared/components/_form.scss */
+    ul.step-list .step-block .text {
+      white-space: nowrap;
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 10px;
+      font-weight: bold;
+      color: #999999; }
+    /* line 266, ../scss/shared/components/_form.scss */
+    ul.step-list .step-block.activated .step-number {
+      background: #ffd600; }
+    /* line 269, ../scss/shared/components/_form.scss */
+    ul.step-list .step-block.activated .text {
+      color: #414141; }
+    /* line 275, ../scss/shared/components/_form.scss */
+    ul.step-list .step-block.done .step-number {
+      background: #d3d3d3; }
+      /* line 277, ../scss/shared/components/_form.scss */
+      ul.step-list .step-block.done .step-number h4, ul.step-list .step-block.done .step-number span {
+        color: #f8f8f8; }
+    /* line 281, ../scss/shared/components/_form.scss */
+    ul.step-list .step-block.done .text {
+      color: #ccc; }
+    /* line 287, ../scss/shared/components/_form.scss */
+    ul.step-list .step-block.disabled .step-number {
+      background: #999999; }
+      /* line 290, ../scss/shared/components/_form.scss */
+      ul.step-list .step-block.disabled .step-number h4, ul.step-list .step-block.disabled .step-number span {
+        color: #f8f8f8; }
+  /* line 299, ../scss/shared/components/_form.scss */
+  ul.step-list.inline-list .step-block {
+    display: flex; }
+
+/* line 305, ../scss/shared/components/_form.scss */
+.noshow {
+  display: none; }
+
+/* line 309, ../scss/shared/components/_form.scss */
+.pnstooltip {
+  margin-left: 10px;
+  cursor: pointer; }
+  /* line 313, ../scss/shared/components/_form.scss */
+  .pnstooltip small {
+    color: #414141;
+    position: relative;
+    top: 1px;
+    font-size: 78%; }
+
+/* line 322, ../scss/shared/components/_form.scss */
+.pnstooltipbox .qtip-default, .pnstooltipbox .qtip-content {
+  background-color: white;
+  border: 3px solid #000001; }
+
+/* line 328, ../scss/shared/components/_form.scss */
+.pnstooltip-content {
+  font-size: 14px;
+  line-height: 18px;
+  color: black; }
+
+/* line 334, ../scss/shared/components/_form.scss */
+.ui-popup {
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: -50px;
+  position: relative; }
+  /* line 341, ../scss/shared/components/_form.scss */
+  .ui-popup:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+    bottom: -8px;
+    left: 48%;
+    display: block;
+    position: absolute; }
+
+/* line 358, ../scss/shared/components/_form.scss */
+.radio:not(.disabled):hover label:before, .checkbox:not(.disabled):hover label:before {
+  border-color: black; }
+
+/* line 366, ../scss/shared/components/_form.scss */
+input.form-control:not([disabled]):hover, textarea:hover, .dropdown:hover {
+  border-color: black; }
+
+/* line 372, ../scss/shared/components/_form.scss */
+.has-success input.form-control:hover {
+  border-color: #ffd600; }
+
+/* line 378, ../scss/shared/components/_form.scss */
+.has-error input.form-control:hover {
+  border-color: #ee3524; }
+
+@media screen and (max-width: 990px) {
+  /* line 388, ../scss/shared/components/_form.scss */
+  body.components-library .step-list .step-block .step-wrap .step-number {
+    display: block;
+    margin: 0 auto 5px;
+    width: 30px;
+    height: 30px; }
+    /* line 393, ../scss/shared/components/_form.scss */
+    body.components-library .step-list .step-block .step-wrap .step-number h4 {
+      line-height: 30px; }
+    /* line 396, ../scss/shared/components/_form.scss */
+    body.components-library .step-list .step-block .step-wrap .step-number .glyphicon {
+      top: 7px; }
+  /* line 400, ../scss/shared/components/_form.scss */
+  body.components-library .step-list .step-block .step-wrap .text {
+    display: block;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 0;
+    white-space: normal; }
+  /* line 411, ../scss/shared/components/_form.scss */
+  body.components-library .bootstrap-switch {
+    display: block;
+    margin-bottom: 15px; } }
+@media screen and (max-width: 460px) {
+  /* line 422, ../scss/shared/components/_form.scss */
+  .password-group .form-control.password {
+    width: 55%; }
+  /* line 425, ../scss/shared/components/_form.scss */
+  .password-group .tick {
+    right: 48%; } }
+/* line 1, ../scss/shared/components/_switch.scss */
+.bootstrap-switch {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  display: inline-block;
+  direction: ltr;
+  cursor: pointer;
+  text-align: left;
+  overflow: hidden;
+  line-height: 8px;
+  z-index: 0;
+  margin-right: 15px;
+  padding: 0 3px;
+  vertical-align: middle;
+  font-weight: bold;
+  /*&.bootstrap-switch-mini {
+    .bootstrap-switch-handle-on, .bootstrap-switch-handle-off, .bootstrap-switch-label {
+      padding: 1px 5px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+  &.bootstrap-switch-small {
+    .bootstrap-switch-handle-on, .bootstrap-switch-handle-off, .bootstrap-switch-label {
+      padding: 5px 10px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+  &.bootstrap-switch-large {
+    .bootstrap-switch-handle-on, .bootstrap-switch-handle-off, .bootstrap-switch-label {
+      padding: 6px 16px;
+      font-size: 18px;
+      line-height: 1.3333333;
+    }
+  }
+  &.bootstrap-switch-disabled, &.bootstrap-switch-readonly, &.bootstrap-switch-indeterminate {
+    cursor: default !important;
+  }
+  &.bootstrap-switch-disabled .bootstrap-switch-handle-on, &.bootstrap-switch-readonly .bootstrap-switch-handle-on, &.bootstrap-switch-indeterminate .bootstrap-switch-handle-on, &.bootstrap-switch-disabled .bootstrap-switch-handle-off, &.bootstrap-switch-readonly .bootstrap-switch-handle-off, &.bootstrap-switch-indeterminate .bootstrap-switch-handle-off, &.bootstrap-switch-disabled .bootstrap-switch-label, &.bootstrap-switch-readonly .bootstrap-switch-label, &.bootstrap-switch-indeterminate .bootstrap-switch-label {
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    cursor: default !important;
+  }*/
+  /*&.bootstrap-switch-off{
+    border-color: $divider-grey;
+    
+    .bootstrap-switch-container{
+        background: $divider-grey;
+
+        .bootstrap-switch-primary{
+          background: $divider-grey;
+        }
+
+        .bootstrap-switch-default{
+          background: $divider-grey;
+        }
+        
+    }
+  }*/
+  /*.bootstrap-switch-handle-on.bootstrap-switch-primary, .bootstrap-switch-handle-off.bootstrap-switch-primary {
+    color: #000000;
+    background: #ffd600;
+    font-family: texgyreheroscn-bold,Arial,Calibri,sans-serif;
+    
+  }
+  .bootstrap-switch-handle-on.bootstrap-switch-default, .bootstrap-switch-handle-off.bootstrap-switch-default {
+    color: #000;
+    background: #ffd600;
+    font-family: texgyreheroscn-bold,Arial,Calibri,sans-serif;
+  }
+  .bootstrap-switch-handle-on.bootstrap-switch-info, .bootstrap-switch-handle-off.bootstrap-switch-info {
+    color: #fff;
+    background: #5bc0de;
+  }
+  .bootstrap-switch-handle-on.bootstrap-switch-success, .bootstrap-switch-handle-off.bootstrap-switch-success {
+    color: #fff;
+    background: #5cb85c;
+  }
+  .bootstrap-switch-handle-on.bootstrap-switch-warning, .bootstrap-switch-handle-off.bootstrap-switch-warning {
+    background: #f0ad4e;
+    color: #fff;
+  }
+  .bootstrap-switch-handle-on.bootstrap-switch-danger, .bootstrap-switch-handle-off.bootstrap-switch-danger {
+    color: #fff;
+    background: #d9534f;
+  }*/ }
+  /* line 21, ../scss/shared/components/_switch.scss */
+  .bootstrap-switch .bootstrap-switch-container {
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-transition: margin-left 0.5s;
+    -moz-transition: margin-left 0.5s;
+    -ms-transition: margin-left 0.5s;
+    -o-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
+    display: inline-block;
+    top: 0;
+    background-color: #ffd600;
+    overflow: hidden; }
+    /* line 33, ../scss/shared/components/_switch.scss */
+    .bootstrap-switch .bootstrap-switch-container span {
+      cursor: pointer;
+      display: inline-block;
+      height: 100%;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      z-index: 1;
+      color: black;
+      -webkit-border-radius: 20px;
+      -khtml-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      border-radius: 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px; }
+      /* line 49, ../scss/shared/components/_switch.scss */
+      .bootstrap-switch .bootstrap-switch-container span.bootstrap-switch-label {
+        z-index: 3;
+        color: #333333;
+        background: black;
+        width: 26px !important;
+        height: 26px;
+        margin-top: -2px;
+        vertical-align: middle;
+        display: inline-block;
+        -webkit-border-radius: 20px;
+        -khtml-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        border-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px; }
+  /* line 69, ../scss/shared/components/_switch.scss */
+  .bootstrap-switch input {
+    display: none; }
+  /* line 74, ../scss/shared/components/_switch.scss */
+  .bootstrap-switch.bootstrap-switch-off .bootstrap-switch-container {
+    background: #e6e6e6; }
+    /* line 76, ../scss/shared/components/_switch.scss */
+    .bootstrap-switch.bootstrap-switch-off .bootstrap-switch-container span.bootstrap-switch-label {
+      background: black; }
+  /* line 84, ../scss/shared/components/_switch.scss */
+  .bootstrap-switch.lock-unlock.bootstrap-switch-on .bootstrap-switch-handle-on {
+    background: transparent url("../../images/icons/PnS_lock.svg") no-repeat scroll 50% center/20px auto; }
+  /* line 92, ../scss/shared/components/_switch.scss */
+  .bootstrap-switch.lock-unlock.bootstrap-switch-off .bootstrap-switch-handle-off {
+    background: transparent url("../../images/icons/PnS_unlock.svg") no-repeat scroll 50% center/20px auto; }
+  /* line 99, ../scss/shared/components/_switch.scss */
+  .bootstrap-switch.hover.bootstrap-switch-off .bootstrap-switch-container span.bootstrap-switch-label {
+    background: white; }
+  /* line 102, ../scss/shared/components/_switch.scss */
+  .bootstrap-switch.hover.bootstrap-switch-on .bootstrap-switch-container span.bootstrap-switch-label {
+    background: white; }
+
+@media screen and (max-width: 480px) {
+  /* line 185, ../scss/shared/components/_switch.scss */
+  .bootstrap-switch {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0;
+    margin-right: 5px; }
+
+  /* line 195, ../scss/shared/components/_switch.scss */
+  .modal .bootstrap-switch {
+    padding: 0 3px;
+    margin-right: 5px;
+    min-width: 77px !important; }
+
+  /* line 205, ../scss/shared/components/_switch.scss */
+  #notification .row .col-xs-12:first-child .col-xs-4 {
+    width: 38%;
+    padding-right: 0; }
+  /* line 209, ../scss/shared/components/_switch.scss */
+  #notification .row .col-xs-12:first-child .col-xs-4:first-child {
+    width: 24%;
+    padding-top: 5px; }
+  /* line 216, ../scss/shared/components/_switch.scss */
+  #notification .bootstrap-switch {
+    padding: 0 3px;
+    margin-right: 5px;
+    min-width: 74px !important; }
+
+  /* line 225, ../scss/shared/components/_switch.scss */
+  #sticky-club-card .bootstrap-switch {
+    padding: 0 3px;
+    margin-right: 5px;
+    min-width: 64px !important; } }
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+  /* line 234, ../scss/shared/components/_switch.scss */
+  .bootstrap-switch {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0;
+    margin-right: 5px; } }
+/*@media screen and (min-width: $mobile-breakpoint){
+    .bootstrap-switch{
+      &.bootstrap-switch-off:hover .bootstrap-switch-container span.bootstrap-switch-label{
+        background: black;
+      }
+      &.bootstrap-switch-on:hover .bootstrap-switch-container span.bootstrap-switch-label{
+        background: white;
+      }
+    }
+   
+}*/
+/* PREFIXED CSS */
+/* line 5, ../scss/shared/components/_dropdown.scss */
+.dropdown {
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #fff; }
+  /* line 13, ../scss/shared/components/_dropdown.scss */
+  .dropdown div, .dropdown li, .dropdown div::after {
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out; }
+  /* line 17, ../scss/shared/components/_dropdown.scss */
+  .dropdown select {
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+  /* line 23, ../scss/shared/components/_dropdown.scss */
+  .dropdown div {
+    position: absolute;
+    height: 0;
+    left: -1px;
+    right: -1px;
+    top: 100%;
+    margin-top: -1px;
+    background: #fff;
+    border: 1px solid black;
+    border-top: 1px solid black;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 7;
+    max-height: 270px; }
+  /* line 40, ../scss/shared/components/_dropdown.scss */
+  .dropdown ul {
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    z-index: 100; }
+  /* line 52, ../scss/shared/components/_dropdown.scss */
+  .dropdown .selected, .dropdown li {
+    display: block;
+    font-weight: bold;
+    line-height: 1;
+    color: #414141;
+    padding: 12px 12px;
+    overflow: hidden;
+    white-space: nowrap; }
+  /* line 62, ../scss/shared/components/_dropdown.scss */
+  .dropdown li {
+    list-style: none;
+    position: relative;
+    z-index: 7; }
+    /* line 67, ../scss/shared/components/_dropdown.scss */
+    .dropdown li.focus {
+      background: #ffd600;
+      position: relative;
+      z-index: 3; }
+    /* line 72, ../scss/shared/components/_dropdown.scss */
+    .dropdown li.active {
+      font-weight: 700; }
+  /* line 77, ../scss/shared/components/_dropdown.scss */
+  .dropdown .selected::after, .dropdown.scrollable div::after {
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none; }
+  /* line 81, ../scss/shared/components/_dropdown.scss */
+  .dropdown .selected {
+    border-color: #ffd600; }
+    /* line 83, ../scss/shared/components/_dropdown.scss */
+    .dropdown .selected:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 60px;
+      border-radius: 0 2px 2px 0; }
+  /* line 94, ../scss/shared/components/_dropdown.scss */
+  .dropdown .carat {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -9px;
+    z-index: 1; }
+    /* line 101, ../scss/shared/components/_dropdown.scss */
+    .dropdown .carat:before {
+      font-family: 'Glyphicons Halflings';
+      color: #ffd600;
+      content: "\e114"; }
+  /* line 108, ../scss/shared/components/_dropdown.scss */
+  .dropdown .old {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden; }
+  /* line 117, ../scss/shared/components/_dropdown.scss */
+  .dropdown.open {
+    z-index: 2; }
+    /* line 119, ../scss/shared/components/_dropdown.scss */
+    .dropdown.open div {
+      opacity: 1; }
+    /* line 122, ../scss/shared/components/_dropdown.scss */
+    .dropdown.open ul {
+      height: 102%;
+      overflow-y: scroll; }
+    /* line 126, ../scss/shared/components/_dropdown.scss */
+    .dropdown.open .carat {
+      margin-top: -9px; }
+      /* line 128, ../scss/shared/components/_dropdown.scss */
+      .dropdown.open .carat:before {
+        font-family: 'Glyphicons Halflings';
+        content: "\e113"; }
+  /* line 135, ../scss/shared/components/_dropdown.scss */
+  .dropdown.focus {
+    border: 1px solid black; }
+    /* line 137, ../scss/shared/components/_dropdown.scss */
+    .dropdown.focus .selected {
+      background: #ffd600; }
+    /* line 141, ../scss/shared/components/_dropdown.scss */
+    .dropdown.focus.open .selected {
+      background: none; }
+  /* line 147, ../scss/shared/components/_dropdown.scss */
+  .dropdown.disabled {
+    background-color: #e6e6e6;
+    border-color: #e6e6e6 !important;
+    cursor: not-allowed; }
+    /* line 151, ../scss/shared/components/_dropdown.scss */
+    .dropdown.disabled .carat {
+      border-top-color: #999; }
+      /* line 153, ../scss/shared/components/_dropdown.scss */
+      .dropdown.disabled .carat:before {
+        color: white; }
+    /* line 157, ../scss/shared/components/_dropdown.scss */
+    .dropdown.disabled .selected {
+      color: white; }
+  /* line 163, ../scss/shared/components/_dropdown.scss */
+  .dropdown.touch .old {
+    width: 100%;
+    height: 100%; }
+  /* line 167, ../scss/shared/components/_dropdown.scss */
+  .dropdown.touch select {
+    width: 100%;
+    height: 100%;
+    opacity: 0; }
+  /* line 174, ../scss/shared/components/_dropdown.scss */
+  .dropdown.touch.focus .carat:before {
+    color: black; }
+  /* line 181, ../scss/shared/components/_dropdown.scss */
+  .dropdown.scrollable div::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    box-shadow: inset 0 -50px 30px -35px #fff; }
+  /* line 190, ../scss/shared/components/_dropdown.scss */
+  .dropdown.scrollable.bottom div::after {
+    opacity: 0; }
+  /* line 195, ../scss/shared/components/_dropdown.scss */
+  .dropdown.scrollable.open ul {
+    overflow-y: auto; }
+  /* line 199, ../scss/shared/components/_dropdown.scss */
+  .dropdown.clicked {
+    border-color: #ffd600;
+    background-color: #ffd600; }
+    /* line 202, ../scss/shared/components/_dropdown.scss */
+    .dropdown.clicked .carat {
+      border-top-color: black; }
+      /* line 204, ../scss/shared/components/_dropdown.scss */
+      .dropdown.clicked .carat:before {
+        color: black; }
+    /* line 210, ../scss/shared/components/_dropdown.scss */
+    .dropdown.clicked.open .carat {
+      border-top-color: white; }
+
+/* line 218, ../scss/shared/components/_dropdown.scss */
+.dob label {
+  display: block; }
+/* line 221, ../scss/shared/components/_dropdown.scss */
+.dob .dropdown-wrap {
+  display: inline-block;
+  margin-right: 7px; }
+  /* line 225, ../scss/shared/components/_dropdown.scss */
+  .dob .dropdown-wrap .dropdown {
+    width: 100%; }
+    /* line 227, ../scss/shared/components/_dropdown.scss */
+    .dob .dropdown-wrap .dropdown ul {
+      height: 99%; }
+    /* line 230, ../scss/shared/components/_dropdown.scss */
+    .dob .dropdown-wrap .dropdown li {
+      padding: 4px 0 0 12px; }
+  /* line 235, ../scss/shared/components/_dropdown.scss */
+  .dob .dropdown-wrap.day {
+    width: 66px; }
+  /* line 238, ../scss/shared/components/_dropdown.scss */
+  .dob .dropdown-wrap.month {
+    width: 130px; }
+  /* line 241, ../scss/shared/components/_dropdown.scss */
+  .dob .dropdown-wrap.year {
+    width: 82px; }
+/* line 245, ../scss/shared/components/_dropdown.scss */
+.dob.form-group {
+  position: relative; }
+  /* line 247, ../scss/shared/components/_dropdown.scss */
+  .dob.form-group .completed {
+    position: absolute;
+    display: block;
+    top: 74px;
+    left: 311px; }
+
+@media screen and (max-width: 990px) {
+  /* line 258, ../scss/shared/components/_dropdown.scss */
+  .dob .dropdown-wrap {
+    margin: 0 0 15px; }
+    /* line 261, ../scss/shared/components/_dropdown.scss */
+    .dob .dropdown-wrap.month {
+      width: 120px; }
+  /* line 266, ../scss/shared/components/_dropdown.scss */
+  .dob.form-group .completed {
+    left: 100px;
+    top: 23px; } }
+@media screen and (max-width: 320px) {
+  /* line 276, ../scss/shared/components/_dropdown.scss */
+  .dob .dropdown-wrap {
+    display: block; }
+
+  /*.dropdown.selected{
+    background: $yellow;
+    .carat{
+      color: black !important;
+      border-top-color: black !important;
+    }
+  }*/ }
+/* Temp to test outline fix */
+/* line 23, ../scss/shared/components/_checkbox.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: none; }
+
+/* line 29, ../scss/shared/components/_checkbox.scss */
+.checkbox {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  height: 30px; }
+  /* line 35, ../scss/shared/components/_checkbox.scss */
+  .checkbox.checkbox-danger input[type="checkbox"]:checked + label::after {
+    color: white; }
+  /* line 41, ../scss/shared/components/_checkbox.scss */
+  .checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 30px; }
+    /* line 47, ../scss/shared/components/_checkbox.scss */
+    .checkbox label::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: -5px;
+      left: 0;
+      margin-left: -20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+    /* line 61, ../scss/shared/components/_checkbox.scss */
+    .checkbox label::after {
+      display: inline-block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 0;
+      margin-left: -12px;
+      padding-left: 0;
+      padding-top: 0;
+      color: #555555; }
+  /* line 76, ../scss/shared/components/_checkbox.scss */
+  .checkbox input[type="checkbox"],
+  .checkbox input[type="radio"] {
+    opacity: 0;
+    z-index: 1; }
+    /* line 81, ../scss/shared/components/_checkbox.scss */
+    .checkbox input[type="checkbox"]:focus + label::before,
+    .checkbox input[type="radio"]:focus + label::before {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    /* line 85, ../scss/shared/components/_checkbox.scss */
+    .checkbox input[type="checkbox"]:checked + label::after,
+    .checkbox input[type="radio"]:checked + label::after {
+      font-family: "Glyphicons Halflings";
+      content: ""; }
+    /* line 90, ../scss/shared/components/_checkbox.scss */
+    .checkbox input[type="checkbox"]:disabled + label,
+    .checkbox input[type="radio"]:disabled + label {
+      opacity: 0.65; }
+      /* line 93, ../scss/shared/components/_checkbox.scss */
+      .checkbox input[type="checkbox"]:disabled + label::before,
+      .checkbox input[type="radio"]:disabled + label::before {
+        background-color: #eeeeee;
+        cursor: not-allowed; }
+  /* line 101, ../scss/shared/components/_checkbox.scss */
+  .checkbox.checkbox-circle label::before {
+    border-radius: 50%; }
+  /* line 105, ../scss/shared/components/_checkbox.scss */
+  .checkbox.checkbox-inline {
+    margin-top: 0; }
+
+/* line 12, ../scss/shared/components/_checkbox.scss */
+.checkbox-primary input[type="checkbox"]:checked + label::before,
+.checkbox-primary input[type="radio"]:checked + label::before {
+  background-color: #428bca;
+  border-color: #428bca; }
+/* line 16, ../scss/shared/components/_checkbox.scss */
+.checkbox-primary input[type="checkbox"]:checked + label::after,
+.checkbox-primary input[type="radio"]:checked + label::after {
+  color: black; }
+
+/* line 12, ../scss/shared/components/_checkbox.scss */
+.checkbox-danger input[type="checkbox"]:checked + label::before,
+.checkbox-danger input[type="radio"]:checked + label::before {
+  background-color: #d9534f;
+  border-color: #d9534f; }
+/* line 16, ../scss/shared/components/_checkbox.scss */
+.checkbox-danger input[type="checkbox"]:checked + label::after,
+.checkbox-danger input[type="radio"]:checked + label::after {
+  color: black; }
+
+/* line 12, ../scss/shared/components/_checkbox.scss */
+.checkbox-info input[type="checkbox"]:checked + label::before,
+.checkbox-info input[type="radio"]:checked + label::before {
+  background-color: #5bc0de;
+  border-color: #5bc0de; }
+/* line 16, ../scss/shared/components/_checkbox.scss */
+.checkbox-info input[type="checkbox"]:checked + label::after,
+.checkbox-info input[type="radio"]:checked + label::after {
+  color: black; }
+
+/* line 12, ../scss/shared/components/_checkbox.scss */
+.checkbox-warning input[type="checkbox"]:checked + label::before,
+.checkbox-warning input[type="radio"]:checked + label::before {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e; }
+/* line 16, ../scss/shared/components/_checkbox.scss */
+.checkbox-warning input[type="checkbox"]:checked + label::after,
+.checkbox-warning input[type="radio"]:checked + label::after {
+  color: black; }
+
+/* line 12, ../scss/shared/components/_checkbox.scss */
+.checkbox-success input[type="checkbox"]:checked + label::before,
+.checkbox-success input[type="radio"]:checked + label::before {
+  background-color: #ffd600;
+  border-color: #ffd600; }
+/* line 16, ../scss/shared/components/_checkbox.scss */
+.checkbox-success input[type="checkbox"]:checked + label::after,
+.checkbox-success input[type="radio"]:checked + label::after {
+  color: black; }
+
+/* line 138, ../scss/shared/components/_checkbox.scss */
+.radio {
+  margin-bottom: 20px;
+  padding-left: 30px;
+  height: 30px; }
+  /* line 143, ../scss/shared/components/_checkbox.scss */
+  .radio label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 20px; }
+    /* line 149, ../scss/shared/components/_checkbox.scss */
+    .radio label::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: -5px;
+      left: 0;
+      margin-left: -30px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      background-color: #fff;
+      -webkit-transition: border 0.15s ease-in-out;
+      -o-transition: border 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out; }
+    /* line 166, ../scss/shared/components/_checkbox.scss */
+    .radio label::after {
+      display: inline-block;
+      position: absolute;
+      content: " ";
+      width: 28px;
+      height: 28px;
+      left: -1px;
+      top: -4px;
+      margin-left: -28px;
+      border-radius: 50%;
+      background-color: #555555;
+      -webkit-transform: scale(0, 0);
+      -ms-transform: scale(0, 0);
+      -o-transform: scale(0, 0);
+      transform: scale(0, 0);
+      -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+  /* line 184, ../scss/shared/components/_checkbox.scss */
+  .radio input[type="radio"] {
+    opacity: 0;
+    z-index: 1; }
+    /* line 189, ../scss/shared/components/_checkbox.scss */
+    .radio input[type="radio"]:focus + label::before {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    /* line 193, ../scss/shared/components/_checkbox.scss */
+    .radio input[type="radio"]:checked + label::after {
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      -o-transform: scale(1, 1);
+      transform: scale(1, 1); }
+    /* line 197, ../scss/shared/components/_checkbox.scss */
+    .radio input[type="radio"]:disabled + label {
+      opacity: 0.65; }
+      /* line 200, ../scss/shared/components/_checkbox.scss */
+      .radio input[type="radio"]:disabled + label::before {
+        cursor: not-allowed; }
+  /* line 207, ../scss/shared/components/_checkbox.scss */
+  .radio.radio-inline {
+    margin-top: 0; }
+
+/* line 123, ../scss/shared/components/_checkbox.scss */
+.radio-primary input[type="radio"] + label::after {
+  background-color: #428bca; }
+/* line 128, ../scss/shared/components/_checkbox.scss */
+.radio-primary input[type="radio"]:checked + label::before {
+  border-color: #428bca; }
+/* line 131, ../scss/shared/components/_checkbox.scss */
+.radio-primary input[type="radio"]:checked + label::after {
+  background-color: #428bca; }
+
+/* line 123, ../scss/shared/components/_checkbox.scss */
+.radio-danger input[type="radio"] + label::after {
+  background-color: #d9534f; }
+/* line 128, ../scss/shared/components/_checkbox.scss */
+.radio-danger input[type="radio"]:checked + label::before {
+  border-color: #d9534f; }
+/* line 131, ../scss/shared/components/_checkbox.scss */
+.radio-danger input[type="radio"]:checked + label::after {
+  background-color: #d9534f; }
+
+/* line 123, ../scss/shared/components/_checkbox.scss */
+.radio-info input[type="radio"] + label::after {
+  background-color: #5bc0de; }
+/* line 128, ../scss/shared/components/_checkbox.scss */
+.radio-info input[type="radio"]:checked + label::before {
+  border-color: #5bc0de; }
+/* line 131, ../scss/shared/components/_checkbox.scss */
+.radio-info input[type="radio"]:checked + label::after {
+  background-color: #5bc0de; }
+
+/* line 123, ../scss/shared/components/_checkbox.scss */
+.radio-warning input[type="radio"] + label::after {
+  background-color: #f0ad4e; }
+/* line 128, ../scss/shared/components/_checkbox.scss */
+.radio-warning input[type="radio"]:checked + label::before {
+  border-color: #f0ad4e; }
+/* line 131, ../scss/shared/components/_checkbox.scss */
+.radio-warning input[type="radio"]:checked + label::after {
+  background-color: #f0ad4e; }
+
+/* line 123, ../scss/shared/components/_checkbox.scss */
+.radio-success input[type="radio"] + label::after {
+  background-color: #ffd600; }
+/* line 128, ../scss/shared/components/_checkbox.scss */
+.radio-success input[type="radio"]:checked + label::before {
+  border-color: #ffd600; }
+/* line 131, ../scss/shared/components/_checkbox.scss */
+.radio-success input[type="radio"]:checked + label::after {
+  background-color: #ffd600; }
+
+/* line 221, ../scss/shared/components/_checkbox.scss */
+input[type="checkbox"].styled:checked + label:after,
+input[type="radio"].styled:checked + label:after {
+  font-family: "Glyphicons Halflings";
+  content: ""; }
+/* line 226, ../scss/shared/components/_checkbox.scss */
+input[type="checkbox"] .styled:checked + label::before,
+input[type="radio"] .styled:checked + label::before {
+  color: #fff; }
+/* line 229, ../scss/shared/components/_checkbox.scss */
+input[type="checkbox"] .styled:checked + label::after,
+input[type="radio"] .styled:checked + label::after {
+  color: #fff; }
+
+/* line 3, ../scss/shared/components/_table.scss */
+.table {
+  /*& > thead > tr > th {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }
+
+  & > tbody > tr > td {
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }*/
+  /*&.table-striped {
+    tbody {
+
+      tr {
+        td {
+          span {
+            &.plus {
+              color: $green;
+            }
+            &.less {
+              color: $red;
+            }
+          }
+        }    
+      }
+    }
+
+    thead > tr > {
+      th, td {
+        border: none;
+      }
+    }
+    
+    tbody > tr > {
+      th, td {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+    
+    tfoot > tr > {
+      th, td {
+        border-top: none;
+      }
+    }
+  }*/
+  /*.col1{
+    width: 6%;
+  }
+  .col2{
+    width: 34%;
+  }
+  .col3{
+    width: 60%;
+    text-align: right;
+    small{
+      text-transform: uppercase;
+      font-size: 70%;
+    }
+  }*/ }
+  /* line 4, ../scss/shared/components/_table.scss */
+  .table h3, .table .notifications .mid a, .notifications .mid .table a {
+    margin: 0;
+    float: left; }
+  /* line 9, ../scss/shared/components/_table.scss */
+  .table em {
+    font-style: normal;
+    display: inline-block; }
+  /* line 14, ../scss/shared/components/_table.scss */
+  .table small {
+    color: #414141;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 70%; }
+  /* line 33, ../scss/shared/components/_table.scss */
+  .table th {
+    border: 0 !important; }
+    /* line 35, ../scss/shared/components/_table.scss */
+    .table th a {
+      float: right;
+      display: block;
+      margin-top: 10px;
+      line-height: 12px; }
+  /* line 45, ../scss/shared/components/_table.scss */
+  .table tbody tr td {
+    border-top: 0 !important;
+    vertical-align: middle;
+    padding: 6px 18px;
+    border-bottom: 1px solid #f2f2f2; }
+    /* line 50, ../scss/shared/components/_table.scss */
+    .table tbody tr td span {
+      width: 12px; }
+      /* line 52, ../scss/shared/components/_table.scss */
+      .table tbody tr td span.plus {
+        color: #7cc84b;
+        display: inline-block; }
+      /* line 56, ../scss/shared/components/_table.scss */
+      .table tbody tr td span.less {
+        color: #ee3524;
+        display: inline-block; }
+    /* line 61, ../scss/shared/components/_table.scss */
+    .table tbody tr td:first-child {
+      width: 124px;
+      border-right: 1px solid #f2f2f2; }
+  /* line 66, ../scss/shared/components/_table.scss */
+  .table tbody tr:nth-child(odd) {
+    background-color: #f8f8f8; }
+  /* line 69, ../scss/shared/components/_table.scss */
+  .table tbody tr:nth-child(even) {
+    background-color: #fff; }
+  /* line 73, ../scss/shared/components/_table.scss */
+  .table tbody tr:last-child td {
+    border-bottom: 0 !important; }
+  /* line 82, ../scss/shared/components/_table.scss */
+  .table.dashed > thead > tr > th {
+    border-top: 1px dashed #ddd !important;
+    border-bottom: 1px dashed #ddd; }
+  /* line 89, ../scss/shared/components/_table.scss */
+  .table.table-striped th {
+    padding: 0 0 15px !important; }
+
+/* line 2, ../scss/shared/components/_notifications.scss */
+.notifications *:focus {
+  outline: none; }
+/* line 5, ../scss/shared/components/_notifications.scss */
+.notifications ul li {
+  height: 22px;
+  position: relative;
+  z-index: 1; }
+  /* line 10, ../scss/shared/components/_notifications.scss */
+  .notifications ul li a {
+    border-bottom: 0 !important; }
+    /* line 12, ../scss/shared/components/_notifications.scss */
+    .notifications ul li a .icon-hidden {
+      display: none;
+      width: 30px;
+      height: 30px; }
+  /* line 19, ../scss/shared/components/_notifications.scss */
+  .notifications ul li.active {
+    z-index: 2; }
+  /* line 23, ../scss/shared/components/_notifications.scss */
+  .notifications ul li:hover .icon, .notifications ul li.active .icon {
+    display: none; }
+  /* line 26, ../scss/shared/components/_notifications.scss */
+  .notifications ul li:hover .icon-hidden, .notifications ul li.active .icon-hidden {
+    display: block; }
+  /* line 30, ../scss/shared/components/_notifications.scss */
+  .notifications ul li:last-child {
+    left: 276px; }
+/* line 36, ../scss/shared/components/_notifications.scss */
+.notifications .nav li a {
+  color: black !important;
+  margin: 0; }
+/* line 41, ../scss/shared/components/_notifications.scss */
+.notifications .nav li .link a {
+  font-size: 11px;
+  line-height: 11px;
+  border-bottom: 1px solid black !important;
+  text-transform: uppercase; }
+  /* line 46, ../scss/shared/components/_notifications.scss */
+  .notifications .nav li .link a:hover {
+    border-bottom-color: #ffd600 !important; }
+/* line 51, ../scss/shared/components/_notifications.scss */
+.notifications .nav li .num {
+  color: white;
+  background: #ee3524;
+  position: absolute;
+  bottom: -3px;
+  right: -6px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 3px;
+  min-width: 16px;
+  text-align: center;
+  display: block; }
+/* line 67, ../scss/shared/components/_notifications.scss */
+.notifications .icon {
+  width: 30px !important;
+  height: 30px !important; }
+/* line 71, ../scss/shared/components/_notifications.scss */
+.notifications .inner-card, .notifications .nav-pills > li > a {
+  background: #ffd600 !important; }
+/* line 74, ../scss/shared/components/_notifications.scss */
+.notifications .inner-card {
+  padding: 40px 30px;
+  border-bottom: 5px solid black; }
+/* line 78, ../scss/shared/components/_notifications.scss */
+.notifications .tooltip {
+  cursor: text; }
+  /* line 80, ../scss/shared/components/_notifications.scss */
+  .notifications .tooltip .tooltip-inner {
+    max-width: 236px;
+    width: 236px;
+    background: white;
+    color: #333;
+    box-shadow: 0 0 3px #ccc;
+    padding: 0; }
+  /* line 88, ../scss/shared/components/_notifications.scss */
+  .notifications .tooltip .icon {
+    display: block !important;
+    background-size: cover; }
+  /* line 94, ../scss/shared/components/_notifications.scss */
+  .notifications .tooltip.bottom {
+    top: 59px !important; }
+    /* line 96, ../scss/shared/components/_notifications.scss */
+    .notifications .tooltip.bottom .tooltip-arrow {
+      margin-left: -20px;
+      top: -30px;
+      border-width: 0 20px 42px;
+      border-bottom-color: white; }
+  /* line 103, ../scss/shared/components/_notifications.scss */
+  .notifications .tooltip.in {
+    opacity: 0.99; }
+/* line 107, ../scss/shared/components/_notifications.scss */
+.notifications .top {
+  padding: 15px 0; }
+  /* line 110, ../scss/shared/components/_notifications.scss */
+  .notifications .top h4 span {
+    display: block;
+    color: #949292;
+    font-family: 'texgyreheroscn-regular'; }
+  /* line 116, ../scss/shared/components/_notifications.scss */
+  .notifications .top .noti-close {
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+    background: url(../images/icons/PnS_close.svg) no-repeat 0 0/cover; }
+/* line 127, ../scss/shared/components/_notifications.scss */
+.notifications .mid, .notifications .bot {
+  padding: 15px 0;
+  border-top: 1px dashed #e6e6e6; }
+/* line 132, ../scss/shared/components/_notifications.scss */
+.notifications .mid a {
+  display: block; }
+/* line 138, ../scss/shared/components/_notifications.scss */
+.notifications .btn-close {
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 3px;
+  width: 22px;
+  height: 22px;
+  background: url(../images/icons/PnS_close_small.svg) no-repeat 0 0;
+  cursor: pointer;
+  display: none; }
+/* line 149, ../scss/shared/components/_notifications.scss */
+.notifications .notification {
+  text-align: left;
+  border-top: 1px dashed #e6e6e6;
+  padding: 20px;
+  position: relative; }
+  /* line 154, ../scss/shared/components/_notifications.scss */
+  .notifications .notification .title {
+    /*background: url(../images/icons/icon-confirm.svg) no-repeat 0 0;
+    padding-left: 27px;
+    line-height: 25px;*/ }
+  /* line 159, ../scss/shared/components/_notifications.scss */
+  .notifications .notification small {
+    display: block;
+    padding: 3px 0 10px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #414141;
+    font-family: Arial; }
+  /* line 167, ../scss/shared/components/_notifications.scss */
+  .notifications .notification .text {
+    padding: 5px 0;
+    color: #414141; }
+/* line 172, ../scss/shared/components/_notifications.scss */
+.notifications .account-noti {
+  text-align: center; }
+  /* line 175, ../scss/shared/components/_notifications.scss */
+  .notifications .account-noti .icon {
+    margin: 0 auto;
+    background: url(../images/icons/PnS_account.svg) no-repeat 0 0; }
+
+@media screen and (max-width: 990px) {
+  /* line 185, ../scss/shared/components/_notifications.scss */
+  body.components-library .notifications ul li:last-child {
+    left: 10px; }
+  /* line 188, ../scss/shared/components/_notifications.scss */
+  body.components-library .notifications .tooltip-inner {
+    width: 300px;
+    max-width: 300px; } }
+/* line 1, ../scss/shared/components/_slider.scss */
+.fuel-discounts {
+  text-align: center; }
+  /* line 3, ../scss/shared/components/_slider.scss */
+  .fuel-discounts h2, .fuel-discounts h3, .fuel-discounts .notifications .mid a, .notifications .mid .fuel-discounts a {
+    padding-bottom: 10px; }
+
+/* line 7, ../scss/shared/components/_slider.scss */
+.balance {
+  font-size: 75px;
+  letter-spacing: -6px; }
+  /* line 10, ../scss/shared/components/_slider.scss */
+  .balance .value {
+    font-size: 160px;
+    line-height: 160px;
+    font-weight: bold; }
+  /* line 15, ../scss/shared/components/_slider.scss */
+  .balance .inner {
+    display: inline-block;
+    position: relative; }
+    /* line 18, ../scss/shared/components/_slider.scss */
+    .balance .inner .cents {
+      position: relative;
+      right: 10px; }
+    /* line 22, ../scss/shared/components/_slider.scss */
+    .balance .inner .whats-this {
+      letter-spacing: 0;
+      position: absolute;
+      right: -120px;
+      bottom: 0;
+      width: 120px;
+      display: block; }
+
+/* line 33, ../scss/shared/components/_slider.scss */
+.slider-wrap {
+  background: white;
+  padding: 30px 0; }
+  /* line 36, ../scss/shared/components/_slider.scss */
+  .slider-wrap div {
+    text-align: left; }
+    /* line 38, ../scss/shared/components/_slider.scss */
+    .slider-wrap div.actions {
+      text-align: right;
+      padding-top: 20px; }
+      /* line 41, ../scss/shared/components/_slider.scss */
+      .slider-wrap div.actions .btn, .slider-wrap div.actions .voucher-wrap .cta, .voucher-wrap .slider-wrap div.actions .cta {
+        margin-right: 15px; }
+  /* line 46, ../scss/shared/components/_slider.scss */
+  .slider-wrap h2 {
+    padding-bottom: 10px; }
+  /* line 49, ../scss/shared/components/_slider.scss */
+  .slider-wrap p {
+    padding-right: 30px; }
+  /* line 52, ../scss/shared/components/_slider.scss */
+  .slider-wrap .make-a-voucher {
+    padding-left: 15px; }
+  /* line 55, ../scss/shared/components/_slider.scss */
+  .slider-wrap .slider-inner {
+    padding-top: 66px; }
+    /* line 57, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner .ui-widget-content .ui-state-default {
+      width: 31px;
+      height: 32px;
+      background: url(../images/icons/PnS_slider.svg) no-repeat 0 0;
+      border: 0; }
+    /* line 63, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner .ui-slider-horizontal .ui-slider-handle {
+      top: -18px;
+      margin-left: -15px; }
+    /* line 67, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner .ui-widget {
+      font-size: 0.2em; }
+    /* line 70, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner *:focus {
+      outline: none; }
+    /* line 73, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner .min, .slider-wrap .slider-inner .max {
+      width: 25px;
+      display: block;
+      position: absolute;
+      top: 58px;
+      font-size: 10px;
+      line-height: 12px;
+      color: #929196; }
+      /* line 81, ../scss/shared/components/_slider.scss */
+      .slider-wrap .slider-inner .min span, .slider-wrap .slider-inner .max span {
+        font-weight: bold;
+        font-size: 14px;
+        display: block;
+        color: #333; }
+    /* line 88, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner .min {
+      left: -30px; }
+    /* line 91, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner .max {
+      right: -30px; }
+    /* line 95, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner:hover .ui-widget-content .ui-state-default {
+      background-image: url(../images/icons/PnS_slider_rollover.svg); }
+  /* line 100, ../scss/shared/components/_slider.scss */
+  .slider-wrap .currentval {
+    width: 55px;
+    height: 55px;
+    background: #ffd600;
+    border-radius: 55px;
+    display: block;
+    position: absolute;
+    top: -63px;
+    left: -12px;
+    line-height: 54px;
+    text-align: center;
+    font-size: 12px;
+    color: black; }
+    /* line 113, ../scss/shared/components/_slider.scss */
+    .slider-wrap .currentval .val {
+      font-size: 30px;
+      letter-spacing: -1px;
+      padding-right: 2px; }
+    /* line 118, ../scss/shared/components/_slider.scss */
+    .slider-wrap .currentval:after {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 16px solid #ffd600;
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      left: 19px; }
+  /* line 131, ../scss/shared/components/_slider.scss */
+  .slider-wrap .yellow-line {
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    height: 3px;
+    display: block;
+    background: #ffd600; }
+
+@media screen and (max-width: 990px) {
+  /* line 142, ../scss/shared/components/_slider.scss */
+  .slider-wrap {
+    width: 300px; }
+    /* line 144, ../scss/shared/components/_slider.scss */
+    .slider-wrap .make-a-voucher {
+      padding: 0 0 25px; }
+    /* line 147, ../scss/shared/components/_slider.scss */
+    .slider-wrap p {
+      padding-right: 0; }
+    /* line 151, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner .slider {
+      width: 176px;
+      margin: 0 auto; }
+    /* line 155, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner .min {
+      left: 15px; }
+    /* line 158, ../scss/shared/components/_slider.scss */
+    .slider-wrap .slider-inner .max {
+      right: 15px; }
+    /* line 162, ../scss/shared/components/_slider.scss */
+    .slider-wrap div {
+      text-align: center; }
+      /* line 164, ../scss/shared/components/_slider.scss */
+      .slider-wrap div.actions {
+        text-align: center; }
+        /* line 166, ../scss/shared/components/_slider.scss */
+        .slider-wrap div.actions .btn, .slider-wrap div.actions .voucher-wrap .cta, .voucher-wrap .slider-wrap div.actions .cta {
+          margin-right: 0; } }
+/* line 1, ../scss/shared/components/_icons.scss */
+.icon {
+  width: 22px;
+  height: 22px; }
+
+/* line 6, ../scss/shared/components/_icons.scss */
+ul.icons {
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0; }
+  /* line 10, ../scss/shared/components/_icons.scss */
+  ul.icons li {
+    margin: 0;
+    padding: 5px 0 0; }
+    /* line 13, ../scss/shared/components/_icons.scss */
+    ul.icons li .icon {
+      height: 22px;
+      display: inline-block;
+      margin-right: 15px;
+      position: relative;
+      top: 5px; }
+
+/* line 22, ../scss/shared/components/_icons.scss */
+.icon-close, .icon-info {
+  cursor: pointer; }
+
+/* line 25, ../scss/shared/components/_icons.scss */
+.icon-close {
+  background: url(../images/icons/PnS_close_black.svg) no-repeat 0 0; }
+  /* line 27, ../scss/shared/components/_icons.scss */
+  .icon-close:hover {
+    background-image: url(../images/icons/PnS_close_rollover.svg); }
+
+/* line 31, ../scss/shared/components/_icons.scss */
+.icon-info {
+  background: url(../images/icons/PnS_info_black.svg) no-repeat 0 0; }
+  /* line 33, ../scss/shared/components/_icons.scss */
+  .icon-info:hover {
+    background-image: url(../images/icons/PnS_info_rollover.svg); }
+
+/* line 37, ../scss/shared/components/_icons.scss */
+.icon-question {
+  background: url(../images/icons/PnS_question.svg) no-repeat 0 0; }
+  /* line 39, ../scss/shared/components/_icons.scss */
+  .icon-question:hover {
+    background-image: url(../images/icons/PnS_question_rollover.svg); }
+
+/* line 43, ../scss/shared/components/_icons.scss */
+.icon-error {
+  background: url(../images/icons/PnS_error.svg) no-repeat 0 0; }
+
+/* line 46, ../scss/shared/components/_icons.scss */
+.icon-alert {
+  background: url(../images/icons/PnS_alert.svg) no-repeat 0 0; }
+
+/* line 49, ../scss/shared/components/_icons.scss */
+.icon-confirm {
+  background: url(../images/icons/PnS_confirm.svg) no-repeat 0 0; }
+
+/* line 52, ../scss/shared/components/_icons.scss */
+.icon-pass-strong {
+  background: url(../images/icons/PnS_smile.svg) no-repeat 0 0; }
+
+/* line 55, ../scss/shared/components/_icons.scss */
+.icon-pass-fair {
+  background: url(../images/icons/PnS_happy.svg) no-repeat 0 0; }
+
+/* line 58, ../scss/shared/components/_icons.scss */
+.icon-pass-weak {
+  background: url(../images/icons/PnS_angry.svg) no-repeat 0 0; }
+
+/* line 61, ../scss/shared/components/_icons.scss */
+.icon-house {
+  background: url(../images/icons/PnS_addhouse.svg) no-repeat 0 0; }
+
+/* line 64, ../scss/shared/components/_icons.scss */
+.icon-deal {
+  background: url(../images/icons/PnS_newdeal.svg) no-repeat 0 0; }
+
+/* line 67, ../scss/shared/components/_icons.scss */
+.icon-unlocked {
+  background: url(../images/icons/PnS_unlock.svg) no-repeat 0 0; }
+
+/* line 70, ../scss/shared/components/_icons.scss */
+.icon-locked {
+  background: url(../images/icons/PnS_lock.svg) no-repeat 0 0; }
+
+/* line 73, ../scss/shared/components/_icons.scss */
+.icon-expired {
+  background: url(../images/icons/PnS_expire.svg) no-repeat 0 0; }
+
+/* line 76, ../scss/shared/components/_icons.scss */
+.icon-recent {
+  background: url(../images/icons/PnS_recent.svg) no-repeat 0 0; }
+
+/* line 79, ../scss/shared/components/_icons.scss */
+.icon-delete {
+  background: url(../images/icons/PnS_delete.svg) no-repeat 0 0; }
+
+/* line 82, ../scss/shared/components/_icons.scss */
+.icon-website {
+  background: url(../images/icons/PnS_website.svg) no-repeat 0 0; }
+
+/* line 85, ../scss/shared/components/_icons.scss */
+.icon-text {
+  background: url(../images/icons/PnS_text.svg) no-repeat 0 0; }
+
+/* line 88, ../scss/shared/components/_icons.scss */
+.icon-email {
+  background: url(../images/icons/PnS_email.svg) no-repeat 0 0; }
+
+/* line 92, ../scss/shared/components/_icons.scss */
+.icon-account {
+  background: url(../images/icons/PnS_account.svg) no-repeat 0 0; }
+
+/* line 6, ../scss/shared/components/_vouchers.scss */
+.voucher {
+  width: 100%;
+  max-width: 232px;
+  height: 345px;
+  padding: 6px;
+  background: white;
+  text-align: center; }
+  /* line 17, ../scss/shared/components/_vouchers.scss */
+  .voucher .inner {
+    position: relative;
+    height: 100%; }
+  /* line 22, ../scss/shared/components/_vouchers.scss */
+  .voucher h2, .voucher h3, .voucher .notifications .mid a, .notifications .mid .voucher a {
+    font-family: texgyreheroscn-bold; }
+  /* line 25, ../scss/shared/components/_vouchers.scss */
+  .voucher h2 {
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* line 30, ../scss/shared/components/_vouchers.scss */
+  .voucher .top {
+    padding-bottom: 10px; }
+    /* line 32, ../scss/shared/components/_vouchers.scss */
+    .voucher .top .tag {
+      width: 115px;
+      height: 115px;
+      background: url(../images/stickers/PnS_sticker_deal.svg) no-repeat 0 0; }
+      /* line 36, ../scss/shared/components/_vouchers.scss */
+      .voucher .top .tag.fuel {
+        background: url(../images/stickers/PnS_sticker_fuel.svg) no-repeat 0 0; }
+      /* line 39, ../scss/shared/components/_vouchers.scss */
+      .voucher .top .tag.prizes {
+        background: url(../images/stickers/PnS_sticker_prizes.svg) no-repeat 0 0; }
+      /* line 42, ../scss/shared/components/_vouchers.scss */
+      .voucher .top .tag.freebie {
+        background: url(../images/stickers/PnS_sticker_freebie.svg) no-repeat 0 0; }
+  /* line 48, ../scss/shared/components/_vouchers.scss */
+  .voucher .details {
+    height: 154px;
+    display: table; }
+    /* line 51, ../scss/shared/components/_vouchers.scss */
+    .voucher .details .main {
+      display: table-cell;
+      vertical-align: middle; }
+    /* line 55, ../scss/shared/components/_vouchers.scss */
+    .voucher .details .price-wrap {
+      background: url(../images/PnS_price_bg.svg) no-repeat left top/contain;
+      width: 110px;
+      height: 63px;
+      position: relative;
+      right: 15px;
+      margin: 10px auto 0;
+      display: table; }
+      /* line 63, ../scss/shared/components/_vouchers.scss */
+      .voucher .details .price-wrap .price {
+        width: 48px;
+        margin: 0 auto;
+        color: black; }
+        /* line 67, ../scss/shared/components/_vouchers.scss */
+        .voucher .details .price-wrap .price .dollars {
+          float: left;
+          font-size: 44px; }
+        /* line 71, ../scss/shared/components/_vouchers.scss */
+        .voucher .details .price-wrap .price .cents, .voucher .details .price-wrap .price .unit {
+          float: right;
+          font-size: 18px;
+          line-height: 18px; }
+        /* line 76, ../scss/shared/components/_vouchers.scss */
+        .voucher .details .price-wrap .price .cents {
+          padding-top: 11px; }
+    /* line 81, ../scss/shared/components/_vouchers.scss */
+    .voucher .details .behind {
+      display: none;
+      text-align: left;
+      vertical-align: middle;
+      padding: 0 15px; }
+      /* line 86, ../scss/shared/components/_vouchers.scss */
+      .voucher .details .behind p {
+        font-size: 11px;
+        line-height: 14px;
+        padding-bottom: 5px; }
+      /* line 91, ../scss/shared/components/_vouchers.scss */
+      .voucher .details .behind.active {
+        display: table-cell; }
+  /* line 96, ../scss/shared/components/_vouchers.scss */
+  .voucher .extra, .voucher .expiry {
+    min-height: 20px;
+    line-height: 20px;
+    color: #929191;
+    font-size: 11px; }
+  /* line 102, ../scss/shared/components/_vouchers.scss */
+  .voucher .icon {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    cursor: pointer;
+    background: url(../images/icons/PnS_info.svg) no-repeat 0 0/cover; }
+    /* line 108, ../scss/shared/components/_vouchers.scss */
+    .voucher .icon:hover {
+      background-image: url(../images/icons/PnS_info_rollover.svg); }
+    /* line 111, ../scss/shared/components/_vouchers.scss */
+    .voucher .icon.active {
+      background-image: url(../images/icons/PnS_flip-back.svg); }
+    /* line 114, ../scss/shared/components/_vouchers.scss */
+    .voucher .icon.active:hover {
+      background-image: url(../images/icons/PnS_flip-back_rollover.svg); }
+  /* line 120, ../scss/shared/components/_vouchers.scss */
+  .voucher.get-it .inner {
+    background: #f2f2f2;
+    padding: 5px; }
+  /* line 124, ../scss/shared/components/_vouchers.scss */
+  .voucher.get-it .details {
+    height: 158px; }
+  /* line 129, ../scss/shared/components/_vouchers.scss */
+  .voucher.got-it {
+    background: none;
+    height: 352px; }
+    /* line 134, ../scss/shared/components/_vouchers.scss */
+    .voucher.got-it .inner {
+      padding-bottom: 5px;
+      position: relative;
+      z-index: 2; }
+    /* line 139, ../scss/shared/components/_vouchers.scss */
+    .voucher.got-it .top {
+      position: relative;
+      padding-bottom: 5px; }
+      /* line 142, ../scss/shared/components/_vouchers.scss */
+      .voucher.got-it .top .tag {
+        margin: 10px 0 0 5px; }
+    /* line 146, ../scss/shared/components/_vouchers.scss */
+    .voucher.got-it .expiry {
+      padding-bottom: 5px; }
+    /* line 149, ../scss/shared/components/_vouchers.scss */
+    .voucher.got-it .icon {
+      bottom: 25px; }
+
+/* line 155, ../scss/shared/components/_vouchers.scss */
+.voucher-wrap {
+  position: relative; }
+  /* line 157, ../scss/shared/components/_vouchers.scss */
+  .voucher-wrap .bg {
+    width: 232px;
+    height: 345px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+    background: url(../images/PnS_card_desktop.svg) no-repeat 0 0/cover; }
+  /* line 167, ../scss/shared/components/_vouchers.scss */
+  .voucher-wrap .cta {
+    -webkit-border-radius: 0 0 4px 4px;
+    -khtml-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -ms-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+    max-width: 232px; }
+    /* line 172, ../scss/shared/components/_vouchers.scss */
+    .voucher-wrap .cta a {
+      border: 0;
+      display: block;
+      color: #ffd600; }
+    /* line 178, ../scss/shared/components/_vouchers.scss */
+    .voucher-wrap .cta:hover a, .voucher-wrap .cta:hover button {
+      color: black !important;
+      background: #ffd600; }
+
+/* line 187, ../scss/shared/components/_vouchers.scss */
+.owl-nav div {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: block;
+  background: red;
+  top: 43%;
+  text-indent: -9999em; }
+  /* line 195, ../scss/shared/components/_vouchers.scss */
+  .owl-nav div.owl-prev {
+    left: -60px;
+    background: url(../images/carousel/PnS_carouselleft.svg) no-repeat 0 0/cover; }
+    /* line 198, ../scss/shared/components/_vouchers.scss */
+    .owl-nav div.owl-prev:hover {
+      background-image: url(../images/carousel/PnS_carouselleft_rollover.svg); }
+    /* line 201, ../scss/shared/components/_vouchers.scss */
+    .owl-nav div.owl-prev.disabled {
+      background-image: url(../images/carousel/PnS_carouselleft.svg) !important; }
+  /* line 205, ../scss/shared/components/_vouchers.scss */
+  .owl-nav div.owl-next {
+    right: -60px;
+    background: url(../images/carousel/PnS_carouselright.svg) no-repeat 0 0/cover; }
+    /* line 208, ../scss/shared/components/_vouchers.scss */
+    .owl-nav div.owl-next:hover {
+      background-image: url(../images/carousel/PnS_carouselright_rollover.svg); }
+    /* line 211, ../scss/shared/components/_vouchers.scss */
+    .owl-nav div.owl-next.disabled {
+      background-image: url(../images/carousel/PnS_carouselright.svg) !important; }
+  /* line 215, ../scss/shared/components/_vouchers.scss */
+  .owl-nav div.disabled {
+    opacity: 0.3;
+    cursor: text !important; }
+
+/* line 221, ../scss/shared/components/_vouchers.scss */
+.owl-dots {
+  text-align: center; }
+  /* line 223, ../scss/shared/components/_vouchers.scss */
+  .owl-dots .owl-dot {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+    display: inline-block;
+    -webkit-border-radius: 18px;
+    -khtml-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    border-radius: 18px;
+    background: #cecece; }
+    /* line 230, ../scss/shared/components/_vouchers.scss */
+    .owl-dots .owl-dot.active {
+      background: black; }
+
+@media screen and (max-width: 990px) {
+  /* line 237, ../scss/shared/components/_vouchers.scss */
+  .owl-carousel .owl-item {
+    text-align: center; }
+    /* line 239, ../scss/shared/components/_vouchers.scss */
+    .owl-carousel .owl-item .voucher-wrap {
+      width: 232px;
+      margin: 0 auto; }
+
+  /* line 244, ../scss/shared/components/_vouchers.scss */
+  .owl-nav div.owl-prev {
+    left: -10px; }
+
+  /* line 247, ../scss/shared/components/_vouchers.scss */
+  .owl-nav div.owl-next {
+    right: -10px; } }
+@media screen and (min-width: 480px) {
+  /* line 255, ../scss/shared/components/_vouchers.scss */
+  .owl-dots .owl-dot:hover {
+    background: #ffd600; }
+    /* line 257, ../scss/shared/components/_vouchers.scss */
+    .owl-dots .owl-dot:hover.active {
+      background: black; } }
+@media screen and (max-width: 480px) {
+  /*.voucher-wrap{
+  	.bg, .cta{
+  		width: $voucher-mobile-width;
+  	}
+  }
+  .voucher{
+  	width: $voucher-mobile-width;
+  	.top{
+  		.tag{
+  			width: 84px;
+  			height: 84px;
+  		}
+  	}
+  	h2{
+  		font-size: 22px;
+  		line-height: 28px;
+  	}
+  	h3{
+  		font-size: 17px;
+  		line-height: 20px;
+  	}
+  }
+  .owl-nav div.owl-prev{
+  	left: -15px;
+  }
+  .owl-nav div.owl-next{
+  	right: -15px;
+  }*/ }
+/* line 1, ../scss/mobile/_page-mobile.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+/* line 8, ../scss/mobile/_page-mobile.scss */
+body {
+  font-family: Arial, sans-serif;
+  color: #414141; }
+
+/* line 13, ../scss/mobile/_page-mobile.scss */
+.page-container {
+  min-height: 100%;
+  position: relative; }
+
+/* line 18, ../scss/mobile/_page-mobile.scss */
+.nolink {
+  cursor: default; }
+
+/* line 22, ../scss/mobile/_page-mobile.scss */
+.action-link {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #414141;
+  font-size: 10px; }
+
+/* line 30, ../scss/mobile/_page-mobile.scss */
+hr {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 23px;
+  margin-bottom: 20px; }
+
+/* line 37, ../scss/mobile/_page-mobile.scss */
+.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button {
+  font-family: Arial, sans-serif; }
+
+/* line 41, ../scss/mobile/_page-mobile.scss */
+.alert {
+  margin-bottom: 8px; }
+
+/* line 45, ../scss/mobile/_page-mobile.scss */
+.icon {
+  width: 22px; }
+  /* line 47, ../scss/mobile/_page-mobile.scss */
+  .icon .st0 {
+    opacity: 1; }
+  /* line 51, ../scss/mobile/_page-mobile.scss */
+  .icon.grey .st0 {
+    opacity: 1;
+    fill: #999999; }
+    /* line 56, ../scss/mobile/_page-mobile.scss */
+    .icon.grey .st0:hover path, .icon.grey .st0:hover {
+      fill: #e6e6e6; }
+
+/* line 67, ../scss/mobile/_page-mobile.scss */
+.bootstrap-switch.bootstrap-switch-off:hover .bootstrap-switch-container span.bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-off.btn:focus .bootstrap-switch-container span.bootstrap-switch-label,
+.voucher-wrap .bootstrap-switch.bootstrap-switch-off.cta:focus .bootstrap-switch-container span.bootstrap-switch-label {
+  background: black none repeat scroll 0 0 !important; }
+
+/* line 77, ../scss/mobile/_page-mobile.scss */
+.container-fluid {
+  width: 960px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  /* line 82, ../scss/mobile/_page-mobile.scss */
+  .container-fluid h1, .container-fluid h2, .container-fluid h3, .container-fluid .notifications .mid a, .notifications .mid .container-fluid a, .container-fluid h4 {
+    margin: 0; }
+  /* line 86, ../scss/mobile/_page-mobile.scss */
+  .container-fluid .page-content {
+    padding-left: 35px; }
+
+/* line 96, ../scss/mobile/_page-mobile.scss */
+.bootstrap-switch .bootstrap-switch-container span.bootstrap-switch-label {
+  height: 24px;
+  line-height: 12px;
+  margin-top: -2px;
+  vertical-align: inherit;
+  width: 24px !important; }
+
+/* line 109, ../scss/mobile/_page-mobile.scss */
+.header {
+  background: #ffd600;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #3b3b3b;
+  text-shadow: none; }
+  /* line 119, ../scss/mobile/_page-mobile.scss */
+  .header span {
+    color: black;
+    line-height: 50px; }
+  /* line 124, ../scss/mobile/_page-mobile.scss */
+  .header.subpage {
+    background: black; }
+    /* line 128, ../scss/mobile/_page-mobile.scss */
+    .header.subpage p.arrow {
+      margin: 0;
+      position: absolute; }
+      /* line 132, ../scss/mobile/_page-mobile.scss */
+      .header.subpage p.arrow a {
+        border: none; }
+    /* line 137, ../scss/mobile/_page-mobile.scss */
+    .header.subpage a {
+      color: #f1c009 !important;
+      text-decoration: none;
+      line-height: 50px;
+      float: left;
+      padding-left: 20px;
+      padding-right: 20px; }
+      /* line 145, ../scss/mobile/_page-mobile.scss */
+      .header.subpage a svg {
+        vertical-align: middle; }
+    /* line 151, ../scss/mobile/_page-mobile.scss */
+    .header.subpage h1 {
+      color: #f1c009;
+      margin: 0;
+      line-height: 50px;
+      font-size: 17px; }
+
+/* line 161, ../scss/mobile/_page-mobile.scss */
+.nav {
+  position: relative; }
+  /* line 165, ../scss/mobile/_page-mobile.scss */
+  .nav.sidebar li:hover {
+    background-color: transparent; }
+  /* line 170, ../scss/mobile/_page-mobile.scss */
+  .nav.hamburger {
+    text-align: center;
+    background-color: #ffd600;
+    text-transform: uppercase; }
+    /* line 176, ../scss/mobile/_page-mobile.scss */
+    .nav.hamburger li a {
+      border: none;
+      color: black !important;
+      display: inline;
+      font-size: 23px;
+      font-weight: normal; }
+      /* line 185, ../scss/mobile/_page-mobile.scss */
+      .nav.hamburger li a:hover {
+        border-bottom: 6px solid black; }
+  /* line 192, ../scss/mobile/_page-mobile.scss */
+  .nav li {
+    height: 50px;
+    line-height: 50px; }
+    /* line 197, ../scss/mobile/_page-mobile.scss */
+    .nav li:hover, .nav li:focus {
+      background-color: #ffd600; }
+    /* line 201, ../scss/mobile/_page-mobile.scss */
+    .nav li a {
+      padding: 0;
+      margin: 0 10px;
+      color: #666666 !important;
+      text-shadow: none;
+      border-radius: 0;
+      border-bottom: 1px solid #e7e7e7;
+      font-weight: normal; }
+      /* line 211, ../scss/mobile/_page-mobile.scss */
+      .nav li a.first {
+        border-top: 1px solid #e7e7e7; }
+      /* line 215, ../scss/mobile/_page-mobile.scss */
+      .nav li a:hover, .nav li a:focus {
+        background-color: transparent;
+        border-bottom: 2px solid #ffd600; }
+      /* line 220, ../scss/mobile/_page-mobile.scss */
+      .nav li a.active {
+        border-bottom: 2px solid #ffd600;
+        color: black !important;
+        background-color: transparent !important; }
+    /* line 228, ../scss/mobile/_page-mobile.scss */
+    .nav li .glyphicon {
+      float: right;
+      line-height: 50px; }
+
+/* line 235, ../scss/mobile/_page-mobile.scss */
+.content {
+  clear: both;
+  text-shadow: none;
+  padding: 20px;
+  padding-bottom: 80px; }
+
+/* line 242, ../scss/mobile/_page-mobile.scss */
+.footer {
+  background: black;
+  height: 50px;
+  text-shadow: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  /* line 250, ../scss/mobile/_page-mobile.scss */
+  .footer .logo {
+    width: 100px;
+    position: absolute;
+    top: 6px;
+    left: 20px; }
+  /* line 257, ../scss/mobile/_page-mobile.scss */
+  .footer p.small {
+    color: #929191;
+    line-height: 50px;
+    float: right;
+    padding-right: 25px; }
+
+/* line 269, ../scss/mobile/_page-mobile.scss */
+#sticky-club-card .card-number {
+  word-spacing: 1px; }
+
+/* line 276, ../scss/mobile/_page-mobile.scss */
+.mobile-header {
+  height: 58px;
+  border-bottom: 6px solid black; }
+  /* line 280, ../scss/mobile/_page-mobile.scss */
+  .mobile-header .logo {
+    width: 130px;
+    height: 39px;
+    margin-top: 6px; }
+  /* line 286, ../scss/mobile/_page-mobile.scss */
+  .mobile-header .icon {
+    width: 25px; }
+    /* line 289, ../scss/mobile/_page-mobile.scss */
+    .mobile-header .icon:hover circle {
+      fill: black; }
+    /* line 293, ../scss/mobile/_page-mobile.scss */
+    .mobile-header .icon:hover path, .mobile-header .icon:hover #XMLID_931_ {
+      fill: #f1c009; }
+  /* line 298, ../scss/mobile/_page-mobile.scss */
+  .mobile-header .nav {
+    width: 100%;
+    padding: 0 10px; }
+    /* line 302, ../scss/mobile/_page-mobile.scss */
+    .mobile-header .nav .quick-link {
+      float: right; }
+      /* line 306, ../scss/mobile/_page-mobile.scss */
+      .mobile-header .nav .quick-link li {
+        margin: 0 10px;
+        display: inline-table; }
+        @media screen and (max-width: 332px) {
+          /* line 306, ../scss/mobile/_page-mobile.scss */
+          .mobile-header .nav .quick-link li {
+            margin: 0 5px; } }
+        /* line 314, ../scss/mobile/_page-mobile.scss */
+        .mobile-header .nav .quick-link li.last {
+          margin-left: 10px;
+          margin-right: 0; }
+    /* line 321, ../scss/mobile/_page-mobile.scss */
+    .mobile-header .nav li {
+      line-height: normal;
+      display: table; }
+      /* line 325, ../scss/mobile/_page-mobile.scss */
+      .mobile-header .nav li a {
+        border-bottom: none;
+        color: black !important;
+        display: table-cell;
+        vertical-align: middle; }
+        /* line 332, ../scss/mobile/_page-mobile.scss */
+        .mobile-header .nav li a.pnslogo {
+          margin: 0; }
+          /* line 334, ../scss/mobile/_page-mobile.scss */
+          .mobile-header .nav li a.pnslogo:hover {
+            border-bottom: none; }
+        /* line 340, ../scss/mobile/_page-mobile.scss */
+        .mobile-header .nav li a:hover {
+          border-bottom: 6px solid black; }
+        /* line 347, ../scss/mobile/_page-mobile.scss */
+        .mobile-header .nav li a.icons:hover {
+          border-bottom: none; }
+
+/* line 356, ../scss/mobile/_page-mobile.scss */
+.mobile-footer {
+  padding: 0 20px; }
+  /* line 360, ../scss/mobile/_page-mobile.scss */
+  .mobile-footer .logo {
+    width: 100px;
+    height: auto;
+    margin-top: 6px; }
+  /* line 365, ../scss/mobile/_page-mobile.scss */
+  .mobile-footer p.small {
+    margin: 0;
+    padding: 0; }
+
+/* line 372, ../scss/mobile/_page-mobile.scss */
+#mobile-pak .col-xs-12 {
+  padding: 0 !important; }
+/* line 375, ../scss/mobile/_page-mobile.scss */
+#mobile-pak .step-list {
+  margin-top: 20px; }
+
+/* line 384, ../scss/mobile/_page-mobile.scss */
+ul.step-list .step-block .step-number {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto 5px; }
+  /* line 390, ../scss/mobile/_page-mobile.scss */
+  ul.step-list .step-block .step-number h4 {
+    line-height: 30px; }
+/* line 394, ../scss/mobile/_page-mobile.scss */
+ul.step-list .step-block p.small {
+  color: #999999; }
+/* line 397, ../scss/mobile/_page-mobile.scss */
+ul.step-list .step-block.activated p.small {
+  color: #414141; }
+
+/* line 404, ../scss/mobile/_page-mobile.scss */
+.page-explanation {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 17.5px;
+  color: #999999;
+  font-family: texgyreheroscn-bold, Arial, Calibri, sans-serif; }
+
+/* line 415, ../scss/mobile/_page-mobile.scss */
+.page-container.ui-page.ui-body-c {
+  background: #F2F2F2 !important; }
+/* line 421, ../scss/mobile/_page-mobile.scss */
+.page-container.account-households .page-explanation {
+  margin-top: 9px; }
+  /* line 424, ../scss/mobile/_page-mobile.scss */
+  .page-container.account-households .page-explanation .pnstooltip {
+    margin-left: 7px; }
+    /* line 428, ../scss/mobile/_page-mobile.scss */
+    .page-container.account-households .page-explanation .pnstooltip svg, .page-container.account-households .page-explanation .pnstooltip img {
+      vertical-align: middle;
+      width: 20px; }
+/* line 437, ../scss/mobile/_page-mobile.scss */
+.page-container.account-households .action-link {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 10px;
+  color: #414141; }
+/* line 447, ../scss/mobile/_page-mobile.scss */
+.page-container.account-households .pnstooltip-trigger {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  font-size: 0.955555em;
+  line-height: 2em;
+  height: 2em;
+  color: #999999;
+  vertical-align: middle; }
+/* line 461, ../scss/mobile/_page-mobile.scss */
+.page-container.account-households .change-address-link a {
+  font-weight: normal;
+  white-space: nowrap;
+  text-decoration: underline; }
+/* line 472, ../scss/mobile/_page-mobile.scss */
+.page-container.security .pnstooltip {
+  margin-left: 7px; }
+  /* line 476, ../scss/mobile/_page-mobile.scss */
+  .page-container.security .pnstooltip svg, .page-container.security .pnstooltip img {
+    vertical-align: middle; }
+
+/* line 491, ../scss/mobile/_page-mobile.scss */
+#notification .table-col-2 {
+  width: 33.33%; }
+/* line 494, ../scss/mobile/_page-mobile.scss */
+#notification .table-col-3 {
+  width: 33.33%; }
+/* line 497, ../scss/mobile/_page-mobile.scss */
+#notification .table-col-4 {
+  width: 33.33%; }
+/* line 500, ../scss/mobile/_page-mobile.scss */
+#notification table.dashed tr {
+  height: 55px; }
+/* line 504, ../scss/mobile/_page-mobile.scss */
+#notification table.notified-tips > thead {
+  background: white; }
+/* line 507, ../scss/mobile/_page-mobile.scss */
+#notification table.notified-tips > thead > tr > th {
+  border-bottom: 0; }
+/* line 513, ../scss/mobile/_page-mobile.scss */
+#notification ul.icons li span {
+  top: 0;
+  vertical-align: top; }
+/* line 518, ../scss/mobile/_page-mobile.scss */
+#notification ul.icons li strong {
+  display: inline-block;
+  width: 85%; }
+/* line 532, ../scss/mobile/_page-mobile.scss */
+#notification .data-roll .col-xs-4 img.icon.big {
+  width: 40px; }
+@media only screen and (max-width: 368px) {
+  /* line 538, ../scss/mobile/_page-mobile.scss */
+  #notification .data-roll .col-xs-4 {
+    padding: 0; } }
+
+/* line 546, ../scss/mobile/_page-mobile.scss */
+.modal .modal-dialog {
+  width: 100%;
+  margin: 0; }
+
+/* line 551, ../scss/mobile/_page-mobile.scss */
+.form-group {
+  position: relative; }
+
+/* line 555, ../scss/mobile/_page-mobile.scss */
+.whats-this {
+  bottom: 14px;
+  position: absolute;
+  right: 15px; }
+
+/* line 561, ../scss/mobile/_page-mobile.scss */
+.info-mark {
+  bottom: 10px;
+  position: absolute;
+  right: -10px; }
+
+/* line 568, ../scss/mobile/_page-mobile.scss */
+.page-register h3, .page-register .notifications .mid a, .notifications .mid .page-register a, .page-register h4 {
+  margin: 0; }
+/* line 573, ../scss/mobile/_page-mobile.scss */
+.page-register .quick-link p {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 10px; }
+
+/* line 582, ../scss/mobile/_page-mobile.scss */
+.qtip-close {
+  background-color: transparent !important;
+  border: medium none;
+  cursor: pointer;
+  outline: medium none;
+  position: absolute;
+  right: -1px;
+  top: 2px;
+  z-index: 11; }
+
+/* line 594, ../scss/mobile/_page-mobile.scss */
+.radio:not(.disabled):hover label:before, .checkbox:not(.disabled):hover label:before {
+  border-color: #cccccc; }
+
+/* ------------------------------
+ * 02. Generic styles 
+ * ----------------------------- */
+/* line 48, ../scss/main-mobile.scss */
+body {
+  background: #f2f2f2; }
+
+/* line 51, ../scss/main-mobile.scss */
+.inline {
+  display: inline !important; }
+
+/* line 55, ../scss/main-mobile.scss */
+.block {
+  display: block !important; }
+
+/* line 59, ../scss/main-mobile.scss */
+.ui-shadow-inset {
+  box-shadow: none;
+  display: inline; }
+
+/* line 64, ../scss/main-mobile.scss */
+.pull-up-text {
+  margin-top: -20px;
+  padding-right: 30px; }
+
+/* line 69, ../scss/main-mobile.scss */
+.pull-up-icon {
+  margin-top: -26px; }
+
+/* line 73, ../scss/main-mobile.scss */
+.clearfix {
+  clear: both; }
+
+/* line 77, ../scss/main-mobile.scss */
+.nav.nav-pills.nav-stacked li a:hover {
+  border-bottom: none; }
+
+/* line 82, ../scss/main-mobile.scss */
+.actions .btn, .actions .voucher-wrap .cta, .voucher-wrap .actions .cta {
+  display: block;
+  margin-bottom: 20px; }
+
+/* line 88, ../scss/main-mobile.scss */
+.header.subpage h1 {
+  color: white; }
+
+/* line 93, ../scss/main-mobile.scss */
+.card .card-header, .card .inner-card {
+  padding: 20px; }
+
+/* line 97, ../scss/main-mobile.scss */
+.pnstooltip:hover #XMLID_62_ {
+  fill: #FFD600;
+  opacity: 1; }
+
+/* line 102, ../scss/main-mobile.scss */
+.pnstooltip:hover #XMLID_4905_ path {
+  fill: black; }
+
+/*# sourceMappingURL=main-mobile.css.map */

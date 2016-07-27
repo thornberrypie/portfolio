@@ -1,0 +1,148 @@
+$table-border-color: #f2f2f2;
+
+.table {
+  h3 {
+    margin: 0;
+    float: left;
+  }
+
+  em{
+    font-style: normal;
+    display: inline-block;
+  }
+
+  small{
+    color: $body-grey;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 70%;
+  }
+
+  /*& > thead > tr > th {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }
+
+  & > tbody > tr > td {
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }*/
+
+  th{
+    border: 0 !important;
+    a{
+      float: right;
+      display: block;
+      margin-top: 10px;
+      line-height: 12px;
+    }
+  }
+
+  tbody{
+    tr{
+      td{
+        border-top: 0 !important;
+        vertical-align: middle;
+        padding: 6px 18px;
+        border-bottom: 1px solid $table-border-color;
+        span{
+          width: 12px;
+          &.plus {
+            color: $green;
+            display: inline-block;
+          }
+          &.less {
+            color: $red;
+            display: inline-block;
+          }
+        }
+        &:first-child{
+          width: 124px;
+          border-right: 1px solid $table-border-color;
+        }
+      }
+      &:nth-child(odd){
+        background-color: $main-card-background;
+      }
+      &:nth-child(even){
+        background-color: #fff;
+      }
+      &:last-child{
+        td{
+          border-bottom: 0 !important;
+        }
+      }
+
+    }
+  }
+
+  &.dashed {
+    & > thead > tr > th {
+      border-top: 1px dashed #ddd !important;
+      border-bottom: 1px dashed #ddd;
+    }
+  }
+
+  &.table-striped{
+    th{
+      padding: 0 0 15px !important;
+    }
+  }
+
+  /*&.table-striped {
+    tbody {
+
+      tr {
+        td {
+          span {
+            &.plus {
+              color: $green;
+            }
+            &.less {
+              color: $red;
+            }
+          }
+        }    
+      }
+    }
+
+    thead > tr > {
+      th, td {
+        border: none;
+      }
+    }
+    
+    tbody > tr > {
+      th, td {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+    
+    tfoot > tr > {
+      th, td {
+        border-top: none;
+      }
+    }
+  }*/
+
+  
+
+  /*.col1{
+    width: 6%;
+  }
+  .col2{
+    width: 34%;
+  }
+  .col3{
+    width: 60%;
+    text-align: right;
+    small{
+      text-transform: uppercase;
+      font-size: 70%;
+    }
+  }*/
+
+}

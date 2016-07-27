@@ -1,0 +1,19 @@
+.about{
+	padding:12px 0;
+	background:linear-gradient(135deg, #75cdf5, #fff);
+	border-bottom-width:2px;
+	border-top-width:2px;
+}
+.about .inner{ z-index:99;}
+.about h3{
+	padding: 10px 0;
+}
+.about p{ width:88%; float:left; font-size:15px;}
+.about p.about-title{ font-weight:bold; font-style:italic;}
+.about p.tright{ float:none; text-align:left;}
+.about .open p{ visibility:visible;}
+.about-bg{
+	width:100%; height:100%; position:absolute; top:0; left:0;
+	background:none;
+	opacity:0.5; display:block;
+}

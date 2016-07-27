@@ -1,0 +1,77 @@
+@import 'vars';
+
+html, body, h1, h2, ul{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: $body-color;
+	font-family: $body-font;
+}
+img{
+	max-width: $padding*10;
+	height: auto;
+}
+h1{
+	padding: $padding 0 0;
+	font-size: 1.4em;
+	line-height: 1.6em;
+	color: white;
+	a{
+		&:hover, &:focus{
+			color: white;
+		}
+	}
+	
+}
+h2{
+	font-size: 1.4em;
+	margin: $padding 0;
+	min-height: $padding/2*12;
+}
+#header.navbar{
+	min-height: 95px;
+	.nav{
+		margin:0;
+		a{
+			padding-left: 0 !important;
+		}
+	}
+	.navbar-brand{
+		display: none;
+	}
+}
+#main{
+	padding-top: $header-height*2;
+	#searchResults{
+		padding-top: $padding*2;
+	}
+}
+#searchform{
+	padding: $padding/2 0 $padding;
+	#searchbox{
+		width: auto;
+		float: left;
+		margin-right: $padding/4;
+	}
+
+}
+.pagenum{
+	padding-bottom: $padding/2;
+	margin-bottom: $padding;
+	border-bottom: 1px solid $body-color;
+}
+.btn-more{
+	margin-bottom: $margin;
+}
+.btn:focus{
+	background: black;
+}
+.navbar-toggle{
+	margin-right: 0;
+}
+@media screen and (max-width:768px){
+	#main{
+		padding-top: $header-height*1.4;
+	}
+}
