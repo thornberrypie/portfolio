@@ -1,8 +1,16 @@
-.clear{ clear:both;}
-.clearfix:after{
-	content:"."; height:0; clear:both; display:block; visibility:hidden;
+.clear{
+	clear:both;
 }
-.hidden{ display:none !important;}
+.clearfix:after{
+	content:".";
+	height:0;
+	clear:both;
+	display:block;
+	visibility:hidden;
+}
+.hidden{
+	display:none !important;
+}
 .boldi{
 	font-weight:bold;
 	white-space:nowrap;

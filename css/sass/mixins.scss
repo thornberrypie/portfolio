@@ -28,6 +28,11 @@
 	background: -moz-linear-gradient($color1, $color2);
 	background: linear-gradient($color1, $color2);
 }
+@mixin parallax($p:50% 50%){
+	background-attachment: fixed;
+	background-position: $p;
+	background-repeat: no-repeat;
+}
 @mixin placeholder-default($color){
 	::-webkit-input-placeholder{ color:$color;}
 	::-moz-placeholder{ color:$color;}

@@ -8,7 +8,10 @@ nav ul{
 	width:300px;
 }
 nav li{
-	float:left; display:block; text-transform:uppercase; text-align:center;
+	float:left;
+	display:block;
+	text-transform:uppercase;
+	text-align:center;
 }
 nav li#nav-home{ width:68px;}
 nav li#nav-about{ width:74px;}
@@ -32,6 +35,10 @@ nav ul a:hover{
 	position:relative;
 }
 .ui-slider-handle{
-	width:12px; height:21px; position:absolute; top:-20px;
-	background:url(../images/slider.png) no-repeat 0 0; outline:0;
+	width:12px;
+	height:21px;
+	position:absolute;
+	top:-20px;
+	background:url(../images/slider.png) no-repeat 0 0;
+	outline:0;
 }

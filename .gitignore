@@ -1,2 +1,5 @@
 .DS_Store
+.sass-cache
+node_modules
+css/style.css.map
 _Reference/access.txt

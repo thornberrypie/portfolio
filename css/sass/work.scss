@@ -1,11 +1,13 @@
 .work{
 	background:#999 url(../images/feather.jpg) no-repeat right top;
-	color:#000; overflow:hidden; z-index:93; padding:16px 0 0;
-	position:relative; z-index:97;
-	border-top:1px solid #81C7E3; border-bottom:1px solid #81C7E3;
-	#sitebg-wrap{
-
-	}
+	color:#000;
+	overflow:hidden;
+	z-index:93;
+	padding:16px 0 0;
+	position:relative;
+	z-index:97;
+	border-top:1px solid #81C7E3;
+	border-bottom:1px solid #81C7E3;
 	.inner{
 		z-index:95;
 		p{
@@ -53,7 +55,7 @@
 				sup{
 					position:relative;
 					top:8px;
-					font-size:14px; 
+					font-size:14px;
 					font-style:italic;
 				}
 			}
@@ -186,9 +188,16 @@
 
 
 #sitebg{
-	width:1000%; height:100%; overflow:hidden; position:absolute; top:0; left:0;
+	width:1000%;
+	height:100%;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
 	background:url(../images/websites1y515.jpg) repeat center 0;
-	opacity:0.07; z-index:94; display:block;
+	opacity:0.07;
+	z-index:94;
+	display:block;
 	&.site5-bg, &.site6-bg, &.site7-bg, &.site8-bg{
 		background-image:url(../images/websites2y515.jpg);
 	}
@@ -208,5 +217,3 @@
 		background-position:center -1498px;
 	}
 }
-
-
