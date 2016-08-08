@@ -20,25 +20,29 @@ $theCountry = $_SESSION['country_array']['country']; ?>
 		<sup>*Dot indicates capital city</sup>
 	</div>
 	<div id="playScore">
-		<table id="scoreTable">
-			<tr><td><b>OVERALL SCORE:</b></td>
-			<td><?php echo intval($_SESSION['total_score']) ?>%</td>
-			<td><b>ROUNDS PLAYED:</b></td>
-			<td><?php echo $_SESSION['num_rounds'] ?></td></tr>
-		</table>
+		<div id="scoreTable">
+			<div class="row">
+				<span class="label"><b>OVERALL SCORE:</b></span>
+				<span class="value"><?php echo intval($_SESSION['total_score']) ?>%</span>
+			</div>
+			<div class="row">
+				<span class="label"><b>ROUNDS PLAYED:</b></span>
+				<span class="value"><?php echo $_SESSION['num_rounds'] ?></span>
+			</div>
+		</div>
 	</div>
 	<div id="endRound">
-		<div id="guessRight">Correct!</div>	
+		<div id="guessRight">Correct!</div>
 		<div id="guessWrong">It's <a href="javascript:popImage('http://en.wikipedia.org/wiki/<?php echo $theCountry ?>')">
 			<?php echo $theCountry ?>!</a></div><br /><br />
 		<a href="index.php?area=play&page=newGame&round=next"><span class="link">Next Round</span></a><br />
-	</div>	
-	
+	</div>
+
 </div>
 <div id="gameFrame">
-	<a href="index.php"><span class="button">Reset&nbsp;Game</span></a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+	<a href="index.php"><span class="button">Reset&nbsp;Game</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;
 	<a href="index.php?page=info"><span class="button">How&nbsp;To&nbsp;Play</span></a>
-</div>	
+</div>
 <div id="infoArea">
 	<div id="countryName"><h3>???????</h3></div>
 	<h4>OFFICIAL LANGUAGE</h4><div id="language"><h5>???????</h5></div>

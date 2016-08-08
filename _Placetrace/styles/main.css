@@ -38,7 +38,7 @@ sup{
 #footer{
 	position:absolute;
 	width:95%;
-	bottom:4px;
+	bottom:25px;
 	left:2.5%;
 	text-align:right;
 	color:#03C;
@@ -125,13 +125,17 @@ STYLES FOR THE HOME PAGE (index.php)
 		position:absolute;
 		bottom:30%;
 		left:43%;
-	}	#loginLink a{text-decoration:none;}
+	}	#loginLink a{
+		text-decoration:none;
+	}
 #homeButtonLeft{
 	position:absolute;
 	top:28%;
 	left:7%;
 	text-align: center;
-}	#homeButtonLeft a{text-decoration:none;}
+}	#homeButtonLeft a{
+		text-decoration:none;
+	}
 #homeButtonRight{
 	position:absolute;
 	top:28%;
@@ -157,7 +161,7 @@ STYLES FOR THE GAME PAGE (play.php)
 		height:auto;
 		display:block;
 		margin-left:20px;
-		max-height:100px;	
+		max-height:100px;
 	}
 	#header h1{
 		color:#909;
@@ -214,14 +218,7 @@ STYLES FOR THE GAME PAGE (play.php)
 		text-align:center;
 		font:120% sans-serif;
 		margin-bottom:0%;
-	}	
-#gameFrame{
-	width:95%;
-	position:absolute;
-	bottom:7%;
-	left:2.5%;
-	font-size:0.8em;
-}
+	}
 #restart{
 	position:absolute;
 	bottom:10%;
@@ -238,7 +235,7 @@ STYLES FOR THE GAME PAGE (play.php)
 	font:bold 180% monotype corsiva;
 	text-decoration:none;
 	display:none;
-}	
+}
 #playMap{
 	position:absolute;
 	width:50%;
@@ -253,15 +250,33 @@ STYLES FOR THE GAME PAGE (play.php)
 	}
 #playScore{
 	position:absolute;
-	width:95%;
-	left:2.5%;
-	bottom:2px;
+	width:66%;
+	left:3%;
+	bottom:12%;
 	color:#090;
-}	#playScore b{color:#039;}
+}	#playScore b{
+		color:#039;
+	}
 	#scoreTable{
 		color:#9A4636;
+		font-size:20px;
+		line-height:28px;
 		font-family:sans-serif;
 	}
+	#scoreTable .row:first-child{
+		position: relative;
+		bottom: 20px;
+	}
+	#scoreTable .value{
+		font-size: 28px;
+	}
+#gameFrame{
+	width:95%;
+	position:absolute;
+	bottom:0.7%;
+	left:2%;
+	font-size:0.8em;
+}
 #endRound{
 	position:absolute;
 	width:40%;
@@ -269,14 +284,16 @@ STYLES FOR THE GAME PAGE (play.php)
 	bottom:49%;
 	left:58%;
 	display:none;
-}	#endRound a:hover{text-decoration:underline;}
+}	#endRound a:hover{
+		text-decoration:underline;
+	}
 #guessRight, #guessWrong{
 	color:#9A4636;
 	font:180% sans-serif;
 	text-align:center;
 	display:none;
 }
-/*-------------------------------------------	
+/*-------------------------------------------
 STYLES FOR THE ADMIN PAGE (admin.php)
 ---------------------------------------------*/
 #adminHeader{
@@ -304,7 +321,7 @@ STYLES FOR THE ADMIN PAGE (admin.php)
 	position:absolute;
 	top:28%;
 	left:5%;
-	
+
 }	#adminButtons em{font:120% bold;}
 	#adminTable{margin-bottom:4%;}
 	#adminList{
