@@ -33,9 +33,9 @@ $(document).ready(function(){
 	});
 //Animate logo on mouseover
 	$('h1 a').mouseenter(function(){
-		$(this).children('.big').stop().animate({'top':0}, 222);
+		$(this).find('.big').stop().animate({'top':0}, 222);
 	}).mouseleave(function(){
-		$(this).children('.big').stop().animate({'top':'4px'}, 222);
+		$(this).find('.big').stop().animate({'top':'4px'}, 222);
 	});
 //Activate navigation slider and page scrolling when link is clicked
 	$('nav ul a').click(function(e){
@@ -138,10 +138,10 @@ function animateNavPage(id){
 
 //Animate thumbnail effects on mouseover/mouseout
 function animateThumb(e, f){ //e=(obj) element, f=(string) function(open or close)
-	var bg1 = e.children('.bg1');
-	var bg2 = e.children('.bg2');
-	var layer = e.children('.layer');
-	var text = e.children('p');
+	var bg1 = e.find('.bg1');
+	var bg2 = e.find('.bg2');
+	var layer = e.find('.layer');
+	var text = e.find('p');
 	var bg1val = 0; var bg2val = 0;
 	if(f == 'open'){
 		bg1val = '-100%'; bg2val = '100%';
@@ -230,7 +230,7 @@ function showSiteText(e){
 	var siteinfo = $('#siteinfo');
 	var siteInfoOrigHeight = siteinfo.height();
 	if(siteInfoOrigHeight != 0) siteinfo.removeAttr('style');
-	var info = e.children('.info').html();
+	var info = e.find('.info').html();
 	siteinfo.html(info);
 	var siteInfoNewHeight = siteinfo.height();
 	siteinfo.height(siteInfoOrigHeight);

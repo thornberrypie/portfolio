@@ -133,7 +133,7 @@ footer {
   width: 47%;
   float: left;
   font-size: 15px;
-  padding-left: 1%; }
+  padding-left: 13px; }
 
 .home-right {
   width: 48%;
@@ -155,7 +155,7 @@ p.intro span {
   display: block;
   position: absolute;
   top: 36px;
-  right: 0; }
+  right: 18px; }
 
 .home-right h3 span {
   display: none;
@@ -163,15 +163,16 @@ p.intro span {
   line-height: 32px; }
 
 .currentStatus {
-  width: 96%;
   float: left;
   display: block;
   border-radius: 7px;
-  margin: 10px 0 6px;
-  padding: 10px;
-  text-align: center;
+  margin: 20px 0 6px;
+  padding: 10px 0 12px;
+  text-align: center !important;
   border: 1px solid #cdcdcd;
   background: linear-gradient(135deg, #75cdf5, #fff); }
+  .currentStatus h4 {
+    padding: 0 10px; }
 
 .a0 {
   top: 45px;
@@ -398,10 +399,6 @@ p.intro span {
   font-weight: bold;
   font-style: italic; }
 
-.about p.tright {
-  float: none;
-  text-align: left; }
-
 .about .open p {
   visibility: visible; }
 
@@ -426,10 +423,13 @@ p.intro span {
   border-top: 1px solid #81C7E3;
   border-bottom: 1px solid #81C7E3; }
   .work .inner {
-    z-index: 95; }
+    z-index: 95;
+    text-align: center; }
     .work .inner p {
       color: white;
       padding: 10px 0 12px; }
+      .work .inner p.selection {
+        text-align: center; }
   .work #siteinfo {
     font: normal 15px/24px "Open Sans";
     display: block; }
@@ -443,22 +443,26 @@ p.intro span {
   .work ul {
     color: white;
     display: block;
-    margin: 24px 0 0; }
+    margin: 24px auto 0; }
     .work ul li {
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      -ms-border-radius: 6px;
-      border-radius: 6px;
-      width: 169px;
-      height: 133px;
-      float: left;
+      margin: 0;
+      padding: 0;
+      width: 25%;
       display: block;
-      position: relative;
-      cursor: pointer;
-      overflow: hidden;
-      margin: 0 78px 54px 0;
-      border: 1px solid #666;
+      float: left;
       text-align: center; }
+      .work ul li .box {
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        border-radius: 6px;
+        width: 169px;
+        height: 133px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0 auto 43px;
+        border: 1px solid #666; }
       .work ul li p {
         text-shadow: 1px 1px 1px 1px #000;
         position: absolute;
@@ -542,28 +546,6 @@ p.intro span {
         background-position: -676px -133px; }
       .work ul li.stoptober .img {
         background-position: -845px -133px; }
-  @media screen and (max-width: 980px) {
-    .work ul {
-      margin: 16px 0 0; }
-      .work ul li {
-        margin: 0 3% 27px 0; }
-        .work ul li .button {
-          display: none; }
-        .work ul li.site4, .work ul li.site8, .work ul li.site12 {
-          margin-right: 3%; } }
-  @media screen and (max-width: 600px) {
-    .work ul {
-      text-align: center; }
-      .work ul li {
-        margin-left: 10%;
-        margin-right: 0; }
-        .work ul li.site1, .work ul li.site, .work ul li.site10 {
-          margin-right: 0; } }
-  @media screen and (max-width: 480px) {
-    .work ul li {
-      margin-left: auto;
-      margin-right: auto !important;
-      float: none; } }
 
 #sitebg {
   width: 1000%;
@@ -609,7 +591,7 @@ p.intro span {
   position: relative;
   z-index: 99; }
   .contact ul li {
-    padding: 10px 0 10px 10px;
+    padding: 10px 0;
     font-size: 14px; }
     .contact ul li a {
       padding-left: 20px;
@@ -670,7 +652,8 @@ nav {
   float: right;
   padding: 63px 0 0;
   position: relative;
-  right: 33px; }
+  right: 33px;
+  margin-bottom: 7px !important; }
 
 nav ul {
   width: 300px; }
@@ -734,9 +717,6 @@ nav ul a:hover {
   .home-right h3 {
     width: 99%; }
 
-  fieldset.currentStatus {
-    width: 95%; }
-
   .download {
     text-align: left; }
 
@@ -744,7 +724,10 @@ nav ul a:hover {
     font-size: 14px; }
 
   nav {
-    right: 30px; } }
+    right: 30px; }
+
+  .work ul li {
+    width: 33.333%; } }
 @media screen and (max-width: 768px) {
   .home {
     margin: 102px 0 0; }
@@ -752,18 +735,24 @@ nav ul a:hover {
   .home-right {
     display: none; }
 
-  .home-left {
-    width: 92%; }
+  .home-left, .about p {
+    width: 100%; }
 
-  header h2 {
+  header h2, .home-left {
     padding-left: 0; }
+
+  .inner {
+    padding: 0 10px; }
 
   header .inner {
     width: 100%;
     padding: 0; }
 
   .hgroup {
-    padding-left: 30px; } }
+    padding-left: 30px; }
+
+  .work ul li {
+    width: 50%; } }
 @media screen and (max-width: 680px) {
   nav {
     padding-top: 20px;
@@ -775,11 +764,7 @@ nav ul a:hover {
   .hgroup {
     float: none; }
 
-  aside {
-    width: 95%;
-    float: none; }
-
-  header .inner {
+  .inner {
     text-align: center; }
 
   .hgroup {
@@ -788,32 +773,29 @@ nav ul a:hover {
   .home {
     margin: 146px 0 0; } }
 @media screen and (max-width: 480px) {
-  fieldset.currentStatus {
-    width: 90%; }
-
   .currentStatus .boldi {
     text-align: center;
     padding-right: 5px; }
 
-  .contact label {
-    display: block; }
-
-  .contact-bg {
-    right: 0; }
-
   .contact aside {
     float: none;
     width: 100%; }
-
-  .contact li {
-    padding: 10px;
+  .contact ul li {
+    padding: 10px 5px !important;
     text-align: center; }
+  .contact label {
+    display: block; }
+  .contact .contact-bg {
+    right: 0; }
 
   .download {
     text-align: center;
     padding-bottom: 10px; }
 
   .download .heading {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .work ul li {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

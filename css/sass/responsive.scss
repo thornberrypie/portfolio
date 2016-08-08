@@ -13,9 +13,6 @@
 	.home-right h3{
 		width:99%;
 	}
-	fieldset.currentStatus{
-		width:95%;
-	}
 	.download{
 		text-align:left;
 	}
@@ -24,22 +21,26 @@
 	}
 	nav{
 		right: 30px;
-
+	}
+	.work ul li{
+		width: 33.333%;
 	}
 }
 @media screen and (max-width:768px){
-
 	.home{
 		margin:102px 0 0;
 	}
 	.home-right{
 		display:none;
 	}
-	.home-left{
-		width:92%;
+	.home-left, .about p{
+		width:100%;
 	}
-	header h2{
+	header h2, .home-left{
 		padding-left: 0;
+	}
+	.inner{
+		padding: 0 10px;
 	}
 	header .inner{
 		width:100%;
@@ -48,7 +49,9 @@
 	.hgroup{
 		padding-left: 30px;
 	}
-
+	.work ul li{
+		width: 50%;
+	}
 }
 @media screen and (max-width:680px){
 	nav{
@@ -61,11 +64,7 @@
 	.hgroup{
 		float:none;
 	}
-	aside{
-		width:95%;
-		float:none;
-	}
-	header .inner{
+	.inner{
 		text-align: center;
 	}
 	.hgroup{
@@ -76,26 +75,28 @@
 	}
 }
 @media screen and (max-width:480px){
-	fieldset.currentStatus{
-		width:90%;
-	}
 	.currentStatus .boldi{
 		text-align:center;
 		padding-right:5px;
 	}
-	.contact label{
-		display:block;
-	}
-	.contact-bg{
-		right:0;
-	}
-	.contact aside{
-		float: none;
-		width: 100%;
-	}
-	.contact li{
-		padding: 10px;
-		text-align: center;
+	.contact{
+		aside{
+			float: none;
+			width: 100%;
+		}
+		ul{
+			li{
+				padding: 10px 5px !important;
+				text-align: center;
+			}
+		}
+		label{
+			display:block;
+		}
+		.contact-bg{
+			right:0;
+		}
+
 	}
 	.download{
 		text-align: center;
@@ -103,5 +104,8 @@
 	}
 	.download .heading{
 		padding-left: 0;
+	}
+	.work ul li{
+		width: 100%;
 	}
 }
