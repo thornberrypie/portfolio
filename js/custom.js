@@ -10,7 +10,7 @@ var emailName = '<a href="mailto:gdthornber@gmail.com" target="_blank">gdthornbe
 var emailDomain = 'gmail.com</a>';
 var phoneNumber = '+64 (0)21 0292 4529';
 var fbAddress = '<a href="http://www.facebook.com/thornberrypie" target="_blank">facebook.com/thornberrypie</a>';
-var acronyms = ['PHP','HTML','CSS','SQL','AJAX','XML','LAMP','SEO','OOP','MVC','JSON','LESS','CMS','REST','CDN','JS','URL','CURL','GUI','WYSIWYG','SOAP','AGILE','GUI','SASS','YAML','WWW','PSD','CLI','PDF','DNS','HTTP','API','RSS','MAMP'];
+var acronyms = ['PHP','HTML','CSS','SQL','CMS','XML','LAMP','SEO','JS','MVC','JSON','LESS','AJAX','REST','CDN','OOP','URL','CURL','GUI','WYSIWYG','SOAP','AGILE','GUI','SASS','YAML','WWW','PSD','CLI','PDF','DNS','HTTP','API','RSS','MAMP'];
 $(document).ready(function(){
 //Preload images for "work" section
 	var thumbs = new Image(); thumbs.src = '/images/thumbs-169x133-2015.jpg';
@@ -205,9 +205,10 @@ function setUpPage(){
 	var speed = acronymFadeSpeed;
 	var fadeDif = speed/acronyms.length;
 	var fadeDelay = 0;
+	var acronymBox = $('.home-right .acronyms');
 //Add acronyms to DOM
 	for(i=0; i < acronyms.length; i++){
-		$('.home-right h3').append('<span class="a'+i+'">'+acronyms[i]+' </span>');
+		acronymBox.append('<span class="a'+i+'">'+acronyms[i]+' </span>');
 	}
 //Scroll to start page
 	animateNavPage(startPage);
@@ -215,7 +216,7 @@ function setUpPage(){
 	$('.intro1').delay(1333).fadeIn(666, function(){
 		$('.intro2').delay(999).fadeIn(666, function(){
 		//Progressively fade acronyms in faster
-			$('.home-right h3 span').each(function(){
+			acronymBox.find('span').each(function(){
 				$(this).delay(fadeDelay).fadeIn(speed);
 				speed = Math.round(speed-fadeDif);
 				fadeDelay = fadeDelay+speed;

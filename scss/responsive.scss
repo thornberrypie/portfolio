@@ -10,68 +10,65 @@
 	.home-left{
 		width:40%;
 	}
-	.home-right h3{
-		width:99%;
+	.home-right{
+		h3.acronyms{
+			right: 12%;
+		}
 	}
 	.download{
 		text-align:left;
-	}
-	p.intro{
-		font-size: 14px;
-	}
-	nav{
-		right: 30px;
 	}
 	.work ul li{
 		width: 33.333%;
 	}
 }
 @media screen and (max-width:768px){
+	.header{
+		position: relative;
+		h2{
+			padding-left: 0;
+		}
+		.inner{
+			width:100%;
+			padding:0;
+		}
+	}
+	.inner{
+		text-align: center;
+		padding: 0 10px;
+	}
+	.hgroup{
+		padding: 3px 0 0;
+		float: none;
+	}
+	.nav-wrapper{
+		width: 100%;
+		nav{
+			padding-top: 12px;
+			margin-bottom: 12px;
+		}
+	}
 	.home{
-		margin:102px 0 0;
+		margin:0;
 	}
 	.home-right{
 		display:none;
 	}
-	.home-left, .about p{
+	.home-left{
+		padding: 0 12px;
 		width:100%;
-	}
-	header h2, .home-left{
-		padding-left: 0;
-	}
-	.inner{
-		padding: 0 10px;
-	}
-	header .inner{
-		width:100%;
-		padding:0;
-	}
-	.hgroup{
-		padding-left: 30px;
 	}
 	.work ul li{
 		width: 50%;
 	}
-}
-@media screen and (max-width:680px){
-	nav{
-		padding-top: 20px;
-		float: none;
-		margin: 0 auto;
-		width:300px;
-		right: 0;
+	.about p{
+		width:100%;
 	}
-	.hgroup{
-		float:none;
-	}
-	.inner{
-		text-align: center;
-	}
-	.hgroup{
-		padding-left: 0;
-	}
-	.home{
-		margin: 146px 0 0;
+	.contact{
+		aside{
+			position: relative;
+			right: 12%;
+		}
 	}
 }
 @media screen and (max-width:480px){
@@ -83,6 +80,7 @@
 		aside{
 			float: none;
 			width: 100%;
+			right: 0;
 		}
 		ul{
 			li{

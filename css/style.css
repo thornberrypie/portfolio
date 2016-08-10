@@ -25,7 +25,7 @@ html, body {
   height: 100%; }
 
 body {
-  font: normal 18px/24px "Open Sans",Helvetica,Arial,sans-serif;
+  font: normal 17px/25px "Source Sans Pro", Helvetica, Arial, sans-serif;
   text-align: center;
   color: #333;
   background: #EEE7D5; }
@@ -45,29 +45,27 @@ h1, h2 {
 
 h1 {
   font-size: 30px; }
-
-h1 span {
-  text-decoration: underline; }
-
-h1 span.big {
-  font-size: 38px;
-  position: relative;
-  top: 4px;
-  text-decoration: none; }
-
-h1 a {
-  color: #14A1D0 !important;
-  transition: all 0.5s ease; }
-
-h1 a span.big, h1 a:hover {
-  text-shadow: 1px 1px #000; }
+  h1 a {
+    color: #14A1D0 !important;
+    transition: all 0.5s ease;
+    display: block; }
+    h1 a span {
+      text-decoration: underline; }
+      h1 a span.big {
+        font-size: 38px;
+        position: relative;
+        top: 4px;
+        text-decoration: none;
+        text-shadow: 1px 1px #000; }
+    h1 a:hover {
+      text-shadow: 1px 1px #000; }
 
 h2 {
   font: normal 18px/48px "Source Sans Pro",Helvetica,Arial,sans-serif;
   padding: 0; }
 
 h4 {
-  font-size: 16px;
+  font-size: 17px;
   color: #515150; }
 
 ul, li {
@@ -76,19 +74,6 @@ ul, li {
 p {
   padding: 7px 0;
   color: #515150; }
-
-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #fff;
-  opacity: 0.95;
-  z-index: 99;
-  border-bottom: 1px solid #eee7d5; }
-
-header h2 {
-  padding-left: 5px; }
 
 noscript {
   padding-top: 16px;
@@ -122,6 +107,18 @@ footer {
   font-size: 12px;
   background: #ede7db url(../images/cloud-windmills.jpg) repeat-x center 100%; }
 
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0.95;
+  z-index: 99;
+  border-bottom: 1px solid #eee7d5; }
+  .header h2 {
+    padding-left: 5px; }
+
 .home {
   background: #D9D9D7 url(../images/fern-leaf.jpg) no-repeat 0 100%;
   padding: 12px 0;
@@ -132,7 +129,6 @@ footer {
 .home-left {
   width: 47%;
   float: left;
-  font-size: 15px;
   padding-left: 13px; }
 
 .home-right {
@@ -140,27 +136,26 @@ footer {
   float: right;
   min-height: 313px;
   min-width: 340px;
-  position: relative; }
-
-p.intro {
-  color: #333;
-  padding-left: 36px; }
-
-p.intro span {
-  display: none; }
-
-.home-right h3 {
-  width: 90%;
-  height: 266px;
-  display: block;
-  position: absolute;
-  top: 36px;
-  right: 18px; }
-
-.home-right h3 span {
-  display: none;
-  position: absolute;
-  line-height: 32px; }
+  position: relative;
+  text-align: center; }
+  .home-right p.intro {
+    color: #333;
+    font-family: "Reem Kufi";
+    font-size: 19px; }
+    .home-right p.intro span {
+      display: none; }
+  .home-right h3.acronyms {
+    width: 90%;
+    height: 266px;
+    display: block;
+    position: absolute;
+    top: 36px;
+    right: 18px;
+    font-family: "Open Sans"; }
+    .home-right h3.acronyms span {
+      display: none;
+      position: absolute;
+      line-height: 32px; }
 
 .currentStatus {
   float: left;
@@ -172,7 +167,8 @@ p.intro span {
   border: 1px solid #cdcdcd;
   background: linear-gradient(135deg, #75cdf5, #fff); }
   .currentStatus h4 {
-    padding: 0 10px; }
+    padding: 0 10px;
+    font-weight: 400; }
 
 .a0 {
   top: 45px;
@@ -648,45 +644,42 @@ p.intro span {
 .download .heading {
   padding-left: 12px; }
 
-nav {
+.nav-wrapper {
+  width: 48%;
   float: right;
-  padding: 63px 0 0;
-  position: relative;
-  right: 33px;
-  margin-bottom: 7px !important; }
-
-nav ul {
-  width: 300px; }
-
-nav li {
-  float: left;
-  display: block;
-  text-transform: uppercase;
   text-align: center; }
+  .nav-wrapper nav {
+    padding: 63px 0 0;
+    margin: 0 auto 7px;
+    width: 300px; }
+    .nav-wrapper nav ul {
+      width: 300px; }
+      .nav-wrapper nav ul li {
+        float: left;
+        display: block;
+        text-transform: uppercase;
+        text-align: center; }
+        .nav-wrapper nav ul li a {
+          color: #5a782a;
+          text-decoration: none;
+          cursor: pointer;
+          font: normal 16px/18px "Reem Kufi"; }
+          .nav-wrapper nav ul li a:hover {
+            color: #737372;
+            border-bottom: 2px solid #737372; }
+        .nav-wrapper nav ul li#nav-home {
+          width: 68px; }
+        .nav-wrapper nav ul li#nav-about {
+          width: 74px; }
+        .nav-wrapper nav ul li#nav-work {
+          width: 68px; }
+        .nav-wrapper nav ul li#nav-contact {
+          width: 90px; }
 
-nav li#nav-home {
-  width: 68px; }
-
-nav li#nav-about {
-  width: 74px; }
-
-nav li#nav-work {
-  width: 68px; }
-
-nav li#nav-contact {
-  width: 90px; }
-
-nav ul a {
-  color: #5a782a;
-  text-decoration: none;
-  cursor: pointer;
-  font: normal 16px/18px "Source Sans Pro"; }
-
-nav ul a:hover {
-  color: #737372;
-  border-bottom: 2px solid #737372; }
-
-.nav-home #nav-home a, .nav-about #nav-about a, .nav-work #nav-work a, .nav-contact #nav-contact a {
+.nav-home #nav-home a,
+.nav-about #nav-about a,
+.nav-work #nav-work a,
+.nav-contact #nav-contact a {
   color: #14A1D0;
   border-bottom: 2px solid #14A1D0; }
 
@@ -714,64 +707,56 @@ nav ul a:hover {
   .home-left {
     width: 40%; }
 
-  .home-right h3 {
-    width: 99%; }
+  .home-right h3.acronyms {
+    right: 12%; }
 
   .download {
     text-align: left; }
 
-  p.intro {
-    font-size: 14px; }
-
-  nav {
-    right: 30px; }
-
   .work ul li {
     width: 33.333%; } }
 @media screen and (max-width: 768px) {
+  .header {
+    position: relative; }
+    .header h2 {
+      padding-left: 0; }
+    .header .inner {
+      width: 100%;
+      padding: 0; }
+
+  .inner {
+    text-align: center;
+    padding: 0 10px; }
+
+  .hgroup {
+    padding: 3px 0 0;
+    float: none; }
+
+  .nav-wrapper {
+    width: 100%; }
+    .nav-wrapper nav {
+      padding-top: 12px;
+      margin-bottom: 12px; }
+
   .home {
-    margin: 102px 0 0; }
+    margin: 0; }
 
   .home-right {
     display: none; }
 
-  .home-left, .about p {
+  .home-left {
+    padding: 0 12px;
     width: 100%; }
 
-  header h2, .home-left {
-    padding-left: 0; }
-
-  .inner {
-    padding: 0 10px; }
-
-  header .inner {
-    width: 100%;
-    padding: 0; }
-
-  .hgroup {
-    padding-left: 30px; }
-
   .work ul li {
-    width: 50%; } }
-@media screen and (max-width: 680px) {
-  nav {
-    padding-top: 20px;
-    float: none;
-    margin: 0 auto;
-    width: 300px;
-    right: 0; }
+    width: 50%; }
 
-  .hgroup {
-    float: none; }
+  .about p {
+    width: 100%; }
 
-  .inner {
-    text-align: center; }
-
-  .hgroup {
-    padding-left: 0; }
-
-  .home {
-    margin: 146px 0 0; } }
+  .contact aside {
+    position: relative;
+    right: 12%; } }
 @media screen and (max-width: 480px) {
   .currentStatus .boldi {
     text-align: center;
@@ -779,7 +764,8 @@ nav ul a:hover {
 
   .contact aside {
     float: none;
-    width: 100%; }
+    width: 100%;
+    right: 0; }
   .contact ul li {
     padding: 10px 5px !important;
     text-align: center; }

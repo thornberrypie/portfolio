@@ -1,0 +1,61 @@
+.nav-wrapper{
+	width:$right-col-width;
+	float: right;
+	text-align: center;
+	nav{
+		padding:63px 0 0;
+		margin: 0 auto 7px;
+		width: 300px;
+		ul{
+			width:300px;
+			li{
+				float:left;
+				display:block;
+				text-transform:uppercase;
+				text-align:center;
+				a{
+					color:#5a782a;
+					text-decoration:none;
+					cursor:pointer;
+					font:normal 16px/18px "Reem Kufi";
+					&:hover{
+						color:#737372;
+						border-bottom:2px solid #737372;
+					}
+				}
+				&#nav-home{
+					width:68px;
+				}
+				&#nav-about{
+					width:74px;
+				}
+				&#nav-work{
+					width:68px;
+				}
+				&#nav-contact{
+					width:90px;
+				}
+
+			}
+		}
+	}
+}
+.nav-home #nav-home a,
+.nav-about #nav-about a,
+.nav-work #nav-work a,
+.nav-contact #nav-contact a{
+	color:#14A1D0;
+	border-bottom:2px solid #14A1D0;
+}
+#nav-slider{
+	width:287px;
+	position:relative;
+}
+.ui-slider-handle{
+	width:12px;
+	height:21px;
+	position:absolute;
+	top:-20px;
+	background:url(../images/slider.png) no-repeat 0 0;
+	outline:0;
+}

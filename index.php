@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<link rel="icon" type="image/png" href="favicon.ico" />
-	<link rel="stylesheet" media="all" href="css/style.css?v=6" />
-	<link rel="stylesheet" media="print" href="css/print.css" />
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css" />
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" href="favicon.ico" >
+	<link rel="stylesheet" media="all" href="css/style.css?v=6">
+	<link rel="stylesheet" media="print" href="css/print.css">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><link rel="stylesheet" media="all" href="css/ie.css" /><![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="js/custom.js?v=4"></script>
-	<title>Graeme Thornber - Web Developer</title>
-	<meta name="description" content="Portfolio of Auckland based Web Developer Graeme Thornber, Wordpress specialist and front-end expert." />
-	<meta name="keywords" content="Web Developer, portfolio, PHP, CSS3, HTML5, Javascript, jQuery, Node.js, AngularJS, Auckland, New Zealand, Wordpress" />
+	<title>Graeme Thornber: Kiwi Web Expert</title>
+	<meta name="author" content="Thornberry Pie">
+	<meta name="description" content="Portfolio of Auckland Web Developer Graeme Thornber: Front-end expert and PHP CMS specialist." />
 </head>
 <body>
 	<!-- Google Tag Manager -->
@@ -26,10 +27,10 @@
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-M59LS4');</script>
 	<!-- End Google Tag Manager -->
-	<header>
+	<header class="header">
 		<div class="inner clearfix">
 			<div class="hgroup">
-				<h1><a href=""><span class="big">G</span><span>raeme</span> <span class="big">T</span><span>hornber</span></a></h1>
+				<h1><a href="/"><span class="big">G</span><span>raeme</span> <span class="big">T</span><span>hornber</span></a></h1>
 				<h2>Kiwi Web Developer</h2>
 			</div>
 			<div class="nav-wrapper">
@@ -50,10 +51,10 @@
 		<div class="inner clearfix">
 			<div class="home-right">
 				<p class="intro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such as:</span></p>
-				<h3></h3>
+				<h3 class="acronyms"></h3>
 			</div>
 			<div class="home-left">
-				<p>I'm a Front End/UX/PHP Developer with over a decade of industry experience currently based in Epsom,&nbsp;Auckland.</p>
+				<p>I'm a Front End/UX/PHP Developer with over a decade of industry experience currently based in Central&nbsp;Auckland.</p>
 				<p>In both small business and corporate environments I've had the opportunity to work with many local and international clients such as Barkers, BNZ, Burger King, Chelsea Sugar, Delegat, Deutsche Telekom, Fonterra, Frucor, Huffer, Meredith Connell, Methven, Overland Footwear, Roche, Toyota, Spark and&nbsp;Volkswagen.
 				<p>I stand out amongst developers due to my social nature, ability to communicate effectively, experience acting, singing and <a href="http://youtube.graemethornber.com" target="_blank">playing&nbsp;guitar</a>.</p>
 			</div>
@@ -63,7 +64,9 @@
 		</div>
 	</article>
 	<article class="work">
-		<div id="sitebg-wrap"><div id="sitebg" class="hidden"></div></div>
+		<div id="sitebg-wrap">
+			<div id="sitebg" class="hidden"></div>
+		</div>
 		<div class="inner">
 			<p class="selection">Here's a brief chronological selection of my work from the past few years:</p>
 			<div id="siteinfo"></div>
@@ -187,7 +190,7 @@
 		</div>
 	</article>
 	<footer>
-		<p>&copy; 2015 Graeme Thornber. All Rights Reserved</p>
+		<p>&copy; <?php echo date('Y') ?> Thornberry Pie. All Rights Reserved</p>
 	</footer>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
