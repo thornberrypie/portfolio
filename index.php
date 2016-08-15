@@ -197,6 +197,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="js/custom.js?v=4"></script>
+	<script src="js/functions.js?v=4"></script>
 	<!-- Google Tag Manager -->
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M59LS4"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

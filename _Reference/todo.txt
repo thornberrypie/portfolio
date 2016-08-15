@@ -1,7 +1,9 @@
-Put acronyms in HTML instead of JS
+Compress JS and CSS
 
 New skills to add to CV:
 Frameworks: Instapage
 Deployment: Bundle, Capistrano (Ruby)
 Marketing tools: Adwords, pixel trackers etc
 Pure.css
+
+Put acronyms in HTML instead of JS
