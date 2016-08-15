@@ -1,0 +1,24 @@
+@import url('reset.css');
+body{ text-align:center;}
+.element-invisible{ display:none;}
+#wrapper{ width:900px; margin:0 auto; text-align:left;}
+#logo{ width:200px; height:100px; float:left;}
+#navigation{ width:400px; float:left;}
+#admin-menu{ float:right;}
+#main-content{}
+#content{ width:700px; float:left;}
+#sidebar{ width:200px; float:right;}
+#sidebar ul.menu li{ float:none; padding:7px 0 0; text-align:right;}
+
+/*-------------------Form Styles----------------------*/
+input.form-text{ border:1px solid #333;}
+
+/*---------------Product List------------------*/
+.views-row{ width:300px; float:left; margin-right:40px;}
+.display-price{ float:none; text-align:left;}
+.product-content img{ opacity:0.03; float:none;}
+
+.view-content:after{
+	content:"."; height:0; clear:both; 
+	display:block; visibility:hidden;
+}

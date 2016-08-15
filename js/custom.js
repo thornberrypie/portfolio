@@ -101,6 +101,9 @@ $(document).ready(function(){
 		}
 	}); //end $('.work li').click(function(){
 
+	//Do some stuff when guitar link is hovered over
+	activateGuitarHover();
+
 	//Run function on resize
 	var timeoutid;
 	$(window).resize(function() {
@@ -110,6 +113,23 @@ $(document).ready(function(){
 }); //end $(document).ready(function(){
 
 /*--------------------------Functions------------------------------*/
+
+function activateGuitarHover(){
+	var link = $('#guitar-link');
+	link.mousenter(function(){
+		fadeInGatPic();
+	}).mouseleave(function(){
+		fadeOutGatPic();
+	});
+}
+
+function fadeInGatPic(){
+
+}
+
+function fadeOutGatPic(){
+
+}
 
 function animateBackground(bg){
 	var speed = siteImgWidth*10;
@@ -181,8 +201,6 @@ function scrollPage(pos){
 	var headerHeight = $('header').height();
 	var newPos = pos - (headerHeight);
 	$('html,body').animate({scrollTop: newPos}, navSpeed);
-	//Detect change nav depending on scroll position when scrolling has ended
-
 }
 
 function setupContact(){

@@ -56,7 +56,7 @@
 			<div class="home-left">
 				<p>I'm a Front End/UX/PHP Developer with over a decade of industry experience currently based in Central&nbsp;Auckland.</p>
 				<p>In both small business and corporate environments I've had the opportunity to work with many local and international clients such as Barkers, BNZ, Burger King, Chelsea Sugar, Delegat, Deutsche Telekom, Fonterra, Frucor, Huffer, Meredith Connell, Methven, Overland Footwear, Roche, Toyota, Spark and&nbsp;Volkswagen.
-				<p>I stand out amongst developers due to my social nature, ability to communicate effectively, experience acting, singing and <a href="http://youtube.graemethornber.com" target="_blank">playing&nbsp;guitar</a>.</p>
+				<p>I stand out amongst developers due to my social nature, ability to communicate effectively, experience acting, singing and <a href="http://youtube.graemethornber.com" target="_blank" id="guitar-link">playing&nbsp;guitar</a>.</p>
 			</div>
 			<aside class="currentStatus">
 				<h4>One of my latest home projects uses AngularJS, Google&nbsp;Maps, and a database from the NZ Ministry&nbsp;of&nbsp;Education. <a href="http://schools.graemethornber.com" target="_blank">View it here</a>.<span class="extra">...and a blast from the past: <a target="_blank" href="http://placetrace.graemethornber.com">my first PHP site</a>, now one decade&nbsp;old.</span></h4>

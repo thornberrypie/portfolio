@@ -1,0 +1,7 @@
+Put acronyms in HTML instead of JS
+
+New skills to add to CV:
+Frameworks: Instapage
+Deployment: Bundle, Capistrano (Ruby)
+Marketing tools: Adwords, pixel trackers etc
+Pure.css
