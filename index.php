@@ -3,50 +3,24 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="icon" type="image/png" href="favicon.ico" >
+	<link rel="icon" type="image/png" href="images/gt-profile-196.png">
+	<link rel="apple-touch-icon-precomposed" href="images/gt-profile-180.png">
 	<link rel="stylesheet" media="all" href="css/style.css?v=6">
 	<link rel="stylesheet" media="print" href="css/print.css">
 	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
-	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><link rel="stylesheet" media="all" href="css/ie.css" /><![endif]-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script src="js/custom.js?v=4"></script>
+	<!--[if IE]>
+		<link rel="shortcut icon" href="favicon.ico">
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script><link rel="stylesheet" media="all" href="css/ie.css" />
+	<![endif]-->
 	<title>Graeme Thornber: Kiwi Web Expert</title>
 	<meta name="author" content="Thornberry Pie">
 	<meta name="description" content="Portfolio of Auckland Web Developer Graeme Thornber: Front-end expert and PHP CMS specialist." />
 </head>
 <body>
-	<!-- Google Tag Manager -->
-	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M59LS4"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-M59LS4');</script>
-	<!-- End Google Tag Manager -->
-	<header class="header">
-		<div class="inner clearfix">
-			<div class="hgroup">
-				<h1><a href="/"><span class="big">G</span><span>raeme</span> <span class="big">T</span><span>hornber</span></a></h1>
-				<h2>Kiwi Web Developer</h2>
-			</div>
-			<div class="nav-wrapper">
-				<nav class="nav-home">
-					<div id="nav-slider"></div>
-					<ul class="clearfix">
-						<li id="nav-home"><a>Home</a></li>
-						<li id="nav-work"><a>Work</a></li>
-						<li id="nav-about"><a>About</a></li>
-						<li id="nav-contact"><a>Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-			<noscript><br /><br /><br />{Please enable Javascript}</noscript>
-		</div>
-	</header>
 	<article class="home">
 		<div class="inner clearfix">
 			<div class="home-right">
@@ -54,21 +28,21 @@
 				<h3 class="acronyms"></h3>
 			</div>
 			<div class="home-left">
-				<p>I'm a Front End/UX/PHP Developer with over a decade of industry experience currently based in Central&nbsp;Auckland.</p>
-				<p>In both small business and corporate environments I've had the opportunity to work with many local and international clients such as Barkers, BNZ, Burger King, Chelsea Sugar, Delegat, Deutsche Telekom, Fonterra, Frucor, Huffer, Meredith Connell, Methven, Overland Footwear, Roche, Toyota, Spark and&nbsp;Volkswagen.
-				<p>I stand out amongst developers due to my social nature, ability to communicate effectively, experience acting, singing and <a href="http://youtube.graemethornber.com" target="_blank" id="guitar-link">playing&nbsp;guitar</a>.</p>
+				<p>I'm a Front End/UX/PHP Web Developer with a firm arsenal of Digital Web skills and over a decade of industry experience creating Web Applications in New Zealand and Europe.</p>
+				<p>I've worked with several Digital Agencies and corporates in Auckland, Wellington and Bonn, Germany for clients such as Barkers, BNZ, Burger King, Chelsea Sugar, Delegat, Deutsche Telekom, Fonterra, Frucor, Huffer, Meredith Connell, Methven, Overland Footwear, Roche, Toyota, Spark and&nbsp;Volkswagen.
+				<p>I stand out amongst developers due to my social nature, ability to communicate effectively, experience acting, singing and <a href="http://youtube.graemethornber.com" target="_blank">playing&nbsp;guitar</a>.</p>
 			</div>
-			<aside class="currentStatus">
+			<!--<aside class="currentStatus">
 				<h4>One of my latest home projects uses AngularJS, Google&nbsp;Maps, and a database from the NZ Ministry&nbsp;of&nbsp;Education. <a href="http://schools.graemethornber.com" target="_blank">View it here</a>.<span class="extra">...and a blast from the past: <a target="_blank" href="http://placetrace.graemethornber.com">my first PHP site</a>, now one decade&nbsp;old.</span></h4>
-			</aside>
+			</aside>-->
 		</div>
 	</article>
-	<article class="work">
+	<article class="work article">
 		<div id="sitebg-wrap">
 			<div id="sitebg" class="hidden"></div>
 		</div>
 		<div class="inner">
-			<p class="selection">Here's a brief chronological selection of my work from the past few years:</p>
+			<p class="selection">Some of my work from the past few years:</p>
 			<div id="siteinfo"></div>
 			<ul class="clearfix">
 				<li class="site1 ffs">
@@ -146,9 +120,9 @@
 			</ul>
 		</div>
 	</article>
-	<article class="about">
+	<article class="about article">
 		<div class="inner clearfix">
-			<h3>A bit about me...</h3>
+			<!--<h3>A bit about me...</h3>-->
 			<p>Originally from England, I grew up in Auckland and have also lived in Wellington, London, and Bonn,&nbsp;Germany.</p>
 			<p class="tright">After finishing my studies at Howick College, I worked in hospitality for several years before receiving my Diploma in Web Development from <strike>Natcoll</strike>... <strike>Yoobee</strike>... Logical? in&nbsp;2006.</p>
 			<p>Since then I have worked in a variety of capacities with digital agencies, corporates and startups in all aspects of producing modern web applications built using fancy tech like AngularJS, Apache, concrete5, CSS3, Drupal, Git, Grunt, Gulp, HTML5, Javascript, Joomla, jQuery, MySQL, Node.js and PHP, Silverstripe and&nbsp;Wordpress.</p>
@@ -156,7 +130,7 @@
 			<div class="suburbs hidden">Arch Hill, Glenfield, Grafton, Howick, Morningside, Mt Eden, Musick Point, New Lynn, Pakuranga, Ponsonby, Red Hill, Sunnynook, Torbay, Totara&nbsp;Vale</div>
 		</div>
 	</article>
-	<article class="contact">
+	<article class="contact article">
 		<div class="inner">
 			<aside class="clearfix">
 				<div class="download clearfix">
@@ -165,7 +139,7 @@
 					<a class="ms" href="assets/CV/2016/Graeme-Thornber-CV2016-word.zip" target="_blank" title="Microsoft Word format"></a>
 				</div>
 			</aside>
-			<ul>
+			<ul class="deats">
 				<li class="con-em">
 					<label class="heading">Write me:</label>
 					<span>View e-mail address</span>
@@ -176,22 +150,62 @@
 					<span>View phone number</span>
 					<em>&nbsp;</em>
 				</li>
-				<li class="link linkedin">
-					<a href="https://www.linkedin.com/pub/graeme-thornber/87/519/9a3" target="_blank">https://www.linkedin.com/pub/graeme-thornber/87/519/9a3</a>
-				</li>
-				<li class="link stackoverflow">
-					<a href="http://stackoverflow.com/users/3352080/thornberrypie" target="_blank">http://stackoverflow.com/users/3352080/thornberrypie</a>
-				</li>
-				<li class="link github">
-					<a href="https://github.com/ThornberryPie" target="_blank">https://github.com/ThornberryPie</a>
+				<li class="con-so clearfix">
+					<label class="heading">Stalk me:</label>
+					<ul class="social">
+						<li class="link facebook">
+							<a href="//www.facebook.com/thornberrypie" target="_blank">facebook.com/thornberrypie</a>
+						</li>
+						<li class="link linkedin">
+							<a href="//www.linkedin.com/in/thornberrypie" target="_blank">linkedin.com/in/thornberrypie</a>
+						</li>
+						<li class="link github">
+							<a href="//github.com/ThornberryPie" target="_blank">github.com/thornberrypie</a>
+						</li>
+						<li class="link stackoverflow">
+							<a href="//stackoverflow.com/users/3352080/thornberrypie" target="_blank">stackoverflow.com/users/3352080/thornberrypie</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 			<div class="contact-bg"></div>
 		</div>
 	</article>
+	<header class="header">
+		<div class="inner clearfix">
+			<div class="hgroup">
+				<h1><a href="/"><span class="big">G</span><span>raeme</span> <span class="big">T</span><span>hornber</span></a></h1>
+				<h2>Kiwi Web Developer</h2>
+			</div>
+			<div class="nav-wrapper">
+				<nav class="nav-home">
+					<div id="nav-slider"></div>
+					<ul class="clearfix">
+						<li id="nav-home"><a>Home</a></li>
+						<li id="nav-work"><a>Work</a></li>
+						<li id="nav-about"><a>About</a></li>
+						<li id="nav-contact"><a>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<noscript><br /><br /><br />{Please enable Javascript}</noscript>
+		</div>
+	</header>
 	<footer>
 		<p>&copy; <?php echo date('Y') ?> Thornberry Pie. All Rights Reserved</p>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/custom.js?v=4"></script>
+	<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M59LS4"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-M59LS4');</script>
+	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

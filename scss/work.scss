@@ -16,11 +16,14 @@
 			padding:10px 0 12px;
 			&.selection{
 				text-align: center;
+				font-family: $reem-font;
+				font-size: 20px;
+				@include text-shadow($dark);
 			}
 		}
 	}
 	#siteinfo{
-		font:normal 15px/24px "Open Sans";
+		font:normal 15px/24px $reem-font;
 		display:block;
 		a{
 			color: white;
@@ -37,6 +40,7 @@
 		color: white;
 		display:block;
 		margin:24px auto 0;
+		font-family: $reem-font;
 		li{
 			margin: 0;
 			padding: 0;

@@ -8,26 +8,21 @@ html, body{
 	height:100%;
 }
 body{
-	font:normal 17px/25px $body-font;
+	font:normal 16px/24px $body-font;
 	text-align:center;
-	color:#333;
-	background:#EEE7D5;
+	color: $dark;
+	background:$peach;
 }
-noscript{
-	width:100%;
-	height:20px;
-	position:absolute;
-	top:0;
-	left:0;
-	color:#E22900;
-	text-align:center;
-	font-weight:bold;
-}
-h1, h2{
-	line-height:40px;
+a{
+	word-wrap: break-word;
+	color: $blue;
+	&:focus, &:hover{
+		outline: none;
+	}
 }
 h1{
 	font-size:30px;
+	line-height:44px;
 	a{
 		color:#14A1D0 !important;
 		transition: all 0.5s ease;
@@ -48,12 +43,12 @@ h1{
 	}
 }
 h2{
-	font:normal 18px/48px "Source Sans Pro",Helvetica,Arial,sans-serif;
+	font:normal 18px/48px $reem-font;
 	padding:0;
 }
 h4{
 	font-size: 17px;
-	color: #515150;
+	color: $dark;
 }
 ul, li{
 	list-style:none;
@@ -63,7 +58,18 @@ p{
 	color: #515150;
 }
 noscript{
+	width:100%;
+	height:20px;
+	position:absolute;
+	top:0;
+	left:0;
+	color:#E22900;
+	text-align:center;
 	padding-top:16px;
+	font: bold 16px/16px $body-font;
+}
+noscript{
+
 	font-size:16px;
 	line-height:16px;
 }

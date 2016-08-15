@@ -25,26 +25,20 @@ html, body {
   height: 100%; }
 
 body {
-  font: normal 17px/25px "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font: normal 16px/24px "Source Sans Pro", Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #333;
+  color: #515150;
   background: #EEE7D5; }
 
-noscript {
-  width: 100%;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #E22900;
-  text-align: center;
-  font-weight: bold; }
-
-h1, h2 {
-  line-height: 40px; }
+a {
+  word-wrap: break-word;
+  color: #14a1d0; }
+  a:focus, a:hover {
+    outline: none; }
 
 h1 {
-  font-size: 30px; }
+  font-size: 30px;
+  line-height: 44px; }
   h1 a {
     color: #14A1D0 !important;
     transition: all 0.5s ease;
@@ -61,7 +55,7 @@ h1 {
       text-shadow: 1px 1px #000; }
 
 h2 {
-  font: normal 18px/48px "Source Sans Pro",Helvetica,Arial,sans-serif;
+  font: normal 18px/48px "Reem Kufi";
   padding: 0; }
 
 h4 {
@@ -76,7 +70,17 @@ p {
   color: #515150; }
 
 noscript {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #E22900;
+  text-align: center;
   padding-top: 16px;
+  font: bold 16px/16px "Source Sans Pro", Helvetica, Arial, sans-serif; }
+
+noscript {
   font-size: 16px;
   line-height: 16px; }
 
@@ -93,19 +97,21 @@ noscript {
 .heading {
   font-size: 18px; }
 
-.about, .work, .contact {
+.article {
   position: relative;
   z-index: 97;
   background: url(../images/bg-pattern.jpg) repeat center 0;
-  border-top: 1px solid #81C7E3;
-  border-bottom: 1px solid #81C7E3; }
+  border-top: 1px solid #81c7e3;
+  border-bottom: 1px solid #81c7e3; }
 
 footer {
-  height: 170px;
+  height: 100px;
   text-align: center;
   line-height: 28px;
   font-size: 12px;
   background: #ede7db url(../images/cloud-windmills.jpg) repeat-x center 100%; }
+  footer p {
+    color: white; }
 
 .header {
   width: 100%;
@@ -115,16 +121,16 @@ footer {
   background: #fff;
   opacity: 0.95;
   z-index: 99;
-  border-bottom: 1px solid #eee7d5; }
+  border-bottom: 1px solid #EEE7D5; }
   .header h2 {
     padding-left: 5px; }
 
 .home {
-  background: #D9D9D7 url(../images/fern-leaf.jpg) no-repeat 0 100%;
+  background: #d9d9d7 url(../images/fern-leaf.jpg) no-repeat 0 100%;
   padding: 12px 0;
   margin: 102px 0 0;
-  border-top: 1px solid #81C7E3;
-  border-bottom: 1px solid #81C7E3; }
+  border-top: 1px solid #81c7e3;
+  border-bottom: 1px solid #81c7e3; }
 
 .home-left {
   width: 47%;
@@ -139,7 +145,7 @@ footer {
   position: relative;
   text-align: center; }
   .home-right p.intro {
-    color: #333;
+    color: #515150;
     font-family: "Reem Kufi";
     font-size: 19px; }
     .home-right p.intro span {
@@ -151,7 +157,7 @@ footer {
     position: absolute;
     top: 36px;
     right: 18px;
-    font-family: "Open Sans"; }
+    font-family: "Reem Kufi"; }
     .home-right h3.acronyms span {
       display: none;
       position: absolute;
@@ -388,8 +394,7 @@ footer {
 
 .about p {
   width: 88%;
-  float: left;
-  font-size: 15px; }
+  float: left; }
 
 .about p.about-title {
   font-weight: bold;
@@ -425,9 +430,12 @@ footer {
       color: white;
       padding: 10px 0 12px; }
       .work .inner p.selection {
-        text-align: center; }
+        text-align: center;
+        font-family: "Reem Kufi";
+        font-size: 20px;
+        text-shadow: 1px 1px #515150; }
   .work #siteinfo {
-    font: normal 15px/24px "Open Sans";
+    font: normal 15px/24px "Reem Kufi";
     display: block; }
     .work #siteinfo a {
       color: white;
@@ -439,7 +447,8 @@ footer {
   .work ul {
     color: white;
     display: block;
-    margin: 24px auto 0; }
+    margin: 24px auto 0;
+    font-family: "Reem Kufi"; }
     .work ul li {
       margin: 0;
       padding: 0;
@@ -579,55 +588,65 @@ footer {
     width: 61px;
     height: 60px;
     display: inline-block;
-    background: url(../images/icons.png) no-repeat 0 0;
+    background: url(../images/gt-icons.png) no-repeat 0 -16px;
     margin: 3px 3px 0 9px; }
     .contact aside a.pdf {
-      background-position: 0 -60px; }
+      background-position: 0 -76px; }
+.contact label {
+  padding-right: 9px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 24px;
+  width: 112px;
+  text-align: right; }
 .contact ul {
   position: relative;
   z-index: 99; }
   .contact ul li {
     padding: 10px 0;
-    font-size: 14px; }
+    font-size: 14px;
+    position: relative; }
     .contact ul li a {
       padding-left: 20px;
       color: #14a1d0; }
+    .contact ul li span {
+      cursor: pointer;
+      color: #009EE3;
+      text-decoration: underline;
+      line-height: 24px; }
+    .contact ul li em {
+      display: none;
+      line-height: 24px;
+      display: inline-block; }
+    .contact ul li.con-so label, .contact ul li.con-so ul {
+      float: left;
+      display: block; }
     .contact ul li.link {
-      padding: 5px 0 0 10px; }
-      .contact ul li.link.linkedin a {
-        background: url(../images/icon-linkedin.png) no-repeat 0 2px; }
-      .contact ul li.link.stackoverflow a {
-        background: url(../images/icon-stackoverflow.png) no-repeat 0 2px; }
-      .contact ul li.link.github a {
-        background: url(../images/icon-github.png) no-repeat 0 2px; }
-@media screen and (max-width: 980px) {
-  .contact .inner {
-    padding: 10px 2.5% 20px; } }
-@media screen and (max-width: 768px) {
-  .contact ul li label {
-    font-size: 15px;
-    line-height: 17px;
-    padding-right: 0;
-    display: block; } }
-
-.contact label {
-  padding-right: 9px;
-  font-weight: bold;
-  display: inline-block;
-  line-height: 24px; }
-
-.contact ul span {
-  cursor: pointer;
-  color: #009EE3;
-  text-decoration: underline;
-  line-height: 24px; }
-
-.contact ul em {
-  display: none;
-  line-height: 24px;
-  display: inline-block; }
-
-.contact-bg {
+      padding: 0 0 6px 6px; }
+      .contact ul li.link a:before {
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        content: " ";
+        left: 0;
+        top: 6px;
+        background: url(../images/gt-icons.png) no-repeat 0 0; }
+      .contact ul li.link.linkedin a:before {
+        background-position: -16px 0; }
+      .contact ul li.link.github a:before {
+        background-position: -32px 0; }
+      .contact ul li.link.stackoverflow a:before {
+        background-position: -48px 0; }
+    .contact ul li ul {
+      display: inline-block; }
+.contact .download {
+  width: 170px;
+  margin: 0 auto;
+  text-align: left; }
+  .contact .download .heading {
+    padding-left: 12px; }
+.contact .contact-bg {
   width: 195px;
   height: 160px;
   position: absolute;
@@ -635,14 +654,6 @@ footer {
   right: 5%;
   opacity: 0.3;
   z-index: 98; }
-
-.download {
-  width: 170px;
-  margin: 0 auto;
-  text-align: left; }
-
-.download .heading {
-  padding-left: 12px; }
 
 .nav-wrapper {
   width: 48%;
@@ -680,8 +691,8 @@ footer {
 .nav-about #nav-about a,
 .nav-work #nav-work a,
 .nav-contact #nav-contact a {
-  color: #14A1D0;
-  border-bottom: 2px solid #14A1D0; }
+  color: #14a1d0;
+  border-bottom: 2px solid #14a1d0; }
 
 #nav-slider {
   width: 287px;
@@ -714,15 +725,16 @@ footer {
     text-align: left; }
 
   .work ul li {
-    width: 33.333%; } }
+    width: 33.333%; }
+
+  .contact .inner {
+    padding: 10px 2.5% 20px; } }
 @media screen and (max-width: 768px) {
-  .header {
-    position: relative; }
-    .header h2 {
-      padding-left: 0; }
-    .header .inner {
-      width: 100%;
-      padding: 0; }
+  .header h2 {
+    padding-left: 0; }
+  .header .inner {
+    width: 100%;
+    padding: 0; }
 
   .inner {
     text-align: center;
@@ -739,7 +751,7 @@ footer {
       margin-bottom: 12px; }
 
   .home {
-    margin: 0; }
+    margin: 147px 0 0; }
 
   .home-right {
     display: none; }
@@ -755,31 +767,46 @@ footer {
     width: 100%; }
 
   .contact aside {
-    position: relative;
-    right: 12%; } }
+    float: none;
+    width: 100%;
+    right: 0; }
+  .contact .download {
+    text-align: center;
+    padding-bottom: 10px; }
+    .contact .download .heading {
+      padding-left: 0; }
+  .contact ul li {
+    padding: 7px 0 !important;
+    text-align: center;
+    line-height: 16px;
+    font-size: 13px; }
+    .contact ul li label {
+      font-size: 15px;
+      line-height: 17px;
+      padding-right: 0;
+      display: block;
+      width: 100%;
+      text-align: center; }
+    .contact ul li a {
+      padding-left: 0; }
+    .contact ul li.con-so label, .contact ul li.con-so ul {
+      float: none; }
+    .contact ul li.con-so label {
+      padding-bottom: 6px; }
+    .contact ul li.link {
+      padding-left: 0; }
+      .contact ul li.link a:before {
+        position: relative;
+        margin: 0 auto;
+        top: -4px; }
+  .contact ul.deats li span {
+    font-size: 15px; }
+  .contact .contact-bg {
+    right: 0; } }
 @media screen and (max-width: 480px) {
   .currentStatus .boldi {
     text-align: center;
     padding-right: 5px; }
-
-  .contact aside {
-    float: none;
-    width: 100%;
-    right: 0; }
-  .contact ul li {
-    padding: 10px 5px !important;
-    text-align: center; }
-  .contact label {
-    display: block; }
-  .contact .contact-bg {
-    right: 0; }
-
-  .download {
-    text-align: center;
-    padding-bottom: 10px; }
-
-  .download .heading {
-    padding-left: 0; }
 
   .work ul li {
     width: 100%; } }

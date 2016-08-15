@@ -1,5 +1,5 @@
 .nav-wrapper{
-	width:$right-col-width;
+	width:48%;
 	float: right;
 	text-align: center;
 	nav{
@@ -14,13 +14,13 @@
 				text-transform:uppercase;
 				text-align:center;
 				a{
-					color:#5a782a;
+					color:$green;
 					text-decoration:none;
 					cursor:pointer;
-					font:normal 16px/18px "Reem Kufi";
+					font:normal 16px/18px $reem-font;
 					&:hover{
-						color:#737372;
-						border-bottom:2px solid #737372;
+						color:$nav-link-hover;
+						border-bottom:2px solid $nav-link-hover;
 					}
 				}
 				&#nav-home{
@@ -44,8 +44,8 @@
 .nav-about #nav-about a,
 .nav-work #nav-work a,
 .nav-contact #nav-contact a{
-	color:#14A1D0;
-	border-bottom:2px solid #14A1D0;
+	color:$blue;
+	border-bottom:2px solid $blue;
 }
 #nav-slider{
 	width:287px;

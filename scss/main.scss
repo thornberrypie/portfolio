@@ -1,3 +1,33 @@
+.inner{
+	width:920px;
+	margin:0 auto;
+	text-align:left;
+	position:relative;
+}
+.hgroup{
+	float:left;
+	padding:10px 0 0 6px;
+}
+.heading{
+	font-size:18px;
+}
+.article{
+	position:relative;
+	z-index:97;
+	background:url(../images/bg-pattern.jpg) repeat center 0;
+	border-top:1px solid $aqua;
+	border-bottom:1px solid $aqua;
+}
+footer{
+	height:100px;
+	text-align:center;
+	line-height:28px;
+	font-size:12px;
+	background:#ede7db url(../images/cloud-windmills.jpg) repeat-x center 100%;
+	p{
+		color: white;
+	}
+}
 .header{
 	width:100%;
 	position:fixed;
@@ -6,17 +36,17 @@
 	background:#fff;
 	opacity:0.95;
 	z-index:99;
-	border-bottom: 1px solid #eee7d5;
+	border-bottom: 1px solid $peach;
 	h2{
 		padding-left: 5px;
 	}
 }
 .home{
-	background:#D9D9D7 url(../images/fern-leaf.jpg) no-repeat 0 100%;
+	background:$light url(../images/fern-leaf.jpg) no-repeat 0 100%;
 	padding:12px 0;
 	margin:102px 0 0;
-	border-top:1px solid #81C7E3;
-	border-bottom:1px solid #81C7E3;
+	border-top:1px solid $aqua;
+	border-bottom:1px solid $aqua;
 }
 .home-left{
 	width:47%;
@@ -31,8 +61,8 @@
 	position:relative;
 	text-align: center;
 	p.intro{
-		color: #333;
-		font-family: "Reem Kufi";
+		color: $dark;
+		font-family: $reem-font;
 		font-size: 19px;
 		span{
 			display:none;
@@ -45,7 +75,7 @@
 		position:absolute;
 		top:36px;
 		right: 18px;
-		font-family: "Open Sans";
+		font-family: $reem-font;
 		span{
 			display:none;
 			position:absolute;
@@ -60,7 +90,7 @@
 	margin:20px 0 6px;
 	padding: 10px 0 12px;
 	text-align: center !important;
-	border: 1px solid #cdcdcd;
+	border: 1px solid $grey;
 	background:linear-gradient(135deg, #75cdf5, #fff);
 	h4{
 		padding: 0 10px;

@@ -116,7 +116,7 @@ $(document).ready(function(){
 
 function activateGuitarHover(){
 	var link = $('#guitar-link');
-	link.mousenter(function(){
+	link.mouseenter(function(){
 		fadeInGatPic();
 	}).mouseleave(function(){
 		fadeOutGatPic();
@@ -151,7 +151,7 @@ function animateNavPage(id){
 		$('#nav-slider').slider({ value:navPos[navid] });
 	});
 //Activate page scrolling
-	var page = $("article[class='"+id+"']");
+	var page = $('article.'+id);
 	var pos = page.offset().top;
 	scrollPage(pos);
 }
