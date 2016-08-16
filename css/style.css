@@ -435,13 +435,15 @@ footer {
         font-size: 20px;
         text-shadow: 1px 1px #515150; }
   .work #siteinfo {
-    font: normal 15px/24px "Reem Kufi";
-    display: block; }
+    font: normal 16px/24px "Reem Kufi";
+    display: block;
+    padding: 0 36px;
+    text-align: justify; }
     .work #siteinfo a {
       color: white;
       font-style: italic; }
       .work #siteinfo a:hover {
-        color: black; }
+        color: #515150; }
       strong .work #siteinfo a {
         font-size: 17px; }
   .work ul {
@@ -502,7 +504,7 @@ footer {
         opacity: 0.82; }
       .work ul li .img {
         z-index: 33;
-        background: url(../images/thumbs-169x133-nov2015.jpg) no-repeat 0 0; }
+        background-image: url(../images/thumbs-169x133.jpg); }
       .work ul li .button {
         background: url(../images/play.png) no-repeat center;
         z-index: 39; }
@@ -545,7 +547,7 @@ footer {
         background-position: -169px -133px; }
       .work ul li.fingertapps .img {
         background-position: -338px -133px; }
-      .work ul li.overland .img {
+      .work ul li.dryitonline .img {
         background-position: -507px -133px; }
       .work ul li.ffs .img {
         background-position: -676px -133px; }
@@ -562,18 +564,60 @@ footer {
   background: url(../images/websites1y515.jpg) repeat center 0;
   opacity: 0.07;
   z-index: 94;
-  display: block; }
-  #sitebg.site5-bg, #sitebg.site6-bg, #sitebg.site7-bg, #sitebg.site8-bg {
-    background-image: url(../images/websites2y515.jpg); }
-  #sitebg.site9-bg, #sitebg.site10-bg, #sitebg.site11-bg, #sitebg.site12-bg {
-    background-image: url(../images/websites3y515.jpg); }
-  #sitebg.site1-bg, #sitebg.site5-bg, #sitebg.site9-bg {
-    background-position: center 47px; }
-  #sitebg.site2-bg, #sitebg.site6-bg, #sitebg.site10-bg {
+  display: block;
+  /*&.site, &.site, &.site, &.site{
+  	background-image:url(../images/websites2y515.jpg);
+  }
+  &.site, &.site1, &.site, &.site2{
+  	background-image:url(../images/websites3y515.jpg);
+  }
+  &.site1, &.site5, &.site9{
+  	background-position:center 47px;
+  }
+  &.site2, &.site6, &.site10{
+  	background-position:center -468px;
+  }
+  &.site3, &.site7, &.site11{
+  	background-position:center -983px;
+  }
+  &.site4, &.site8, &.site12{
+  	background-position:center -1498px;
+  }*/ }
+  #sitebg.ffs-bg {
+    background-image: url(../images/websites3y515.jpg);
     background-position: center -468px; }
-  #sitebg.site3-bg, #sitebg.site7-bg, #sitebg.site11-bg {
+  #sitebg.stoptober-bg {
+    background-image: url(../images/websites3y515.jpg);
+    background-position: center -1498px; }
+  #sitebg.mc-bg {
+    background-image: url(../images/websites3y515.jpg);
     background-position: center -983px; }
-  #sitebg.site4-bg, #sitebg.site8-bg, #sitebg.site12-bg {
+  #sitebg.coats-bg {
+    background-image: url(../images/websites3y515.jpg);
+    background-position: center 47px; }
+  #sitebg.liftoff-bg {
+    background-image: url(../images/websites1y515.jpg);
+    background-position: center -983px; }
+  #sitebg.sff-bg {
+    background-image: url(../images/websites1y515.jpg);
+    background-position: center 47px; }
+  #sitebg.scopevisio-bg {
+    background-image: url(../images/websites1y515.jpg);
+    background-position: center -468px; }
+  #sitebg.nzso-bg {
+    background-image: url(../images/websites2y515.jpg);
+    background-position: center 47px; }
+  #sitebg.toptobottom-bg {
+    background-image: url(../images/websites1y515.jpg);
+    background-position: center -1498px; }
+  #sitebg.hito-bg {
+    background-image: url(../images/websites2y515.jpg);
+    background-position: center -468px; }
+  #sitebg.fingertapps-bg {
+    background-image: url(../images/websites2y515.jpg);
+    background-position: center -983px; }
+  #sitebg.dryitonline-bg {
+    background-image: url(../images/websites2y515.jpg);
     background-position: center -1498px; }
 
 .contact .inner {
@@ -640,12 +684,15 @@ footer {
         background-position: -48px 0; }
     .contact ul li ul {
       display: inline-block; }
+  .contact ul.deats label {
+    font-family: "Reem Kufi"; }
 .contact .download {
-  width: 170px;
+  width: 158px;
   margin: 0 auto;
   text-align: left; }
   .contact .download .heading {
-    padding-left: 12px; }
+    font-family: "Reem Kufi";
+    text-align: center; }
 .contact .contact-bg {
   width: 195px;
   height: 160px;

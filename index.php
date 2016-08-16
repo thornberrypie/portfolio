@@ -111,10 +111,10 @@
 						<div class="info"><strong><a class="siteTitle" href="http://www.fingertapps.com" target="_blank" title="Visit Website">www.fingertapps.com</a></strong> - As the sole developer on this site, I produced a custom Wordpress theme in a single day and integrated the homepage rotator using jQuery's cycle plugin the next day to finish it off.</div>
 					</div>
 				</li>
-				<li class="site12 overland">
+				<li class="site12 dryitonline">
 					<div class="box">
-						<p>Overland<br /><sup>E-Commerce<br />Front-End / ASP.NET</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a href="http://www.overlandfootwear.co.nz" target="_blank" title="Visit Website">www.overlandfootwear.co.nz</a></strong> - This was one of the 50+ sites I skinned at <a href="http://www.solutionists.co.nz" target="_blank">Solutionists</a> in 2009/2010. Working from PSD files, I wrote the entire front-end for these sites and integrated the code into Solutionist's custom .NET e-commerce CMS framework. I also scripted countless HTML email campaign templates for <a href="http://www.overlandfootwear.co.nz" target="_blank" title="Visit Website">Overland</a> and <a href="http://www.barkersonline.co.nz/" target="_blank">Barkers</a>. Other sites I worked on at Solutionists were <a href="http://www.hufferstore.com/" target="_blank">Huffer&nbsp;Store</a>, <a href="http://www.deucegeneration.com/" target="_blank">Deuce&nbsp;Shoes</a>, <a href="http://www.bigmanclothing.co.nz/" target="_blank">Big&nbsp;Man&nbsp;Clothing</a>, <a href="http://www.dryitonline.co.nz/" target="_blank">DryItOnline</a>, <a href="http://www.daisybaby.co.nz/" target="_blank">Daisy&nbsp;Baby</a>, and <a href="http://www.publichealthworkforce.org.nz/" target="_blank">NZ&nbsp;Ministry&nbsp;of&nbsp;Health</a>.</div>
+						<p>DryitOnline<br /><sup>E-Commerce SaaS<br />Front-End / ASP.NET</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
+						<div class="info"><strong><a href="http://www.dryitonline.co.nz/" target="_blank" title="Visit Website">DryItOnline</a></strong> - As well as this site, in 2009 and 2010 I wrote the entire front-end for over 50 websites with <a href="http://www.solutionists.co.nz" target="_blank">Solutionists</a> and integrated these into their custom .NET e-commerce CMS framework. I also scripted over 100 HTML EDMs in Campaign Monitor for <a href="http://www.overlandfootwear.co.nz" target="_blank" title="Visit Website">Overland Footwear</a>, <a href="http://www.barkersonline.co.nz" target="_blank">Barkers</a> and others. Most of the sites I build for clients such as Overland, Huffer Store, Deuce Shoes have since been replaced but a couple that remain unchanged are <a href="http://www.bigmanclothing.co.nz/" target="_blank">Big&nbsp;Man&nbsp;Clothing</a>, and <a href="http://www.publichealthworkforce.org.nz/" target="_blank">NZ&nbsp;Ministry&nbsp;of&nbsp;Health</a>.</div>
 					</div>
 				</li>
 			</ul>
@@ -127,7 +127,7 @@
 			<p class="tright">After finishing my studies at Howick College, I worked in hospitality for several years before receiving my Diploma in Web Development from <strike>Natcoll</strike>... <strike>Yoobee</strike>... Logical? in&nbsp;2006.</p>
 			<p>Since then I have worked in a variety of capacities with digital agencies, corporates and startups in all aspects of producing modern web applications built using fancy tech like AngularJS, Apache, concrete5, CSS3, Drupal, Git, Grunt, Gulp, HTML5, Javascript, Joomla, jQuery, MySQL, Node.js and PHP, Silverstripe and&nbsp;Wordpress.</p>
 			<p class="tright">Being a huge music fan I play guitar and as many other instruments as I can get my hands on. I also enjoy travelling, swimming, fishing, cooking and lucid&nbsp;dreaming.</p>
-			<div class="suburbs hidden">Arch Hill, Glenfield, Grafton, Howick, Morningside, Mt Eden, Musick Point, New Lynn, Pakuranga, Ponsonby, Red Hill, Sunnynook, Torbay, Totara&nbsp;Vale</div>
+			<?php /*<div class="suburbs hidden">Arch Hill, Glenfield, Grafton, Howick, Morningside, Mt Eden, Musick Point, New Lynn, Pakuranga, Ponsonby, Red Hill, Sunnynook, Torbay, Totara&nbsp;Vale</div>*/ ?>
 		</div>
 	</article>
 	<article class="contact article">

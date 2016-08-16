@@ -82,13 +82,19 @@
 				display: inline-block;
 			}
 		}
+		&.deats{
+			label{
+				font-family: $reem-font;
+			}
+		}
 	}
 	.download{
-		width:170px;
+		width:158px;
 		margin: 0 auto;
 		text-align: left;
 		.heading{
-			padding-left: 12px;
+			font-family: $reem-font;
+			text-align: center;
 		}
 	}
 	.contact-bg{
