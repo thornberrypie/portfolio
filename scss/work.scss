@@ -13,7 +13,7 @@
 		text-align: center;
 		p{
 			color: white;
-			padding:10px 0 12px;
+			padding:6px 0 0;
 			&.selection{
 				text-align: center;
 				font-family: $reem-font;
@@ -50,6 +50,7 @@
 			display: block;
 			float: left;
 			text-align: center;
+			line-height: 30px;
 			.box{
 				@include border-radius(6px);
 				width:169px;
@@ -60,17 +61,22 @@
 				margin:0 auto 43px;
 				border:1px solid #666;
 			}
-			p{
+			.text{
 				@include text-shadow(1px 1px #000);
 				@include absolute();
 				z-index:77;
-				line-height:37px;
+				line-height:30px;
 				font-size:18px;
 				font-weight:bold;
-				sup{
-					position:relative;
-					top:8px;
-					font-size:14px;
+				h3, h4{
+					color: white;
+					padding-top: 10px;
+				}
+				h3{
+					font-size: 18px;
+				}
+				h4{
+					font-size:15px;
 					font-style:italic;
 				}
 			}

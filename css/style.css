@@ -424,7 +424,7 @@ footer {
     text-align: center; }
     .work .inner p {
       color: white;
-      padding: 10px 0 12px; }
+      padding: 6px 0 0; }
       .work .inner p.selection {
         text-align: center;
         font-family: "Reem Kufi";
@@ -453,7 +453,8 @@ footer {
       width: 25%;
       display: block;
       float: left;
-      text-align: center; }
+      text-align: center;
+      line-height: 30px; }
       .work ul li .box {
         -webkit-border-radius: 6px;
         -moz-border-radius: 6px;
@@ -466,7 +467,7 @@ footer {
         overflow: hidden;
         margin: 0 auto 43px;
         border: 1px solid #666; }
-      .work ul li p {
+      .work ul li .text {
         text-shadow: 1px 1px 1px 1px #000;
         position: absolute;
         display: block;
@@ -475,13 +476,16 @@ footer {
         width: 100%;
         height: 100%;
         z-index: 77;
-        line-height: 37px;
+        line-height: 30px;
         font-size: 18px;
         font-weight: bold; }
-        .work ul li p sup {
-          position: relative;
-          top: 8px;
-          font-size: 14px;
+        .work ul li .text h3, .work ul li .text h4 {
+          color: white;
+          padding-top: 10px; }
+        .work ul li .text h3 {
+          font-size: 18px; }
+        .work ul li .text h4 {
+          font-size: 15px;
           font-style: italic; }
       .work ul li span {
         position: absolute;
