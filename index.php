@@ -7,9 +7,9 @@
 	<link rel="apple-touch-icon-precomposed" href="images/gt-profile-180.png">
 	<link rel="stylesheet" media="all" href="css/style.css?v=6">
 	<link rel="stylesheet" media="print" href="css/print.css">
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
 	<!--[if IE]>
 		<link rel="shortcut icon" href="favicon.ico">
 	<![endif]-->
@@ -30,10 +30,10 @@
 			<div class="home-left">
 				<p>I'm a Front End/UX/PHP Web Developer with a firm arsenal of Digital Web skills and over a decade of industry experience creating Web Applications in New Zealand and Europe.</p>
 				<p>I've worked with several Digital Agencies and corporates in Auckland, Wellington and Bonn, Germany for clients such as Barkers, BNZ, Burger King, Chelsea Sugar, Delegat, Deutsche Telekom, Fonterra, Frucor, Huffer, Meredith Connell, Methven, Overland Footwear, Roche, Toyota, Spark and&nbsp;Volkswagen.
-				<p>I stand out amongst developers due to my social nature, ability to communicate effectively, experience acting, singing and <a href="http://youtube.graemethornber.com" target="_blank">playing&nbsp;guitar</a>.</p>
+				<p>I stand out amongst developers due to my social nature, ability to communicate effectively, experience acting, singing and <a href="//youtube.graemethornber.com" target="_blank">playing&nbsp;guitar</a>.</p>
 			</div>
 			<!--<aside class="currentStatus">
-				<h4>One of my latest home projects uses AngularJS, Google&nbsp;Maps, and a database from the NZ Ministry&nbsp;of&nbsp;Education. <a href="http://schools.graemethornber.com" target="_blank">View it here</a>.<span class="extra">...and a blast from the past: <a target="_blank" href="http://placetrace.graemethornber.com">my first PHP site</a>, now one decade&nbsp;old.</span></h4>
+				<h4>One of my latest home projects uses AngularJS, Google&nbsp;Maps, and a database from the NZ Ministry&nbsp;of&nbsp;Education. <a href="//schools.graemethornber.com" target="_blank">View it here</a>.<span class="extra">...and a blast from the past: <a target="_blank" href="//placetrace.graemethornber.com">my first PHP site</a>, now one decade&nbsp;old.</span></h4>
 			</aside>-->
 		</div>
 	</article>
@@ -45,70 +45,70 @@
 			<p class="selection">Some of my work from the past few years:</p>
 			<div id="siteinfo"></div>
 			<ul class="clearfix">
-				<li class="site1 ffs">
+				<li class="site1 roche">
+					<div class="box">
+						<p>Roche<br /><sup>Concrete5</sup><br /><sup>SASS / jQuery</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
+						<div class="info"><strong><a class="siteTitle" href="//www.roche.co.nz" target="_blank" title="Visit Website">www.roche.co.nz</a></strong> - content here...<a href="//www.cancerinfo.co.nz" target="_blank">cancerinfo.co.nz</a> <a href="//www.roche-plus.co.nz" target="_blank">roche-plus.co.nz</a></div>
+					</div>
+				</li>
+				<li class="site2 ffs">
 					<div class="box">
 						<p><sup>Fonterra Foodservice</sup><br />Bolt CMS / Twig<br /><sup>Bootstrap 3 / jQuery</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="https://www.fonterrafoodservice.co.nz" target="_blank" title="Visit Website">www.fonterrafoodservice.co.nz</a></strong> - In late 2015 I collaborated with <a target="_blank" href="http://www.satellitemedia.co.nz/">Satellite Media</a> to help Fonterra branch out into the Foodservice industry with a new site. It is built with a sophisticated CMS called <a href="https://bolt.cm/" target="_blank">Bolt</a> and contains some delicious recipes!.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.fonterrafoodservice.co.nz" target="_blank" title="Visit Website">www.fonterrafoodservice.co.nz</a></strong> - In late 2015 I collaborated with <a target="_blank" href="//www.satellitemedia.co.nz/">Satellite Media</a> to help Fonterra branch out into the Foodservice industry with a new site. It is built with a sophisticated CMS called <a href="//bolt.cm/" target="_blank">Bolt</a> and contains some delicious recipes!.</div>
 					</div>
 				</li>
-				<li class="site2 stoptober">
+				<li class="site3 stoptober">
 					<div class="box">
 						<p>Stoptober NZ<br /><sup>Stylus / JADE / Mongo</sup><br />Node.js / Express</p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="http://www.stoptober.nz" target="_blank" title="Visit Website">www.stoptober.nz</a></strong> - Stoptober is an annual campaign to help people stop smoking, and in August 2015 after quitting smoking myself a month earlier I built the web application that runs the 2015 campaign. Working with <a target="_blank" href="http://www.touchcast.co.nz/">Touchcast</a>, I built both front and back end using the most cutting-edge web technologies: Node, Express 4, JADE, Stylus, and Mongoose with MongoDB.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.stoptober.nz" target="_blank" title="Visit Website">www.stoptober.nz</a></strong> - Stoptober is an annual campaign to help people stop smoking, and in August 2015 after quitting smoking myself a month earlier I built the web application that runs the 2015 campaign. Working with <a target="_blank" href="//www.touchcast.co.nz/">Touchcast</a>, I built both front and back end using the most cutting-edge web technologies: Node, Express 4, JADE, Stylus, and Mongoose with MongoDB.</div>
 					</div>
 				</li>
-				<li class="site3 mc">
+				<li class="site4 mc">
 					<div class="box">
 						<p><sup>Meredith Connell</sup><br />Drupal / LESS<br /><sup>jQuery / Masonry</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="http://www.mc.co.nz" target="_blank" title="Visit Website">www.mc.co.nz</a></strong> - Early in 2015 I built the front end for NZ law firm Meredith Connell's new Drupal website with the talented folks at <a href="http://www.insightcreative.co.nz" target="_blank">Insight&nbsp;Creative</a>. Although the back-end developer was in Wellington and I was working in Auckland, we collaborated daily and were able to deliver the polished product one week ahead of schedule using modern technologies such as git, beanstalk and of course the good old telephone.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.mc.co.nz" target="_blank" title="Visit Website">www.mc.co.nz</a></strong> - Early in 2015 I built the front end for NZ law firm Meredith Connell's new Drupal website with the talented folks at <a href="//www.insightcreative.co.nz" target="_blank">Insight&nbsp;Creative</a>. Although the back-end developer was in Wellington and I was working in Auckland, we collaborated daily and were able to deliver the polished product one week ahead of schedule using modern technologies such as git, beanstalk and of course the good old telephone.</div>
 					</div>
 				</li>
-				<li class="site4 coats">
+				<li class="site5 coats">
 					<div class="box">
 						<p>Coats Design<br /><sup>Wordpress / SASS<br />Bootstrap 3 / jQuery</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="http://coatsdesign.co.nz/" target="_blank" title="Visit Website">www.coatsdesign.co.nz</a></strong> - Early in 2014, I worked with <a href="http://www.tinsoldier.co.nz">Tin&nbsp;Soldier</a> to create a custom Wordpress site for Coats Design. For this I built a responsive HTML5 theme with Bootstrap 3, compiled plenty of CSS using SASS, and fine-tuned the UI by extending Javascript with jQuery and Isotope/Masonry.</div>
+						<div class="info"><strong><a class="siteTitle" href="//coatsdesign.co.nz/" target="_blank" title="Visit Website">www.coatsdesign.co.nz</a></strong> - Early in 2014, I worked with <a href="//www.tinsoldier.co.nz">Tin&nbsp;Soldier</a> to create a custom Wordpress site for Coats Design. For this I built a responsive HTML5 theme with Bootstrap 3, compiled plenty of CSS using SASS, and fine-tuned the UI by extending Javascript with jQuery and Isotope/Masonry.</div>
 					</div>
 				</li>
-				<li class="site5 liftoff">
+				<li class="site6 liftoff">
 					<div class="box">
 						<p>Lift Off<br /><sup>HTML5 / CSS3 / jQuery<br />Git / JIRA / Bitbucket</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="http://liftoff.co.nz/" target="_blank" title="Visit Website">www.liftoff.co.nz</a></strong> - In March and April of 2014 I worked with <a href="http://idesignmedia.co.nz/" target="_blank">iDesign&nbsp;Media</a> to create one of New Zealand's first Equity Crowdfunding platforms. My role in this project was to produce the majority of the front-end code and integrate this into iDesign's custom framework. During this process, I worked mostly from home and collaborated with iDesign using Git.</div>
+						<div class="info"><strong><a class="siteTitle" href="//liftoff.co.nz/" target="_blank" title="Visit Website">www.liftoff.co.nz</a></strong> - In March and April of 2014 I worked with <a href="//idesignmedia.co.nz/" target="_blank">iDesign&nbsp;Media</a> to create one of New Zealand's first Equity Crowdfunding platforms. My role in this project was to produce the majority of the front-end code and integrate this into iDesign's custom framework. During this process, I worked mostly from home and collaborated with iDesign using Git.</div>
 					</div>
 				</li>
-				<li class="site6 sff">
+				<li class="site7 sff">
 					<div class="box">
 						<p>Silver Fern Farms<br /><sup>Mobile Front-End<br />Silverstripe / jQuery</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="http://www.silverfernfarms.co.nz" target="_blank" title="Visit Website">www.silverfernfarms.co.nz</a></strong> - During a 3 month contract with <a href="http://www.colensobbdo.co.nz" target="_blank">Colenso&nbsp;BBDO</a>, I skinned the mobile version of this website as well as working on several small campaigns and projects for clients such as BNZ (<a href="https://www.powerofadollarchallenge.co.nz/" target="_blank">Power&nbsp;of&nbsp;a&nbsp;Dollar</a> campaign), Burger&nbsp;King (Outlaw&nbsp;campaign), Fonterra (iPad app for Memphis&nbsp;Meltdown), Frucor (migration of <a href="http://www.v.co.nz" target="_blank">V&nbsp;website</a>) and Volkswagen (email newsletter templates).</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.silverfernfarms.co.nz" target="_blank" title="Visit Website">www.silverfernfarms.co.nz</a></strong> - During a 3 month contract with <a href="//www.colensobbdo.co.nz" target="_blank">Colenso&nbsp;BBDO</a>, I skinned the mobile version of this website as well as working on several small campaigns and projects for clients such as BNZ (<a href="//www.powerofadollarchallenge.co.nz/" target="_blank">Power&nbsp;of&nbsp;a&nbsp;Dollar</a> campaign), Burger&nbsp;King (Outlaw&nbsp;campaign), Fonterra (iPad app for Memphis&nbsp;Meltdown), Frucor (migration of <a href="//www.v.co.nz" target="_blank">V&nbsp;website</a>) and Volkswagen (email newsletter templates).</div>
 					</div>
 				</li>
-				<li class="site7 scopevisio">
+				<li class="site8 scopevisio">
 					<div class="box">
 						<p>Scopevisio<br /><sup>Drupal / SOAP / XML</sup><br /><sup>JSON / Web Services</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="https://www.scopevisio.com" target="_blank" title="Visit Website">www.scopevisio.com</a></strong> - During my time in Germany, I was employed by Scopevisio&nbsp;AG and spent a large amount of my time there building their company website with Drupal 8. With a minimal amount of plugins being used, I wrote most of the code myself and much of the content is generated using XML files and through Web Services using SOAP and JSON. During my time at Scopevisio, I really felt that I had made the transition from intermediate to senior developer.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.scopevisio.com" target="_blank" title="Visit Website">www.scopevisio.com</a></strong> - During my time in Germany, I was employed by Scopevisio&nbsp;AG and spent a large amount of my time there building their company website with Drupal 8. With a minimal amount of plugins being used, I wrote most of the code myself and much of the content is generated using XML files and through Web Services using SOAP and JSON. During my time at Scopevisio, I really felt that I had made the transition from intermediate to senior developer.</div>
 					</div>
 				</li>
-				<li class="site8 nzso">
+				<li class="site9 nzso">
 					<div class="box">
 						<p>NZSO<br /><sup>HTML5 / Wordpress<br />Front-End / jQuery</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="http://www.nzso.co.nz" target="_blank" title="Visit Website">www.nzso.co.nz</a></strong> - The final site I worked on with <a href="http://www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> and the last site I built which was non-responsive, I wrote the entire front-end in the form of a Wordpress theme for the New Zealand Symphony Orchestra website. During my time at The&nbsp;Church I also produced websites for Wellington Iwi <a href="http://www.ngatitoa.iwi.nz" target="_blank">Ngati&nbsp;Toa</a>, Drama School <a href="http://www.toiwhakaari.ac.nz" target="_blank">Toi&nbsp;Whakaari</a>, and a trade site for <a href="http://www.rjslicorice.co.nz" target="_blank">RJ's&nbsp;Licorice</a>.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.nzso.co.nz" target="_blank" title="Visit Website">www.nzso.co.nz</a></strong> - The final site I worked on with <a href="//www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> and the last site I built which was non-responsive, I wrote the entire front-end in the form of a Wordpress theme for the New Zealand Symphony Orchestra website. During my time at The&nbsp;Church I also built the following sites: <a href="//www.ngatitoa.iwi.nz" target="_blank">Ngati&nbsp;Toa Rangatira</a>, <a href="//www.toiwhakaari.ac.nz" target="_blank">Toi&nbsp;Whakaari</a>, <a href="//www.fingertapps.com" target="_blank">Fingertapps</a> and a trade site for <a href="//www.rjslicorice.co.nz" target="_blank">RJ's&nbsp;Licorice</a>.</div>
 					</div>
 				</li>
-				<li class="site9 toptobottom">
+				<li class="site10 toptobottom">
 					<div class="box">
 						<p>Toyota<br /><sup>Google Maps API v3<br />Wordpress / jQuery</sup><br /><sup>Saatchi &amp; Saatchi</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="http://www.toptobottom.co.nz" target="_blank" title="Visit Website">www.toptobottom.co.nz</a><em> (No longer online)</em></strong> - A mashup of Wordpress and Google&nbsp;Maps, designed by Saatchi&nbsp;&amp;&nbsp;Saatchi for a Toyota campaign that involved Marc&nbsp;Ellis driving the length of New&nbsp;Zealand in a 60 year old FJ&nbsp;Cruiser. In 2010 <a href="http://www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> were approached by Aim Proximity who had picked up this job but hadn't the manpower to meet the strict deadline. I eagerly rose to the challenge and single-handedly wrote 90% of the site during the summer holidays then passed it back to the agency to complete the finishing touches and meet the deadline to coincide with the TV, radio and print campaigns.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.toptobottom.co.nz" target="_blank" title="Visit Website">www.toptobottom.co.nz</a><em> (No longer online)</em></strong> - A mashup of Wordpress and Google&nbsp;Maps, designed by Saatchi&nbsp;&amp;&nbsp;Saatchi for a Toyota campaign that involved Marc&nbsp;Ellis driving the length of New&nbsp;Zealand in a 60 year old FJ&nbsp;Cruiser. In 2010 <a href="//www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> were approached by Aim Proximity who had picked up this job but hadn't the manpower to meet the strict deadline. I eagerly rose to the challenge and single-handedly wrote 90% of the site during the summer holidays then passed it back to the agency to complete the finishing touches and meet the deadline to coincide with the TV, radio and print campaigns.</div>
 					</div>
 				</li>
-				<li class="site10 hito">
+				<li class="site11 hito">
 					<div class="box">
 						<p>HITO<br /><sup>Wordpress</sup><br /><sup>Theme Build</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="http://www.hito.org.nz" target="_blank" title="Visit Website">www.hito.org.nz</a></strong> - Working with amazing designers at <a href="http://www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> in Wellington, I produced a custom Wordpress theme for the NZ Hairdressing Industry Training Organisation. I worked closely with the client on a daily basis through the whole process and helped transform into web their many ideas and desires. I was the sole devoloper working on this project, writing the front-end and server-side code.</div>
-					</div>
-				</li>
-				<li class="site11 fingertapps">
-					<div class="box">
-						<p>Fingertapps<br /><sup>Wordpress</sup><br /><sup>Theme Build</sup></p><span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="http://www.fingertapps.com" target="_blank" title="Visit Website">www.fingertapps.com</a></strong> - As the sole developer on this site, I produced a custom Wordpress theme in a single day and integrated the homepage rotator using jQuery's cycle plugin the next day to finish it off.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.hito.org.nz" target="_blank" title="Visit Website">www.hito.org.nz</a></strong> - Working with amazing designers at <a href="//www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> in Wellington, I produced a custom Wordpress theme for the NZ Hairdressing Industry Training Organisation. I worked closely with the client on a daily basis through the whole process and helped transform into web their many ideas and desires. I was the sole devoloper working on this project, writing the front-end and server-side code.</div>
 					</div>
 				</li>
 				<li class="site12 dryitonline">
@@ -194,9 +194,10 @@
 	<footer>
 		<p>&copy; <?php echo date('Y') ?> Thornberry Pie. All Rights Reserved</p>
 	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="js/custom.js?v=4"></script>
+	<script src="js/functions.js?v=4"></script>
 	<!-- Google Tag Manager -->
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M59LS4"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
