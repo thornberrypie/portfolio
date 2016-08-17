@@ -9,7 +9,7 @@ var acronymFadeSpeed = 666;
 var emailName = '<a href="mailto:gdthornber@gmail.com" target="_blank">gdthornber';
 var emailDomain = 'gmail.com</a>';
 var phoneNumber = '+64 (0)21 0292 4529';
-var fbAddress = '<a href="http://www.facebook.com/thornberrypie" target="_blank">facebook.com/thornberrypie</a>';
+var fbAddress = '<a href="//www.facebook.com/thornberrypie" target="_blank">facebook.com/thornberrypie</a>';
 var acronyms = ['PHP','HTML','CSS','SQL','CMS','XML','LAMP','SEO','JS','MVC','JSON','LESS','AJAX','REST','CDN','OOP','URL','CURL','GUI','WYSIWYG','SOAP','AGILE','GUI','SASS','YAML','WWW','PSD','CLI','PDF','DNS','HTTP','API','RSS','MAMP'];
 $(document).ready(function(){
 //Preload images for "work" section
