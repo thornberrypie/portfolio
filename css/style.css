@@ -699,7 +699,7 @@ footer {
   z-index: 98; }
 
 .nav-wrapper {
-  width: 34%;
+  width: 45%;
   float: right;
   text-align: center; }
   .nav-wrapper nav {
@@ -756,7 +756,11 @@ footer {
     box-sizing: border-box; }
 
   .inner {
-    padding: 0 2.5%; }
+    padding: 0 2.5%;
+    width: 100% !important; }
+
+  .nav-wrapper {
+    width: 55%; }
 
   .home-left {
     width: 40%; }
@@ -776,7 +780,6 @@ footer {
   .header h2 {
     padding-left: 0; }
   .header .inner {
-    width: 100%;
     padding: 0; }
 
   .inner {

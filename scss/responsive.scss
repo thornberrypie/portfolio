@@ -6,6 +6,10 @@
 	}
 	.inner{
 		padding:0 2.5%;
+		width: 100% !important;
+	}
+	.nav-wrapper{
+		width: 55%;
 	}
 	.home-left{
 		width:40%;
@@ -33,7 +37,6 @@
 			padding-left: 0;
 		}
 		.inner{
-			width:100%;
 			padding:0;
 		}
 	}
