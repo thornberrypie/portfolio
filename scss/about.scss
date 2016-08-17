@@ -3,23 +3,26 @@
 	background:linear-gradient(135deg, #75cdf5, #fff);
 	border-bottom-width:2px;
 	border-top-width:2px;
-}
-.about .inner{
-	z-index:99;
-}
-.about h3{
-	padding: 10px 0;
-}
-.about p{
-	width:88%;
-	float:left;
-}
-.about p.about-title{
-	font-weight:bold;
-	font-style:italic;
-}
-.about .open p{
-	visibility:visible;
+	.inner{
+		z-index:99;
+		width: $content-width;
+	}
+	h3{
+		padding: 10px 0;
+	}
+	p{
+		width:88%;
+		float:left;
+		&.about-title{
+			font-weight:bold;
+			font-style:italic;
+		}
+	}
+	.open{
+		p{
+			visibility:visible;
+		}
+	}
 }
 .about-bg{
 	width:100%;

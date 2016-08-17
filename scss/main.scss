@@ -6,7 +6,7 @@
 }
 .hgroup{
 	float:left;
-	padding:10px 0 0 6px;
+	padding:10px 0 0;
 }
 .heading{
 	font-size:18px;
@@ -37,8 +37,8 @@ footer{
 	opacity:0.95;
 	z-index:99;
 	border-bottom: 1px solid $peach;
-	h2{
-		padding-left: 5px;
+	.inner{
+		width: $content-width+6;
 	}
 }
 .home{
@@ -51,7 +51,7 @@ footer{
 .home-left{
 	width:47%;
 	float:left;
-	padding-left:13px;
+	padding-left:36px;
 }
 .home-right{
 	width:48%;

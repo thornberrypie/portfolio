@@ -2,3 +2,4 @@
 Compress JS and CSS
 
 Put acronyms in HTML instead of JS
+Make acronyms disappear then reappear again

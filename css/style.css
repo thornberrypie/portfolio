@@ -92,7 +92,7 @@ noscript {
 
 .hgroup {
   float: left;
-  padding: 10px 0 0 6px; }
+  padding: 10px 0 0; }
 
 .heading {
   font-size: 18px; }
@@ -122,8 +122,8 @@ footer {
   opacity: 0.95;
   z-index: 99;
   border-bottom: 1px solid #EEE7D5; }
-  .header h2 {
-    padding-left: 5px; }
+  .header .inner {
+    width: 850px; }
 
 .home {
   background: #d9d9d7 url(../images/fern-leaf.jpg) no-repeat 0 100%;
@@ -135,7 +135,7 @@ footer {
 .home-left {
   width: 47%;
   float: left;
-  padding-left: 13px; }
+  padding-left: 36px; }
 
 .home-right {
   width: 48%;
@@ -385,23 +385,19 @@ footer {
   background: linear-gradient(135deg, #75cdf5, #fff);
   border-bottom-width: 2px;
   border-top-width: 2px; }
-
-.about .inner {
-  z-index: 99; }
-
-.about h3 {
-  padding: 10px 0; }
-
-.about p {
-  width: 88%;
-  float: left; }
-
-.about p.about-title {
-  font-weight: bold;
-  font-style: italic; }
-
-.about .open p {
-  visibility: visible; }
+  .about .inner {
+    z-index: 99;
+    width: 844px; }
+  .about h3 {
+    padding: 10px 0; }
+  .about p {
+    width: 88%;
+    float: left; }
+    .about p.about-title {
+      font-weight: bold;
+      font-style: italic; }
+  .about .open p {
+    visibility: visible; }
 
 .about-bg {
   width: 100%;
@@ -545,7 +541,7 @@ footer {
         background-position: 0 -133px; }
       .work ul li.hito .img {
         background-position: -169px -133px; }
-      .work ul li.fingertapps .img {
+      .work ul li.roche .img {
         background-position: -338px -133px; }
       .work ul li.dryitonline .img {
         background-position: -507px -133px; }
@@ -583,42 +579,42 @@ footer {
   &.site4, &.site8, &.site12{
   	background-position:center -1498px;
   }*/ }
+  #sitebg.roche-bg {
+    background-image: url(../images/websites2y515.jpg);
+    background-position: left -1030px; }
   #sitebg.ffs-bg {
     background-image: url(../images/websites3y515.jpg);
-    background-position: center -468px; }
+    background-position: left -515px; }
   #sitebg.stoptober-bg {
     background-image: url(../images/websites3y515.jpg);
-    background-position: center -1498px; }
+    background-position: center -1545px; }
   #sitebg.mc-bg {
     background-image: url(../images/websites3y515.jpg);
-    background-position: center -983px; }
+    background-position: center -1030px; }
   #sitebg.coats-bg {
     background-image: url(../images/websites3y515.jpg);
-    background-position: center 47px; }
+    background-position: left 0; }
   #sitebg.liftoff-bg {
     background-image: url(../images/websites1y515.jpg);
-    background-position: center -983px; }
+    background-position: center -1030px; }
   #sitebg.sff-bg {
     background-image: url(../images/websites1y515.jpg);
-    background-position: center 47px; }
+    background-position: center 0; }
   #sitebg.scopevisio-bg {
     background-image: url(../images/websites1y515.jpg);
-    background-position: center -468px; }
+    background-position: left -515px; }
   #sitebg.nzso-bg {
     background-image: url(../images/websites2y515.jpg);
-    background-position: center 47px; }
+    background-position: left 0; }
   #sitebg.toptobottom-bg {
     background-image: url(../images/websites1y515.jpg);
-    background-position: center -1498px; }
+    background-position: center -1545px; }
   #sitebg.hito-bg {
     background-image: url(../images/websites2y515.jpg);
-    background-position: center -468px; }
-  #sitebg.fingertapps-bg {
-    background-image: url(../images/websites2y515.jpg);
-    background-position: center -983px; }
+    background-position: center -515px; }
   #sitebg.dryitonline-bg {
     background-image: url(../images/websites2y515.jpg);
-    background-position: center -1498px; }
+    background-position: left -1545px; }
 
 .contact .inner {
   padding: 10px 0 20px; }
@@ -703,7 +699,7 @@ footer {
   z-index: 98; }
 
 .nav-wrapper {
-  width: 48%;
+  width: 34%;
   float: right;
   text-align: center; }
   .nav-wrapper nav {

@@ -150,7 +150,7 @@
 			&.hito .img{
 				background-position:-169px -133px;
 			}
-			&.fingertapps .img{
+			&.roche .img{
 				background-position:-338px -133px;
 			}
 			&.dryitonline .img{
@@ -178,53 +178,53 @@
 	opacity:0.07;
 	z-index:94;
 	display:block;
+	&.roche-bg{
+		background-image:url(../images/websites2y515.jpg);
+		background-position: left -1030px;
+	}
 	&.ffs-bg{
 		background-image:url(../images/websites3y515.jpg);
-		background-position: center -468px;
+		background-position: left -515px;
 	}
 	&.stoptober-bg{
 		background-image:url(../images/websites3y515.jpg);
-		background-position: center -1498px;
+		background-position: center -1545px;
 	}
 	&.mc-bg{
 		background-image:url(../images/websites3y515.jpg);
-		background-position: center -983px;
+		background-position: center -1030px;
 	}
 	&.coats-bg{
 		background-image:url(../images/websites3y515.jpg);
-		background-position: center 47px;
+		background-position: left 0;
 	}
 	&.liftoff-bg{
 		background-image:url(../images/websites1y515.jpg);
-		background-position: center -983px;
+		background-position: center -1030px;
 	}
 	&.sff-bg{
 		background-image:url(../images/websites1y515.jpg);
-		background-position: center 47px;
+		background-position: center 0;
 	}
 	&.scopevisio-bg{
 		background-image:url(../images/websites1y515.jpg);
-		background-position: center -468px;
+		background-position: left -515px;
 	}
 	&.nzso-bg{
 		background-image:url(../images/websites2y515.jpg);
-		background-position: center 47px;
+		background-position: left 0;
 	}
 	&.toptobottom-bg{
 		background-image:url(../images/websites1y515.jpg);
-		background-position: center -1498px;
+		background-position: center -1545px;
 	}
 	&.hito-bg{
 		background-image:url(../images/websites2y515.jpg);
-		background-position: center -468px;
-	}
-	&.fingertapps-bg{
-		background-image:url(../images/websites2y515.jpg);
-		background-position: center -983px;
+		background-position: center -515px;
 	}
 	&.dryitonline-bg{
 		background-image:url(../images/websites2y515.jpg);
-		background-position: center -1498px;
+		background-position: left -1545px;
 	}
 	/*&.site, &.site, &.site, &.site{
 		background-image:url(../images/websites2y515.jpg);

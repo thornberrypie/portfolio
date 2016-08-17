@@ -13,9 +13,10 @@ var fbAddress = '<a href="//www.facebook.com/thornberrypie" target="_blank">face
 var acronyms = ['PHP','HTML','CSS','SQL','CMS','XML','LAMP','SEO','JS','MVC','JSON','LESS','AJAX','REST','CDN','OOP','URL','CURL','GUI','WYSIWYG','SOAP','AGILE','GUI','SASS','YAML','WWW','PSD','CLI','PDF','DNS','HTTP','API','RSS','MAMP'];
 $(document).ready(function(){
 //Preload images for "work" section
-	var thumbs = new Image(); thumbs.src = '/images/thumbs-169x133-2015.jpg';
+	var thumbs = new Image(); thumbs.src = '/images/thumbs-169x133.jpg';
 	var sites1 = new Image(); sites1.src = '/images/websites1y515.jpg';
 	var sites2 = new Image(); sites2.src = '/images/websites2y515.jpg';
+	var sites3 = new Image(); sites3.src = '/images/websites3y515.jpg';
 //Set up acronyms for home section
 	setUpPage();
 //Set up navigation slider
