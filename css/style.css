@@ -15,7 +15,7 @@
   font-weight: bold;
   white-space: nowrap; }
 
-html, body, div, img, h1, h2, h3, h4, p, ul, li {
+html, body, div, img, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
   padding: 0;
   border: 0; }
@@ -150,7 +150,7 @@ footer {
     font-size: 19px; }
     .home-right p.intro span {
       display: none; }
-  .home-right h3.acronyms {
+  .home-right h2.acronyms {
     width: 90%;
     height: 266px;
     display: block;
@@ -158,7 +158,7 @@ footer {
     top: 36px;
     right: 18px;
     font-family: "Reem Kufi"; }
-    .home-right h3.acronyms span {
+    .home-right h2.acronyms span {
       display: none;
       position: absolute;
       line-height: 32px; }
@@ -479,14 +479,17 @@ footer {
         line-height: 30px;
         font-size: 18px;
         font-weight: bold; }
-        .work ul li .text h3, .work ul li .text h4 {
+        .work ul li .text h3, .work ul li .text h4, .work ul li .text h5 {
           color: white;
-          padding-top: 10px; }
+          padding-top: 10px;
+          line-height: 30px; }
         .work ul li .text h3 {
           font-size: 18px; }
         .work ul li .text h4 {
           font-size: 15px;
           font-style: italic; }
+        .work ul li .text h5 {
+          font-size: 14px; }
       .work ul li span {
         position: absolute;
         display: block;
@@ -769,7 +772,7 @@ footer {
   .home-left {
     width: 40%; }
 
-  .home-right h3.acronyms {
+  .home-right h2.acronyms {
     right: 12%; }
 
   .download {

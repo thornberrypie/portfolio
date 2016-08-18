@@ -1,3 +1,4 @@
+<?php include 'includes/functions.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +26,7 @@
 		<div class="inner clearfix">
 			<div class="home-right">
 				<p class="intro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such as:</span></p>
-				<h3 class="acronyms"></h3>
+				<h2 class="acronyms"><?php outputAcronyms() ?></h2>
 			</div>
 			<div class="home-left">
 				<p>I'm a Front End/UX/PHP Web Developer with a firm arsenal of Digital Web skills and over a decade of industry experience creating Web Applications in New Zealand and Europe.</p>
@@ -47,7 +48,7 @@
 			<ul class="clearfix">
 				<li class="site1 roche">
 					<div class="box">
-						<div class="text"><h3>Roche</h3><h4>Concrete5</h4><h4>SASS / jQuery</h4></div>
+						<div class="text"><h3>Roche</h3><h3>Concrete5</h3><h4>SASS / jQuery</h4></div>
 						<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
 						<div class="info"><strong><a class="siteTitle" href="//www.roche.co.nz" target="_blank" title="Visit Website">www.roche.co.nz</a></strong> - From the dawn of 2016 I've been working with one of Auckland's top Digital Agencies: <a target="_blank" href="//www.spitfire.co.nz">Spitfire</a> to deliver a suite of sites for Swiss pharmaceuticals: <a href="//www.roche.co.nz" target="_blank">roche.co.nz</a>, <a href="//www.cancerinfo.co.nz" target="_blank">cancerinfo.co.nz</a> and <a href="//www.roche-plus.co.nz" target="_blank">roche-plus.co.nz</a>. These sites were crafted in PHP CMS Concrete5 with custom-made modules and templates. During my time at <a target="_blank" href="//www.spitfire.co.nz">Spitfire</a> I've also had the opportunity to do extensive work on one of New Zealand's most popular recipe websites: <a target="_blank" href="//www.chelsea.co.nz">Chelsea Sugar NZ</a> and their Aussie affiliates <a target="_blank" href="//www.csrsugar.com.au">CSR Sugar Australia</a>.</div>
 					</div>
@@ -82,7 +83,7 @@
 				</li>
 				<li class="site6 liftoff">
 					<div class="box">
-						<div class="text"><h3>Lift Off</h3><h4>HTML5 / CSS3 / jQuery</h4><h4>Git / JIRA / Bitbucket</h4></div>
+						<div class="text"><h3>Lift Off</h3><h5>HTML5 / CSS3 / jQuery</h5><h4>Git / JIRA / Bitbucket</h4></div>
 						<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
 						<div class="info"><strong><a class="siteTitle" href="//liftoff.co.nz/" target="_blank" title="Visit Website">www.liftoff.co.nz</a></strong> - In March and April of 2014 I worked with <a href="//idesignmedia.co.nz/" target="_blank">iDesign&nbsp;Media</a> to create one of New Zealand's first Equity Crowdfunding platforms. My role in this project was to produce the majority of the front-end code and integrate this into iDesign's custom framework. During this process, I worked mostly from home and collaborated with iDesign using Git.</div>
 					</div>
@@ -117,7 +118,7 @@
 				</li>
 				<li class="site11 hito">
 					<div class="box">
-						<div class="text"><h3>HITO</h3><h4>Wordpress</h4><h4>Theme Build</h4></div>
+						<div class="text"><h3>HITO</h3><h3>Wordpress</h3><h4>Theme Build</h4></div>
 						<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
 						<div class="info"><strong><a class="siteTitle" href="//www.hito.org.nz" target="_blank" title="Visit Website">www.hito.org.nz</a></strong> - Working with amazing designers at <a href="//www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> in Wellington, I produced a custom Wordpress theme for the NZ Hairdressing Industry Training Organisation. I worked closely with the client on a daily basis through the whole process and helped transform into web their many ideas and desires. I was the sole devoloper working on this project, writing the front-end and server-side code.</div>
 					</div>

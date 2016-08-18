@@ -10,7 +10,7 @@ var emailName = '<a href="mailto:gdthornber@gmail.com" target="_blank">gdthornbe
 var emailDomain = 'gmail.com</a>';
 var phoneNumber = '+64 (0)21 0292 4529';
 var fbAddress = '<a href="//www.facebook.com/thornberrypie" target="_blank">facebook.com/thornberrypie</a>';
-var acronyms = ['PHP','HTML','CSS','SQL','CMS','XML','LAMP','SEO','JS','MVC','JSON','LESS','AJAX','REST','CDN','OOP','URL','CURL','GUI','WYSIWYG','SOAP','AGILE','GUI','SASS','YAML','WWW','PSD','CLI','PDF','DNS','HTTP','API','RSS','MAMP'];
+//var acronyms = ['PHP','HTML','CSS','SQL','CMS','XML','LAMP','SEO','JS','MVC','JSON','LESS','AJAX','REST','CDN','OOP','URL','CURL','GUI','WYSIWYG','SOAP','AGILE','GUI','SASS','YAML','WWW','PSD','CLI','PDF','DNS','HTTP','API','RSS','MAMP'];
 $(document).ready(function(){
 //Preload images for "work" section
 	var thumbs = new Image(); thumbs.src = '/images/thumbs-169x133.jpg';
@@ -222,13 +222,13 @@ function setupContact(){
 
 function setUpPage(){
 	var speed = acronymFadeSpeed;
-	var fadeDif = speed/acronyms.length;
+	var fadeDif = speed / $('.acronyms span').length;
 	var fadeDelay = 0;
 	var acronymBox = $('.home-right .acronyms');
 //Add acronyms to DOM
-	for(i=0; i < acronyms.length; i++){
+	/*for(i=0; i < acronyms.length; i++){
 		acronymBox.append('<span class="a'+i+'">'+acronyms[i]+' </span>');
-	}
+	}*/
 //Scroll to start page
 	animateNavPage(startPage);
 //Fade in intro text
