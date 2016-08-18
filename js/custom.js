@@ -262,12 +262,12 @@ function setUpPage(){
 function showSiteText(e){
 	var siteinfo = $('#siteinfo');
 	var siteInfoOrigHeight = siteinfo.height();
-	if(siteInfoOrigHeight != 0) siteinfo.removeAttr('style');
+	if(siteInfoOrigHeight !== 0) siteinfo.removeAttr('style');
 	var info = e.find('.info').html();
 	siteinfo.html(info);
 	var siteInfoNewHeight = siteinfo.height();
 	siteinfo.height(siteInfoOrigHeight);
-	if(siteInfoOrigHeight == 0) siteinfo.css('display','block');
+	if(siteInfoOrigHeight === 0) siteinfo.css('display','block');
 	siteinfo.stop().animate({'height':siteInfoNewHeight}, 333);
 }
 
@@ -283,6 +283,6 @@ function stopDraggingNav(num){
 	}else{
 		id = 'contact';
 	}
-	var pageid = (id=='') ? 'home' : id;
+	var pageid = (id==='') ? 'home' : id;
 	animateNavPage(id);
 }

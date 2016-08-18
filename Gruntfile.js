@@ -20,10 +20,14 @@ module.exports = function(grunt) {
 					'js/custom.min.js': ['js/custom.js', 'js/functions.js']
 				}
 	        }
-		}
+		},
+		jshint: {
+            all: ['js/custom.js']
+        }
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.registerTask('default',['watch','sass','uglify']);
 }

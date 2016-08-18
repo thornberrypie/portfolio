@@ -4,6 +4,7 @@
   "description": "Portfolio of Graeme Thornber",
   "devDependencies": {
     "grunt": "*",
+    "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-sass": "*",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "*"
