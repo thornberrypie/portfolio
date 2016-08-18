@@ -27,6 +27,7 @@
 			<div class="home-right">
 				<p class="intro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such as:</span></p>
 				<h2 class="acronyms"><?php outputAcronyms() ?></h2>
+				<div id="gat"></div>
 			</div>
 			<div class="home-left">
 				<p>I'm a Front End/UX/PHP Web Developer with a firm arsenal of Digital Web skills and over a decade of industry experience creating Web Applications in New Zealand and Europe.</p>

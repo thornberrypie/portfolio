@@ -10,6 +10,7 @@ var emailName = '<a href="mailto:gdthornber@gmail.com" target="_blank">gdthornbe
 var emailDomain = 'gmail.com</a>';
 var phoneNumber = '+64 (0)21 0292 4529';
 var fbAddress = '<a href="//www.facebook.com/thornberrypie" target="_blank">facebook.com/thornberrypie</a>';
+var gatCounter = 0;
 //var acronyms = ['PHP','HTML','CSS','SQL','CMS','XML','LAMP','SEO','JS','MVC','JSON','LESS','AJAX','REST','CDN','OOP','URL','CURL','GUI','WYSIWYG','SOAP','AGILE','GUI','SASS','YAML','WWW','PSD','CLI','PDF','DNS','HTTP','API','RSS','MAMP'];
 $(document).ready(function(){
 //Preload images for "work" section
@@ -118,18 +119,30 @@ $(document).ready(function(){
 function activateGuitarHover(){
 	var link = $('#guitar-link');
 	link.mouseenter(function(){
-		fadeInGatPic();
+		fadeInGatSection();
 	}).mouseleave(function(){
-		fadeOutGatPic();
+		fadeOutGatSection();
 	});
 }
 
-function fadeInGatPic(){
-
+function fadeInGatSection(){
+	if(gatCounter < 7){
+		var ranNum = getRandomArbitrary(1, 7);
+		console.log(ranNum);
+		//John Frusciante, Eric Clapton, Jimi Hendrix, Jimmy Page, Graham Coxon, Trey Spruance, Slash, Jim Martin, Beatles, Dave Navarro, Mark Knopfler, Josh Homme, Alex Turner, Johnny Cash, Bob Dylan, Prince, Keith Richards, Neil Young
+		gatCounter++;
+	}else{
+		gatCounter = 0;
+	}
+	$('#gat').addClass('active');
 }
 
-function fadeOutGatPic(){
+function fadeOutGatSection(){
+	$('#gat').removeClass('active');
+}
 
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
 }
 
 function animateBackground(bg){

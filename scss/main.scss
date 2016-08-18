@@ -97,3 +97,10 @@ footer{
 		font-weight: 400;
 	}
 }
+#gat{
+	opacity: 0;
+	@include transition(opacity .25s ease-in-out);
+	&.active{
+		opacity: 1;
+	}
+}
