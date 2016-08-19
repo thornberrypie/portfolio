@@ -6,3 +6,5 @@ Make acronyms disappear then reappear again
 
 Add to CV:
 Command Line Tools: JSHint
+Backbone.js
+Underscore.js 

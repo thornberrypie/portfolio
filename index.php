@@ -8,9 +8,7 @@
 	<link rel="apple-touch-icon-precomposed" href="images/gt-profile-180.png">
 	<link rel="stylesheet" media="all" href="css/style.css?v=6">
 	<link rel="stylesheet" media="print" href="css/print.css">
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro|Reem+Kufi" rel="stylesheet">
 	<!--[if IE]>
 		<link rel="shortcut icon" href="favicon.ico">
 	<![endif]-->
@@ -208,10 +206,7 @@
 	<footer>
 		<p>&copy; <?php echo date('Y') ?> Thornberry Pie. All Rights Reserved</p>
 	</footer>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script src="js/custom.js?v=4"></script>
-	<script src="js/functions.js?v=4"></script>
+	<script src="js/custom.min.js"></script>
 	<!-- Google Tag Manager -->
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M59LS4"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

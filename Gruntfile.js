@@ -11,13 +11,13 @@ module.exports = function(grunt) {
 		watch: {
 			css: {
 				files: '**/*.scss',
-				tasks: ['sass']
+				tasks: ['sass','uglify']
 			}
 		},
 		uglify: {
 	        my_target: {
 				files: {
-					'js/custom.min.js': ['js/custom.js', 'js/functions.js']
+					'js/custom.min.js': ['js/jquery-2.1.4.min.js', 'js/jquery-ui-1.11.4.min.js', 'js/functions.js', 'js/custom.js']
 				}
 	        }
 		},
