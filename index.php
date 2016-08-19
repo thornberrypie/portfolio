@@ -18,6 +18,11 @@
 	<title>Graeme Thornber: Kiwi Web Expert</title>
 	<meta name="author" content="Thornberry Pie">
 	<meta name="description" content="Portfolio of Auckland Web Developer Graeme Thornber: Front-end expert and PHP CMS specialist." />
+	<meta property="og:title" content="Graeme Thornber: Kiwi Web Expert" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="//graemethornber.com/images/gt-gat.jpg" />
+	<meta property="og:url" content="//graemethornber.com" />
+	<meta property="og:description" content="Portfolio of Auckland Web Developer Graeme Thornber: Front-end expert and PHP CMS specialist." />
 </head>
 <body>
 	<article class="home">
