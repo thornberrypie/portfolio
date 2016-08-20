@@ -64,6 +64,8 @@ footer{
 		color: $dark;
 		font-family: $reem-font;
 		font-size: 19px;
+		position: relative;
+		z-index: 5;
 		span{
 			display:none;
 		}
@@ -75,11 +77,28 @@ footer{
 		position:absolute;
 		top:36px;
 		right: 18px;
+		z-index: 5;
 		font-family: $reem-font;
 		span{
 			display:none;
 			position:absolute;
 			line-height:32px;
+		}
+	}
+	#gat{
+		opacity: 0.333;
+		width: 316px;
+		height: 274px;
+		position: absolute;
+		top: 39px;
+		right: 71px;
+		z-index: 3;
+		//background-image: url(../images/players/mark-knopfler.jpg);
+		background-position: center middle;
+		background-repeat: no-repeat;
+		@include transition(opacity .666s ease-in-out);
+		&.active{
+			opacity: 0.333;
 		}
 	}
 }
@@ -95,20 +114,5 @@ footer{
 	h4{
 		padding: 0 10px;
 		font-weight: 400;
-	}
-}
-#gat{
-	opacity: 0.333;
-	width: 316px;
-	height: 274px;
-	position: absolute;
-	top: 39px;
-	right: 71px;
-	//background-image: url(../images/players/mark-knopfler.jpg);
-	background-position: center middle;
-	background-repeat: no-repeat;
-	@include transition(opacity .666s ease-in-out);
-	&.active{
-		opacity: 0.333;
 	}
 }

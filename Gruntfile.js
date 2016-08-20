@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 		watch: {
 			css: {
 				files: '**/*.scss',
-				tasks: ['sass','uglify']
+				tasks: ['sass','uglify','cssmin']
 			}
 		},
 		uglify: {
@@ -21,13 +21,26 @@ module.exports = function(grunt) {
 				}
 	        }
 		},
+		cssmin: {
+		  options: {
+		    shorthandCompacting: false,
+		    roundingPrecision: -1
+		  },
+		  target: {
+		    files: {
+		      'css/style.min.css': ['css/style.css']
+		    }
+		  }
+		},
 		jshint: {
             all: ['js/custom.js']
         }
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+
 	grunt.registerTask('default',['watch','sass','uglify']);
 }
