@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" href="images/gt-profile-196.png">
 	<link rel="apple-touch-icon-precomposed" href="images/gt-profile-180.png">
-	<link rel="stylesheet" media="all" href="css/style.min.css?v=6">
+	<link rel="stylesheet" media="all" href="css/style.css">
 	<link rel="stylesheet" media="print" href="css/print.css">
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro|Reem+Kufi" rel="stylesheet">
 	<!--[if IE]>

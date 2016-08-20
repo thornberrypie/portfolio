@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 		watch: {
 			css: {
 				files: '**/*.scss',
-				tasks: ['sass','uglify','cssmin']
+				tasks: ['sass','cssmin','uglify']
 			}
 		},
 		uglify: {
@@ -42,5 +42,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 
-	grunt.registerTask('default',['watch','sass','uglify']);
+	grunt.registerTask('default',['watch','sass','cssmin','uglify']);
 }

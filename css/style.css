@@ -147,21 +147,42 @@ footer {
   .home-right p.intro {
     color: #515150;
     font-family: "Reem Kufi";
-    font-size: 19px; }
+    font-size: 19px;
+    position: relative;
+    z-index: 5; }
     .home-right p.intro span {
       display: none; }
   .home-right h2.acronyms {
+    /*width: 320px;*/
     width: 90%;
     height: 266px;
     display: block;
     position: absolute;
     top: 36px;
     right: 18px;
+    z-index: 5;
     font-family: "Reem Kufi"; }
     .home-right h2.acronyms span {
       display: none;
       position: absolute;
       line-height: 32px; }
+  .home-right #gat {
+    opacity: 0.333;
+    width: 316px;
+    height: 274px;
+    position: absolute;
+    top: 39px;
+    right: 71px;
+    z-index: 3;
+    background-position: center middle;
+    background-repeat: no-repeat;
+    transition: opacity 0.666s ease-in-out;
+    -webkit-transition: opacity 0.666s ease-in-out;
+    -moz-transition: opacity 0.666s ease-in-out;
+    -o-transition: opacity 0.666s ease-in-out;
+    -ms-transition: opacity 0.666s ease-in-out; }
+    .home-right #gat.active {
+      opacity: 0.333; }
 
 .currentStatus {
   float: left;
@@ -175,23 +196,6 @@ footer {
   .currentStatus h4 {
     padding: 0 10px;
     font-weight: 400; }
-
-#gat {
-  opacity: 0.333;
-  width: 316px;
-  height: 274px;
-  position: absolute;
-  top: 39px;
-  right: 71px;
-  background-position: center middle;
-  background-repeat: no-repeat;
-  transition: opacity 0.666s ease-in-out;
-  -webkit-transition: opacity 0.666s ease-in-out;
-  -moz-transition: opacity 0.666s ease-in-out;
-  -o-transition: opacity 0.666s ease-in-out;
-  -ms-transition: opacity 0.666s ease-in-out; }
-  #gat.active {
-    opacity: 0.333; }
 
 .a0 {
   top: 45px;
