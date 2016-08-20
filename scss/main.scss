@@ -98,9 +98,17 @@ footer{
 	}
 }
 #gat{
-	opacity: 0;
-	@include transition(opacity .25s ease-in-out);
+	opacity: 0.333;
+	width: 316px;
+	height: 274px;
+	position: absolute;
+	top: 39px;
+	right: 71px;
+	//background-image: url(../images/players/mark-knopfler.jpg);
+	background-position: center middle;
+	background-repeat: no-repeat;
+	@include transition(opacity .666s ease-in-out);
 	&.active{
-		opacity: 1;
+		opacity: 0.333;
 	}
 }

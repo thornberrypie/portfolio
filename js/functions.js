@@ -12,7 +12,7 @@ function fadeInGatSection(){
 	//Times ranNum by width of pic to get random background position
 	var xPos = (ranNum * playerWidth) * -1;
 	console.log(xPos);
-	$('#gat').css('background-position', xPos+' 0').addClass('active');
+	//$('#gat').css('background-position', xPos+' 0').addClass('active');
 }
 
 function fadeOutGatSection(){

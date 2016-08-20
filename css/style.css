@@ -177,14 +177,21 @@ footer {
     font-weight: 400; }
 
 #gat {
-  opacity: 0;
-  transition: opacity 0.25s ease-in-out;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out; }
+  opacity: 0.333;
+  width: 316px;
+  height: 274px;
+  position: absolute;
+  top: 39px;
+  right: 71px;
+  background-position: center middle;
+  background-repeat: no-repeat;
+  transition: opacity 0.666s ease-in-out;
+  -webkit-transition: opacity 0.666s ease-in-out;
+  -moz-transition: opacity 0.666s ease-in-out;
+  -o-transition: opacity 0.666s ease-in-out;
+  -ms-transition: opacity 0.666s ease-in-out; }
   #gat.active {
-    opacity: 1; }
+    opacity: 0.333; }
 
 .a0 {
   top: 45px;
