@@ -54,16 +54,17 @@ footer{
 	padding-left:36px;
 }
 .home-right{
-	width:48%;
+	width:$box-width;
 	float:right;
 	min-height:313px;
 	min-width:340px;
 	position:relative;
+	right: 54px;
 	text-align: center;
 	p.intro{
 		color: $dark;
 		font-family: $reem-font;
-		font-size: 19px;
+		font-size: 18px;
 		position: relative;
 		z-index: 5;
 		span{
@@ -71,15 +72,15 @@ footer{
 		}
 	}
 	h2.acronyms{
-		/*width: 320px;*/
-		width:90%;
+		width:$box-width;
 		height:266px;
 		display:block;
 		position:absolute;
 		top:36px;
-		right: 18px;
+		right: 9px;
 		z-index: 5;
 		font-family: $reem-font;
+		//background: darken($light, 3%);
 		span{
 			display:none;
 			position:absolute;

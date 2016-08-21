@@ -14,11 +14,6 @@
 	.home-left{
 		width:40%;
 	}
-	.home-right{
-		h2.acronyms{
-			right: 12%;
-		}
-	}
 	.download{
 		text-align:left;
 	}
@@ -51,15 +46,20 @@
 	.nav-wrapper{
 		width: 100%;
 		nav{
-			padding-top: 12px;
+			padding: 12px 0 0;
 			margin-bottom: 12px;
 		}
 	}
 	.home{
 		margin:147px 0 0;
+		.inner{
+			padding: 0;
+		}
 	}
 	.home-right{
-		display:none;
+		float: none;
+		margin: 0 auto;
+		right: 0;
 	}
 	.home-left{
 		padding: 0 12px;

@@ -138,28 +138,28 @@ footer {
   padding-left: 36px; }
 
 .home-right {
-  width: 48%;
+  width: 320px;
   float: right;
   min-height: 313px;
   min-width: 340px;
   position: relative;
+  right: 54px;
   text-align: center; }
   .home-right p.intro {
     color: #515150;
     font-family: "Reem Kufi";
-    font-size: 19px;
+    font-size: 18px;
     position: relative;
     z-index: 5; }
     .home-right p.intro span {
       display: none; }
   .home-right h2.acronyms {
-    /*width: 320px;*/
-    width: 90%;
+    width: 320px;
     height: 266px;
     display: block;
     position: absolute;
     top: 36px;
-    right: 18px;
+    right: 9px;
     z-index: 5;
     font-family: "Reem Kufi"; }
     .home-right h2.acronyms span {
@@ -198,165 +198,165 @@ footer {
     font-weight: 400; }
 
 .a0 {
-  top: 45px;
-  left: 39px;
+  top: 72px;
+  left: 8px;
   font-size: 32px;
   color: #297ED8; }
 
 .a1 {
-  top: 166px;
-  left: 76px;
+  top: 136px;
+  left: 66px;
   font-size: 30px;
   color: #5196E0; }
 
 .a2 {
-  top: 86px;
-  left: 288px;
+  top: 62px;
+  left: 240px;
   font-size: 31px;
   color: #258DD6; }
 
 .a3 {
-  top: 154px;
-  left: 236px;
+  top: 150px;
+  left: 226px;
   font-size: 30px;
   color: #2399D4; }
 
 .a4 {
-  top: 218px;
-  left: 158px;
+  top: 236px;
+  left: 65px;
   font-size: 30px;
   color: #21A0D3; }
 
 .a5 {
-  top: 240px;
+  top: 235px;
   left: 14px;
-  font-size: 29px;
+  font-size: 20px;
   color: #20A6D2; }
 
 .a6 {
-  top: 113px;
-  left: 172px;
+  top: 115px;
+  left: 151px;
   font-size: 28px;
   color: #2DABD4; }
 
 .a7 {
-  top: 188px;
-  left: 303px;
-  font-size: 28px;
+  top: 184px;
+  left: 252px;
+  font-size: 25px;
   color: #3FB2D8; }
 
 .a8 {
-  top: 22px;
-  left: 222px;
-  font-size: 27px;
+  top: 42px;
+  left: 153px;
+  font-size: 23px;
   color: #297ED8; }
 
 .a9 {
-  top: 130px;
-  left: 9px;
-  font-size: 26px;
+  top: 132px;
+  left: 2px;
+  font-size: 24px;
   color: #5196E0; }
 
 .a10 {
-  top: 241px;
-  left: 298px;
+  top: 200px;
+  left: 138px;
   font-size: 26px;
   color: #4978E2; }
 
 .a11 {
-  top: 46px;
-  left: 134px;
-  font-size: 28px;
+  top: 34px;
+  left: 75px;
+  font-size: 26px;
   color: #5196E0; }
 
 .a12 {
-  top: 248px;
-  left: 224px;
+  top: 233px;
+  left: 158px;
   font-size: 25px;
   color: #5197E0; }
 
 .a13 {
-  top: 7px;
-  left: 15px;
+  top: 5px;
+  left: 0px;
   font-size: 24px;
   color: #20A6D2; }
 
 .a14 {
-  top: 83px;
-  left: 124px;
+  top: 70px;
+  left: 89px;
   font-size: 24px;
   color: #4771E1; }
 
 .a15 {
-  top: 9px;
-  left: 306px;
+  top: 0px;
+  left: 260px;
   font-size: 26px;
   color: #297ed8; }
 
 .a16 {
   top: 202px;
-  left: 30px;
+  left: 6px;
   font-size: 25px;
   color: #5BBEDE; }
 
 .a17 {
-  top: 210px;
-  left: 97px;
-  font-size: 20px;
+  top: 174px;
+  left: 59px;
+  font-size: 17px;
   color: #3FB2D8; }
 
 .a18 {
-  top: 128px;
-  left: 104px;
+  top: 101px;
+  left: 99px;
   font-size: 22px;
   color: #5196E0; }
 
 .a19 {
-  top: 51px;
-  left: 256px;
-  font-size: 20px;
+  top: 30px;
+  left: 216px;
+  font-size: 17px;
   color: #258DD6; }
 
 .a20 {
-  top: 145px;
-  left: 311px;
+  top: 120px;
+  left: 248px;
   font-size: 21px;
   color: #3C45E4; }
 
 .a21 {
-  top: 15px;
-  left: 90px;
+  top: 0px;
+  left: 88px;
   font-size: 22px;
   color: #5196E0; }
 
 .a22 {
-  top: 78px;
-  left: 13px;
+  top: 36px;
+  left: 24px;
   font-size: 20px;
   color: #4771E1; }
 
 .a23 {
-  top: 248px;
-  left: 97px;
+  top: 204px;
+  left: 74px;
   font-size: 20px;
   color: #3C45E4; }
 
 .a24 {
-  top: 102px;
-  left: 58px;
+  top: 104px;
+  left: 34px;
   font-size: 20px;
   color: #21A0D3; }
 
 .a25 {
-  top: 182px;
-  left: 172px;
+  top: 170px;
+  left: 118px;
   font-size: 16px;
   color: #3C45E4; }
 
 .a26 {
-  top: 216px;
-  left: 258px;
-  font-size: 19px;
+  top: 212px;
+  left: 236px;
+  font-size: 21px;
   color: #5BBEDE; }
 
 .a27 {
@@ -368,36 +368,36 @@ footer {
 .a28 {
   top: 148px;
   left: 175px;
-  font-size: 20px;
+  font-size: 32px;
   color: #2DABD4; }
 
 .a29 {
   top: 4px;
   left: 174px;
-  font-size: 18px;
+  font-size: 27px;
   color: #2399D4; }
 
 .a30 {
-  top: 76px;
-  left: 202px;
+  top: 80px;
+  left: 158px;
   font-size: 22px;
   color: #297ED8; }
 
 .a31 {
-  top: 253px;
-  left: 170px;
-  font-size: 17px;
+  top: 236px;
+  left: 269px;
+  font-size: 26px;
   color: #21A0D3; }
 
 .a32 {
-  top: 190px;
-  left: 236px;
+  top: 177px;
+  left: 201px;
   font-size: 17px;
   color: #20A6D2; }
 
 .a33 {
-  top: 120px;
-  left: 270px;
+  top: 94px;
+  left: 224px;
   font-size: 17px;
   color: #3D49E4; }
 
@@ -793,9 +793,6 @@ footer {
   .home-left {
     width: 40%; }
 
-  .home-right h2.acronyms {
-    right: 12%; }
-
   .download {
     text-align: left; }
 
@@ -821,14 +818,18 @@ footer {
   .nav-wrapper {
     width: 100%; }
     .nav-wrapper nav {
-      padding-top: 12px;
+      padding: 12px 0 0;
       margin-bottom: 12px; }
 
   .home {
     margin: 147px 0 0; }
+    .home .inner {
+      padding: 0; }
 
   .home-right {
-    display: none; }
+    float: none;
+    margin: 0 auto;
+    right: 0; }
 
   .home-left {
     padding: 0 12px;
