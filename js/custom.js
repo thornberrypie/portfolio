@@ -14,14 +14,16 @@ var numPlayers = 20;
 var playerWidth = 350;
 //var acronyms = ['PHP','HTML','CSS','SQL','CMS','XML','LAMP','SEO','JS','MVC','JSON','LESS','AJAX','REST','CDN','OOP','URL','CURL','GUI','WYSIWYG','SOAP','AGILE','GUI','SASS','YAML','WWW','PSD','CLI','PDF','DNS','HTTP','API','RSS','MAMP'];
 $(document).ready(function(){
-//Preload images for "work" section
+	//Preload images for "work" section
 	var thumbs = new Image(); thumbs.src = '/images/thumbs-169x133.jpg';
 	var sites1 = new Image(); sites1.src = '/images/websites1y515.jpg';
 	var sites2 = new Image(); sites2.src = '/images/websites2y515.jpg';
 	var sites3 = new Image(); sites3.src = '/images/websites3y515.jpg';
-//Set up acronyms for home section
+
+	//Set up acronyms for home section
 	setUpPage();
-//Set up navigation slider
+
+	//Set up navigation slider
 	$('#nav-slider').slider({
 		min: 0,
 		max: navWidth,
@@ -34,23 +36,26 @@ $(document).ready(function(){
 			stopDraggingNav(num);
 		}
 	});
-//Animate logo on mouseover
+
+	//Animate logo on mouseover
 	$('h1 a').mouseenter(function(){
 		$(this).find('.big').stop().animate({'top':0}, 222);
 	}).mouseleave(function(){
 		$(this).find('.big').stop().animate({'top':'4px'}, 222);
 	});
-//Activate navigation slider and page scrolling when link is clicked
+
+	//Activate navigation slider and page scrolling when link is clicked
 	$('nav ul a').click(function(e){
 		e.preventDefault();
 		var navActive = $('nav').attr('class');
 		var navid = $(this).parents('li').attr('id');
 		var pageid = navid.replace('nav-', '');
 		animateNavPage(pageid);
-	//Stop "work" animation and hide text
+		//Stop "work" animation and hide text
 		leaveWorkArea();
 	});
-//Show site thumbnail on mouseover
+
+	//Show site thumbnail on mouseover
 	$('.work li').mouseenter(function(){
 		$(this).addClass('over');
 		animateThumb($(this), 'open');
@@ -60,7 +65,8 @@ $(document).ready(function(){
 			animateThumb($(this), 'close');
 		}
 	});
-//Show site info and bg when site thumbnail is clicked
+
+	//Show site info and bg when site thumbnail is clicked
 	$('.work li').click(function(){
 		var clicked = $(this);
 		var bg = $('#sitebg');
@@ -71,7 +77,7 @@ $(document).ready(function(){
 				animateThumb($(this), 'close');
 			}
 		});
-	//Pause bg instead of changing if same item is clicked
+		//Pause bg instead of changing if same item is clicked
 		if(clicked.hasClass('active')){
 			if(clicked.hasClass('paused')){
 				clicked.removeClass('paused');
@@ -80,7 +86,7 @@ $(document).ready(function(){
 				bg.stop();
 				clicked.addClass('paused');
 			}
-	//Change/show bg and text when first/ different item is clicked
+		//Change/show bg and text when first/ different item is clicked
 		}else{
 			var clickedClass = clicked.attr('class');
 			$('.work li').removeClass('active').removeClass('paused');
@@ -104,7 +110,7 @@ $(document).ready(function(){
 		}
 	}); //end $('.work li').click(function(){
 
-	//Do some stuff when guitar link is hovered over
+	//Show random hero guitar link is hovered over
 	activateGuitarHover();
 
 	//Run function on resize

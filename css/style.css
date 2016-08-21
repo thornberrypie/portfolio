@@ -115,7 +115,7 @@ footer {
 
 .header {
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   background: #fff;
@@ -806,6 +806,22 @@ footer {
     padding-left: 0; }
   .header .inner {
     padding: 0; }
+  .header .nav-wrapper {
+    width: 100%; }
+    .header .nav-wrapper nav {
+      padding: 12px 0 0;
+      margin-bottom: 12px; }
+  .header.sticky {
+    position: fixed; }
+    .header.sticky h1, .header.sticky h2 {
+      display: none; }
+    .header.sticky .nav-wrapper {
+      float: none;
+      background: #fff;
+      height: 84px; }
+      .header.sticky .nav-wrapper nav {
+        margin: 15px 0 0 10px;
+        padding: 50px 0 0; }
 
   .inner {
     text-align: center;
@@ -815,14 +831,8 @@ footer {
     padding: 3px 0 0;
     float: none; }
 
-  .nav-wrapper {
-    width: 100%; }
-    .nav-wrapper nav {
-      padding: 12px 0 0;
-      margin-bottom: 12px; }
-
   .home {
-    margin: 147px 0 0; }
+    margin: 0; }
     .home .inner {
       padding: 0; }
 
@@ -830,6 +840,8 @@ footer {
     float: none;
     margin: 0 auto;
     right: 0; }
+    .home-right p.intro {
+      font-size: 16px; }
 
   .home-left {
     padding: 0 12px;

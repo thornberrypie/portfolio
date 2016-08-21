@@ -34,6 +34,29 @@
 		.inner{
 			padding:0;
 		}
+		.nav-wrapper{
+			width: 100%;
+			nav{
+				padding: 12px 0 0;
+				margin-bottom: 12px;
+			}
+		}
+		&.sticky{
+			position: fixed;
+
+			h1, h2/*, .ui-slider-handle*/{
+				display: none;
+			}
+			.nav-wrapper{
+				float: none;
+				background: $white;
+				height: 84px;
+				nav{
+					margin: 15px 0 0 10px;
+					padding: 50px 0 0;
+				}
+			}
+		}
 	}
 	.inner{
 		text-align: center;
@@ -43,15 +66,9 @@
 		padding: 3px 0 0;
 		float: none;
 	}
-	.nav-wrapper{
-		width: 100%;
-		nav{
-			padding: 12px 0 0;
-			margin-bottom: 12px;
-		}
-	}
+
 	.home{
-		margin:147px 0 0;
+		margin:0;
 		.inner{
 			padding: 0;
 		}
@@ -60,6 +77,9 @@
 		float: none;
 		margin: 0 auto;
 		right: 0;
+		p.intro{
+			font-size: 16px;
+		}
 	}
 	.home-left{
 		padding: 0 12px;

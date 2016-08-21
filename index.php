@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" href="images/gt-profile-196.png">
 	<link rel="apple-touch-icon-precomposed" href="images/gt-profile-180.png">
-	<link rel="stylesheet" media="all" href="css/style.css">
+	<link rel="stylesheet" media="all" href="css/style.min.css">
 	<link rel="stylesheet" media="print" href="css/print.css">
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro|Reem+Kufi" rel="stylesheet">
 	<!--[if IE]>
@@ -25,6 +25,26 @@
 	<meta property="og:description" content="Portfolio of Auckland Web Developer Graeme Thornber: Front-end expert and PHP CMS specialist." />
 </head>
 <body>
+	<header class="header">
+		<div class="inner clearfix">
+			<div class="hgroup">
+				<h1><a href="/"><span class="big">G</span><span>raeme</span> <span class="big">T</span><span>hornber</span></a></h1>
+				<h2>Kiwi Web Developer</h2>
+			</div>
+			<div class="nav-wrapper">
+				<nav class="nav-home">
+					<div id="nav-slider"></div>
+					<ul class="clearfix">
+						<li id="nav-home"><a>Home</a></li>
+						<li id="nav-work"><a>Work</a></li>
+						<li id="nav-about"><a>About</a></li>
+						<li id="nav-contact"><a>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<noscript><br /><br /><br />{Please enable Javascript}</noscript>
+		</div>
+	</header>
 	<article class="home">
 		<div class="inner clearfix">
 			<div class="home-right">
@@ -188,26 +208,6 @@
 			<div class="contact-bg"></div>
 		</div>
 	</article>
-	<header class="header">
-		<div class="inner clearfix">
-			<div class="hgroup">
-				<h1><a href="/"><span class="big">G</span><span>raeme</span> <span class="big">T</span><span>hornber</span></a></h1>
-				<h2>Kiwi Web Developer</h2>
-			</div>
-			<div class="nav-wrapper">
-				<nav class="nav-home">
-					<div id="nav-slider"></div>
-					<ul class="clearfix">
-						<li id="nav-home"><a>Home</a></li>
-						<li id="nav-work"><a>Work</a></li>
-						<li id="nav-about"><a>About</a></li>
-						<li id="nav-contact"><a>Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-			<noscript><br /><br /><br />{Please enable Javascript}</noscript>
-		</div>
-	</header>
 	<footer>
 		<p>&copy; <?php echo date('Y') ?> Thornberry Pie. All Rights Reserved</p>
 	</footer>
