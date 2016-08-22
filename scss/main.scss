@@ -17,6 +17,9 @@
 	background:url(../images/bg-pattern.jpg) repeat center 0;
 	border-top:1px solid $aqua;
 	border-bottom:1px solid $aqua;
+	&.work{
+		border-bottom: 0;
+	}
 }
 footer{
 	height:100px;
@@ -45,7 +48,6 @@ footer{
 	background:$light url(../images/fern-leaf.jpg) no-repeat 0 100%;
 	padding:12px 0;
 	border-top:1px solid $aqua;
-	border-bottom:1px solid $aqua;
 }
 .home-left{
 	width:47%;

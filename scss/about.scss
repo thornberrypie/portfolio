@@ -1,8 +1,7 @@
 .about{
 	padding:12px 0;
 	background:linear-gradient(135deg, #75cdf5, #fff);
-	border-bottom-width:2px;
-	border-top-width:2px;
+	border-bottom:0;
 	.inner{
 		z-index:99;
 		width: $content-width;
