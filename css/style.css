@@ -139,7 +139,7 @@ footer {
 .home-right {
   width: 320px;
   float: right;
-  min-height: 313px;
+  min-height: 303px;
   position: relative;
   right: 54px;
   text-align: center; }
@@ -148,6 +148,7 @@ footer {
     font-family: "Reem Kufi";
     font-size: 18px;
     position: relative;
+    right: 7px;
     z-index: 5; }
     .home-right p.intro span {
       display: none; }
@@ -286,8 +287,8 @@ footer {
   color: #4771E1; }
 
 .a15 {
-  top: 0px;
-  left: 255px;
+  top: 2px;
+  left: 245px;
   font-size: 26px;
   color: #297ed8; }
 
@@ -352,8 +353,8 @@ footer {
   color: #3C45E4; }
 
 .a26 {
-  top: 212px;
-  left: 236px;
+  top: 207px;
+  left: 222px;
   font-size: 21px;
   color: #5BBEDE; }
 
@@ -382,8 +383,8 @@ footer {
   color: #297ED8; }
 
 .a31 {
-  top: 236px;
-  left: 258px;
+  top: 234px;
+  left: 252px;
   font-size: 26px;
   color: #21A0D3; }
 
@@ -911,6 +912,12 @@ footer {
   .currentStatus .boldi {
     text-align: center;
     padding-right: 5px; }
+
+  .home {
+    padding-top: 6px; }
+
+  .home-right h2.acronyms {
+    top: 30px; }
 
   .work ul li {
     width: 100%; }
