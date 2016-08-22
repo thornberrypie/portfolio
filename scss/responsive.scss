@@ -12,7 +12,8 @@
 		width: 55%;
 	}
 	.home-left{
-		width:40%;
+		width:46%;
+		padding-left: 3px;
 	}
 	.download{
 		text-align:left;
@@ -41,22 +42,6 @@
 				margin-bottom: 12px;
 			}
 		}
-		&.sticky{
-			position: fixed;
-
-			h1, h2/*, .ui-slider-handle*/{
-				display: none;
-			}
-			.nav-wrapper{
-				float: none;
-				background: $white;
-				height: 84px;
-				nav{
-					margin: 15px 0 0 10px;
-					padding: 50px 0 0;
-				}
-			}
-		}
 	}
 	.inner{
 		text-align: center;
@@ -79,14 +64,23 @@
 		right: 0;
 		p.intro{
 			font-size: 16px;
+			padding-top: 0;
+		}
+		h2.acronyms{
+			right: 0;
 		}
 	}
 	.home-left{
 		padding: 0 12px;
 		width:100%;
 	}
-	.work ul li{
-		width: 50%;
+	.work{
+		ul li{
+			width: 50%;
+		}
+		#siteinfo{
+			padding: 0 12px;
+		}
 	}
 	.about p{
 		width:100%;
@@ -152,16 +146,55 @@
 			right:0;
 		}
 	}
+	.sticky-header{
+		.header{
+			position: fixed;
+			height: $sticky-header-height;
+			h1, h2/*, .ui-slider-handle*/{
+				display: none;
+			}
+			.nav-wrapper{
+				float: none;
+				background: $white;
+				height: 50px;
+				nav{
+					margin: 15px auto 0;
+					padding: 12px 0 0;
+				}
+			}
+		}
+		.home{
+			padding-top: 155px;
+		}
+	}
 }
 @media screen and (max-width:480px){
 	.currentStatus .boldi{
 		text-align:center;
 		padding-right:5px;
 	}
-
 	.work{
 		ul li{
 			width: 100%;
+			&.over{
+				h3, h4{
+					opacity: 0;
+				}
+			}
+		}
+		.inner{
+			p.selection{
+				font-size: 17px;
+			}
+		}
+	}
+	.sticky-header{
+		.header{
+			.nav-wrapper{
+				nav{
+					//margin: 15px 0 0 10px;
+				}
+			}
 		}
 	}
 }

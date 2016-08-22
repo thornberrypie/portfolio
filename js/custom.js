@@ -12,7 +12,7 @@ var phoneNumber = '+64 (0)21 0292 4529';
 var fbAddress = '<a href="//www.facebook.com/thornberrypie" target="_blank">facebook.com/thornberrypie</a>';
 var numPlayers = 20;
 var playerWidth = 350;
-//var acronyms = ['PHP','HTML','CSS','SQL','CMS','XML','LAMP','SEO','JS','MVC','JSON','LESS','AJAX','REST','CDN','OOP','URL','CURL','GUI','WYSIWYG','SOAP','AGILE','GUI','SASS','YAML','WWW','PSD','CLI','PDF','DNS','HTTP','API','RSS','MAMP'];
+
 $(document).ready(function(){
 	//Preload images for "work" section
 	var thumbs = new Image(); thumbs.src = '/images/thumbs-169x133.jpg';
@@ -119,6 +119,13 @@ $(document).ready(function(){
 		clearTimeout(timeoutid);
 		timeoutid = setTimeout(doneResizing, 333);
 	});
+
+	if($(window).width() < 480){ console.log($(window).width());
+		$('.work li').each(function(){
+			$(this).addClass('over');
+			animateThumb($(this), 'open');
+		});
+	}
 }); //end $(document).ready(function(){
 
 /*--------------------------Functions------------------------------*/

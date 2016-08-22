@@ -128,7 +128,6 @@ footer {
 .home {
   background: #d9d9d7 url(../images/fern-leaf.jpg) no-repeat 0 100%;
   padding: 12px 0;
-  margin: 102px 0 0;
   border-top: 1px solid #81c7e3;
   border-bottom: 1px solid #81c7e3; }
 
@@ -141,7 +140,6 @@ footer {
   width: 320px;
   float: right;
   min-height: 313px;
-  min-width: 340px;
   position: relative;
   right: 54px;
   text-align: center; }
@@ -253,7 +251,7 @@ footer {
 
 .a9 {
   top: 132px;
-  left: 2px;
+  left: 5px;
   font-size: 24px;
   color: #5196E0; }
 
@@ -276,8 +274,8 @@ footer {
   color: #5197E0; }
 
 .a13 {
-  top: 5px;
-  left: 0px;
+  top: 3px;
+  left: 12px;
   font-size: 24px;
   color: #20A6D2; }
 
@@ -289,7 +287,7 @@ footer {
 
 .a15 {
   top: 0px;
-  left: 260px;
+  left: 255px;
   font-size: 26px;
   color: #297ed8; }
 
@@ -385,7 +383,7 @@ footer {
 
 .a31 {
   top: 236px;
-  left: 269px;
+  left: 258px;
   font-size: 26px;
   color: #21A0D3; }
 
@@ -551,6 +549,8 @@ footer {
       .work ul li.active.paused .button {
         background: url(../images/play.png) no-repeat center;
         z-index: 39; }
+      .work ul li.active h3, .work ul li.active h4 {
+        opacity: 0; }
       .work ul li.site4, .work ul li.site8, .work ul li.site12 {
         margin-right: 0; }
       .work ul li.sff .img {
@@ -791,7 +791,8 @@ footer {
     width: 55%; }
 
   .home-left {
-    width: 40%; }
+    width: 46%;
+    padding-left: 3px; }
 
   .download {
     text-align: left; }
@@ -811,17 +812,6 @@ footer {
     .header .nav-wrapper nav {
       padding: 12px 0 0;
       margin-bottom: 12px; }
-  .header.sticky {
-    position: fixed; }
-    .header.sticky h1, .header.sticky h2 {
-      display: none; }
-    .header.sticky .nav-wrapper {
-      float: none;
-      background: #fff;
-      height: 84px; }
-      .header.sticky .nav-wrapper nav {
-        margin: 15px 0 0 10px;
-        padding: 50px 0 0; }
 
   .inner {
     text-align: center;
@@ -841,7 +831,10 @@ footer {
     margin: 0 auto;
     right: 0; }
     .home-right p.intro {
-      font-size: 16px; }
+      font-size: 16px;
+      padding-top: 0; }
+    .home-right h2.acronyms {
+      right: 0; }
 
   .home-left {
     padding: 0 12px;
@@ -849,6 +842,8 @@ footer {
 
   .work ul li {
     width: 50%; }
+  .work #siteinfo {
+    padding: 0 12px; }
 
   .about p {
     width: 100%; }
@@ -889,13 +884,32 @@ footer {
   .contact ul.deats li span {
     font-size: 15px; }
   .contact .contact-bg {
-    right: 0; } }
+    right: 0; }
+
+  .sticky-header .header {
+    position: fixed;
+    height: 66px; }
+    .sticky-header .header h1, .sticky-header .header h2 {
+      display: none; }
+    .sticky-header .header .nav-wrapper {
+      float: none;
+      background: #fff;
+      height: 50px; }
+      .sticky-header .header .nav-wrapper nav {
+        margin: 15px auto 0;
+        padding: 12px 0 0; }
+  .sticky-header .home {
+    padding-top: 155px; } }
 @media screen and (max-width: 480px) {
   .currentStatus .boldi {
     text-align: center;
     padding-right: 5px; }
 
   .work ul li {
-    width: 100%; } }
+    width: 100%; }
+    .work ul li.over h3, .work ul li.over h4 {
+      opacity: 0; }
+  .work .inner p.selection {
+    font-size: 17px; } }
 
 /*# sourceMappingURL=style.css.map */

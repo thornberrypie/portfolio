@@ -79,7 +79,7 @@ function fadeInGatSection(){
 	var ranNum = getRandomArbitrary(1, numPlayers);
 	//Times ranNum by width of pic to get random background position
 	var xPos = (ranNum * playerWidth) * -1;
-	console.log(xPos);
+	//console.log(xPos);
 	//$('#gat').css('background-position', xPos+' 0').addClass('active');
 }
 
@@ -109,11 +109,11 @@ function leaveWorkArea(){
 function makeHeaderSticky(){
 	$(window).scroll(function(){
 		var topPos = $(window).scrollTop();
-		console.log(topPos);
+		//console.log(topPos);
 		if(topPos > 72){
-            $('.header').addClass('sticky');
+            $('body').addClass('sticky-header');
         }else{
-			$('.header').removeClass('sticky');
+			$('body').removeClass('sticky-header');
 		}
 	});
 }
