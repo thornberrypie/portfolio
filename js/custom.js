@@ -51,7 +51,7 @@ $(document).ready(function(){
 		var navid = $(this).parents('li').attr('id');
 		var pageid = navid.replace('nav-', '');
 		animateNavPage(pageid);
-		//Stop "work" animation and hide text
+		//Stop work animation and hide text
 		leaveWorkArea();
 	});
 

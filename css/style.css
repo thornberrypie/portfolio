@@ -501,7 +501,12 @@ footer {
         .work ul li .text h3, .work ul li .text h4, .work ul li .text h5 {
           color: white;
           padding-top: 10px;
-          line-height: 30px; }
+          line-height: 30px;
+          transition: opacity 0.333s ease-in-out;
+          -webkit-transition: opacity 0.333s ease-in-out;
+          -moz-transition: opacity 0.333s ease-in-out;
+          -o-transition: opacity 0.333s ease-in-out;
+          -ms-transition: opacity 0.333s ease-in-out; }
         .work ul li .text h3 {
           font-size: 18px; }
         .work ul li .text h4 {
@@ -539,6 +544,8 @@ footer {
       .work ul li .info {
         display: none;
         font-size: 55px; }
+      .work ul li.over h3, .work ul li.over h4, .work ul li.over h5 {
+        opacity: 0; }
       .work ul li.active .img {
         opacity: 0.5; }
       .work ul li.active .button {
@@ -907,7 +914,7 @@ footer {
 
   .work ul li {
     width: 100%; }
-    .work ul li.over h3, .work ul li.over h4 {
+    .work ul li.over h3, .work ul li.over h4, .work ul li.over h5 {
       opacity: 0; }
   .work .inner p.selection {
     font-size: 17px; } }
