@@ -1,1 +1,18 @@
 Add guitar hover effect
+
+-------------Stuff to learn--------------
+
+Jenkins
+
+iOS development:
+Xcode, storyboard, xib, UIKit, CoreLocation, MapKit, CoreAnimation
+
+more PHP stuff:
+Ansible, Elasticsearch
+
+JS frameworks:
+Redux, Polymer
+
+ES2016 (ES6), Webpack, Babel
+
+TDD, BDD, Mocha, Jasmine, Jest, Lab
