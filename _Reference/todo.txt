@@ -2,7 +2,7 @@ Add guitar hover effect
 
 -------------Stuff to learn--------------
 
-Jenkins
+Jenkins, Docker, Ubuntu
 
 iOS development:
 Xcode, storyboard, xib, UIKit, CoreLocation, MapKit, CoreAnimation
