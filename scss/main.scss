@@ -72,22 +72,6 @@ footer{
 			display:none;
 		}
 	}
-	h2.acronyms{
-		width:$box-width;
-		height:266px;
-		display:block;
-		position:absolute;
-		top:36px;
-		right: 9px;
-		z-index: 5;
-		font-family: $reem-font;
-		//background: darken($light, 3%);
-		span{
-			display:none;
-			position:absolute;
-			line-height:32px;
-		}
-	}
 	#gat{
 		opacity: 0.333;
 		width: 316px;

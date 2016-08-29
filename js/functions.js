@@ -59,7 +59,7 @@ function doneResizing(){
 }
 
 function fadeInAcronyms(){
-	var acronymBox = $('.home-right .acronyms');
+	var acronymBox = $('.acronyms');
 	var speed = acronymFadeSpeed;
 	var fadeDif = speed / $('.acronyms span').length;
 	var fadeDelay = 0;
@@ -67,7 +67,14 @@ function fadeInAcronyms(){
 		$('.intro2').delay(999).fadeIn(666, function(){
 		//Progressively fade acronyms in faster
 			acronymBox.find('span').each(function(){
-				$(this).delay(fadeDelay).fadeIn(speed);
+				var a = $(this);
+				console.log(acronymBox.attr('id'));
+				setTimeout(function(){
+					a.fadeIn(speed);
+					acronymBox.attr('id', 'r'+a.attr('class'));
+				}, fadeDelay);
+				//a.delay(fadeDelay).fadeIn(speed);
+				//acronymBox.delay(fadeDelay).attr('id', a.attr('class'));
 				speed = Math.round(speed-fadeDif);
 				fadeDelay = fadeDelay+speed;
 			});

@@ -49,7 +49,10 @@
 		<div class="inner clearfix">
 			<div class="home-right">
 				<p class="intro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such as:</span></p>
-				<h2 class="acronyms"><?php outputAcronyms() ?></h2>
+				<h2 class="acronyms">
+					<?php outputAcronyms() ?>
+					<div class="acronimg"></div>
+				</h2>
 				<div id="gat"></div>
 			</div>
 			<div class="home-left">

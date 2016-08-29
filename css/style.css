@@ -153,19 +153,6 @@ footer {
     z-index: 5; }
     .home-right p.intro span {
       display: none; }
-  .home-right h2.acronyms {
-    width: 320px;
-    height: 266px;
-    display: block;
-    position: absolute;
-    top: 36px;
-    right: 9px;
-    z-index: 5;
-    font-family: "Reem Kufi"; }
-    .home-right h2.acronyms span {
-      display: none;
-      position: absolute;
-      line-height: 32px; }
   .home-right #gat {
     opacity: 0.333;
     width: 316px;
@@ -196,6 +183,37 @@ footer {
   .currentStatus h4 {
     padding: 0 10px;
     font-weight: 400; }
+
+h2.acronyms {
+  width: 320px;
+  height: 266px;
+  display: block;
+  position: absolute;
+  top: 36px;
+  right: 9px;
+  z-index: 5;
+  font-family: "Reem Kufi"; }
+  h2.acronyms span {
+    display: none;
+    position: absolute;
+    line-height: 32px; }
+
+.acronimg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0.0333;
+  transition: opacity 0.123s ease-in-out;
+  -webkit-transition: opacity 0.123s ease-in-out;
+  -moz-transition: opacity 0.123s ease-in-out;
+  -o-transition: opacity 0.123s ease-in-out;
+  -ms-transition: opacity 0.123s ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center middle;
+  background-size: contain; }
 
 .a0 {
   top: 72px;
