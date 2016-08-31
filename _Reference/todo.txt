@@ -1,18 +1,7 @@
-Add guitar hover effect
+Add guitar hover effect & acronym logos
+
+Add betterliving.co.nz to Satellite Media section
 
 -------------Stuff to learn--------------
 
-Jenkins, Docker, Ubuntu
-
-iOS development:
-Xcode, storyboard, xib, UIKit, CoreLocation, MapKit, CoreAnimation
-
-more PHP stuff:
-Ansible, Elasticsearch
-
-JS frameworks:
-Redux, Polymer
-
-ES2016 (ES6), Webpack, Babel
-
-TDD, BDD, Mocha, Jasmine, Jest, Lab
+Jenkins, Xcode, ES2016, Babel, Mocha
