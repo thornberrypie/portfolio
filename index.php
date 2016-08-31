@@ -84,7 +84,7 @@
 					<div class="box">
 						<div class="text"><h4>Fonterra Foodservice</h4><h3>Bolt CMS / Twig</h3><h4>Bootstrap 3 / jQuery</h4></div>
 						<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="//www.fonterrafoodservice.co.nz" target="_blank" title="Visit Website">www.fonterrafoodservice.co.nz</a></strong> - In late 2015 I collaborated with <a target="_blank" href="//www.satellitemedia.co.nz/">Satellite Media</a> to help Fonterra branch out into the Foodservice industry with a new site. It is built with a sophisticated CMS called <a href="//bolt.cm/" target="_blank">Bolt</a> and contains some delicious recipes!.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.fonterrafoodservice.co.nz" target="_blank" title="Visit Website">www.fonterrafoodservice.co.nz</a></strong> - In late 2015 I collaborated with <a target="_blank" href="//www.satellitemedia.co.nz/">Satellite Media</a> to build Fonterra's new Foodservice website. It's' built with a sophisticated CMS called <a href="//bolt.cm/" target="_blank">Bolt</a> and contains some delicious recipes!. During my time at <a target="_blank" href="//www.satellitemedia.co.nz/">Satellite</a> I also had the opportunity to work on <a target="_blank" href="//www.betterliving.co.nz/">www.betterliving.co.nz</a></div>
 					</div>
 				</li>
 				<li class="site3 stoptober">

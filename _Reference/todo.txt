@@ -1,7 +1,5 @@
 Add guitar hover effect & acronym logos
 
-Add betterliving.co.nz to Satellite Media section
-
 -------------Stuff to learn--------------
 
 Jenkins, Xcode, ES2016, Babel, Mocha

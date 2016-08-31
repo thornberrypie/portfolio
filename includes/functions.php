@@ -37,7 +37,7 @@ function outputAcronyms(){
         'MAMP'
     );
     foreach($acronyms as $k=>$v){
-        echo '<span class="a'.$k.'">'.$v.'</span>';
+        echo '<span class="a'.$k.'">'.$v.' </span>';
     }
 }
 ?>
