@@ -3,3 +3,7 @@ Add guitar hover effect & acronym logos
 -------------Stuff to learn--------------
 
 Jenkins, Xcode, ES2016, Babel, Mocha
+
+
+Current app tutorial:
+https://www.youtube.com/watch?v=wxiRx77XFN8&list=PLMRqhzcHGw1ZF7VdTt2EALt_5i6RELc0k&index=10#t=766.38071
