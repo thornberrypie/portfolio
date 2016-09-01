@@ -1,3 +1,5 @@
+Change grunt to gulp
+
 Add guitar hover effect & acronym logos
 
 -------------Stuff to learn--------------
