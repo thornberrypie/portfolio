@@ -33,7 +33,7 @@ function outputAcronyms(){
         'XML',
         'HTTP',
         'PSD',
-        'RSS',
+        'EDM',
         'MAMP'
     );
     foreach($acronyms as $k=>$v){
