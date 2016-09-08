@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" href="images/gt-profile-196.png">
 	<link rel="apple-touch-icon-precomposed" href="images/gt-profile-180.png">
-	<link rel="stylesheet" media="all" href="css/style.min.css">
+	<link rel="stylesheet" media="all" href="build/index.min.css">
 	<link rel="stylesheet" media="print" href="css/print.css">
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro|Reem+Kufi" rel="stylesheet">
 	<!--[if IE]>
@@ -214,7 +214,7 @@
 	<footer>
 		<p>&copy; <?php echo date('Y') ?> Thornberry Pie. All Rights Reserved</p>
 	</footer>
-	<script src="js/custom.min.js"></script>
+	<script src="build/main.min.js"></script>
 	<!-- Google Tag Manager -->
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M59LS4"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
