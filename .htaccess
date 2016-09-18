@@ -2,6 +2,8 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\.
 RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
+ErrorDocument 404 /404.php
+
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -18,3 +20,7 @@ ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
 ## EXPIRES CACHING ##
+
+Redirect 301 /files/Graeme-Thornber-CV.pdf /assets/CV/2016/Graeme-Thornber-CV2016.pdf
+Redirect 301 /assets/Graeme-Thornber-CV-english.odt /assets/CV/2016/Graeme-Thornber-CV2016-word.zip
+Redirect 301 /thorn-berry-pie/75 /
