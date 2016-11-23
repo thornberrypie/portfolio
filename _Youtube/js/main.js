@@ -1,7 +1,7 @@
 var Search = function(){
-    
+
     this.apiKey = 'AIzaSyDMEgyECScLdhmGq-YcNFFQ2HFawNstPCw';
-    this.defaultSearchterm = 'svensven2011 degraw grenade smiths';
+    this.defaultSearchterm = 'svensven2011';
     this.nextPageToken = '';
     this.pageCount = 1;
     this.resultsPerPage = 12;
@@ -68,7 +68,7 @@ var Search = function(){
         this.pageCount = 1;
         var obj = this;
         /*if($('#navbar .nav li').length == 5){
-           $('#navbar .nav li:first-child').remove(); 
+           $('#navbar .nav li:first-child').remove();
         }*/
         $('#navbar .nav').append('<li><a href="#">'+this.rawsearchterm()+'</a></li>');
         $('#navbar li a').unbind('click').on('click', function(){
@@ -77,7 +77,7 @@ var Search = function(){
         });
     }
 
-    
+
 }
 
 //Runs when google client api has loaded
@@ -85,7 +85,7 @@ function googleApiClientReady(){
 
     //Ensure page has loaded properly
     $(document).ready(function(){
-        
+
         var $search = new Search();
 
         //Show results when search form is submitted
@@ -95,10 +95,10 @@ function googleApiClientReady(){
                 $search.updateRecent();
                 $search.getResults('add');
             }
-            
+
         });
 
-        
+
         //Add default searchterm to input box if none exists
         if($search.searchterm() === ''){
             $('#searchbox').attr('value', $search.defaultSearchterm);
