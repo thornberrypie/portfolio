@@ -18,6 +18,9 @@
 				font-size: 20px;
 				@include text-shadow($dark);
 			}
+			&:last-child{
+				padding-bottom: 6px;
+			}
 		}
 	}
 	#siteinfo{
@@ -215,7 +218,11 @@
 		background-image:url(../images/websites3y515.jpg);
 		background-position: left 0;
 	}
-	&.liftoff-bg{
+	/*&.liftoff-bg{
+		background-image:url(../images/websites1y515.jpg);
+		background-position: center -1030px;
+	}*/
+	&.oysterbay-bg{
 		background-image:url(../images/websites1y515.jpg);
 		background-position: center -1030px;
 	}
