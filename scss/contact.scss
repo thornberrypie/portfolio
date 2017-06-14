@@ -49,6 +49,9 @@
 				line-height: 24px;
 				display: inline-block;
 			}
+			&.con-em a {
+				padding-left: 0;
+			}
 			&.con-so{
 				label, ul{
 					float: left;
