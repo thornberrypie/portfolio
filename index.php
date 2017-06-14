@@ -191,8 +191,8 @@
 			<aside class="clearfix">
 				<div class="download clearfix">
 					<p class="heading">Download CV</p>
-					<a class="pdf" href="assets/CV/2016/Graeme-Thornber-CV2016.pdf" target="_blank" title="PDF format"></a>
-					<a class="ms" href="assets/CV/2016/Graeme-Thornber-CV2016-word.zip" target="_blank" title="Microsoft Word format"></a>
+					<a class="pdf" href="assets/CV/2017/Graeme-Thornber-CV2017.pdf" target="_blank" title="PDF format"></a>
+					<a class="ms" href="assets/CV/2017/Graeme-Thornber-CV2017-word.zip" target="_blank" title="Microsoft Word format"></a>
 				</div>
 			</aside>
 			<ul class="deats">
