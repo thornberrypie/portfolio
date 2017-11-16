@@ -29,7 +29,7 @@
 		<div class="inner clearfix">
 			<div class="hgroup">
 				<h1><a href="/"><span class="big">G</span><span>raeme</span> <span class="big">T</span><span>hornber</span></a></h1>
-				<h2>Kiwi Web Developer</h2>
+				<h2>Web Developer based in Whitianga, NZ</h2>
 			</div>
 			<div class="nav-wrapper">
 				<nav class="nav-home">
@@ -45,7 +45,7 @@
 			<noscript><br /><br /><br />{Please enable Javascript}</noscript>
 		</div>
 	</header>
-	<article class="home">
+	<article class="home article">
 		<div class="inner clearfix">
 			<div class="home-right">
 				<p class="intro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such as:</span></p>
@@ -56,8 +56,8 @@
 				<div id="gat"></div>
 			</div>
 			<div class="home-left">
-				<p>I'm a Front End/UX/PHP Web Developer with a firm arsenal of Digital Web skills and over a decade of industry experience creating Web Applications in New Zealand and Europe.</p>
-				<p>I've worked with several Digital Agencies and corporates in Auckland, Wellington and Bonn, Germany for clients such as Barkers, BNZ, Burger King, Chelsea Sugar, Delegat, Deutsche Telekom, Fonterra, Frucor, Huffer, Meredith Connell, Methven, Overland Footwear, Roche, Toyota, Spark and&nbsp;Volkswagen.
+				<p>I'm an Open-source Web Developer with a firm arsenal of Digital Web skills and over a decade of industry experience creating Web Applications in New Zealand and Europe.</p>
+				<p>I've worked with several Digital Agencies and corporates in Auckland, Wellington and Bonn, Germany for clients such as Barkers, BNZ, Burger King, Chelsea Sugar, Delegat, Deutsche Telekom, Fonterra, Frucor, Huffer, Kiwirail, Meredith Connell, Methven, Overland Footwear, Roche, Toyota, Spark and&nbsp;Volkswagen.
 				<p>I stand out amongst developers due to my social nature, ability to communicate effectively, experience acting, singing and <a id="guitar-link" href="//youtube.graemethornber.com" target="_blank">playing guitar</a>.</p>
 			</div>
 			<!--<aside class="currentStatus">
@@ -159,7 +159,7 @@
 				</li>-->
 				<li class="site11 hito">
 					<div class="box">
-						<div class="text"><h3>HITO</h3><h3>Wordpress CMS</h3><h4>Front-End / Cufon</h4></div>
+						<div class="text"><h3>HITO</h3><h3>Wordpress CMS</h3><h4>Front-End / UX</h4></div>
 						<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
 						<div class="info"><strong><a class="siteTitle" href="//www.hito.org.nz" target="_blank" title="Visit Website">www.hito.org.nz</a></strong> - Working with amazing designers at <a href="//www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> in Wellington, I produced a custom Wordpress theme for the NZ Hairdressing Industry Training Organisation. I worked closely with the client on a daily basis through the whole process and helped transform into web their many ideas and desires. I was the sole devoloper working on this project, writing the front-end and server-side code.</div>
 					</div>
@@ -172,13 +172,13 @@
 					</div>
 				</li>
 			</ul>
-			<p><em>All sites above contain PHP, HTML, CSS and Javascript&nbsp;with&nbsp;jQuery.</em></p>
+			<p class="disclaimer"><em>All sites above contain PHP, HTML, CSS and Javascript&nbsp;with&nbsp;jQuery.</em></p>
 		</div>
 	</article>
 	<article class="about article">
 		<div class="inner clearfix">
 			<!--<h3>A bit about me...</h3>-->
-			<p>Originally from England, I grew up in Auckland and have also lived in Wellington, London, and Bonn,&nbsp;Germany.</p>
+			<p>Originally from England, now based in the Coromandel, I grew up in Auckland and have also lived in Wellington, London, and Bonn,&nbsp;Germany.</p>
 			<p class="tright">After finishing my studies at Howick College, I worked in hospitality for several years before receiving my Diploma in Web Development from <strike>Natcoll</strike>... <strike>Yoobee</strike>... Logical? in&nbsp;2006.</p>
 			<p>Since then I have worked in a variety of capacities with digital agencies, corporates and startups in all aspects of producing modern web applications built using fancy tech like AngularJS, Apache, concrete5, CSS3, Drupal, Git, Grunt, Gulp, HTML5, Javascript, Joomla, jQuery, MySQL, Node.js and PHP, Silverstripe and&nbsp;Wordpress.</p>
 			<p class="tright">Being a huge music fan I play guitar and as many other instruments as I can get my hands on. I also enjoy travelling, swimming, fishing, cooking and lucid&nbsp;dreaming.</p>
@@ -227,7 +227,7 @@
 			<div class="contact-bg"></div>
 		</div>
 	</article>
-	<footer>
+	<footer class="footer">
 		<p>&copy; <?php echo date('Y') ?> Thornberry Pie. All Rights Reserved</p>
 	</footer>
 	<script src="build/main.min.js"></script>

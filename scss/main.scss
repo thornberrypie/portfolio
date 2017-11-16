@@ -1,12 +1,12 @@
 .inner{
-	width:920px;
+	max-width:920px;
 	margin:0 auto;
 	text-align:left;
 	position:relative;
 }
 .hgroup{
 	float:left;
-	padding:10px 0 0;
+	padding:$padding 0 0;
 }
 .heading{
 	font-size:18px;
@@ -15,17 +15,19 @@
 	position:relative;
 	z-index:97;
 	background:url(../images/bg-pattern.jpg) repeat center 0;
-	border-top:1px solid $aqua;
-	border-bottom:1px solid $aqua;
-	&.work{
-		border-bottom: 0;
+	border-top:1px solid $white;
+	border-bottom:1px solid $grey;
+	padding: $padding*2 0;
+	&.home, &.about {
+		border-top: 0;
 	}
 }
-footer{
-	height:100px;
+.footer{
+	height:80px;
 	text-align:center;
 	line-height:28px;
 	font-size:12px;
+	padding: $padding*2 0;
 	background:#ede7db url(../images/cloud-windmills.jpg) repeat-x center 100%;
 	p{
 		color: white;
@@ -39,35 +41,33 @@ footer{
 	background:$white;
 	opacity:0.95;
 	z-index:99;
-	border-bottom: 1px solid $peach;
+	border-bottom: 1px solid $grey;
+	padding: $padding 0;
 	.inner{
 		width: $content-width+6;
 	}
 }
 .home{
 	background:$light url(../images/fern-leaf.jpg) no-repeat 0 100%;
-	padding:12px 0;
-	border-top:1px solid $aqua;
 }
 .home-left{
 	width:47%;
 	float:left;
-	padding-left:36px;
+	padding-left:$padding*3;
 }
 .home-right{
 	width:$box-width;
 	float:right;
-	min-height:303px;
+	min-height:323px;
 	position:relative;
-	right: 54px;
-	text-align: center;
-	p.intro{
+	right: 17px;
+	.intro{
 		color: $dark;
 		font-family: $reem-font;
 		font-size: 18px;
 		position: relative;
-		right: 7px;
 		z-index: 5;
+		padding-top: 0;
 		span{
 			display:none;
 		}
@@ -94,7 +94,7 @@ footer{
 	display: block;
 	border-radius:7px;
 	margin:20px 0 6px;
-	padding: 10px 0 12px;
+	padding: $padding 0;
 	text-align: center !important;
 	border: 1px solid $grey;
 	background:linear-gradient(135deg, #75cdf5, #fff);

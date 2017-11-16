@@ -1,4 +1,8 @@
 @media screen and (max-width:980px){
+	.nav-wrapper nav {
+		position: relative;
+		right: 33px;
+	}
 	.inner, fieldset.currentStatus, .home-left{
 		width:100%;
 		float:none;
@@ -8,12 +12,9 @@
 		padding:0 2.5%;
 		width: 100% !important;
 	}
-	.nav-wrapper{
-		width: 55%;
-	}
 	.home-left{
 		width:46%;
-		padding-left: 3px;
+		padding-left: $padding/4;
 	}
 	.download{
 		text-align:left;
@@ -28,27 +29,44 @@
 	}
 }
 @media screen and (max-width:768px){
+	.nav-wrapper{
+		text-align: center;
+		width: 100%;
+		nav{
+			padding: $padding 0 0;
+			margin: 0 auto $padding;
+			right: 0;
+		}
+	}
+	.article {
+		padding: $padding*2;
+		p{
+			text-align: justify;
+
+			&.disclaimer {
+				text-align: center;
+			}
+
+			&.intro {
+				text-align: left;
+				padding-left: $padding;
+			}
+		}
+	}
 	.header{
 		h2{
-			padding-left: 0;
+			padding: 0 0 $padding/4 0;
 		}
 		.inner{
 			padding:0;
 		}
-		.nav-wrapper{
-			width: 100%;
-			nav{
-				padding: 12px 0 0;
-				margin-bottom: 12px;
-			}
-		}
 	}
 	.inner{
 		text-align: center;
-		padding: 0 10px;
+		padding: 0 $padding;
 	}
 	.hgroup{
-		padding: 3px 0 0;
+		padding: $padding/2 0 ;
 		float: none;
 	}
 
@@ -71,7 +89,7 @@
 		}
 	}
 	.home-left{
-		padding: 0 12px;
+		padding: 0 $padding*2;
 		width:100%;
 	}
 	.work{
@@ -150,6 +168,7 @@
 		.header{
 			position: fixed;
 			height: $sticky-header-height;
+
 			h1, h2/*, .ui-slider-handle*/{
 				display: none;
 			}
@@ -169,15 +188,18 @@
 	}
 }
 @media screen and (max-width:480px){
+	.article {
+		padding: $padding*2 0;
+	}
 	.currentStatus .boldi{
 		text-align:center;
 		padding-right:5px;
 	}
-	.home{
-		padding-top: 6px;
-	}
 	.home-right h2.acronyms{
 		top: 30px;
+	}
+	.home-left {
+		padding: 0 $padding;
 	}
 	.work{
 		ul li{
@@ -191,15 +213,6 @@
 		.inner{
 			p.selection{
 				font-size: 17px;
-			}
-		}
-	}
-	.sticky-header{
-		.header{
-			.nav-wrapper{
-				nav{
-					//margin: 15px 0 0 10px;
-				}
 			}
 		}
 	}

@@ -34,7 +34,7 @@ function outputAcronyms(){
         'HTTP',
         'PSD',
         'EDM',
-        'MAMP'
+        'YML'
     );
     foreach($acronyms as $k=>$v){
         echo '<span class="a'.$k.'">'.$v.' </span>';
