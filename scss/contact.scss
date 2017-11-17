@@ -27,6 +27,15 @@
 	ul{
 		position:relative;
 		z-index:99;
+		display: block;
+		text-align: left;
+
+		&.social {
+			li {
+				text-align: left;
+			}
+		}
+
 		li{
 			padding:10px 0;
 			font-size: 14px;
@@ -34,6 +43,7 @@
 			a{
 				padding-left: 20px;
 				color:#14a1d0;
+				display: inline-block;
 			}
 			span{
 				cursor:pointer;
@@ -60,7 +70,7 @@
 				a:before{
 					width: 16px;
 					height: 16px;
-					display: block;
+					display: inline-block;
 					position: absolute;
 					content: " ";
 					left: 0;

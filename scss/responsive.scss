@@ -40,6 +40,9 @@
 	}
 	.article {
 		padding: $padding*2;
+		&.contact {
+			padding-bottom: $padding;
+		}
 		p{
 			text-align: justify;
 
@@ -119,16 +122,15 @@
 		ul{
 			li{
 				padding: 7px 0 !important;
-				text-align: center;
 				line-height: 16px;
 				font-size: 13px;
 				label{
 					font-size:15px;
 					line-height: 17px;
 					padding-right:0;
-					display: block;
-					width: 100%;
-					text-align: center;
+					text-align: left;
+					width: 66px;
+					white-space: nowrap;
 				}
 				a{
 					padding-left: 0;
@@ -147,7 +149,8 @@
 						&:before{
 							position: relative;
 							margin: 0 auto;
-							top: -4px;
+							top: 4px;
+							margin-right: 6px;
 						}
 					}
 				}
@@ -166,6 +169,7 @@
 	}
 	.sticky-header{
 		.header{
+			padding-top: 0;
 			position: fixed;
 			height: $sticky-header-height;
 
@@ -178,7 +182,7 @@
 				height: 50px;
 				nav{
 					margin: 15px auto 0;
-					padding: 12px 0 0;
+					padding: $padding/2 0 0;
 				}
 			}
 		}
@@ -190,6 +194,10 @@
 @media screen and (max-width:480px){
 	.article {
 		padding: $padding*2 0;
+
+		&.about {
+			padding: $padding*2 $padding;
+		}
 	}
 	.currentStatus .boldi{
 		text-align:center;
@@ -199,7 +207,7 @@
 		top: 30px;
 	}
 	.home-left {
-		padding: 0 $padding;
+		padding: 0 $padding*1.5;
 	}
 	.work{
 		ul li{
