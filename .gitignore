@@ -2,5 +2,5 @@
 .sass-cache
 node_modules
 css/style.css.map
-_Reference/access.txt
-_Reference/_*.txt
+_Reference
+_Placetrace/scripts/globals.php
