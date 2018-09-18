@@ -6,23 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" href="images/gt-profile-196.png">
 	<link rel="apple-touch-icon-precomposed" href="images/gt-profile-180.png">
-	<link rel="stylesheet" media="all" href="build/index.min.css">
-	<link rel="stylesheet" media="print" href="css/print.css">
+	<link rel="stylesheet" media="all" href="dist/css/style.css">
+	<link rel="stylesheet" media="print" href="dist/css/print.css">
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro|Reem+Kufi" rel="stylesheet">
 	<!--[if IE]>
 		<link rel="shortcut icon" href="favicon.ico">
 	<![endif]-->
 	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script><link rel="stylesheet" media="all" href="css/ie.css" />
+		<script src="js/html5shiv.js"></script><link rel="stylesheet" media="all" href="dist/css/ie.css" />
 	<![endif]-->
 	<title>Graeme Thornber: Kiwi Web Expert</title>
 	<meta name="author" content="Thornberry Pie">
-	<meta name="description" content="Portfolio of Auckland Web Developer Graeme Thornber: Front-end expert and PHP CMS specialist." />
+	<meta name="description" content="Portfolio of Kiwi Web Developer Graeme Thornber: Front-end expert and PHP CMS specialist." />
 	<meta property="og:title" content="Graeme Thornber: Kiwi Web Expert" />
-	<meta property="og:type" content="article" />
+	<meta property="og:type" content="website" />
 	<meta property="og:image" content="//graemethornber.com/images/gt-gat.jpg" />
 	<meta property="og:url" content="//graemethornber.com" />
-	<meta property="og:description" content="Portfolio of Auckland Web Developer Graeme Thornber: Front-end expert and PHP CMS specialist." />
+	<meta property="og:description" content="Portfolio of Kiwi Web Developer Graeme Thornber: Front-end expert and PHP CMS specialist." />
 </head>
 <body>
 	<header class="header">
@@ -230,7 +230,7 @@
 	<footer class="footer">
 		<p>&copy; <?php echo date('Y') ?> Thornberry Pie. All Rights Reserved</p>
 	</footer>
-	<script src="build/main.min.js"></script>
+	<script src="dist/main.min.js"></script>
 	<!-- Google Tag Manager -->
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M59LS4"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

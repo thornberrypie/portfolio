@@ -1,41 +1,64 @@
-// Include gulp
 var gulp = require('gulp');
-// Include plugins
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
 
-// Concatenate & Minify JS
-gulp.task('scripts', function() {
-    return gulp.src([
-        'js/jquery-2.1.4.min.js',
-        'js/jquery-ui-1.11.4.min.js',
-        'js/functions.js',
-        'js/custom.js'
-    ])
-    .pipe(concat('main.js'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(gulp.dest('build'));
+var input = './app/scss/style.scss';
+var output_main = './dist/css';
+
+var sassOptions = {
+  errLogToConsole: true,
+  outputStyle: 'expanded'
+};
+
+var autoprefixerOptions = {
+  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+};
+
+gulp.task('serve', ['sass'], function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+
+    gulp.watch("app/scss/**/*.scss", ['sass']);
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-// Compile SASS
 gulp.task('sass', function() {
-    return sass('scss/index.scss', {style: 'compressed'})
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('build'));
+    return gulp
+        .src(input)
+        .pipe(sourcemaps.init())
+        .pipe(sass(sassOptions).on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(autoprefixer(autoprefixerOptions))
+        .pipe(gulp.dest(output_main))
+        .pipe(browserSync.stream());
 });
 
-// Watch task
+
 gulp.task('watch', function() {
-  // Watch .js files
-  gulp.watch('js/*.js', ['scripts']);
-  // Watch .scss files
-  gulp.watch('scss/*.scss', ['sass']);
-  //Add image optimisation
-
+  return gulp
+    // Watch the input folder for change,
+    // and run `sass` task when something happens
+    .watch(input, ['sass'])
+    // When there is a change,
+    // log a message in the console
+    .on('change', function(event) {
+      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+    });
 });
 
-// Default Task
-gulp.task('default', ['scripts', 'sass', 'watch']);
+gulp.task('default', ['serve']);
+
+gulp.task('prod', function () {
+  var main = gulp
+    .src(input)
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(gulp.dest(output_main));
+
+  return es.concat(main, improv);
+});

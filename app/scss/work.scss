@@ -1,5 +1,5 @@
 .work{
-	background:#999 url(../images/feather.jpg) no-repeat right top;
+	background:#999 url(../../images/feather.jpg) no-repeat right top;
 	color:#000;
 	overflow:hidden;
 	position:relative;
@@ -98,15 +98,15 @@
 				background-image: $site-thumbs;
 			}
 			.button{
-				background:url(../images/play.png) no-repeat center;
+				background:url(../../images/play.png) no-repeat center;
 				z-index:39;
 			}
 			.bg1{
-				background:url(../images/diag-left.png) no-repeat 0 0;
+				background:url(../../images/diag-left.png) no-repeat 0 0;
 				z-index:55;
 			}
 			.bg2{
-				background:url(../images/diag-right.png) no-repeat 0 0;
+				background:url(../../images/diag-right.png) no-repeat 0 0;
 				z-index:55;
 			}
 			.info{
@@ -123,7 +123,7 @@
 					opacity:0.5;
 				}
 				.button{
-					background:url(../images/pause.png) no-repeat center;
+					background:url(../../images/pause.png) no-repeat center;
 					opacity:0.55;
 				}
 				&.over{
@@ -133,7 +133,7 @@
 				}
 				&.paused{
 					.button{
-						background:url(../images/play.png) no-repeat center;
+						background:url(../../images/play.png) no-repeat center;
 						z-index:39;
 					}
 				}
@@ -192,56 +192,56 @@
 	position:absolute;
 	top:0;
 	left:0;
-	background:url(../images/websites1y515.jpg) repeat center 0;
+	background:url(../../images/websites1y515.jpg) repeat center 0;
 	opacity:0.07;
 	z-index:94;
 	display:block;
 	&.roche-bg{
-		background-image:url(../images/websites2y515.jpg);
+		background-image:url(../../images/websites2y515.jpg);
 		background-position: left -1030px;
 	}
 	&.ffs-bg{
-		background-image:url(../images/websites3y515.jpg);
+		background-image:url(../../images/websites3y515.jpg);
 		background-position: left -515px;
 	}
 	&.stoptober-bg{
-		background-image:url(../images/websites3y515.jpg);
+		background-image:url(../../images/websites3y515.jpg);
 		background-position: center -1545px;
 	}
 	&.mc-bg{
-		background-image:url(../images/websites3y515.jpg);
+		background-image:url(../../images/websites3y515.jpg);
 		background-position: center -1030px;
 	}
 	&.coats-bg{
-		background-image:url(../images/websites3y515.jpg);
+		background-image:url(../../images/websites3y515.jpg);
 		background-position: left 0;
 	}
 	&.oysterbay-bg{
-		background-image:url(../images/websites1y515.jpg);
+		background-image:url(../../images/websites1y515.jpg);
 		background-position: center -1030px;
 	}
 	&.sff-bg{
-		background-image:url(../images/websites1y515.jpg);
+		background-image:url(../../images/websites1y515.jpg);
 		background-position: center 0;
 	}
 	&.scopevisio-bg{
-		background-image:url(../images/websites1y515.jpg);
+		background-image:url(../../images/websites1y515.jpg);
 		background-position: left -515px;
 	}
 	&.nzso-bg{
-		background-image:url(../images/websites2y515.jpg);
+		background-image:url(../../images/websites2y515.jpg);
 		background-position: left 0;
 	}
 	&.kiwirail-bg{
-		background-image:url(../images/websites1y515.jpg);
+		background-image:url(../../images/websites1y515.jpg);
 		background-position: center -1545px;
 	}
 	&.hito-bg{
-		background-image:url(../images/websites2y515.jpg);
+		background-image:url(../../images/websites2y515.jpg);
 		background-position: center -515px;
 	}
 	&.dryitonline-bg{
-		background-image:url(../images/websites2y515.jpg);
+		background-image:url(../../images/websites2y515.jpg);
 		background-position: left -1545px;
 	}
 }

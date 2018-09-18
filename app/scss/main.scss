@@ -14,7 +14,7 @@
 .article{
 	position:relative;
 	z-index:97;
-	background:url(../images/bg-pattern.jpg) repeat center 0;
+	background:url(../../images/bg-pattern.jpg) repeat center 0;
 	border-top:1px solid $white;
 	border-bottom:1px solid $grey;
 	padding: $padding*2 0;
@@ -28,7 +28,7 @@
 	line-height:28px;
 	font-size:12px;
 	padding: $padding*2 0;
-	background:#ede7db url(../images/cloud-windmills.jpg) repeat-x center 100%;
+	background:#ede7db url(../../images/cloud-windmills.jpg) repeat-x center 100%;
 	p{
 		color: white;
 	}
@@ -48,7 +48,7 @@
 	}
 }
 .home{
-	background:$light url(../images/fern-leaf.jpg) no-repeat 0 100%;
+	background:$light url(../../images/fern-leaf.jpg) no-repeat 0 100%;
 }
 .home-left{
 	width:47%;
@@ -80,7 +80,7 @@
 		top: 39px;
 		right: 71px;
 		z-index: 3;
-		//background-image: url(../images/players/mark-knopfler.jpg);
+		//background-image: url(../../images/players/mark-knopfler.jpg);
 		background-position: center middle;
 		background-repeat: no-repeat;
 		@include transition(opacity .666s ease-in-out);

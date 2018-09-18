@@ -1,14 +1,24 @@
 {
-  "name": "gt-portfolio",
-  "version": "3.3.3",
-  "description": "Portfolio of Graeme Thornber",
+  "name": "sass-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
   "devDependencies": {
-      "gulp": "^3.9.1",
-      "gulp-cache": "^0.4.5",
-      "gulp-concat": "^2.6.0",
-      "gulp-imagemin": "^3.0.3",
-      "gulp-rename": "^1.2.2",
-      "gulp-ruby-sass": "^2.1.0",
-      "gulp-uglify": "^2.0.0"
-  }
+    "breakpoint-sass": "^2.7.0",
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
