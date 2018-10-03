@@ -22,7 +22,7 @@ function outputAcronyms(){
         'BEM',
         'WYSIWYG',
         'SOAP',
-        'AGILE',
+        'SSL',
         'GUI',
         'SQL',
         'SSH',
@@ -31,9 +31,9 @@ function outputAcronyms(){
         'CLI',
         'WIP',
         'XML',
-        'HTTP',
-        'PSD',
-        'EDM',
+        'HTTPS',
+        'MVP',
+        'ES6',
         'YML'
     );
     foreach($acronyms as $k=>$v){
