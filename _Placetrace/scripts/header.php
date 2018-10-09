@@ -5,7 +5,7 @@ $url = '';
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<?php 
+	<?php
 	if($description){echo'<meta name="description" content="'.$description.'" />';}
 	if($keywords){echo'<meta name="keywords" content="'.$keywords.'" />';}
 	if($author){echo'<meta name="author" content="'.$author.'" />';}
@@ -13,7 +13,6 @@ $url = '';
 	if($robots){echo'<meta name="robots" content="'.$robots.'" />';}echo'
 	<title>'.$title.'</title>
 	';?>
-	<script type="text/javascript" src="/scripts/JSfunctions.js" ></script>
-	<link href="/styles/main.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="scripts/JSfunctions.js" ></script>
+	<link href="styles/main.css" type="text/css" rel="stylesheet" />
 </head>
-

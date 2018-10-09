@@ -16,7 +16,7 @@ $theCountry = $_SESSION['country_array']['country']; ?>
 		</select>
 	</div>
 	<div id="playMap">
-		<img src="/mapOutlines/<?php echo $random_country['image'] ?>.gif" alt="Guess which country this is" />
+		<img src="mapOutlines/<?php echo $random_country['image'] ?>.gif" alt="Guess which country this is" />
 		<sup>*Dot indicates capital city</sup>
 	</div>
 	<div id="playScore">
