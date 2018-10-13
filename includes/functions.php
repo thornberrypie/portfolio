@@ -13,15 +13,15 @@ function outputAcronyms(){
         'MVC',
         'JSON',
         'LESS',
-        'LAMP',
+        'EDM',
         'REST',
         'CDN',
         'OOP',
         'URL',
         'CURL',
         'BEM',
-        'WYSIWYG',
-        'SOAP',
+        'TDD',
+        'TLS',
         'SSL',
         'GUI',
         'SQL',
@@ -36,6 +36,7 @@ function outputAcronyms(){
         'ES6',
         'YML'
     );
+
     foreach($acronyms as $k=>$v){
         echo '<span class="a'.$k.'">'.$v.' </span>';
     }
