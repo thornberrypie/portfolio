@@ -17,7 +17,7 @@ var autoprefixerOptions = {
 
 gulp.task('serve', ['sass','js'], function() {
     gulp.watch("app/scss/**/*.scss", ['sass']);
-	gulp.watch("app/js/app.js", ['js']);
+	gulp.watch("app/js/*.js", ['js']);
 });
 
 gulp.task('sass', function() {

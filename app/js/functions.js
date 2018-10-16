@@ -12,16 +12,6 @@ function setUpPage(){
 	makeHeaderSticky();
 }
 
-function activateGuitarHover(){
-	var link = $('#guitar-link');
-
-	link.mouseenter(function(){
-		fadeInGatSection();
-	}).mouseleave(function(){
-		fadeOutGatSection();
-	});
-}
-
 function animateBackground(bg){
 	var speed = siteImgWidth*10;
 	var leftVal = bg.css('left');
@@ -52,20 +42,24 @@ function animateNavPage(id){
 }
 
  // e=(obj) element, f=(string) function(open or close)
-function animateThumb(e, f){
-	var bg1 = e.find('.bg1');
-	var bg2 = e.find('.bg2');
-	var layer = e.find('.layer');
-	var text = e.find('p');
-	var bg1val = 0; var bg2val = 0;
+function animateThumb(el, f){
+	var bg1 = el.find('.bg1');
+	var bg2 = el.find('.bg2');
+	var layer = el.find('.layer');
+	var text = el.find('p');
+	var bg1val = 0;
+    var bg2val = 0;
+    var year = el.find('.year');
 
 	if(f == 'open'){
 		bg1val = '-100%'; bg2val = '100%';
 		layer.stop().fadeOut(thumbSpeed);
 		text.stop().fadeOut(thumbSpeed);
+        year.stop().fadeIn(thumbSpeed);
 	}else{
 		layer.fadeIn(thumbSpeed);
 		text.fadeIn(thumbSpeed);
+        year.fadeOut(thumbSpeed);
 	}
 
 	bg1.stop().animate({'top':bg1val, 'left':bg1val}, thumbSpeed);
@@ -103,22 +97,6 @@ function fadeInAcronyms(){
 			});
 		});
 	});
-}
-
-function fadeInGatSection(){
-	var ranNum = getRandomArbitrary(1, numPlayers);
-	// Times ranNum by width of pic to get random background position
-	var xPos = (ranNum * playerWidth) * -1;
-	// console.log(xPos);
-	// $('#gat').css('background-position', xPos+' 0').addClass('active');
-}
-
-function fadeOutGatSection(){
-	$('#gat').removeClass('active');
-}
-
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
 }
 
 function leaveWorkArea(){

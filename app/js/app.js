@@ -110,9 +110,6 @@ jQuery(document).ready(function($){
 		}
 	}); //end $('.work li').click(function(){
 
-	//Show random hero guitar link is hovered over
-	activateGuitarHover();
-
 	//Run function on resize
 	var timeoutid;
 	$(window).resize(function() {
@@ -142,16 +139,6 @@ function setUpPage(){
 
 	// Hide header when scrolling down on smaller screens
 	makeHeaderSticky();
-}
-
-function activateGuitarHover(){
-	var link = $('#guitar-link');
-
-	link.mouseenter(function(){
-		fadeInGatSection();
-	}).mouseleave(function(){
-		fadeOutGatSection();
-	});
 }
 
 function animateBackground(bg){
@@ -189,15 +176,19 @@ function animateThumb(e, f){
 	var bg2 = e.find('.bg2');
 	var layer = e.find('.layer');
 	var text = e.find('p');
-	var bg1val = 0; var bg2val = 0;
+	var bg1val = 0;
+    var bg2val = 0;
+    var year = el.find('.year');
 
 	if(f == 'open'){
 		bg1val = '-100%'; bg2val = '100%';
 		layer.stop().fadeOut(thumbSpeed);
 		text.stop().fadeOut(thumbSpeed);
+        year.stop().fadeIn(thumbSpeed);
 	}else{
 		layer.fadeIn(thumbSpeed);
 		text.fadeIn(thumbSpeed);
+        year.fadeOut(thumbSpeed);
 	}
 
 	bg1.stop().animate({'top':bg1val, 'left':bg1val}, thumbSpeed);
@@ -235,22 +226,6 @@ function fadeInAcronyms(){
 			});
 		});
 	});
-}
-
-function fadeInGatSection(){
-	var ranNum = getRandomArbitrary(1, numPlayers);
-	// Times ranNum by width of pic to get random background position
-	var xPos = (ranNum * playerWidth) * -1;
-	// console.log(xPos);
-	// $('#gat').css('background-position', xPos+' 0').addClass('active');
-}
-
-function fadeOutGatSection(){
-	$('#gat').removeClass('active');
-}
-
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
 }
 
 function leaveWorkArea(){

@@ -182,6 +182,18 @@
 			}
 		}
 	}
+    .site {
+        position: relative;
+    }
+    .year {
+        bottom: 11px;
+        color: black;
+        display: none;
+        font-size: 20px;
+        left: 42%;
+        position: absolute;
+        z-index: 999999;
+    }
 }
 
 
@@ -192,56 +204,56 @@
 	position:absolute;
 	top:0;
 	left:0;
-	background:url(../../images/websites1y515.jpg) repeat center 0;
+	background:url(../../images/screens/websites1y515.jpg) repeat center 0;
 	opacity:0.07;
 	z-index:94;
 	display:block;
 	&.roche-bg{
-		background-image:url(../../images/websites2y515.jpg);
+		background-image:url(../../images/screens/websites2y515.jpg);
 		background-position: left -1030px;
 	}
 	&.ffs-bg{
-		background-image:url(../../images/websites3y515.jpg);
+		background-image:url(../../images/screens/websites3y515.jpg);
 		background-position: left -515px;
 	}
 	&.stoptober-bg{
-		background-image:url(../../images/websites3y515.jpg);
+		background-image:url(../../images/screens/websites3y515.jpg);
 		background-position: center -1545px;
 	}
 	&.mc-bg{
-		background-image:url(../../images/websites3y515.jpg);
+		background-image:url(../../images/screens/websites3y515.jpg);
 		background-position: center -1030px;
 	}
 	&.coats-bg{
-		background-image:url(../../images/websites3y515.jpg);
+		background-image:url(../../images/screens/websites3y515.jpg);
 		background-position: left 0;
 	}
 	&.oysterbay-bg{
-		background-image:url(../../images/websites1y515.jpg);
+		background-image:url(../../images/screens/websites1y515.jpg);
 		background-position: center -1030px;
 	}
 	&.sff-bg{
-		background-image:url(../../images/websites1y515.jpg);
+		background-image:url(../../images/screens/websites1y515.jpg);
 		background-position: center 0;
 	}
 	&.scopevisio-bg{
-		background-image:url(../../images/websites1y515.jpg);
+		background-image:url(../../images/screens/websites1y515.jpg);
 		background-position: left -515px;
 	}
 	&.nzso-bg{
-		background-image:url(../../images/websites2y515.jpg);
+		background-image:url(../../images/screens/websites2y515.jpg);
 		background-position: left 0;
 	}
 	&.kiwirail-bg{
-		background-image:url(../../images/websites1y515.jpg);
+		background-image:url(../../images/screens/websites1y515.jpg);
 		background-position: center -1545px;
 	}
 	&.hito-bg{
-		background-image:url(../../images/websites2y515.jpg);
+		background-image:url(../../images/screens/websites2y515.jpg);
 		background-position: center -515px;
 	}
 	&.dryitonline-bg{
-		background-image:url(../../images/websites2y515.jpg);
+		background-image:url(../../images/screens/websites2y515.jpg);
 		background-position: left -1545px;
 	}
 }

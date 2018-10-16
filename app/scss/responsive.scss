@@ -121,9 +121,8 @@
 		}
 		ul{
 			li{
-				padding: 7px 0 !important;
+				padding: 7px 0;
 				line-height: 16px;
-				font-size: 13px;
 				label{
 					font-size:15px;
 					line-height: 17px;
@@ -135,16 +134,9 @@
 				a{
 					padding-left: 0;
 				}
-				&.con-so{
-					label, ul{
-						float: none;
-					}
-					label{
-						padding-bottom: 6px;
-					}
-				}
+
 				&.link{
-					padding-left: 0;
+					padding: 0 0 12px;
 					a{
 						&:before{
 							position: relative;
@@ -154,6 +146,9 @@
 						}
 					}
 				}
+                &.stackoverflow {
+                    font-size: 13px;
+                }
 			}
 			&.deats{
 				li{
@@ -224,4 +219,15 @@
 			}
 		}
 	}
+
+    .contact ul li {
+        &.con-so{
+            label{
+                padding-bottom: 4px;
+            }
+            label, ul{
+                float: none;
+            }
+        }
+    }
 }
