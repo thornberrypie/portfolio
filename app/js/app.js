@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
 	$('h1 a').mouseenter(function(){
 		$(this).find('.big').stop().animate({'top':0}, 222);
 	}).mouseleave(function(){
-		$(this).find('.big').stop().animate({'top':'4px'}, 222);
+		$(this).find('.big').stop().animate({'top':'3px'}, 222);
 	});
 
 	//Activate navigation slider and page scrolling when link is clicked
