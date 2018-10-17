@@ -22,16 +22,19 @@
 		}
 	}
 	#siteinfo{
-		font:normal 16px/24px $reem-font;
+		font:300 16px/24px $body-font;
 		display:block;
 		padding: 0 36px;
 		text-align: justify;
 		a{
-			color: white;
+			color: $light;
 			font-style: italic;
+			text-decoration: none;
+
 			&:hover{
 				color: $dark;
 			}
+			
 			strong &{
 				font-size: 17px;
 			}

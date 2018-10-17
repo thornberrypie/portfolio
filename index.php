@@ -55,12 +55,12 @@
 				</h2>
 			</div>
 			<div class="home-left">
-                <p>Hi, I'm Graeme. I build modern web applications writing code in a variety of open-source languages including:</p>
+                <p>Hi, I'm Graeme. I build modern web applications writing code in a variety of open-source languages including but not limited to:</p>
                     <ul>
-                        <li><b>HTML5</b>: with frameworks like Bootstrap, Foundation, Pure.css and disfigured siblings like JSX</li>
-                        <li><b>CSS3</b>: responsive, multi-platform, cross-browser with preprocessors like SASS, LESS and stylus</li>
-                        <li><b>Javascript</b>: using latest standards like ES6 and modern frameworks like ReactJS, Angular and Vue.js</li>
-                        <li><b>PHP</b>: CMS / MVC frameworks like Laravel, Silverstripe, Symfony, Wordpress, Drupal, Joomla, Bolt, Concrete5</li>
+                        <li><b>HTML5</b>: with a focus on accessibility and frameworks like Bootstrap, Foundation, Pure.css and disfigured siblings like JSX</li>
+                        <li><b>CSS3</b>: responsive, multi-platform and cross-browser with an arsenal of preprocessors like SASS, LESS and stylus and the like</li>
+                        <li><b>Javascript</b>: expert jQuery skills as well as ES6 coding standards and modern frameworks like ReactJS, Angular and Vue.js</li>
+                        <li><b>PHP</b>: CMS and MVC frameworks like Laravel, Silverstripe, Symfony, Wordpress, Drupal, Bolt, Zend, Concrete5 and Joomla</li>
                     </ul>
             </div>
 			<!--<aside class="currentStatus">
@@ -104,7 +104,7 @@
 					<div class="box">
 						<div class="text"><h3>Roche NZ</h3><h3>Concrete5 / Grunt</h3><h4>3 SASS theme builds</h4></div>
 						<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="//www.roche.co.nz" target="_blank" title="Visit Website">www.roche.co.nz</a></strong> - For the duration of 2016 I worked with one of Auckland's top digital agencies <a target="_blank" href="//www.spitfire.co.nz">Spitfire</a> to deliver a suite of sites for Swiss pharmaceuticals: <a href="//www.roche.co.nz" target="_blank">roche.co.nz</a>, <a href="//www.cancerinfo.co.nz" target="_blank">cancerinfo.co.nz</a> and <a href="//www.roche-plus.co.nz" target="_blank">roche-plus.co.nz</a>. These sites were crafted in PHP CMS Concrete5 with custom-made modules and templates. During my time at <a target="_blank" href="//www.spitfire.co.nz">Spitfire</a> I've also had the opportunity to do extensive work on one of New Zealand's most popular recipe websites: <a target="_blank" href="//www.chelsea.co.nz">Chelsea Sugar NZ</a> and their Aussie affiliates <a target="_blank" href="//www.csrsugar.com.au">CSR Sugar Australia</a>.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.roche.co.nz" target="_blank" title="Visit Website">www.roche.co.nz</a></strong> - For the duration of 2016 I worked with one of Auckland's top digital agencies <a target="_blank" href="//www.spitfire.co.nz">Spitfire</a> to deliver a suite of Swiss pharmaceutical sites: <a href="//www.roche.co.nz" target="_blank">roche.co.nz</a>, <a href="//www.cancerinfo.co.nz" target="_blank">cancerinfo.co.nz</a> and <a href="//www.roche-plus.co.nz" target="_blank">roche-plus.co.nz</a>. These were crafted in PHP CMS Concrete5 with custom-made modules and templates. During my time at <a target="_blank" href="//www.spitfire.co.nz">Spitfire</a> I've also had the opportunity to do extensive work on one of New Zealand's most popular recipe websites: <a target="_blank" href="//www.chelsea.co.nz">Chelsea Sugar NZ</a> and their Aussie affiliates <a target="_blank" href="//www.csrsugar.com.au">CSR Sugar Australia</a>.</div>
                     </div>
                     <div class="year">2016</div>
 				</li>
@@ -196,7 +196,7 @@
             <p>I've worked with some of New Zealand’s top digital and design agencies on a range of projects with local and global clients including Barkers, BNZ, Burger King, Deutsche Telekom, Fonterra, Frucor, Huffer, Methven, Overland, Toyota, Spark and Volkswagen.</p>
             <p>I was born in England, grew up in Auckland and have also lived in Wellington, London and Bonn, Germany. I now work remotely from the beautiful Coromandel.</p>
             <p>I'm also a musician and actor, playing mainly guitar and anything else with strings including piano. In 2018 I acted with Whitianga's Offbeat Theatre in my 5th play, and co-founded a local improv theatre group.</p>
-            <p>Due to my interest in both maps and education I built <a href="http://schoolz.nz" target="_blank">this site with AngularJS</a> in 2016 as an aid to house-hunting in New Zealand.</p>
+            <p>Due to my interest in both maps and education, in 2016 I built <a href="http://schoolz.nz" target="_blank">this site with AngularJS</a> as an aid to house-hunting in New Zealand.</p>
             <h5>Latest work launched 9th October 2018:</h5>
             <p class="latest">
                 <strong>Greater Christchurch Claims Resolution Service</strong><br>
