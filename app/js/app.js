@@ -14,12 +14,6 @@ var numPlayers = 20;
 var playerWidth = 350;
 
 jQuery(document).ready(function($){
-	//Preload images for "work" section
-	var thumbs = new Image(); thumbs.src = '/images/thumbs-169x133.jpg';
-	var sites1 = new Image(); sites1.src = '/images/websites1y515.jpg';
-	var sites2 = new Image(); sites2.src = '/images/websites2y515.jpg';
-	var sites3 = new Image(); sites3.src = '/images/websites3y515.jpg';
-
 	//Set up acronyms for home section
 	setUpPage();
 

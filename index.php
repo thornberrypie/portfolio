@@ -53,17 +53,15 @@
 					<?php outputAcronyms() ?>
 					<div class="acronimg"></div>
 				</h2>
-				<div id="gat"></div>
 			</div>
 			<div class="home-left">
-				<p>I'm an Open-source Web Developer with a firm arsenal of Digital Web skills and over a decade of industry experience creating Web Applications in New Zealand and Europe.</p>
-				<p>I've worked with several Digital Agencies and corporates in Auckland, Wellington and Bonn, Germany for clients such as Barkers, BNZ, Burger King, Chelsea Sugar, Delegat, Deutsche Telekom, Fonterra, Frucor, Huffer, Kiwirail, Meredith Connell, Methven, Overland Footwear, Roche, Toyota, Spark and&nbsp;Volkswagen.
-				<p>I stand out amongst developers due to my social nature, ability to communicate effectively, experience acting, singing and <a id="guitar-link" href="//youtube.graemethornber.com" target="_blank">playing guitar</a>.</p>
-                <h5>Latest work launched 9th October 2018:</h5>
-                <p>
-                    <strong>Greater Christchurch Claims Resolution Service</strong><br>
-                    <a href="https://www.gccrs.govt.nz/" target="_blank">www.gccrs.govt.nz</a>
-                </p>
+                <p>Hi, I'm Graeme. I build modern web applications writing code in a variety of open-source languages including:</p>
+                    <ul>
+                        <li><b>HTML5</b>: with frameworks like Bootstrap, Foundation, Pure.css and disfigured siblings like JSX</li>
+                        <li><b>CSS3</b>: responsive, multi-platform, cross-browser with preprocessors like SASS, LESS and stylus</li>
+                        <li><b>Javascript</b>: using latest standards like ES6 and modern frameworks like ReactJS, Angular and Vue.js</li>
+                        <li><b>PHP</b>: CMS / MVC frameworks like Laravel, Silverstripe, Symfony, Wordpress, Drupal, Joomla, Bolt, Concrete5</li>
+                    </ul>
             </div>
 			<!--<aside class="currentStatus">
 				<h4>One of my latest home projects uses AngularJS, Google&nbsp;Maps, and a database from the NZ Ministry&nbsp;of&nbsp;Education. <a href="//schools.graemethornber.com" target="_blank">View it here</a>.<span class="extra">...and a blast from the past: <a target="_blank" href="//placetrace.graemethornber.com">my first PHP site</a>, now one decade&nbsp;old.</span></h4>
@@ -195,14 +193,16 @@
 	</article>
 	<article class="about article">
 		<div class="inner clearfix">
-			<!--<h3>A bit about me...</h3>-->
-			<p>Originally from England, now based in the Coromandel, I grew up in Auckland and have also lived in Wellington, London, and Bonn,&nbsp;Germany.</p>
-			<p class="tright">After finishing my studies at Howick College, I worked in hospitality for several years before receiving my Diploma in Web Development from <strike>Natcoll</strike>... <strike>Yoobee</strike>... Logical? in&nbsp;2006.</p>
-			<p>Since then I have worked in a variety of capacities with digital agencies, corporates and startups in all aspects of producing modern web applications built using fancy tech like AngularJS, Apache, concrete5, CSS3, Drupal, Git, Grunt, Gulp, HTML5, Javascript, Joomla, jQuery, MySQL, Node.js and PHP, Silverstripe and&nbsp;Wordpress.</p>
-			<p class="tright">Being a huge music fan I play guitar and as many other instruments as I can get my hands on. I also enjoy travelling, swimming, fishing, cooking and lucid&nbsp;dreaming.</p>
-			<p><a href="//schools.graemethornber.com" target="_blank">My latest personal project</a> was built as an aid to house-hunting in NZ and uses AngularJS with Google Maps.</p>
-			<?php /*<div class="suburbs hidden">Arch Hill, Glenfield, Grafton, Howick, Morningside, Mt Eden, Musick Point, New Lynn, Pakuranga, Ponsonby, Red Hill, Sunnynook, Torbay, Totara&nbsp;Vale</div>*/ ?>
-		</div>
+            <p>I've worked with some of New Zealand’s top digital and design agencies on a range of projects with local and global clients including Barkers, BNZ, Burger King, Deutsche Telekom, Fonterra, Frucor, Huffer, Methven, Overland, Toyota, Spark and Volkswagen.</p>
+            <p>I was born in England, grew up in Auckland and have also lived in Wellington, London and Bonn, Germany. I now work remotely from the beautiful Coromandel.</p>
+            <p>I'm also a musician and actor, playing mainly guitar and anything else with strings including piano. In 2018 I acted with Whitianga's Offbeat Theatre in my 5th play, and co-founded a local improv theatre group.</p>
+            <p>Due to my interest in both maps and education I built <a href="http://schoolz.nz" target="_blank">this site with AngularJS</a> in 2016 as an aid to house-hunting in New Zealand.</p>
+            <h5>Latest work launched 9th October 2018:</h5>
+            <p class="latest">
+                <strong>Greater Christchurch Claims Resolution Service</strong><br>
+                <a href="https://www.gccrs.govt.nz/" target="_blank">www.gccrs.govt.nz</a>
+            </p>
+        </div>
 	</article>
 	<article class="contact article">
 		<div class="inner">
