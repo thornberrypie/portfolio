@@ -28,7 +28,7 @@
 	<header class="header">
 		<div class="inner clearfix">
 			<div class="hgroup">
-				<h1><a href="/"><span class="big">T</span><span>hornberry</span><span class="big">P</span><span>ie</span><span class="suffix">.com</span></a></h1>
+				<h1><a href="/"><span class="big">T</span><span>hornberry</span><span class="big">P</span><span>ie</span><!--<span class="suffix">.com</span>--></a></h1>
 				<h2>Portfolio of Web Developer Graeme Thornber</h2>
 			</div>
 			<div class="nav-wrapper">
@@ -59,7 +59,7 @@
                     <ul>
                         <li><b>HTML5</b>: with a focus on accessibility and frameworks like Bootstrap, Foundation, Pure.css and disfigured siblings like JSX</li>
                         <li><b>CSS3</b>: responsive, multi-platform and cross-browser with an arsenal of preprocessors like SASS, LESS and stylus and the like</li>
-                        <li><b>Javascript</b>: expert jQuery skills as well as ES6 coding standards and modern frameworks like ReactJS, Angular and Vue.js</li>
+                        <li><b>Javascript</b>: expert jQuery skills as well as ES6, Node.js and modern frameworks like Express, ReactJS, Angular and Vue.js</li>
                         <li><b>PHP</b>: CMS and MVC frameworks like Laravel, Silverstripe, Symfony, Wordpress, Drupal, Bolt, Zend, Concrete5 and Joomla</li>
                     </ul>
             </div>
@@ -152,7 +152,7 @@
 					<div class="box">
 						<div class="text"><h3>Scopevisio</h3><h4>Drupal / SOAP / XML</h4><h4>JSON / Web Services</h4></div>
 						<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="//www.scopevisio.com" target="_blank" title="Visit Website">www.scopevisio.com</a></strong> - During my time in Germany, I was employed by Scopevisio&nbsp;AG and spent a large amount of my time there building their company website with Drupal 8. With a minimal amount of plugins being used, I wrote most of the code myself and much of the content is generated using XML files and through Web Services using SOAP and JSON. During my time at Scopevisio, I really felt that I had made the transition from intermediate to senior developer.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.scopevisio.com" target="_blank" title="Visit Website">www.scopevisio.com</a></strong> - During my time in Germany, I was employed by Scopevisio&nbsp;AG and spent a large amount of my time there building their company website with Drupal. With a minimal amount of plugins being used, I wrote most of the code myself and much of the content is generated using XML files and through Web Services using SOAP and JSON. During my time at Scopevisio, I really felt that I had made the transition from intermediate to senior developer.</div>
                     </div>
                     <div class="year">2012</div>
 				</li>
