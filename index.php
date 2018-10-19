@@ -175,7 +175,7 @@
 					<div class="box">
 						<div class="text"><h3>HITO</h3><h3>Wordpress CMS</h3><h4>Front-End / UX</h4></div>
 						<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-						<div class="info"><strong><a class="siteTitle" href="//www.hito.org.nz" target="_blank" title="Visit Website">www.hito.org.nz</a></strong> - Working with amazing designers at <a href="//www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> in Wellington, I produced a custom Wordpress theme for the NZ Hairdressing Industry Training Organisation. I worked closely with the client on a daily basis through the whole process and helped transform into web their many ideas and desires. I was the sole devoloper working on this project, writing the front-end and server-side code.</div>
+						<div class="info"><strong><a class="siteTitle" href="//www.hito.org.nz" target="_blank" title="Visit Website">www.hito.org.nz</a></strong> - Working with amazing designers at <a href="//www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> in Wellington, I produced a custom Wordpress theme for the NZ Hairdressing Industry Training Organisation. I worked closely with the client on a daily basis through the whole process and helped transform into web their many ideas and desires. I was the sole developer working on this project, writing the front-end and server-side code.</div>
                     </div>
                     <div class="year">2010</div>
 				</li>
@@ -195,7 +195,7 @@
 		<div class="inner clearfix">
             <p>I've worked with some of New Zealand’s top digital and design agencies on a range of projects with local and global clients including Barkers, BNZ, Burger King, Deutsche Telekom, Fonterra, Frucor, Huffer, Methven, Overland, Toyota, Spark and Volkswagen.</p>
             <p>I was born in England, grew up in Auckland and have also lived in Wellington, London and Bonn, Germany. I now work remotely from the beautiful Coromandel.</p>
-            <p>I'm also a musician and actor, playing mainly guitar and anything else with strings including piano. In 2018 I acted with Whitianga's Offbeat Theatre in my 5th play, and co-founded a local improv theatre group.</p>
+            <p>I'm also a musician and actor, playing mainly <a href="https://www.youtube.com/watch?v=KcXUD8sjd4Y" target="_blank">guitar</a> and anything else with strings including piano. In 2018 I acted with Whitianga's Offbeat Theatre in my 5th play, and co-founded a local improv theatre group.</p>
             <p>Due to my interest in both maps and education, in 2016 I built <a href="http://schoolz.nz" target="_blank">this site with AngularJS</a> as an aid to house-hunting in New Zealand.</p>
             <h5>Latest work launched 9th October 2018:</h5>
             <p class="latest">
