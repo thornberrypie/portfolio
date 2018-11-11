@@ -24,3 +24,5 @@ ExpiresDefault "access 1 month"
 Redirect 301 /files/Graeme-Thornber-CV.pdf /assets/CV/2016/Graeme-Thornber-CV2016.pdf
 Redirect 301 /assets/Graeme-Thornber-CV-english.odt /assets/CV/2016/Graeme-Thornber-CV2016-word.zip
 Redirect 301 /thorn-berry-pie/75 /
+Redirect 301 /assets/CV/2018/Graeme-Thornber-CV2018.pdf /assets/CV/2018/Graeme-Thornber-CV-Nov-2018.pdf
+Redirect 301 /assets/CV/2018/Graeme-Thornber-CV2018.docx.zip /assets/CV/2018/Graeme-Thornber-CV-Nov-2018.docx.zip

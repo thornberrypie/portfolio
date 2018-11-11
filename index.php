@@ -17,12 +17,12 @@
 	<![endif]-->
 	<title>Graeme Thornber: Web Developer, Musician, Actor, Adventurer</title>
 	<meta name="author" content="Graeme Thornber">
-	<meta name="description" content="Web Developer, Musician, Actor, Adventurer">
+	<meta name="description" content="Web Developer & App Engineer, Musician, Actor, Adventurer">
 	<meta property="og:title" content="Graeme Thornber">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="//graemethornber.com/images/gt-gat.jpg">
 	<meta property="og:url" content="//graemethornber.com">
-	<meta property="og:description" content="Web Developer, Musician, Actor, Adventurer">
+	<meta property="og:description" content="Web Developer & App Engineer, Musician, Actor, Adventurer">
 </head>
 <body>
 	<header class="header">
@@ -57,10 +57,10 @@
 			<div class="home-left">
                 <p>Hi, I'm Graeme. I build modern web applications writing code in a variety of open-source languages including but not limited to:</p>
                     <ul>
-                        <li><b>HTML5</b>: with a focus on accessibility and frameworks like Bootstrap, Foundation, Pure.css and disfigured siblings like JSX</li>
-                        <li><b>CSS3</b>: responsive, multi-platform and cross-browser with an arsenal of preprocessors like SASS, LESS and stylus and the like</li>
+                        <li><b>HTML5</b>: with a focus on SEO, accessibility and web standards using a variety of templating engines and frameworks.</li>
+                        <li><b>CSS3</b>: mobile-first, cross-browser, cross-platform with SASS & LESS and newer techniques like Flexbox and CSS Grid.</li>
                         <li><b>Javascript</b>: expert jQuery skills as well as ES6, Node.js and modern frameworks like Express, ReactJS, Angular and Vue.js</li>
-                        <li><b>PHP</b>: CMS and MVC frameworks like Laravel, Silverstripe, Symfony, Wordpress, Drupal, Bolt, Zend, Concrete5 and Joomla</li>
+                        <li><b>PHP & MySQL</b>: CMS and MVC frameworks like Silverstripe, Wordpress, Symfony, Laravel, Drupal, Bolt, Zend and Magento</li>
                     </ul>
             </div>
 			<!--<aside class="currentStatus">
@@ -193,11 +193,9 @@
 	</article>
 	<article class="about article">
 		<div class="inner clearfix">
-            <p>I've worked with some of New Zealand’s top digital and design agencies on a range of projects with local and global clients including Barkers, BNZ, Burger King, Deutsche Telekom, Fonterra, Frucor, Huffer, Methven, Overland, Toyota, Spark and Volkswagen.</p>
-            <p>I was born in England, grew up in Auckland and have also lived in Wellington, London and Bonn, Germany. I now work remotely from the beautiful Coromandel.</p>
-            <p>I'm also a musician and actor, playing mainly <a href="https://www.youtube.com/watch?v=KcXUD8sjd4Y" target="_blank">guitar</a> and anything else with strings including piano. In 2018 I acted with Whitianga's Offbeat Theatre in my 5th play, and co-founded a local improv theatre group.</p>
-            <p>Due to my interest in both maps and education, in 2016 I built <a href="http://schoolz.nz" target="_blank">this site with AngularJS</a> as an aid to house-hunting in New Zealand.</p>
-            <h5>Latest work launched 9th October 2018:</h5>
+            <p>I was born in England, grew up in Auckland and have also lived in Wellington, London and Bonn, Germany. I love playing <a href="https://www.youtube.com/watch?v=KcXUD8sjd4Y" target="_blank">guitar</a>, singing and acting. In 2018 I joined Whitianga's Offbeat Theatre to act in my 5th play, and co-founded a local improv theatre group.</p>
+            <p>Due to my interest in both maps and education, in 2016 I built <a href="http://schoolz.nz" target="_blank">this site with AngularJS</a> as an aid to house-hunting in New Zealand. My next venture is to become a skilled mobile app developer, I currently have two apps in development using React Native.</p>
+            <h5>Latest website launched October 2018:</h5>
             <p class="latest">
                 <strong>Greater Christchurch Claims Resolution Service</strong><br>
                 <a href="https://www.gccrs.govt.nz/" target="_blank">www.gccrs.govt.nz</a>
@@ -209,8 +207,8 @@
 			<aside class="clearfix">
 				<div class="download clearfix">
 					<p class="heading">Download CV</p>
-					<a class="pdf" href="assets/CV/2018/Graeme-Thornber-CV2018.pdf" target="_blank" title="PDF format"></a>
-					<a class="ms" href="assets/CV/2018/Graeme-Thornber-CV2018.docx.zip" target="_blank" title="Microsoft Word format"></a>
+					<a class="pdf" href="assets/CV/2018/Graeme-Thornber-CV-Nov-2018.pdf" target="_blank" title="PDF format"></a>
+					<a class="ms" href="assets/CV/2018/Graeme-Thornber-CV-Nov-2018.docx.zip" target="_blank" title="Microsoft Word format"></a>
 				</div>
 			</aside>
 			<ul class="deats">
