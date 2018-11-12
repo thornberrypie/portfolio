@@ -49,7 +49,7 @@ h1{
 	}
 }
 h2{
-	font:normal 18px/48px $reem-font;
+	font:normal 18px/23px $reem-font;
 	padding:0;
 }
 h4{
@@ -91,18 +91,11 @@ noscript{
 	text-align:left;
 	position:relative;
 }
-.hgroup{
-	float:left;
-	padding:$padding 0 0;
-
-	.suffix {
-		font-size: 0.7em;
-	}
-}
 .heading{
 	font-size:18px;
 }
 .article{
+	clear: both;
 	position:relative;
 	z-index:97;
 	background:url(../../images/bg-pattern.jpg) repeat center 0;
@@ -126,21 +119,7 @@ noscript{
 		color: white;
 	}
 }
-.header{
-	width:100%;
-	position:relative;
-	top:0;
-	left:0;
-	background:$white;
-	opacity:0.95;
-	z-index:99;
-	border-bottom: 1px solid $grey;
-	padding: $padding 0;
 
-	.inner{
-		width: $content-width+6;
-	}
-}
 .home{
 	background:$light;
 

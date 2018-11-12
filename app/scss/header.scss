@@ -1,0 +1,73 @@
+.header{
+	background:$white;
+	opacity:0.95;
+	z-index:99;
+	border-bottom: 1px solid $grey;
+	padding: $padding 0;
+
+	.inner{
+		width: $content-width+6;
+	}
+
+	.tagline {
+		padding-top: $padding;
+	}
+}
+
+.logo{
+	text-align: left;
+
+	.suffix {
+		font-size: 0.7em;
+	}
+}
+
+.nav{
+	margin: $padding * 5 0 0;
+	text-align: right;
+
+	&-list {
+		width:300px;
+	}
+
+	&-item {
+		display: inline-block;
+	}
+
+	&-link {
+		border: 0;
+		color:black;
+		cursor:pointer;
+		font:normal 16px/18px $reem-font;
+		text-transform:uppercase;
+		margin: 0;
+		padding: 0 $padding/2;
+
+		&:hover,
+		&:focus {
+			border-bottom:2px solid $nav-link-hover;
+			color:$nav-link-hover;
+			outline: none;
+		}
+	}
+}
+
+.nav-home .nav-item--home a,
+.nav-about .nav-item--about a,
+.nav-work .nav-item--work a,
+.nav-contact .nav-item--contact a{
+	color:$blue;
+	border-bottom:2px solid $blue;
+}
+#nav-slider{
+	width:287px;
+	position:relative;
+}
+.ui-slider-handle{
+	width:12px;
+	height:21px;
+	position:absolute;
+	top:-20px;
+	background:url(../../images/slider.png) no-repeat 0 0;
+	outline:0;
+}

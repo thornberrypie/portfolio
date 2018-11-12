@@ -1,18 +1,23 @@
 .contact{
-	aside{
+	.files{
 		position:relative;
 		z-index:111;
 		width:38%;
 		float:right;
 		text-align: center;
 		a{
-			width:61px;
+			width:67px;
 			height:60px;
 			display:inline-block;
 			background:url(../../images/gt-icons.png) no-repeat 0 -16px;
-			margin:3px 3px 0 9px;
-			&.pdf{
+			margin:3px;
+
+			&.pdf {
 				background-position:0 -76px;
+			}
+
+			&:last-child {
+				margin-left: 9px;
 			}
 		}
 	}
@@ -99,7 +104,7 @@
 		}
 	}
 	.download{
-		width:158px;
+		width:180px;
 		margin: 0 auto;
 		text-align: left;
 		.heading{

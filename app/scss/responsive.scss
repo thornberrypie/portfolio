@@ -1,7 +1,8 @@
 @media screen and (max-width:980px){
-	.nav-wrapper nav {
-		position: relative;
-		right: 33px;
+	.nav{
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
 	}
 	.inner, fieldset.currentStatus, .home-left{
 		width:100%;
@@ -29,15 +30,14 @@
 	}
 }
 @media screen and (max-width:768px){
-	.nav-wrapper{
-		text-align: center;
-		width: 100%;
-		nav{
-			padding: $padding 0 0;
-			margin: 0 auto $padding;
-			right: 0;
-		}
+	.flex {
+		display: block;
 	}
+	
+	.logo {
+		text-align: center;
+	}
+
 	.article {
 		padding: $padding*2;
 		&.contact {
@@ -54,14 +54,6 @@
 				text-align: left;
 				padding-left: $padding;
 			}
-		}
-	}
-	.header{
-		h2{
-			padding: 0 0 $padding/4 0;
-		}
-		.inner{
-			padding:0;
 		}
 	}
 	.inner{
@@ -107,11 +99,6 @@
 		width:100%;
 	}
 	.contact{
-		aside{
-			float: none;
-			width: 100%;
-			right: 0;
-		}
 		.download{
 			text-align: center;
 			padding-bottom: 10px;
@@ -162,16 +149,19 @@
 			right:0;
 		}
 	}
+
 	.sticky-header{
 		.header{
+			height: $sticky-header-height;
 			padding-top: 0;
 			position: fixed;
-			height: $sticky-header-height;
+			top: 0;
+			width: 100%;
 
 			h1, h2/*, .ui-slider-handle*/{
 				display: none;
 			}
-			.nav-wrapper{
+			.nav{
 				float: none;
 				background: $white;
 				height: 50px;

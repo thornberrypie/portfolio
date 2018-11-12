@@ -1,5 +1,5 @@
 var startPage = 'home';
-var navPos = {'nav-home':27, 'nav-work':95, 'nav-about':166, 'nav-contact':248};
+var navPos = {'home':45, 'work':110, 'about':175, 'contact':250};
 var navBreaks = [62, 136, 204];
 var navWidth = 287;
 var navSpeed = 456;
@@ -21,7 +21,7 @@ jQuery(document).ready(function($){
 		min: 0,
 		max: navWidth,
 		step: 1,
-		value: navPos['nav-'+startPage],
+		value: navPos[startPage],
 		range: "min",
 		animate: true,
 		stop: function(event, ui){
@@ -38,12 +38,11 @@ jQuery(document).ready(function($){
 	});
 
 	//Activate navigation slider and page scrolling when link is clicked
-	$('nav ul a').click(function(e){
+	$('.nav-link').click(function(e){
 		e.preventDefault();
-		var navActive = $('nav').attr('class');
-		var navid = $(this).parents('li').attr('id');
-		var pageid = navid.replace('nav-', '');
-		animateNavPage(pageid);
+		var id = $(this).data('id');
+		console.log(id);
+		animateNavPage(id);
 		//Stop work animation and hide text
 		leaveWorkArea();
 	});
@@ -149,12 +148,9 @@ function animateBackground(bg){
 }
 
 function animateNavPage(id){
-	var navid = 'nav-'+id;
-
 	// Animate navigation
-	$('.ui-slider-handle').animate({'left':navPos[navid]}, navSpeed, function(){
-		$('nav').removeClass().addClass(navid);
-		$('#nav-slider').slider({ value:navPos[navid] });
+	$('.ui-slider-handle').animate({'left':navPos[id]}, navSpeed, function(){
+		$('#nav-slider').slider({ value:navPos[id] });
 	});
 
 	// Activate page scrolling
@@ -171,7 +167,7 @@ function animateThumb(e, f){
 	var text = e.find('p');
 	var bg1val = 0;
     var bg2val = 0;
-    var year = el.find('.year');
+    var year = e.find('.year');
 
 	if(f == 'open'){
 		bg1val = '-100%'; bg2val = '100%';
