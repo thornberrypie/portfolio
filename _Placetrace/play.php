@@ -55,7 +55,7 @@ $theCountry = $_SESSION['country_array']['country']; ?>
 	<a href="/"><img src="images/ptHeader.gif" alt="Place-Trace" /></a>
 </div>
 <div id="footer">
-	<span>Created in 2006 by Graeme Thornber &copy;<?php echo date('Y') ?><br /><a href="http://www.graemethornber.com">www.graemethornber.com</a>
+	<span>Created in 2006 by Graeme Thornber &copy;<?php echo date('Y') ?><br /><a href="http://www.thornberrypie.com">www.thornberrypie.com</a>
 	<?php
 	if(isset($_SESSION['comment'])){
 		if($_SESSION['comment'] == 'sent'){ echo'
