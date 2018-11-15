@@ -1,5 +1,5 @@
 var startPage = 'home';
-var navPos = {'home':45, 'work':110, 'about':175, 'contact':250};
+var navPos = {'home':41, 'work':101, 'about':163, 'contact':237};
 var navBreaks = [62, 136, 204];
 var navWidth = 287;
 var navSpeed = 456;

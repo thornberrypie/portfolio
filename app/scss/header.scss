@@ -1,9 +1,9 @@
 .header{
-	background:$white;
-	opacity:0.95;
-	z-index:99;
+	background: $white;
 	border-bottom: 1px solid $grey;
+	opacity: 0.95;
 	padding: $padding 0;
+	z-index: 99;
 
 	.inner{
 		width: $content-width+6;
@@ -23,15 +23,20 @@
 }
 
 .nav{
-	margin: $padding * 5 0 0;
+	margin-top: auto;
 	text-align: right;
 
+	&-inner {
+		width: 312px;
+	}
+
 	&-list {
-		width:300px;
+		display: flex;
+		justify-content: center;
 	}
 
 	&-item {
-		display: inline-block;
+
 	}
 
 	&-link {
@@ -62,6 +67,7 @@
 #nav-slider{
 	width:287px;
 	position:relative;
+	top: -1px;
 }
 .ui-slider-handle{
 	width:12px;
