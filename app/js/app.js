@@ -10,7 +10,6 @@ var emailName = '<a href="mailto:gdthornber@gmail.com" target="_blank">gdthornbe
 var emailDomain = 'gmail.com</a>';
 var phoneNumber = '+64 (0)21 0292 4529';
 var fbAddress = '<a href="//www.facebook.com/thornberrypie" target="_blank">facebook.com/thornberrypie</a>';
-var numPlayers = 20;
 var playerWidth = 350;
 
 jQuery(document).ready(function($){
