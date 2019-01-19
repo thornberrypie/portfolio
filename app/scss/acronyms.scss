@@ -1,35 +1,15 @@
 h2.acronyms{
     width:$box-width;
     height:266px;
-    display:block;
-    position:absolute;
-    top:36px;
-    right: 9px;
-    z-index: 5;
     font-family: $reem-font;
-    //background: darken($light, 3%);
+
     span{
         display:none;
         position:absolute;
         line-height:32px;
     }
 }
-.acronimg{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    opacity: 0.0333;
-    @include transition(opacity .123s ease-in-out);
-    background-repeat: no-repeat;
-    background-position: center middle;
-    background-size: contain;
-    //#ra0 &{ background-image: url(../../images/acronyms/php.png)}
-    //#ra1 &{ background-image: url(../../images/acronyms/html.png)}
-    //#ra2 &{ background-image: url(../../images/acronyms/css.png)}
-}
+
 .a0{ top:72px; left:8px; font-size:32px; color:#297ED8;}
 .a1{ top:136px; left:66px; font-size:30px; color:#5196E0;}
 .a2{ top:62px; left:240px; font-size:31px; color:#258DD6;}

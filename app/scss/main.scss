@@ -86,7 +86,7 @@ noscript{
 	line-height:16px;
 }
 .inner{
-	max-width:920px;
+	max-width:$max-content-width;
 	margin:0 auto;
 	text-align:left;
 	position:relative;
@@ -95,13 +95,13 @@ noscript{
 	font-size:18px;
 }
 .article{
-	clear: both;
-	position:relative;
-	z-index:97;
 	background:url(../../images/bg-pattern.jpg) repeat center 0;
-	border-top:1px solid $white;
-	border-bottom:1px solid $grey;
+  border-bottom:1px solid $grey;
+  border-top:1px solid $white;
+  display: flex;
 	padding: $padding*2 0;
+  position:relative;
+  text-align: center;
 
 	&.home, &.about {
 		border-top: 0;
@@ -124,10 +124,6 @@ noscript{
 	background:$light;
 
     &-left{
-    	width:47%;
-    	float:left;
-    	padding-left:$padding*3;
-
         ul {
             padding-top: 7px;
         }

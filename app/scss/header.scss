@@ -5,10 +5,6 @@
 	padding: $padding 0;
 	z-index: 99;
 
-	.inner{
-		width: $content-width+6;
-	}
-
 	.tagline {
 		padding-top: $padding;
 	}
@@ -33,10 +29,6 @@
 	&-list {
 		display: flex;
 		justify-content: center;
-	}
-
-	&-item {
-
 	}
 
 	&-link {

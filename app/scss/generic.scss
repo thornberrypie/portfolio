@@ -1,3 +1,7 @@
+.boldi{
+	font-weight:bold;
+	white-space:nowrap;
+}
 .clear{
 	clear:both;
 }
@@ -8,19 +12,19 @@
 	display:block;
 	visibility:hidden;
 }
-.hidden{
-	display:none !important;
+.container {
+  margin: 0 auto;
+  max-width: $max-content-width;
+  text-align: left;
 }
-.boldi{
-	font-weight:bold;
-	white-space:nowrap;
-}
-
 .flex {
 	display: flex;
 	justify-content: space-between;
-
-	&-item {
-		padding: 0 $padding * 2;
-	}
+  position: relative;
+}
+.hidden{
+	display:none !important;
+}
+.wrapper {
+  text-align: center;
 }

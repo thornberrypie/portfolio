@@ -22,6 +22,20 @@
 	-moz-box-shadow:$box-shadow;
 	-webkit-box-shadow:$box-shadow;
 }
+@mixin bp($class) {
+  @if $class == sm {
+    @media (min-width: 480px) { @content; }
+  }
+  @else if $class == md {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $class == lg {
+    @media (min-width: 980px) { @content; }
+  }
+  @else {
+    @warn "Breakpoint mixin supports: sm, md and lg";
+  }
+}
 @mixin linear-gradient($color1, $color2) {
 	background: -webkit-linear-gradient($color1, $color2);
 	background: -o-linear-gradient($color1, $color2);
