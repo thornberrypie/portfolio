@@ -7,12 +7,12 @@
     }
 
     .intro {
-      padding: $padding 0;
+      padding: $space 0;
     }
 
     @include bp(md) {
       min-width: 40%;
-      padding-bottom: $padding*2;
+      padding-bottom: $space*2;
     }
   }
 
@@ -33,11 +33,11 @@
   &-intro {
     font-size: 1.4rem;
     line-height: 1.6;
-    padding: $padding*2 0 0;
+    padding: $space*2 0 0;
     text-align: left;
 
     @include bp(sm) {
-      padding: $padding*2 $padding*3;
+      padding: $space*2 $space*3;
     }
 
     @include bp(md) {
@@ -50,7 +50,7 @@
     }
 
     li {
-      padding: $padding 0 $padding*2;
+      padding: $space 0 $space*2;
 
       strong {
         font-size: 1.6rem;

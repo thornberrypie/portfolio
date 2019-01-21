@@ -33,7 +33,7 @@
     @media (min-width: 980px) { @content; }
   }
   @else {
-    @warn "Breakpoint mixin supports: sm, md and lg";
+    @warn "Breakpoint mixin supports: xs, sm, md and lg";
   }
 }
 @mixin linear-gradient($color1, $color2) {

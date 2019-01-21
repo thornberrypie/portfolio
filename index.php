@@ -7,7 +7,7 @@
 <main role="main">
 	<?php include 'includes/home.php' ?>
 	<?php include 'includes/work.php' ?>
-	<?php include 'includes/about.php' ?>
+	<?php //include 'includes/about.php' ?>
 	<?php include 'includes/contact.php' ?>
 </main>
 <?php include 'includes/footer.php' ?>

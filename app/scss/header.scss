@@ -2,7 +2,7 @@
 	background: $white;
 	border-bottom: 1px solid $grey;
 	opacity: 0.95;
-	padding-bottom: $padding;
+	padding-bottom: $space;
 	z-index: 99;
 
   .container {
@@ -10,7 +10,7 @@
   }
 
 	.tagline {
-		padding-top: $padding;
+		padding-top: $space;
 	}
 }
 
@@ -18,7 +18,7 @@
 	text-align: left;
 
   @include bp(sm) {
-    margin-left: $padding*3;
+    margin-left: $space*3;
   }
 
   @include bp(lg) {
@@ -50,7 +50,7 @@
 		font:normal 16px/18px $reem-font;
 		text-transform:uppercase;
 		margin: 0;
-		padding: 0 $padding/2;
+		padding: 0 $space/2;
 
 		&:hover,
 		&:focus {

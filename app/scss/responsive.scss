@@ -24,7 +24,7 @@
 }
 @media screen and (max-width:768px){
 	.nav {
-		margin-top: $padding * 3;
+		margin-top: $space * 3;
 	}
 
 	.logo {
@@ -32,9 +32,9 @@
 	}
 
 	.article {
-		padding: $padding*2;
+		padding: $space*2;
 		&.contact {
-			padding-bottom: $padding;
+			padding-bottom: $space;
 		}
 		p{
 			text-align: justify;
@@ -45,7 +45,7 @@
 		}
 	}
 	.hgroup{
-		padding: $padding/2 0 ;
+		padding: $space/2 0 ;
 		float: none;
 	}
 
@@ -96,13 +96,6 @@
                     font-size: 13px;
                 }
 			}
-			&.deats{
-				li{
-					span{
-						font-size: 15px;
-					}
-				}
-			}
 		}
 		.contact-bg{
 			right:0;
@@ -126,7 +119,7 @@
 				height: 50px;
 				nav{
 					margin: 15px auto 0;
-					padding: $padding/2 0 0;
+					padding: $space/2 0 0;
 				}
 			}
 		}
@@ -137,10 +130,10 @@
 }
 @media screen and (max-width:480px) {
 	.article {
-		padding: $padding*2 0;
+		padding: $space*2 0;
 
 		&.about {
-			padding: $padding*2 $padding;
+			padding: $space*2 $space;
 		}
 	}
 	.currentStatus .boldi{
@@ -157,15 +150,4 @@
 			}
 		}
 	}
-
-    .contact ul li {
-        &.con-so{
-            label{
-                padding-bottom: 4px;
-            }
-            label, ul{
-                float: none;
-            }
-        }
-    }
 }

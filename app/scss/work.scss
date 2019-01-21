@@ -24,7 +24,7 @@
 	}
 	#siteinfo{
 		display:block;
-		padding: 0 $padding*2;
+		padding: 0 $space*2;
 		text-align: left;
 
     @include bp(md) {

@@ -15,7 +15,7 @@
 .container {
   margin: 0 auto;
   max-width: $max-content-width;
-  padding: $padding $padding*2;
+  padding: $space $space*2;
   position: relative;
 }
 .flex {
@@ -34,6 +34,9 @@
 }
 .hidden{
 	display:none !important;
+}
+.nowrap {
+  white-space: nowrap;
 }
 .wrapper {
   text-align: center;

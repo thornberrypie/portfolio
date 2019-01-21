@@ -99,7 +99,7 @@ noscript{
   border-bottom:1px solid $grey;
   border-top:1px solid $white;
   display: flex;
-	padding: $padding*2 0;
+	padding: $space*2 0;
   position:relative;
   text-align: center;
 
@@ -112,7 +112,7 @@ noscript{
 	text-align:center;
 	line-height:28px;
 	font-size:12px;
-	padding: $padding*2 0;
+	padding: $space*2 0;
 	background:#ede7db url(../../images/cloud-windmills.jpg) repeat-x center 100%;
 
 	p{
@@ -125,7 +125,7 @@ noscript{
 	display: block;
 	border-radius:7px;
 	margin:20px 0 6px;
-	padding: $padding 0;
+	padding: $space 0;
 	text-align: center !important;
 	border: 1px solid $grey;
 	background:linear-gradient(135deg, #75cdf5, #fff);

@@ -1,33 +1,39 @@
 .contact{
 	.files{
-		position:relative;
-		z-index:111;
-		width:38%;
-		float:right;
-		text-align: center;
+    margin: $space 0;
+    &.flex {
+      flex-direction: row;
+    }
+
 		a{
 			width:67px;
 			height:60px;
-			display:inline-block;
 			background:url(../../images/gt-icons.png) no-repeat 0 -16px;
 			margin:3px;
 
 			&.pdf {
 				background-position:0 -76px;
 			}
-
-			&:last-child {
-				margin-left: 9px;
-			}
 		}
 	}
+  em {
+    font-size: 1.2rem;
+  }
 	label{
 		padding-right:9px;
 		font-weight:bold;
-		display: inline-block;
+		display: block;
 		line-height: 24px;
 		width: 112px;
 		text-align: right;
+    vertical-align: top;
+
+    @include bp(sm) {
+      display: inline-block;
+      font-family: $reem-font;
+      line-height: 1.7;
+      min-width: 66px;
+    }
 	}
 	ul{
 		position:relative;
@@ -64,12 +70,6 @@
 			&.con-em a {
 				padding-left: 0;
 			}
-			&.con-so{
-				label, ul{
-					float: left;
-					display: block;
-				}
-			}
 			&.link{
 				padding: 0 0 6px 6px;
 				a:before{
@@ -97,11 +97,6 @@
 				display: inline-block;
 			}
 		}
-		&.deats{
-			label{
-				font-family: $reem-font;
-			}
-		}
 	}
 	.download{
 		width:180px;
@@ -111,14 +106,5 @@
 			font-family: $reem-font;
 			text-align: center;
 		}
-	}
-	.contact-bg{
-		width:195px;
-		height:160px;
-		position:absolute;
-		bottom:0;
-		right:5%;
-		opacity:0.3;
-		z-index:98;
 	}
 }
