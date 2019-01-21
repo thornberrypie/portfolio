@@ -19,7 +19,7 @@
 		<link rel="shortcut icon" href="favicon.ico">
 	<![endif]-->
 	<!--[if lt IE 9]>
-		<script src="/app/js/vendor/html5shiv.js"></script><link rel="stylesheet" media="all" href="/dist/css/ie.css" />
+		<script src="/app/js/vendor/html5shiv.js"></script>
 	<![endif]-->
 	<title>Graeme Thornber: Web Developer, Musician, Actor, Adventurer</title>
 	<meta name="author" content="Graeme Thornber">

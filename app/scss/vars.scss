@@ -1,5 +1,7 @@
-$body-font: "Source Sans Pro", Helvetica, Arial, sans-serif;
-$reem-font: "Reem Kufi";
+$source-sans-font: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$reem-font: "Reem Kufi", Helvetica, Arial, sans-serif;
+$body-font: $source-sans-font;
+$heading-font: $reem-font;
 $dark: #515150;
 $light: #eff1f2;
 $blue: #14a1d0;

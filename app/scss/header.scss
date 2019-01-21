@@ -2,8 +2,12 @@
 	background: $white;
 	border-bottom: 1px solid $grey;
 	opacity: 0.95;
-	padding: $padding 0;
+	padding-bottom: $padding;
 	z-index: 99;
+
+  .container {
+    max-width: 956px;
+  }
 
 	.tagline {
 		padding-top: $padding;
@@ -12,6 +16,14 @@
 
 .logo{
 	text-align: left;
+
+  @include bp(sm) {
+    margin-left: $padding*3;
+  }
+
+  @include bp(lg) {
+    margin-left: 0;
+  }
 
 	.suffix {
 		font-size: 0.7em;

@@ -1,17 +1,22 @@
-<article class="home article">
-	<div class="container">
+<article class="home wrapper">
+	<div class="flex container">
     <div class="home-intro">
-			<p>I build, deploy and maintain modern web applications for all platforms, coding in a variety of open-source languages like:</p>
-				<ul>
-					<li><b>HTML5</b>: with a focus on SEO, accessibility and web standards using a variety of templating engines and frameworks.</li>
-					<li><b>CSS3</b>: mobile-first, cross-browser, cross-platform with SASS & LESS and newer techniques like Flexbox and CSS Grid.</li>
-					<li><b>Javascript</b>: jQuery expert with strong skills in modern JS: ES6, Node.js, Typescript, Angular, Vue.js, React and React Native.</li>
-					<li><b>PHP & MySQL</b>: CMS and MVC frameworks like Silverstripe, Wordpress, Symfony, Laravel, Drupal, Bolt, Zend and Magento</li>
-				</ul>
+			<p>Based in Whitianga, NZ I offer services dealing with all aspects of the modern digital experience including web sites, mobile apps, e-commerce, digital marketing, SEO, hosting and more.</p>
+			<?php /*
+      <ul>
+				<li><strong>Web sites</strong>: Custom design & development including E-Commerce and CMS frameworks like Wordpress, Magento and Silverstripe.</li>
+        <li><strong>Web apps</strong>: Mini-sites, brochure sites and SPAs built with modern Javascript tools like Angular and React.</li>
+        <li><strong>Mobile apps</strong>: Android & iPhone app development, integration with web sites and apps.</li>
+        <li><strong>Maintenance</strong>: Upgrading, switching hosts, improving performance and accessibility.</li>
+        <li><strong>Digital Marketing</strong>: SEO, social media integration, email marketing with Mailchimp & Campaign Monitor.</li>
+        <li><strong>Hosting</strong>: Variety of hosting solutions from as little as $3 per month.</li>
+			</ul>
+      */ ?>
+      <p>Call me for a free consultation or no-obligation quote for fixing issues on your existing web site.</p>
 		</div>
     <div class="home-acronyms">
-			<p class="intro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such as:</span></p>
-			<h2 class="acronyms">
+			<p class="intro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such&nbsp;as:</span></p>
+			<h2 class="home-acronymbox">
 				<?php outputAcronyms() ?>
 			</h2>
 		</div>

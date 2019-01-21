@@ -130,7 +130,7 @@ function setUpPage(){
 	setUpContact();
 
 	// Hide header when scrolling down on smaller screens
-	makeHeaderSticky();
+	//makeHeaderSticky();
 }
 
 function animateBackground(bg){
@@ -194,9 +194,9 @@ function doneResizing(){
 }
 
 function fadeInAcronyms(){
-	var acronymBox = $('.acronyms');
+	var acronymBox = $('.home-acronymbox');
 	var speed = acronymFadeSpeed;
-	var fadeDif = speed / $('.acronyms span').length;
+	var fadeDif = speed / $('.home-acronymbox span').length;
 	var fadeDelay = 0;
 
 	$('.intro1').delay(1333).fadeIn(666, function(){

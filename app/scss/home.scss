@@ -1,13 +1,70 @@
-h2.acronyms{
+.home{
+	background:$light;
+
+  &-acronyms {
+    span {
+      display: none;
+    }
+
+    .intro {
+      padding: $padding 0;
+    }
+
+    @include bp(md) {
+      min-width: 40%;
+      padding-bottom: $padding*2;
+    }
+  }
+
+  &-acronymbox {
     width:$box-width;
     height:266px;
-    font-family: $reem-font;
+    font-family: $heading-font;
+    margin: 0 auto;
+    position: relative;
 
     span{
         display:none;
         position:absolute;
         line-height:32px;
     }
+  }
+
+  &-intro {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    padding: $padding*2 0 0;
+    text-align: left;
+
+    @include bp(sm) {
+      padding: $padding*2 $padding*3;
+    }
+
+    @include bp(md) {
+      font-size: 1.5rem;
+      padding-right: 4em;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    li {
+      padding: $padding 0 $padding*2;
+
+      strong {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .flex {
+    flex-direction: column-reverse;
+
+    @include bp(md) {
+      flex-direction: row;
+    }
+  }
 }
 
 .a0{ top:72px; left:8px; font-size:32px; color:#297ED8;}

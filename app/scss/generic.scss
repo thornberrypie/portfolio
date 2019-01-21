@@ -15,12 +15,22 @@
 .container {
   margin: 0 auto;
   max-width: $max-content-width;
-  text-align: left;
+  padding: $padding $padding*2;
+  position: relative;
 }
 .flex {
 	display: flex;
+  flex-direction: column;
 	justify-content: space-between;
-  position: relative;
+
+  @include bp(md) {
+    flex-direction: row;
+  }
+
+  & > div,
+  & > nav {
+
+  }
 }
 .hidden{
 	display:none !important;

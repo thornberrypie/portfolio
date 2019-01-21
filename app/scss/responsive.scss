@@ -42,11 +42,6 @@
 			&.disclaimer {
 				text-align: center;
 			}
-
-			&.intro {
-				text-align: left;
-				padding-left: $padding;
-			}
 		}
 	}
 	.hgroup{
@@ -57,9 +52,6 @@
 	.work{
 		ul li{
 			width: 50%;
-		}
-		#siteinfo{
-			padding: 0 12px;
 		}
 	}
 	.about p{
@@ -162,11 +154,6 @@
 				h3, h4, h5{
 					opacity: 0;
 				}
-			}
-		}
-		.inner{
-			p.selection{
-				font-size: 17px;
 			}
 		}
 	}
