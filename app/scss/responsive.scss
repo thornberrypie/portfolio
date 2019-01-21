@@ -10,9 +10,6 @@
 			width: 300px;
 		}
 	}
-	.download{
-		text-align:left;
-	}
 	.work ul li{
 		width: 33.333%;
 	}
@@ -58,28 +55,10 @@
 		width:100%;
 	}
 	.contact{
-		.download{
-			text-align: center;
-			padding-bottom: 10px;
-			.heading{
-				padding-left: 0;
-			}
-		}
 		ul{
 			li{
 				padding: 7px 0;
 				line-height: 16px;
-				label{
-					font-size:15px;
-					line-height: 17px;
-					padding-right:0;
-					text-align: left;
-					width: 66px;
-					white-space: nowrap;
-				}
-				a{
-					padding-left: 0;
-				}
 
 				&.link{
 					padding: 0 0 12px;

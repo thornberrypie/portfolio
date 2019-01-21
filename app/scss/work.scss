@@ -1,5 +1,5 @@
 .work{
-	background:#999 url(../../images/feather.jpg) no-repeat right top;
+	background:$work-bg url(../../images/feather.jpg) no-repeat right top;
 	color:#000;
 	overflow:hidden;
 	position:relative;
@@ -9,13 +9,11 @@
 		z-index:95;
 		text-align: center;
 		p{
-			color: white;
 			padding:6px 0 0;
 
 			&.selection{
 				text-align: center;
 				font-family: $heading-font;
-				@include text-shadow($dark);
 			}
 			&:last-child{
 				padding-bottom: 6px;

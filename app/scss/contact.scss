@@ -1,6 +1,12 @@
 .contact{
+  .flex {
+    @include bp(md) {
+      flex-direction: row-reverse;
+    }
+  }
 	.files{
     margin: $space 0;
+
     &.flex {
       flex-direction: row;
     }
@@ -19,20 +25,16 @@
   em {
     font-size: 1.2rem;
   }
-	label{
-		padding-right:9px;
-		font-weight:bold;
+	.heading{
+		padding-right: $space;
+    font-family: $reem-font;
 		display: block;
-		line-height: 24px;
-		width: 112px;
-		text-align: right;
+		width: $space*10;
     vertical-align: top;
 
-    @include bp(sm) {
+    @include bp(md) {
       display: inline-block;
-      font-family: $reem-font;
-      line-height: 1.7;
-      min-width: 66px;
+      text-align: right;
     }
 	}
 	ul{
@@ -42,6 +44,9 @@
 		text-align: left;
 
 		&.social {
+			display: inline-block;
+      padding-top: $space;
+
 			li {
 				text-align: left;
 			}
@@ -52,20 +57,18 @@
 			font-size: 15px;
 			position: relative;
 			a{
-				padding-left: 20px;
-				color:#14a1d0;
+				color:#0B7B9D;
 				display: inline-block;
-			}
-			span{
-				cursor:pointer;
-				color:#009EE3;
-				text-decoration:underline;
-				line-height: 24px;
+        padding-left: $space*1.5;
 			}
 			em{
-				display:none;
-				line-height: 24px;
 				display: inline-block;
+				line-height: 1.5;
+
+        &.showing {
+          //@include animation-appear(66px, $animation-duration);
+          transition: max-height 0.666s ease-in;
+        }
 			}
 			&.con-em a {
 				padding-left: 0;
@@ -93,18 +96,36 @@
 				}
 
 			}
-			ul{
-				display: inline-block;
-			}
 		}
 	}
+
+  .js-contact-trigger {
+    color:#007DB3;
+    cursor:pointer;
+    display: block;
+    line-height: 24px;
+    text-decoration:underline;
+
+    &:hover {
+      color: #009EE3;
+    }
+
+    @include bp(md) {
+      display: inline-block;
+    }
+  }
 	.download{
-		width:180px;
-		margin: 0 auto;
+		margin: 0 auto $space*2;
 		text-align: left;
+    width: $space*12;
+
 		.heading{
-			font-family: $reem-font;
 			text-align: center;
+      width: 100%;
 		}
 	}
+
+  .js-contact-trigger {
+    font-size: 1.2rem;
+  }
 }

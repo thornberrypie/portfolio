@@ -6,6 +6,18 @@
 	width: 100%;
 	height: 100%;
 }
+@mixin animation-appear($height, $duration) {
+  animation: animation-appear $duration;
+
+  @keyframes animation-appear {
+      from {
+        height: 0;
+      }
+      to {
+        height: $height;
+      }
+  }
+}
 @mixin border-image($size){
 	webkit-border-image: url(images/seperator.png) $size round;
     -o-border-image: url(images/seperator.png) $size round;

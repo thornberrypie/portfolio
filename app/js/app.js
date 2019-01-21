@@ -5,10 +5,9 @@ var navWidth = 287;
 var navSpeed = 456;
 var thumbSpeed = 555;
 var siteImgWidth = 2132;
-var acronymFadeSpeed = 666;
-var emailName = '<a href="mailto:gdthornber@gmail.com" target="_blank">gdthornber';
-var emailDomain = 'gmail.com</a>';
-var phoneNumber = '+64 (0)21 0292 4529';
+var animateSpeed = 666;
+var emaiLink = '<a href="mailto:thornberrypie@gmail.com" target="_blank">thornberrypie@gmail.com</a>';
+var phoneLink = '<a href="tel:+642102924529">+64 (0)21 0292 4529</a>';
 var fbAddress = '<a href="//www.facebook.com/thornberrypie" target="_blank">facebook.com/thornberrypie</a>';
 var playerWidth = 350;
 
@@ -133,6 +132,19 @@ function setUpPage(){
 	//makeHeaderSticky();
 }
 
+function activateContactItem(itemClass) {
+  var html = '';
+  switch(itemClass){
+    case 'con-em': html = emaiLink; break;
+    case 'con-ph': html = phoneLink; break;
+    case 'con-fb': html = fbAddress; break;
+  }
+
+  $('.'+itemClass).find('.js-contact-trigger').fadeOut(333, function(){
+    $('.'+itemClass).find('em').addClass('showing').html(html);
+  });
+}
+
 function animateBackground(bg){
 	var speed = siteImgWidth*10;
 	var leftVal = bg.css('left');
@@ -195,12 +207,12 @@ function doneResizing(){
 
 function fadeInAcronyms(){
 	var acronymBox = $('.home-acronymbox');
-	var speed = acronymFadeSpeed;
+	var speed = animateSpeed;
 	var fadeDif = speed / $('.home-acronymbox span').length;
 	var fadeDelay = 0;
 
-	$('.intro1').delay(1333).fadeIn(666, function(){
-		$('.intro2').delay(999).fadeIn(666, function(){
+	$('.intro1').delay(1333).fadeIn(animateSpeed, function(){
+		$('.intro2').delay(999).fadeIn(animateSpeed, function(){
 		// Progressively fade acronyms in faster
 			acronymBox.find('span').each(function(){
 				var a = $(this);
@@ -255,20 +267,19 @@ function scrollPage(pos){
 }
 
 function setUpContact(){
-	$('.contact li span').click(function(){
-		var liClass = $(this).parents('li').attr('class');
-		var showHtml = '';
-
-		switch(liClass){
-			case 'con-em': showHtml = emailName+'@'+emailDomain; break;
-			case 'con-ph': showHtml = phoneNumber; break;
-			case 'con-fb': showHtml = fbAddress; break;
-		}
-
-		$(this).fadeOut(333, function(){
-			$('.'+liClass+' em').html(showHtml).show(666);
-		});
+	$('.js-contact-trigger').click(function(){
+		var itemClass = $(this).parents('li').attr('class');
+		activateContactItem(itemClass);
 	});
+
+  $('.js-scroll-to-call').click(function(e){
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $('.con-ph').offset().top
+    }, animateSpeed, function(){
+      activateContactItem('con-ph');
+    });
+  });
 }
 
 // Animate to correct height and show text when work item is clicked

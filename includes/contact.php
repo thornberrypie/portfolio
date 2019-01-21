@@ -10,15 +10,15 @@
 		<ul class="deats">
 			<li class="con-em">
 				<label class="heading">Write me:</label>
-				<span>View e-mail address</span>
+				<span class="js-contact-trigger">View e-mail address</span>
 				<em>&nbsp;</em>
 			</li>
 			<li class="con-ph">
 				<label class="heading">Call me:</label>
-				<span>View phone number</span>
+				<span class="js-contact-trigger">View phone number</span>
 				<em>&nbsp;</em>
 			</li>
-			<li class="con-so clearfix">
+			<li class="con-so">
 				<label class="heading">Stalk me:</label>
 				<ul class="social">
 					<li class="link facebook">

@@ -1,4 +1,5 @@
 html, body, div, img, h1, h2, h3, h4, h5, h6, p, ul, li{
+  font-weight: normal;
 	margin:0;
 	padding:0;
 	border:0;
@@ -67,7 +68,7 @@ ul, li{
 }
 p{
 	padding:7px 0;
-	color: #515150;
+	color: $dark;
 }
 noscript{
 	width:100%;
@@ -111,12 +112,12 @@ noscript{
 	height:80px;
 	text-align:center;
 	line-height:28px;
-	font-size:12px;
+	font-size:0.9rem;
 	padding: $space*2 0;
 	background:#ede7db url(../../images/cloud-windmills.jpg) repeat-x center 100%;
 
 	p{
-		color: white;
+		color: $dark;
 	}
 }
 
