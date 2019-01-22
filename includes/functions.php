@@ -1,44 +1,44 @@
 <?php
 function outputAcronyms(){
     $acronyms = array(
-        'PHP',
         'HTML',
         'CSS',
-        'SASS',
-        'CMS',
-        'SEO',
-        'AJAX',
+        'JS',
+        'PHP',
         'JSX',
-        'DNS',
-        'MVC',
+        'ES6',
+        'SASS',
+        'SSH',
+        'CMS',
+        'API',
+        'REST',
         'JSON',
         'LESS',
-        'EDM',
-        'REST',
-        'CDN',
-        'OOP',
-        'URL',
-        'CURL',
-        'BEM',
-        'TDD',
         'SDK',
+        'MVC',
+        'OOP',
+        'BEM',
+        'CURL',
+        'CDN',
+        'TDD',
+        'EDM',
         'SSL',
         'GUI',
         'SQL',
-        'SSH',
+        'SEO',
         'WCAG',
-        'API',
+        'MVP',
         'CLI',
         'WIP',
         'XML',
         'HTTPS',
-        'MVP',
-        'ES6',
+        'URL',
+        'DNS',
         'YML'
     );
 
     foreach($acronyms as $k=>$v){
-        echo '<span class="a'.$k.'">'.$v.' </span>';
+        echo '<span class="a'.$k.'">'.$v.'</span>';
     }
 }
 ?>

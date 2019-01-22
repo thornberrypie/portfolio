@@ -40,6 +40,10 @@
 			padding:10px 0;
 			position: relative;
 			text-align: left;
+
+      label, span {
+        vertical-align: top;
+      }
 		}
 
     .reveal{
@@ -53,8 +57,15 @@
       transition: opacity 0.123s ease-in;
 
       &.showing {
-        //@include animation-appear(66px, $animation-duration);
+        display: inline-block;
         opacity: 1;
+        position: relative;
+        top: 0;
+      }
+
+      // Class can be added when clicking on 'call me' link
+      &.flash {
+        //@include animation-flash(0.5s, '#00F');
       }
     }
 

@@ -144,6 +144,7 @@ function activateContactItem(itemType) {
   }
 
   trigger.animate({'opacity': 0},123, function(){
+    trigger.addClass('hidden');
     reveal.addClass('showing').html(html);
   });
 }

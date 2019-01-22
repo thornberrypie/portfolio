@@ -1,9 +1,11 @@
 .nav{
-	margin: $space*3 auto 0;
+	margin: $space*4 auto 0;
   width: 300px;
 
   @include bp(md) {
-    margin: $space*3 0;
+    margin: $space*4.5 0 0;
+    position: relative;
+    right: $space*2;
   }
 
 	&-inner {

@@ -13,7 +13,13 @@
   }
 
   &-acronymsintro {
+    margin: $space*2 0 $space;
     min-height: 63px;
+
+    @include bp(sm) {
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
   }
 
   &-acronymbox {
@@ -71,37 +77,41 @@
   }
 }
 
+.home-acronymbox span {
+  //display: inline !important;
+}
+
 .a0{ top:72px; left:8px; font-size:32px; color:#297ED8;}
-.a1{ top:136px; left:66px; font-size:30px; color:#5196E0;}
-.a2{ top:62px; left:240px; font-size:31px; color:#258DD6;}
-.a3{ top:150px; left:226px; font-size:30px; color:#2399D4;}
+.a1{ top:136px; left:77px; font-size:32px; color:#5196E0;}
+.a2{ top:62px; left:262px; font-size:31px; color:#258DD6;}
+.a3{ top:150px; left:226px; font-size:31px; color:#2399D4;}
 .a4{ top:236px; left:72px; font-size:30px; color:#21A0D3;}
-.a5{ top:235px; left:10px; font-size:25px; color:#20A6D2;}
-.a6{ top:115px; left:151px; font-size:28px; color:#2DABD4;}
-.a7{ top:182px; left:256px; font-size:21px; color:#3FB2D8;}
-.a8{ top:40px; left:154px; font-size:25px; color:#297ED8;}
-.a9{ top:132px; left:5px; font-size:24px; color:#5196E0;}
-.a10{ top:200px; left:138px; font-size:26px; color:#4978E2;}
-.a11{ top:34px; left:75px; font-size:26px; color:#5196E0;}
-.a12{ top:233px; left:158px; font-size:25px; color:#5197E0;}
-.a13{ top:3px; left:12px; font-size:24px; color:#20A6D2;}
-.a14{ top:70px; left:89px; font-size:24px; color:#4771E1;}
-.a15{ top:2px; left:240px; font-size:26px; color:#297ed8;}
-.a16{ top:202px; left:12px; font-size:18px; color:#5BBEDE;}
-.a17{ top:174px; left:59px; font-size:17px; color:#3FB2D8;}
-.a18{ top:101px; left:99px; font-size:22px; color:#5196E0;}
-.a19{ top:30px; left:216px; font-size:17px; color:#258DD6;}
-.a20{ top:120px; left:248px; font-size:21px; color:#3C45E4;}
+.a5{ top:236px; left:237px; font-size:30px; color:#20A6D2;}
+.a6{ top:3px; left:155px; font-size:29px; color:#2DABD4;}
+.a7{ top:72px; left:180px; font-size:29px; color:#3FB2D8;}
+.a8{ top:110px; left:158px; font-size:28px; color:#297ED8;}
+.a9{ top:235px; left:10px; font-size:28px; color:#5196E0;}
+.a10{ top:200px; left:138px; font-size:27px; color:#4978E2;}
+.a11{ top:34px; left:75px; font-size:27px; color:#5196E0;}
+.a12{ top:40px; left:157px; font-size:26px; color:#5197E0;}
+.a13{ top:3px; left:12px; font-size:26px; color:#20A6D2;}
+.a14{ top:132px; left:15px; font-size:25px; color:#4771E1;}
+.a15{ top:2px; left:240px; font-size:25px; color:#297ed8;}
+.a16{ top:182px; left:252px; font-size:24px; color:#5BBEDE;}
+.a17{ top:174px; left:59px; font-size:24px; color:#3FB2D8;}
+.a18{ top:101px; left:99px; font-size:23px; color:#5196E0;}
+.a19{ top:236px; left:154px; font-size:23px; color:#258DD6;}
+.a20{ top:70px; left:104px; font-size:22px; color:#3C45E4;}
 .a21{ top:0px; left:88px; font-size:22px; color:#5196E0;}
-.a22{ top:36px; left:24px; font-size:20px; color:#4771E1;}
-.a23{ top:204px; left:74px; font-size:20px; color:#3C45E4;}
+.a22{ top:36px; left:24px; font-size:21px; color:#4771E1;}
+.a23{ top:202px; left:84px; font-size:21px; color:#3C45E4;}
 .a24{ top:104px; left:34px; font-size:20px; color:#21A0D3;}
-.a25{ top:170px; left:118px; font-size:16px; color:#3C45E4;}
-.a26{ top:207px; left:222px; font-size:21px; color:#5BBEDE;}
+.a25{ top:145px; left:156px; font-size:20px; color:#3C45E4;}
+.a26{ top:207px; left:222px; font-size:19px; color:#5BBEDE;}
 .a27{ top:166px; left:20px; font-size:19px; color:#3C45E4;}
-.a28{ top:150px; left:168px; font-size:26px; color:#2DABD4;}
-.a29{ top:4px; left:160px; font-size:27px; color:#2399D4;}
-.a30{ top:75px; left:152px; font-size:23px; color:#297ED8;}
-.a31{ top:236px; left:237px; font-size:26px; color:#21A0D3;}
-.a32{ top:177px; left:201px; font-size:17px; color:#20A6D2;}
-.a33{ top:94px; left:224px; font-size:17px; color:#3D49E4;}
+.a28{ top:170px; left:133px; font-size:18px; color:#2DABD4;}
+.a29{ top:30px; left:234px; font-size:18px; color:#2399D4;}
+.a30{ top:202px; left:12px; font-size:17px; color:#297ED8;}
+.a31{ top:120px; left:248px; font-size:17px; color:#21A0D3;}
+.a32{ top:175px; left:195px; font-size:16px; color:#20A6D2;}
+.a33{ top:94px; left:233px; font-size:16px; color:#3D49E4;}

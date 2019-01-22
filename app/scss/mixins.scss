@@ -18,6 +18,21 @@
       }
   }
 }
+@mixin animation-flash($duration, $color) {
+  animation-name: animation-flash;
+  animation-duration: $duration;
+
+  @keyframes animation-flash {
+      from {
+        background: $color;
+        color: $color-white;
+      }
+      to {
+        background: default;
+        color: $color-blue-text;
+      }
+  }
+}
 @mixin border-image($size){
 	webkit-border-image: url(images/seperator.png) $size round;
     -o-border-image: url(images/seperator.png) $size round;
