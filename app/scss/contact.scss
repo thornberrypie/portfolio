@@ -9,6 +9,7 @@
 
     &.flex {
       flex-direction: row;
+      justify-content: center;
     }
 
 		a{
@@ -22,12 +23,8 @@
 			}
 		}
 	}
-  em {
-    font-size: 1.2rem;
-  }
 	.heading{
 		padding-right: $space;
-    font-family: $reem-font;
 		display: block;
 		width: $space*10;
     vertical-align: top;
@@ -37,45 +34,67 @@
       text-align: right;
     }
 	}
-	ul{
-		position:relative;
-		z-index:99;
-		display: block;
-		text-align: left;
 
-		&.social {
-			display: inline-block;
-      padding-top: $space;
-
-			li {
-				text-align: left;
-			}
+	.deats {
+		.item {
+			padding:10px 0;
+			position: relative;
+			text-align: left;
 		}
 
-		li{
-			padding:10px 0;
-			font-size: 15px;
+    .reveal{
+      display: block;
+      font-size: 1.2rem;
+      left: 0;
+      line-height: 1.5;
+      opacity: 0;
+      position: absolute;
+      top: 33px;
+      transition: opacity 0.123s ease-in;
+
+      &.showing {
+        //@include animation-appear(66px, $animation-duration);
+        opacity: 1;
+      }
+    }
+
+		a {
+			color:#0B7B9D;
+			display: inline-block;
+		}
+	}
+
+	.social {
+		display: block;
+		padding-top: $space 0;
+		position:relative;
+		text-align: left;
+		z-index:99;
+
+		@include bp(sm) {
+			display: inline-block;
+		}
+
+		.link{
+      font-size: 0.9rem;
+			padding: 0 0 6px 6px;
 			position: relative;
-			a{
+			text-align: left;
+
+      @include bp(md) {
+        font-size: 1rem;
+      }
+
+      @include bp(lg) {
+        font-size: 1.2rem;
+      }
+
+			a {
 				color:#0B7B9D;
 				display: inline-block;
-        padding-left: $space*1.5;
-			}
-			em{
-				display: inline-block;
-				line-height: 1.5;
+				padding-left: $space*1.5;
 
-        &.showing {
-          //@include animation-appear(66px, $animation-duration);
-          transition: max-height 0.666s ease-in;
-        }
-			}
-			&.con-em a {
-				padding-left: 0;
-			}
-			&.link{
-				padding: 0 0 6px 6px;
-				a:before{
+				&:before {
 					width: 16px;
 					height: 16px;
 					display: inline-block;
@@ -85,16 +104,16 @@
 					top: 5px;
 					background: url(../../images/gt-icons.png) no-repeat 0 0;
 				}
-				&.linkedin a:before{
-					background-position: -16px 0;
-				}
-				&.github a:before{
-					background-position: -32px 0;
-				}
-				&.stackoverflow a:before{
-					background-position: -48px 0;
-				}
+			}
 
+			&.linkedin a:before{
+				background-position: -16px 0;
+			}
+			&.github a:before{
+				background-position: -32px 0;
+			}
+			&.stackoverflow a:before{
+				background-position: -48px 0;
 			}
 		}
 	}
@@ -104,6 +123,7 @@
     cursor:pointer;
     display: block;
     line-height: 24px;
+    overflow: hidden;
     text-decoration:underline;
 
     &:hover {
@@ -117,7 +137,12 @@
 	.download{
 		margin: 0 auto $space*2;
 		text-align: left;
-    width: $space*12;
+    width: $space*13;
+
+    @include bp(md) {
+      margin: 0;
+      width: 30%
+    }
 
 		.heading{
 			text-align: center;

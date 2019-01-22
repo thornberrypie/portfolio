@@ -132,16 +132,19 @@ function setUpPage(){
 	//makeHeaderSticky();
 }
 
-function activateContactItem(itemClass) {
+function activateContactItem(itemType) {
   var html = '';
-  switch(itemClass){
-    case 'con-em': html = emaiLink; break;
-    case 'con-ph': html = phoneLink; break;
-    case 'con-fb': html = fbAddress; break;
+  var trigger = $('[data-type='+itemType+']').find('.js-contact-trigger');
+  var reveal = $('[data-type='+itemType+']').find('.reveal');
+
+  switch(itemType){
+    case 'email': html = emaiLink; break;
+    case 'phone': html = phoneLink; break;
+    case 'social': html = fbAddress; break;
   }
 
-  $('.'+itemClass).find('.js-contact-trigger').fadeOut(333, function(){
-    $('.'+itemClass).find('em').addClass('showing').html(html);
+  trigger.animate({'opacity': 0},123, function(){
+    reveal.addClass('showing').html(html);
   });
 }
 
@@ -212,6 +215,7 @@ function fadeInAcronyms(){
 	var fadeDelay = 0;
 
 	$('.intro1').delay(1333).fadeIn(animateSpeed, function(){
+    $(this).css('display','block');
 		$('.intro2').delay(999).fadeIn(animateSpeed, function(){
 		// Progressively fade acronyms in faster
 			acronymBox.find('span').each(function(){
@@ -268,16 +272,17 @@ function scrollPage(pos){
 
 function setUpContact(){
 	$('.js-contact-trigger').click(function(){
-		var itemClass = $(this).parents('li').attr('class');
-		activateContactItem(itemClass);
+		//var itemClass = $(this).parents('li').attr('class');
+		var itemType = $(this).closest('.item').data('type');
+		activateContactItem(itemType);
 	});
 
   $('.js-scroll-to-call').click(function(e){
     e.preventDefault();
     $('html, body').animate({
-      scrollTop: $('.con-ph').offset().top
+      scrollTop: $('[data-type=phone]').offset().top
     }, animateSpeed, function(){
-      activateContactItem('con-ph');
+      activateContactItem('phone');
     });
   });
 }

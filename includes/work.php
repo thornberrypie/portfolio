@@ -18,7 +18,7 @@
 				<div class="box">
 					<div class="text"><h3>Kiwirail</h3><h3>Silverstrpe CMS</h3><h4>Pure.css / BEM</h4></div>
 					<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-					<div class="info"><strong><a class="siteTitle" href="//www.greatjourneysofnz.co.nz" target="_blank" title="Visit Website">www.greatjourneysofnz.co.nz</a></strong> - Since November 2016 I've been working with the fantastic team at <a href="//dna.co.nz">DNA</a>. For this project I built the vast majority of the front-end using BEM methodology and the Pure.css framework whilst greatly increasing my knowledge of Silverstripe's back-end. Daily meetings with the client ensured that the process went very smoothly and was a big win for everyone involved.</div>
+					<div class="info"><strong><a class="siteTitle" href="//www.greatjourneysofnz.co.nz" target="_blank" title="Visit Website">www.greatjourneysofnz.co.nz</a></strong> - From November 2016 and for the next 2 years I worked with the fantastic team at <a href="//dna.co.nz">DNA</a>. For this project I built the vast majority of the front-end using BEM methodology and the Pure.css framework whilst greatly increasing my knowledge of Silverstripe's back-end. Daily meetings with the client ensured that the process went very smoothly and was a big win for everyone involved.</div>
 				</div>
 				<div class="year">2017</div>
 			</li>
@@ -118,6 +118,6 @@
 				<div class="year">2009</div>
 			</li>
 		</ul>
-		<p class="disclaimer"><em>All sites above contain PHP, HTML, CSS and Javascript&nbsp;with&nbsp;jQuery.</em></p>
+		<p class="disclaimer">All sites above (pre-2018) contain PHP, HTML, CSS and Javascript&nbsp;with&nbsp;jQuery.</p>
 	</div>
 </article>

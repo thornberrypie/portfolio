@@ -99,7 +99,6 @@ noscript{
 	background:url(../../images/bg-pattern.jpg) repeat center 0;
   border-bottom:1px solid $grey;
   border-top:1px solid $white;
-  display: flex;
 	padding: $space*2 0;
   position:relative;
   text-align: center;
@@ -113,11 +112,12 @@ noscript{
 	text-align:center;
 	line-height:28px;
 	font-size:0.9rem;
-	padding: $space*2 0;
+	padding: $space*2;
 	background:#ede7db url(../../images/cloud-windmills.jpg) repeat-x center 100%;
 
 	p{
 		color: $dark;
+    padding: 0;
 	}
 }
 

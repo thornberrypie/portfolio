@@ -15,7 +15,7 @@
       <p><a href="#" class="js-scroll-to-call">Call me</a> for a free consultation or <span class="nowrap">no-obligation</span> quote for fixing issues on your existing web site.</p>
 		</div>
     <div class="home-acronyms">
-			<p class="intro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such&nbsp;as:</span></p>
+			<p class="home-acronymsintro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such&nbsp;as:</span></p>
 			<h2 class="home-acronymbox">
 				<?php outputAcronyms() ?>
 			</h2>

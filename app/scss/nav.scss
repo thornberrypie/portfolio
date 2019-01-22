@@ -1,0 +1,56 @@
+.nav{
+	margin: $space*3 auto 0;
+  width: 300px;
+
+  @include bp(md) {
+    margin: $space*3 0;
+  }
+
+	&-inner {
+		width: 312px;
+	}
+
+	&-list {
+		display: flex;
+		justify-content: center;
+	}
+
+	&-link {
+		border: 0;
+		color:black;
+		cursor:pointer;
+		font:normal 16px/18px $reem-font;
+		text-transform:uppercase;
+		margin: 0;
+		padding: 0 $space/2;
+
+		&:hover,
+		&:focus {
+			border-bottom:2px solid $nav-link-hover;
+			color:$nav-link-hover;
+			outline: none;
+		}
+	}
+}
+
+
+.nav-home .nav-item--home a,
+.nav-about .nav-item--about a,
+.nav-work .nav-item--work a,
+.nav-contact .nav-item--contact a{
+	color:$blue;
+	border-bottom:2px solid $blue;
+}
+#nav-slider{
+	width:287px;
+	position:relative;
+	top: -1px;
+}
+.ui-slider-handle{
+	width:12px;
+	height:21px;
+	position:absolute;
+	top:-20px;
+	background:url(../../images/slider.png) no-repeat 0 0;
+	outline:0;
+}

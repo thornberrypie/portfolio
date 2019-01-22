@@ -1,15 +1,4 @@
 @media screen and (max-width:980px){
-	.nav{
-		text-align: center;
-
-		&-inner {
-			margin-left: auto;
-			margin-right: auto;
-			position: relative;
-			text-align: center;
-			width: 300px;
-		}
-	}
 	.work ul li{
 		width: 33.333%;
 	}
@@ -27,20 +16,6 @@
 	.logo {
 		text-align: center;
 	}
-
-	.article {
-		padding: $space*2;
-		&.contact {
-			padding-bottom: $space;
-		}
-		p{
-			text-align: justify;
-
-			&.disclaimer {
-				text-align: center;
-			}
-		}
-	}
 	.hgroup{
 		padding: $space/2 0 ;
 		float: none;
@@ -51,70 +26,8 @@
 			width: 50%;
 		}
 	}
-	.about p{
-		width:100%;
-	}
-	.contact{
-		ul{
-			li{
-				padding: 7px 0;
-				line-height: 16px;
-
-				&.link{
-					padding: 0 0 12px;
-					a{
-						&:before{
-							position: relative;
-							margin: 0 auto;
-							top: 4px;
-							margin-right: 6px;
-						}
-					}
-				}
-                &.stackoverflow {
-                    font-size: 13px;
-                }
-			}
-		}
-		.contact-bg{
-			right:0;
-		}
-	}
-
-	.sticky-header{
-		.header{
-			height: $sticky-header-height;
-			padding-top: 0;
-			position: fixed;
-			top: 0;
-			width: 100%;
-
-			h1, h2/*, .ui-slider-handle*/{
-				display: none;
-			}
-			.nav{
-				float: none;
-				background: $white;
-				height: 50px;
-				nav{
-					margin: 15px auto 0;
-					padding: $space/2 0 0;
-				}
-			}
-		}
-		.home{
-			padding-top: 155px;
-		}
-	}
 }
 @media screen and (max-width:480px) {
-	.article {
-		padding: $space*2 0;
-
-		&.about {
-			padding: $space*2 $space;
-		}
-	}
 	.currentStatus .boldi{
 		text-align:center;
 		padding-right:5px;

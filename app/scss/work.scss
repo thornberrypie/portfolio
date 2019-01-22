@@ -9,14 +9,9 @@
 		z-index:95;
 		text-align: center;
 		p{
-			padding:6px 0 0;
-
 			&.selection{
 				text-align: center;
 				font-family: $heading-font;
-			}
-			&:last-child{
-				padding-bottom: 6px;
 			}
 		}
 	}
@@ -42,6 +37,10 @@
 			}
 		}
 	}
+  .disclaimer {
+    padding: $space/2 $space;
+  }
+
 	ul{
 		color: white;
 		display:block;
