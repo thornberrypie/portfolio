@@ -1,3 +1,5 @@
+<?php include 'data/work-data.php' ?>
+
 <article class="work article">
 	<div id="sitebg-wrap">
 		<div id="sitebg" class="hidden"></div>
@@ -6,6 +8,27 @@
 		<p class="selection">Some of my work over the last decade:</p>
 		<div id="siteinfo"></div>
 		<ul class="clearfix">
+      <?php
+      $index = 0;
+      foreach($projects as $key => $item) {
+        echo '
+        <li class="site site'.($index+1).' '.$key.'">
+          <div class="box">
+            <div class="text">'.$item['text'].'</div>
+            <span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
+            <div class="info">
+              <strong>
+                <a class="siteTitle" href="'.$item['href'].'" target="_blank" title="Visit Website">'.$item['url'].'</a>
+              </strong> - '.$item['content'].'
+            </div>
+          </div>
+          <div class="year">'.$item['year'].'</div>
+        </li>';
+
+        $index++;
+      }
+      ?>
+      <?php /*
 			<li class="site site1 ffs">
 				<div class="box">
 					<div class="text"><h4>MBIE GCCRS</h4><h3>Silverstripe CMS</h3><h4>CWP / Solr</h4></div>
@@ -16,7 +39,7 @@
 			</li>
 			<li class="site site2 kiwirail">
 				<div class="box">
-					<div class="text"><h3>Kiwirail</h3><h3>Silverstrpe CMS</h3><h4>Pure.css / BEM</h4></div>
+					<div class="text"><h3>Kiwirail</h3><h3>Silverstripe CMS</h3><h4>Pure.css / BEM</h4></div>
 					<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
 					<div class="info"><strong><a class="siteTitle" href="//www.greatjourneysofnz.co.nz" target="_blank" title="Visit Website">www.greatjourneysofnz.co.nz</a></strong> - From November 2016 and for the next 2 years I worked with the fantastic team at <a href="//dna.co.nz">DNA</a>. For this project I built the vast majority of the front-end using BEM methodology and the Pure.css framework whilst greatly increasing my knowledge of Silverstripe's back-end. Daily meetings with the client ensured that the process went very smoothly and was a big win for everyone involved.</div>
 				</div>
@@ -63,13 +86,6 @@
 				</div>
 				<div class="year">2014</div>
 			</li>
-			<!--<li class="site6 liftoff">
-				<div class="box">
-					<div class="text"><h3>Lift Off</h3><h5>HTML5 / CSS3 / jQuery</h5><h4>Git / JIRA / Bitbucket</h4></div>
-					<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-					<div class="info"><strong><a class="siteTitle" href="//liftoff.co.nz/" target="_blank" title="Visit Website">www.liftoff.co.nz</a></strong> - In March and April of 2014 I worked with <a href="//idesignmedia.co.nz/" target="_blank">iDesign&nbsp;Media</a> to create one of New Zealand's first Equity Crowdfunding platforms. My role in this project was to produce the majority of the front-end code and integrate this into iDesign's custom framework. During this process, I worked mostly from home and collaborated with iDesign using Git.</div>
-				</div>
-			</li>-->
 			<li class="site site8 sff">
 				<div class="box">
 					<div class="text"><h3>Silver Fern Farms</h3><h4>Silverstripe / SASS</h4><h4>Mobile Front-End</h4></div>
@@ -94,13 +110,6 @@
 				</div>
 				<div class="year">2011</div>
 			</li>
-			<!--<li class="site10 toptobottom">
-				<div class="box">
-					<div class="text"><h3>Toyota</h3><h4>Google Maps API v3</h4><h4>Wordpress theme build</h4></div>
-					<span class="layer"></span><span class="img"></span><span class="button"></span><span class="bg1"></span><span class="bg2"></span>
-					<div class="info"><strong><a class="siteTitle" href="//www.toptobottom.co.nz" target="_blank" title="Visit Website">www.toptobottom.co.nz</a><em> (No longer online)</em></strong> - A mashup of Wordpress and Google&nbsp;Maps, designed by Saatchi&nbsp;&amp;&nbsp;Saatchi for a Toyota campaign that involved Marc&nbsp;Ellis driving the length of New&nbsp;Zealand in a 60 year old FJ&nbsp;Cruiser. In 2010 <a href="//www.thechurch.co.nz" target="_blank">The&nbsp;Church</a> were approached by Aim Proximity who had picked up this job but hadn't the manpower to meet the strict deadline. I eagerly rose to the challenge and single-handedly wrote 90% of the site during the summer holidays then passed it back to the agency to complete the finishing touches and meet the deadline to coincide with the TV, radio and print campaigns.</div>
-				</div>
-			</li>-->
 			<li class="site site11 hito">
 				<div class="box">
 					<div class="text"><h3>HITO</h3><h3>Wordpress CMS</h3><h4>Front-End / UX</h4></div>
@@ -117,6 +126,7 @@
 				</div>
 				<div class="year">2009</div>
 			</li>
+      */ ?>
 		</ul>
 		<p class="disclaimer">All sites above (pre-2018) contain PHP, HTML, CSS and Javascript&nbsp;with&nbsp;jQuery.</p>
 	</div>
