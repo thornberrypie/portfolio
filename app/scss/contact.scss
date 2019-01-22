@@ -58,20 +58,19 @@
 
       &.showing {
         display: inline-block;
+        font-size: 1.5rem;
+        line-height: 1;
         opacity: 1;
         position: relative;
+        text-decoration: none;
         top: 0;
-      }
-
-      // Class can be added when clicking on 'call me' link
-      &.flash {
-        //@include animation-flash(0.5s, '#00F');
       }
     }
 
 		a {
 			color:#0B7B9D;
 			display: inline-block;
+      text-decoration: none;
 		}
 	}
 
@@ -97,13 +96,14 @@
       }
 
       @include bp(lg) {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
 
 			a {
 				color:#0B7B9D;
 				display: inline-block;
 				padding-left: $space*1.5;
+        text-decoration: none;
 
 				&:before {
 					width: 16px;
