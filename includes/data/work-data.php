@@ -1,5 +1,12 @@
 <?php
 $projects = [
+  'placetrace'  => [
+    'text'    => '<h3>Place-Trace</h3><h4>React, ES6, Flexbox</h4><h4>Geography game</h4>',
+    'href'    => 'http://place-trace.com/',
+    'url'     => 'www.place-trace.com',
+    'content' => 'A challenging geography game that uses live data from the REST Countries API. It\'s a Javascript rebuild of my first PHP site from 2006, but this time using React, ES6 and SASS.',
+    'year'    => '2019'
+  ],
   'gccrs' => [
     'text'    => '<h4>MBIE GCCRS</h4><h3>Silverstripe CMS</h3><h4>CWP / Solr</h4>',
     'href'    => 'https://www.gccrs.govt.nz/',
@@ -28,11 +35,11 @@ $projects = [
     'content' => 'For the duration of 2016 I worked with one of Auckland\'s top digital agencies <a target="_blank" href="//www.spitfire.co.nz">Spitfire</a> to deliver a suite of Swiss pharmaceutical sites: <a href="//www.roche.co.nz" target="_blank">roche.co.nz</a>, <a href="//www.cancerinfo.co.nz" target="_blank">cancerinfo.co.nz</a> and <a href="//www.roche-plus.co.nz" target="_blank">roche-plus.co.nz</a>. These were crafted in PHP CMS Concrete5 with custom-made modules and templates. During my time at <a target="_blank" href="//www.spitfire.co.nz">Spitfire</a> I\'ve also had the opportunity to do extensive work on one of New Zealand\'s most popular recipe websites: <a target="_blank" href="//www.chelsea.co.nz">Chelsea Sugar NZ</a> and their Aussie affiliates <a target="_blank" href="//www.csrsugar.com.au">CSR Sugar Australia</a>.',
     'year'    => '2016'
   ],
-  'stoptober'  => [
-    'text'    => '<h4>Stoptober NZ</h4><h3>Node.js / Express</h3><h4>Stylus / JADE / Mongo</h4>',
-    'href'    => '#',
-    'url'     => 'www.stoptober.nz',
-    'content' => 'Stoptober is an annual campaign to help people stop smoking, and in August 2015 after quitting smoking myself a month earlier I built the web application that runs the 2015 campaign. Working with <a target="_blank" href="//www.touchcast.co.nz/">Touchcast</a>, I built both front and back end using the most cutting-edge web technologies: Node, Express 4, JADE, Stylus, and Mongoose with MongoDB.',
+  'schoolz'  => [
+    'text'    => '<h3>Schoolz.NZ</h3><h3>AngularJS</h3><h4>Google Maps API</h4>',
+    'href'    => 'http://schoolz.nz/',
+    'url'     => 'www.schoolz.nz',
+    'content' => 'A personal site that I built as a way to learn AngularJS and as an aid to house hunting.',
     'year'    => '2015'
   ],
   'mc'  => [
@@ -40,13 +47,6 @@ $projects = [
     'href'    => 'https://www.mc.co.nz/',
     'url'     => 'www.mc.co.nz',
     'content' => 'Early in 2015 I built the front end for NZ law firm Meredith Connell\'s new Drupal website with the talented folks at <a href="//www.insightcreative.co.nz" target="_blank">Insight&nbsp;Creative</a>. Although the back-end developer was in Wellington and I was working in Auckland, we collaborated daily and were able to deliver the polished product one week ahead of schedule using modern technologies such as git, beanstalk and of course the good old telephone.',
-    'year'    => '2014'
-  ],
-  'coats'  => [
-    'text'    => '<h3>Coats Design</h3><h4>Wordpress / SASS</h4><h4>Bootstrap 3 / Masonry</h4>',
-    'href'    => '#',
-    'url'     => 'www.coatsdesign.co.nz',
-    'content' => 'Early in 2014, I worked with <a href="//www.tinsoldier.co.nz">Tin&nbsp;Soldier</a> to create a custom Wordpress site for Coats Design. For this I built a responsive HTML5 theme with Bootstrap 3, compiled plenty of CSS using SASS, and fine-tuned the UI by extending Javascript with jQuery and Isotope/Masonry.',
     'year'    => '2014'
   ],
   'sff'  => [

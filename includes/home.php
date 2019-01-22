@@ -13,6 +13,7 @@
 			</ul>
       */ ?>
       <p><a href="#" class="js-scroll-to-call">Call me</a> for a free consultation or <span class="nowrap">no-obligation</span> quote for fixing issues on your existing web site.</p>
+      <p>Latest work:<br><a href="http://place-trace.com" target="_blank">A visual javascript geography quiz</a></p>
 		</div>
     <div class="home-acronyms">
 			<p class="home-acronymsintro"><span class="intro1">My work involves many acronyms,</span> <span class="intro2">such&nbsp;as:</span></p>

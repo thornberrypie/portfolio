@@ -148,6 +148,7 @@
 			&.site4, &.site8, &.site12{
 				margin-right:0;
 			}
+
 			&.sff .img{
 				background-position:0 0;
 			}
@@ -157,11 +158,11 @@
 			&.oysterbay .img{
 				background-position:-338px 0;
 			}
+      &.hito .img{
+				background-position:-169px -133px;
+			}
 			&.kiwirail .img{
 				background-position:-507px 0;
-			}
-			&.coats .img{
-				background-position:-676px 0;
 			}
 			&.mc .img{
 				background-position:-845px 0px;
@@ -169,8 +170,8 @@
 			&.nzso .img{
 				background-position:0 -133px;
 			}
-			&.hito .img{
-				background-position:-169px -133px;
+      &.placetrace .img{
+				background-position:-676px 0;
 			}
 			&.roche .img{
 				background-position:-338px -133px;
@@ -178,10 +179,10 @@
 			&.dryitonline .img{
 				background-position:-507px -133px;
 			}
-			&.ffs .img{
+			&.gccrs .img{
 				background-position:-676px -133px;
 			}
-			&.stoptober .img{
+			&.schoolz .img{
 				background-position:-845px -133px;
 			}
 		}
@@ -220,7 +221,7 @@
 		background-image:url(../../images/screens/websites3y515.jpg);
 		background-position: left -515px;
 	}
-	&.stoptober-bg{
+	&.schoolz-bg{
 		background-image:url(../../images/screens/websites3y515.jpg);
 		background-position: center -1545px;
 	}
@@ -228,7 +229,7 @@
 		background-image:url(../../images/screens/websites3y515.jpg);
 		background-position: center -1030px;
 	}
-	&.coats-bg{
+	&.placetrace-bg{
 		background-image:url(../../images/screens/websites3y515.jpg);
 		background-position: left 0;
 	}
