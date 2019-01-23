@@ -53,7 +53,7 @@
   @if $class == xs {
     @media (min-width: 384px) { @content; }
   }
-  @if $class == sm {
+  @else if $class == sm {
     @media (min-width: 480px) { @content; }
   }
   @else if $class == md {

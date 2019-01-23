@@ -1,15 +1,16 @@
 .nav{
 	margin: $space*4 auto 0;
   position: relative;
-  right: $space*1.5;
+  right: 5%;
   width: 300px;
 
   @include bp(xs) {
-    right: 0;
+    right: -2%;
   }
 
   @include bp(md) {
     margin: $space*4.5 0 0;
+    right: 3.75%;
   }
 
 	&-inner {
