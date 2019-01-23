@@ -28,11 +28,16 @@
     font-family: $heading-font;
     margin: 0 auto;
     position: relative;
+    right: $space*1.5;
+
+    @include bp(xs) {
+      right: 0;
+    }
 
     span{
-        display:none;
-        position:absolute;
-        line-height:32px;
+      display:none;
+      position:absolute;
+      line-height:32px;
     }
   }
 
