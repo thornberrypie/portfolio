@@ -3,8 +3,8 @@
 		<aside class="download">
 			<p class="heading">Download Resume</p>
 			<div class="flex files">
-				<a class="pdf" href="assets/CV/2018/Graeme-Thornber-CV-Nov-2018.pdf" target="_blank" title="PDF format"></a>
-				<a class="ms" href="assets/CV/2018/Graeme-Thornber-CV-Nov-2018.docx.zip" target="_blank" title="Microsoft Word format"></a>
+				<a class="pdf" href="files/CV/2018/Graeme-Thornber-CV-Nov-2018.pdf" target="_blank" title="PDF format"></a>
+				<a class="ms" href="files/CV/2018/Graeme-Thornber-CV-Nov-2018.docx.zip" target="_blank" title="Microsoft Word format"></a>
 			</div>
 		</aside>
 		<ul class="deats">
