@@ -17,6 +17,10 @@
   max-width: $max-content-width;
   padding: $space $space*2;
   position: relative;
+
+  @include bp(xs) {
+    //padding: $space $space*2;
+  }
 }
 .flex {
 	display: flex;

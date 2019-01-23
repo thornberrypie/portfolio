@@ -87,7 +87,7 @@
 
 		.link{
       font-size: 0.9rem;
-			padding: 0 0 6px 6px;
+			padding: 0 0 6px 0;
 			position: relative;
 			text-align: left;
 
@@ -102,7 +102,7 @@
 			a {
 				color:#0B7B9D;
 				display: inline-block;
-				padding-left: $space*1.5;
+				padding: $space/4 0 0 $space/12;
         text-decoration: none;
 
 				&:before {
@@ -111,10 +111,18 @@
 					display: inline-block;
 					position: absolute;
 					content: " ";
-					left: 0;
+					left: -$space*1.6;
 					top: 5px;
 					background: url(../../images/gt-icons.png) no-repeat 0 0;
 				}
+
+        @include bp(xs) {
+          padding-left: $space*1.5;
+
+          &:before {
+            left: 0;
+          }
+        }
 			}
 
 			&.linkedin a:before{
