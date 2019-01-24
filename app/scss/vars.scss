@@ -2,11 +2,13 @@ $source-sans-font: "Source Sans Pro", Helvetica, Arial, sans-serif;
 $reem-font: "Reem Kufi", Helvetica, Arial, sans-serif;
 $body-font: $source-sans-font;
 $heading-font: $reem-font;
+
 $dark: #303030;
-$light: #eff1f2;
-$blue: #14a1d0;
-$green: #0C726C;
-$green--dark: #27312E;
+$color-light: #eff1f2;
+$blue: #0B7799;
+//$blue--dark: #111673;
+$green: #51790B;
+$dark-green: #43514B;
 $red: #E22900;
 $peach: #EEE7D5;
 $aqua: #81c7e3;
@@ -14,6 +16,10 @@ $grey: #cdcdcd;
 $light-grey: #e8e8e8;
 $white: #fff;
 $nav-link-hover: #737372;
+
+$color-link: $green;
+$color-link--hover: $dark-green;
+
 $hero-height: 515px;
 $content-width: 844px;
 $max-content-width: 1024px;

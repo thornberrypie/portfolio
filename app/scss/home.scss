@@ -1,5 +1,5 @@
 .home{
-	background:$light;
+	background:$color-light;
 
   &-acronyms {
     span {
@@ -13,7 +13,7 @@
   }
 
   &-acronymsintro {
-    margin: $space*2 0 $space;
+    margin: $space 0;
     min-height: 63px;
 
     @include bp(sm) {
@@ -28,7 +28,7 @@
     font-family: $heading-font;
     margin: 0 auto;
     position: relative;
-    right: $space*1.5;
+    right: $space/2;
 
     @include bp(xs) {
       right: 0;

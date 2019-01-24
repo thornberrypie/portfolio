@@ -1,5 +1,10 @@
 var startPage = 'home';
-var navPos = {'home':41, 'work':101, 'about':163, 'contact':237};
+var navPos = {
+  'home':54,
+  'work':138,
+  //'about':163,
+  'contact':232
+};
 var navBreaks = [62, 136, 204];
 var navWidth = 287;
 var navSpeed = 456;
@@ -40,7 +45,6 @@ jQuery(document).ready(function($){
 	$('.nav-link').click(function(e){
 		e.preventDefault();
 		var id = $(this).data('id');
-		console.log(id);
 		animateNavPage(id);
 		//Stop work animation and hide text
 		leaveWorkArea();
@@ -170,9 +174,13 @@ function animateNavPage(id){
 	});
 
 	// Activate page scrolling
-	var page = $('article.'+id);
-	var pos = page.offset().top;
-	scrollPage(pos);
+  if(id === 'contact') {
+    scrollToContact(true);
+  } else {
+    var page = $('article.'+id);
+  	var pos = page.offset().top + 210;
+  	scrollPage(pos);
+  }
 }
 
  // e=(obj) element, f=(string) function(open or close)
@@ -271,6 +279,18 @@ function scrollPage(pos){
 	$('html,body').animate({scrollTop: newPos}, navSpeed);
 }
 
+function scrollToContact(showEmail) {
+  $('html, body').animate({
+    scrollTop: $('[data-type=phone]').offset().top
+  }, animateSpeed, function(){
+    activateContactItem('phone');
+
+    if(showEmail) {
+      activateContactItem('email');
+    }
+  });
+}
+
 function setUpContact(){
 	$('.js-contact-trigger').click(function(){
 		//var itemClass = $(this).parents('li').attr('class');
@@ -280,11 +300,7 @@ function setUpContact(){
 
   $('.js-scroll-to-call').click(function(e){
     e.preventDefault();
-    $('html, body').animate({
-      scrollTop: $('[data-type=phone]').offset().top
-    }, animateSpeed, function(){
-      activateContactItem('phone');
-    });
+    scrollToContact(false);
   });
 }
 

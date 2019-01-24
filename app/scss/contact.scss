@@ -59,7 +59,7 @@
       &.showing {
         display: inline-block;
         font-size: 1.5rem;
-        line-height: 1;
+        line-height: 1.1;
         opacity: 1;
         position: relative;
         text-decoration: none;
@@ -68,7 +68,7 @@
     }
 
 		a {
-			color:#0B7B9D;
+			color:$blue;
 			display: inline-block;
       text-decoration: none;
 		}
@@ -100,10 +100,14 @@
       }
 
 			a {
-				color:#0B7B9D;
+				color: $color-link;
 				display: inline-block;
-				padding: $space/4 0 0 $space/12;
+				padding: $space/4 0 0 $space/2;
         text-decoration: none;
+
+        &:focus, &:hover {
+          color: $color-link--hover;
+        }
 
 				&:before {
 					width: 16px;
@@ -111,16 +115,22 @@
 					display: inline-block;
 					position: absolute;
 					content: " ";
-					left: -$space*1.6;
+					left: -$space;
 					top: 5px;
 					background: url(../../images/gt-icons.png) no-repeat 0 0;
 				}
 
         @include bp(xs) {
-          padding-left: $space*1.5;
+          padding: 0 0 0 $space*2;
 
           &:before {
             left: 0;
+          }
+        }
+
+        @include bp(lg) {
+          &:before {
+            top: 8px;
           }
         }
 			}
@@ -138,7 +148,7 @@
 	}
 
   .js-contact-trigger {
-    color:#007DB3;
+    color: $color-link;
     cursor:pointer;
     display: block;
     line-height: 24px;
@@ -146,7 +156,7 @@
     text-decoration:underline;
 
     &:hover {
-      color: #009EE3;
+      color: $color-link--hover;
     }
 
     @include bp(md) {

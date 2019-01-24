@@ -15,16 +15,13 @@ body{
 	background:$peach;
 }
 a{
-	word-wrap: break-word;
-	color: $blue;
+  color: $color-link;
+  text-decoration: none;
+  word-wrap: break-word;
 
 	&:focus, &:hover{
-
+    color: $color-link--hover;
 	}
-
-    strong, b {
-        color: $green--dark;
-    }
 }
 h1{
 	font-size:30px;

@@ -24,12 +24,12 @@
       text-align: justify;
     }
 		a{
-			color: $dark;
+			color: $color-light;
 			font-style: italic;
 			text-decoration: none;
 
 			&:hover{
-				color: $light;
+				color: $dark-green;
 			}
 
 			strong &{
