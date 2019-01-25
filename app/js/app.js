@@ -5,7 +5,7 @@ var navPos = {
   //'about':163,
   'contact':232
 };
-var navBreaks = [62, 136, 204];
+var navBreaks = [99, 181];
 var navWidth = 287;
 var navSpeed = 456;
 var thumbSpeed = 555;
@@ -30,7 +30,9 @@ jQuery(document).ready(function($){
 		animate: true,
 		stop: function(event, ui){
 			var num = ui.value;
-			stopDraggingNav(num);
+      if(num) {
+        stopDraggingNav(num);
+      }
 		}
 	});
 
@@ -263,10 +265,9 @@ function makeHeaderSticky(){
 	$(window).scroll(function(){
 		var topPos = $(window).scrollTop();
 
-		// console.log(topPos);
 		if(topPos > 72){
-            $('body').addClass('sticky-header');
-        }else{
+      $('body').addClass('sticky-header');
+    }else{
 			$('body').removeClass('sticky-header');
 		}
 	});
@@ -323,17 +324,15 @@ function showSiteText(e){
 
 // Animate to nearest page when slider has stopped being dragged
 function stopDraggingNav(num){
-	var id = '';
+  var id = '';
 
-	if(num < navBreaks[2]){
-		if(num < navBreaks[1]){
-			id = (num < navBreaks[0]) ? 'home' : 'work';
-		}else{
-			id = 'about';
-		}
-	}else{
-		id = 'contact';
-	}
+  if(num < navBreaks[0]) {
+    id = 'home';
+  } else if(num > navBreaks[1]) {
+    id = 'contact';
+  } else {
+    id = 'work';
+  }
 
 	var pageid = (id==='') ? 'home' : id;
 	animateNavPage(id);

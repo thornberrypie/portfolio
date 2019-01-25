@@ -18,7 +18,7 @@
   padding: $space $space*1.5;
   position: relative;
 
-  @include bp(xs) {
+  @include bp(md) {
     padding: $space $space*2;
   }
 }

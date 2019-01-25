@@ -13,11 +13,16 @@
   }
 
   &-acronymsintro {
+    font-size: 1.1rem;
     margin: $space 0;
     min-height: 63px;
 
+    @include bp(xs) {
+      //font-size: 1rem;
+    }
+
     @include bp(sm) {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       line-height: 1.6;
     }
   }
@@ -42,8 +47,8 @@
   }
 
   &-intro {
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.4;
     padding: $space*2 0 0;
     text-align: left;
 
@@ -51,13 +56,8 @@
       padding: $space*2 $space*3;
     }
 
-    @include bp(md) {
-      font-size: 1.5rem;
-      //padding: $space $space*2 $space 0;
-    }
-
     @include bp(lg) {
-      //padding-left: 0;
+      //font-size: 1.3rem;
     }
 
     ul {
