@@ -14,7 +14,7 @@
 	<link rel="apple-touch-icon-precomposed" href="/images/gt-profile-180.png">
 	<link rel="stylesheet" media="all" href="/dist/css/styles.css">
 	<link rel="stylesheet" media="print" href="/dist/css/print.css">
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro|Reem+Kufi" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Reem+Kufi" rel="stylesheet">
 	<!--[if IE]>
 		<link rel="shortcut icon" href="favicon.ico">
 	<![endif]-->
@@ -26,7 +26,9 @@
 	<meta name="description" content="Web Developer & App Engineer, Musician, Actor, Adventurer">
 	<meta property="og:title" content="Graeme Thornber">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="http://thornberrypie.com/images/gt-gat.jpg">
-	<meta property="og:url" content="http://thornberrypie.com">
+	<meta property="og:image" content="https://thornberrypie.com/images/thornberrypie-screenshot.png">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+	<meta property="og:url" content="https://thornberrypie.com">
 	<meta property="og:description" content="Web Developer & App Engineer, Musician, Actor, Adventurer">
 </head>
