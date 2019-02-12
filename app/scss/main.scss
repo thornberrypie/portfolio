@@ -27,7 +27,7 @@ h1{
 	font-size:30px;
 	line-height:44px;
 	a{
-		color:#14A1D0 !important;
+		color: $blue;
 		transition: all 0.5s ease;
 		display: block;
 		text-decoration: none;
@@ -49,6 +49,9 @@ h1{
 h2{
 	font:normal 18px/25px $reem-font;
 	padding:0;
+}
+h3 {
+  padding: 15px 0;
 }
 h4{
 	font-size: 17px;
@@ -141,10 +144,6 @@ noscript{
 	.inner{
 		z-index:99;
 		width: $content-width;
-	}
-
-	h3{
-		padding: 10px 0;
 	}
 
 	p{

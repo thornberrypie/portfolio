@@ -1,4 +1,5 @@
 <article class="contact article wrapper">
+  <h3>Get in touch to discuss your next digital manoeuvre:</h3>
 	<div class="flex container">
 		<aside class="download">
 			<p class="heading">Download Resume</p>

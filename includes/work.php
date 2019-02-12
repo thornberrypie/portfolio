@@ -5,7 +5,7 @@
 		<div id="sitebg" class="hidden"></div>
 	</div>
 	<div class="inner">
-		<p class="selection">Some of my work over the last decade:</p>
+		<h3 class="selection">Some of my work over the last decade:</h3>
 		<div id="siteinfo"></div>
 		<ul class="clearfix">
       <?php

@@ -7,9 +7,9 @@
 		</div>
     <div class="home-acronyms">
 			<p class="home-acronymsintro"><span class="intro1">My work involves many&nbsp;acronyms,</span> <span class="intro2">such&nbsp;as:</span></p>
-			<h2 class="home-acronymbox">
+			<div class="home-acronymbox">
 				<?php outputAcronyms() ?>
-			</h2>
+			</div>
 		</div>
 	</div>
 </article>

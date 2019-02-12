@@ -9,12 +9,13 @@
 	  gtag('config', 'UA-41497075-1');
 	</script>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="/images/gt-profile-196.png">
 	<link rel="apple-touch-icon-precomposed" href="/images/gt-profile-180.png">
 	<link rel="stylesheet" media="all" href="/dist/css/styles.css">
 	<link rel="stylesheet" media="print" href="/dist/css/print.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Reem+Kufi" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
 	<!--[if IE]>
 		<link rel="shortcut icon" href="favicon.ico">
 	<![endif]-->
