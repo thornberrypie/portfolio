@@ -6,7 +6,7 @@
       <p>Latest work:<br><a href="http://place-trace.com" target="_blank">Place-Trace: A visual javascript geography&nbsp;quiz</a></p>
 		</div>
     <div class="home-acronyms">
-			<p class="home-acronymsintro"><span class="intro1">My work involves many&nbsp;acronyms,</span> <span class="intro2">such&nbsp;as:</span></p>
+			<h2 class="home-acronymsintro"><span class="intro1">My work involves many&nbsp;acronyms,</span> <span class="intro2">such&nbsp;as:</span></h2>
 			<div class="home-acronymbox">
 				<?php outputAcronyms() ?>
 			</div>
