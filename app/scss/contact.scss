@@ -74,7 +74,70 @@
 		}
 	}
 
-	.social {
+  .link{
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0 0 6px 0;
+    position: relative;
+    text-align: left;
+
+    a {
+      color: $color-link;
+      display: inline-block;
+      padding: $space/4 0 0 $space/2;
+      text-decoration: none;
+
+      &:focus, &:hover {
+        color: $color-link--hover;
+      }
+
+      &:before {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: absolute;
+        content: " ";
+        left: -$space;
+        top: 5px;
+        background: url(../../images/gt-icons.png) no-repeat 0 0;
+      }
+
+      @include bp(xs) {
+        padding: 3px 0 0 $space*2;
+
+        &:before {
+          left: 0;
+        }
+      }
+
+      @include bp(lg) {
+        &:before {
+          top: 8px;
+        }
+      }
+    }
+
+    &.item a {
+      padding-left: 0;
+      text-decoration: underline;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &.linkedin a:before{
+      background-position: -16px 0;
+    }
+    &.github a:before{
+      background-position: -32px 0;
+    }
+    &.stackoverflow a:before{
+      background-position: -48px 0;
+    }
+  }
+
+  .social {
 		display: block;
 		padding-top: $space 0;
 		position:relative;
@@ -85,11 +148,9 @@
 			display: inline-block;
 		}
 
-		.link{
+    .link {
       font-size: 0.9rem;
-			padding: 0 0 6px 0;
-			position: relative;
-			text-align: left;
+      margin-bottom: $space/2;
 
       @include bp(md) {
         font-size: 1rem;
@@ -98,53 +159,7 @@
       @include bp(lg) {
         font-size: 1.3rem;
       }
-
-			a {
-				color: $color-link;
-				display: inline-block;
-				padding: $space/4 0 0 $space/2;
-        text-decoration: none;
-
-        &:focus, &:hover {
-          color: $color-link--hover;
-        }
-
-				&:before {
-					width: 16px;
-					height: 16px;
-					display: inline-block;
-					position: absolute;
-					content: " ";
-					left: -$space;
-					top: 5px;
-					background: url(../../images/gt-icons.png) no-repeat 0 0;
-				}
-
-        @include bp(xs) {
-          padding: 3px 0 0 $space*2;
-
-          &:before {
-            left: 0;
-          }
-        }
-
-        @include bp(lg) {
-          &:before {
-            top: 8px;
-          }
-        }
-			}
-
-			&.linkedin a:before{
-				background-position: -16px 0;
-			}
-			&.github a:before{
-				background-position: -32px 0;
-			}
-			&.stackoverflow a:before{
-				background-position: -48px 0;
-			}
-		}
+    }
 	}
 
   .js-contact-trigger {

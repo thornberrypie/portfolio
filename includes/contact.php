@@ -19,6 +19,10 @@
 				<span class="js-contact-trigger">View phone number</span>
 				<span class="reveal">&nbsp;</span>
 			</li>
+      <li class="item link" data-type="hire">
+				<label class="heading">Hire me:</label>
+        <a href="https://thepond.net/profiles/graeme/" target="_blank">thepond.net/profiles/graeme</a>
+			</li>
 			<li class="item con-so" data-type="social">
 				<label class="heading">Stalk me:</label>
 				<ul class="social">

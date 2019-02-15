@@ -128,6 +128,6 @@
 			</li>
       */ ?>
 		</ul>
-		<p class="disclaimer">All sites above (pre-2018) contain PHP, HTML, CSS and Javascript&nbsp;with&nbsp;jQuery.</p>
+		<h3 class="disclaimer">All sites above between 2010-2018 contain PHP and jQuery.</h3>
 	</div>
 </article>
