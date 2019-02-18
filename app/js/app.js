@@ -69,11 +69,14 @@ jQuery(document).ready(function($){
 		var bg = $('#sitebg');
 		$('p.selection').hide();
 		clicked.removeClass('over');
+
+    // Close any active work items
 		$('.work li.active').each(function(){
-			if($(this).attr('class') != clicked.attr('class')){
+			if($(this).attr('class') !== clicked.attr('class')){
 				animateThumb($(this), 'close');
 			}
 		});
+
 		//Pause bg instead of changing if same item is clicked
 		if(clicked.hasClass('active')){
 			if(clicked.hasClass('paused')){
@@ -83,9 +86,9 @@ jQuery(document).ready(function($){
 				bg.stop();
 				clicked.addClass('paused');
 			}
-		//Change/show bg and text when first/ different item is clicked
-		}else{
-			var clickedClass = clicked.attr('class');
+		} else {
+      //Change/show bg and text when first/ different item is clicked
+      var clickedClass = clicked.attr('class');
 			$('.work li').removeClass('active').removeClass('paused');
 		//Fade bg and change image if a different item is selected
 			if(bg.hasClass('hidden')){
@@ -199,11 +202,11 @@ function animateThumb(e, f){
 		bg1val = '-100%'; bg2val = '100%';
 		layer.stop().fadeOut(thumbSpeed);
 		text.stop().fadeOut(thumbSpeed);
-        year.stop().fadeIn(thumbSpeed);
+    year.stop().fadeIn(thumbSpeed);
 	}else{
 		layer.fadeIn(thumbSpeed);
 		text.fadeIn(thumbSpeed);
-        year.fadeOut(thumbSpeed);
+    year.fadeOut(thumbSpeed);
 	}
 
 	bg1.stop().animate({'top':bg1val, 'left':bg1val}, thumbSpeed);
@@ -274,8 +277,12 @@ function makeHeaderSticky(){
 }
 
 function scrollPage(pos){
-	var headerHeight = $('header').height();
-	var newPos = pos - (headerHeight);
+	var headerHeight = $('.header').height();
+	var newPos = pos - headerHeight;
+
+  if($(window).width() >= 768) {
+    var newPos = pos - (headerHeight * 2);
+  }
 
 	$('html,body').animate({scrollTop: newPos}, navSpeed);
 }
