@@ -5,6 +5,11 @@
   text-shadow: none !important;
 }
 
+
+.flex.container {
+  padding: 12pt;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -14,7 +19,8 @@ a {
 .js-contact-trigger,
 .nav,
 #siteinfo,
-.work ul li span {
+.work ul li span,
+.home-acronymbox span:after {
 	display:none !important;
 }
 
@@ -42,7 +48,7 @@ a {
   padding: 0 !important;
 }
 
-.contact .item .heading:after,
+.contact .item .label:after,
 .logo .title a span,
 .work .inner p.selection {
   font-size: 18pt !important;
@@ -61,7 +67,7 @@ h1 a span.big {
 }
 
 .inner {
-  margin: 12pt 24pt;
+  margin: 12pt;
   max-width: 100%;
 }
 
@@ -80,16 +86,6 @@ h1 a span.big {
   top: 0;
 }
 
-.home-acronymbox span:after {
-  content: ', ';
-  position: relative;
-  right: 4pt;
-}
-
-.home-acronymbox span:last-child:after {
-  content: '.';
-}
-
 .home-acronyms {
   min-width: 100%;
   padding-bottom: 0;
@@ -104,14 +100,13 @@ h1 a span.big {
   min-height: 1px;
 }
 
-.work .site .year {
-  display: block !important;
-  left: 90%;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  top: 0;
-  width: 10%;
+.work .inner .selection {
+  text-align: left;
+  font-size: 18pt !important;
+}
+
+.work ul li {
+ margin: 0;
 }
 
 .work ul li {
@@ -162,27 +157,60 @@ h1 a span.big {
   margin-bottom: 18pt;
 }
 
-.contact .item .heading {
-  font-size: 16pt;
-  text-align: left;
+.contact ul.links {
+  display: block;
   width: 100%;
 }
 
-.contact .item[data-type=email] .heading:after {
+.contact ul.links li.item {
+  clear: both;
+  display: block;
+  padding: 10px 0 0;
+  text-align: left;
+}
+
+.contact ul.links li.item.con-so {
+  display: flex;
+}
+
+.contact ul.links li.item .label {
+  display: inline-block;
+  font-weight: bold;
+  width: 108px;
+}
+
+.contact ul.links .reveal {
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+  top: 0;
+  transition: none;
+}
+
+.contact ul.links .reveal:after {
+  display: block;
+  float: left;
+}
+
+
+.contact .item[data-type=email] .reveal:after {
   content: 'thornberrypie@gmail.com';
-  display: block;
 }
 
-.contact .item[data-type=phone] .heading:after {
+.contact .item[data-type=phone] .reveal:after {
   content: '+64 (0)21 0292 4529';
+}
+
+.contact ul.social {
   display: block;
+  float: left;
 }
 
-.contact .social .link {
-  padding: 4pt 0;
+.contact ul.social li.link {
+  padding: 0;
 }
 
-.contact .social .link a {
+.contact ul.social li.link a {
   font-size: 18pt !important;
   padding: 0;
 }

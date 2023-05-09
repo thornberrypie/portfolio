@@ -1,0 +1,128 @@
+.home{
+	background:$color-light;
+
+  @include bp(md) {
+    .container {
+      padding-bottom: 18px;
+    }
+    .flex {
+      align-items: center;
+    }
+  }
+
+  @include bp(xl) {
+    .container {
+      padding: 20px 0;
+    }
+  }
+
+
+  &-intro {
+    padding: $space*2 0 0;
+    text-align: left;
+
+    @include bp(md) {
+      font-size: 0.9rem;
+      line-height: 25px;
+      padding: 3px 36px;
+    }
+
+    @include bp(lg) {
+      font-size: 1rem;
+      line-height: 27px;
+    }
+
+    @include bp(xl) {
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    li {
+      padding: $space 0 $space*2;
+
+      strong {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+
+  &-acronyms {
+    span {
+      display: none;
+    }
+  }
+
+  &-acronymsintro {
+    font-size: 1.1rem;
+    margin: 6px 0;
+    min-height: 50px;
+  }
+
+  &-acronymbox {
+    width: 360px;
+    height: 300px;
+    font-family: $heading-font;
+    margin: 0 auto;
+    position: relative;
+
+    span{
+      display:none;
+      position:absolute;
+      line-height:32px;
+    }
+  }
+
+  .flex {
+    flex-direction: column-reverse;
+
+    @include bp(md) {
+      flex-direction: row;
+    }
+  }
+}
+
+.home-acronymbox span {
+  color: $blue;
+
+  &:nth-child(odd) {
+    color: $green;
+  }
+}
+
+.a0{ top:76px; left:10px; font-size:32px }
+.a1{ top:182px; left:150px; font-size:32px }
+.a2{ top:48px; left:322px; font-size:32px }
+.a3{ top:152px; left:240px; font-size:32px }
+.a4{ top:260px; left:72px; font-size:31px }
+.a5{ top:266px; left:298px; font-size:33px }
+.a6{ top:4px; left:218px; font-size:29px }
+.a7{ top:72px; left:218px; font-size:32px }
+.a8{ top:150px; left:88px; font-size:30px }
+.a9{ top:270px; left:6px; font-size:29px }
+.a10{ top:224px; left:260px; font-size:28px }
+.a11{ top:62px; left:116px; font-size:28px }
+.a12{ top:26px; left:156px; font-size:27px }
+.a13{ top:0; left:12px; font-size:27px }
+.a14{ top:144px; left:12px; font-size:26px }
+.a15{ top:0; left:305px; font-size:26px }
+.a16{ top:186px; left:292px; font-size:25px }
+.a17{ top:194px; left:78px; font-size:21px }
+.a18{ top:136px; left:164px; font-size:25px }
+.a19{ top:268px; left:142px; font-size:28px }
+.a20{ top:94px; left:172px; font-size:23px }
+.a21{ top:6px; left:90px; font-size:25px }
+.a22{ top:38px; left:32px; font-size:22px }
+.a23{ top:226px; left:182px; font-size:28px }
+.a24{ top:110px; left:82px; font-size:28px }
+.a25{ top:112px; left:232px; font-size:26px }
+.a26{ top:265px; left:222px; font-size:21px }
+.a27{ top:188px; left:22px; font-size:25px }
+.a28{ top:226px; left:104px; font-size:24px }
+.a29{ top:42px; left:254px; font-size:21px }
+.a30{ top:226px; left:18px; font-size:19px }
+.a31{ top:125px; left:308px; font-size:22px }
+.a32{ top:190px; left:221px; font-size:23px }
+.a33{ top:82px; left:272px; font-size:22px }

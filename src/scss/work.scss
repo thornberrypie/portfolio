@@ -1,0 +1,268 @@
+.work{
+	background:$work-bg url(../../images/feather.jpg) no-repeat right top;
+	color:#000;
+	overflow:hidden;
+	position:relative;
+	z-index:97;
+
+	.inner{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 960px;
+		z-index:95;
+		& .selection{
+			text-align: center;
+			font: normal 21px/25px $heading-font;
+		}
+	}
+	.worktext{
+		display: block;
+    line-height: 1.4;
+		padding: 0 $space*2;
+		text-align: left;
+
+    @include bp(md) {
+      text-align: justify;
+    }
+
+		a{
+			color: $color-light;
+			font-style: italic;
+			text-decoration: none;
+
+			&:hover{
+				text-decoration: underline;
+			}
+
+			strong &{
+				font-size: 17px;
+			}
+		}
+	}
+  .disclaimer {
+    padding: $halfspace $space;
+  }
+
+	ul{
+		color: white;
+		margin: 24px auto 0;
+		padding: 0;
+		text-align: center;
+		li{
+			display: inline-block;
+			margin: 15px;
+			padding: 0;
+			text-align: center;
+			line-height: 30px;
+
+			.box{
+				@include border-radius(6px);
+				width:169px;
+				height:133px;
+				position:relative;
+				cursor:pointer;
+				overflow:hidden;
+				border:1px solid #666;
+			}
+			.text{
+				@include text-shadow(1px 1px #000);
+				@include absolute();
+				z-index:77;
+				line-height:30px;
+				font-size:18px;
+				font-weight:bold;
+				padding: 10px 0;
+
+				h3, h4{
+					@include transition(opacity .333s ease-in-out);
+					color: white;
+					line-height:29px;
+					padding: 0;
+				}
+				h3{
+					font-size: 20px;
+				}
+				h4{
+					display: flex;
+					flex-direction: column;
+					font-size:15px;
+					font-weight:300;
+					justify-content: center;
+					line-height: 23px;
+					min-height: 50px; // line-height * 2
+					padding: 3px 0;
+				}
+			}
+			span{
+				@include absolute();
+				@include border-radius(6px);
+			}
+			.layer{
+				background:#333;
+				z-index:44;
+				opacity:0.82;
+			}
+			.img{
+				z-index:33;
+				background-image: url(../../images/thumbs-2023.jpg);
+			}
+			.button{
+				background:url(../../images/play.png) no-repeat center;
+				z-index:39;
+			}
+			.bg1{
+				background:url(../../images/diag-left.png) no-repeat 0 0;
+				z-index:55;
+			}
+			.bg2{
+				background:url(../../images/diag-right.png) no-repeat 0 0;
+				z-index:55;
+			}
+			.info{
+				display:none;
+				font-size:55px;
+			}
+			&.over{
+				h3, h4, h5{
+					opacity: 0;
+				}
+			}
+			&.active{
+				.img{
+					opacity:0.5;
+				}
+				.button{
+					background:url(../../images/pause.png) no-repeat center;
+					opacity:0.55;
+				}
+				&.over{
+					.button{
+						opacity:1;
+					}
+				}
+				&.paused{
+					.button{
+						background:url(../../images/play.png) no-repeat center;
+						z-index:39;
+					}
+				}
+				h3, h4{
+					opacity: 0;
+				}
+			}
+
+			&.site-sff .img{
+				background-position:0 0;
+			}
+			&.site-scopevisio .img{
+				background-position:-169px 0;
+			}
+			&.site-oysterbay .img{
+				background-position:-338px 0;
+			}
+      &.site-hito .img{
+				background-position:-169px -133px;
+			}
+			&.site-kiwirail .img{
+				background-position:-507px 0;
+			}
+			&.site-mc .img{
+				background-position:-845px 0px;
+			}
+			&.site-nzso .img{
+				background-position:0 -133px;
+			}
+      &.site-placetrace .img{
+				background-position:-676px 0;
+			}
+			&.site-tourwriter .img{
+				background-position:-338px -133px;
+			}
+			&.site-dryitonline .img{
+				background-position:-507px -133px;
+			}
+			&.site-gccrs .img{
+				background-position:-676px -133px;
+			}
+			&.site-schoolz .img{
+				background-position:-845px -133px;
+			}
+		}
+	}
+    .site {
+        position: relative;
+    }
+    .year {
+        bottom: 11px;
+        color: black;
+        display: none;
+        font-size: 20px;
+        left: 42%;
+        position: absolute;
+        z-index: 999999;
+				width: 169px;
+    }
+}
+
+
+#sitebg{
+	width:1000%;
+	height:100%;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(../../images/screens/websites1y515.jpg) repeat center 0;
+	opacity:0.07;
+	z-index:94;
+	display:block;
+	&.roche-bg{
+		background-image:url(../../images/screens/websites2y515.jpg);
+		background-position: left -1030px;
+	}
+	&.ffs-bg{
+		background-image:url(../../images/screens/websites3y515.jpg);
+		background-position: left -515px;
+	}
+	&.schoolz-bg{
+		background-image:url(../../images/screens/websites3y515.jpg);
+		background-position: center -1545px;
+	}
+	&.mc-bg{
+		background-image:url(../../images/screens/websites3y515.jpg);
+		background-position: center -1030px;
+	}
+	&.placetrace-bg{
+		background-image:url(../../images/screens/websites3y515.jpg);
+		background-position: left 0;
+	}
+	&.oysterbay-bg{
+		background-image:url(../../images/screens/websites1y515.jpg);
+		background-position: center -1030px;
+	}
+	&.sff-bg{
+		background-image:url(../../images/screens/websites1y515.jpg);
+		background-position: center 0;
+	}
+	&.scopevisio-bg{
+		background-image:url(../../images/screens/websites1y515.jpg);
+		background-position: left -515px;
+	}
+	&.nzso-bg{
+		background-image:url(../../images/screens/websites2y515.jpg);
+		background-position: left 0;
+	}
+	&.kiwirail-bg{
+		background-image:url(../../images/screens/websites1y515.jpg);
+		background-position: center -1545px;
+	}
+	&.hito-bg{
+		background-image:url(../../images/screens/websites2y515.jpg);
+		background-position: center -515px;
+	}
+	&.dryitonline-bg{
+		background-image:url(../../images/screens/websites2y515.jpg);
+		background-position: left -1545px;
+	}
+}

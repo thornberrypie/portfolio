@@ -1,0 +1,94 @@
+.header{
+	background: $white url(../../images/bg-pattern.jpg) repeat center 0;
+	border-bottom: 1px solid $grey;
+	opacity: 0.95;
+	padding-bottom: $space;
+	z-index: 99;
+
+  .container {
+    max-width: 956px;
+  }
+
+	.tagline {
+		padding-top: $space;
+	}
+}
+
+.logo{
+	text-align: center;
+
+  @include bp(md) {
+    margin-left: $space*3;
+		text-align: left;
+  }
+
+  @include bp(lg) {
+    margin-left: 0;
+  }
+
+	.suffix {
+		font-size: 0.7em;
+	}
+}
+
+.nav{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+
+  @include bp(md) {
+		align-self: flex-end;
+    width: 300px;
+  }
+
+	&-inner {
+		width: 312px;
+	}
+
+	&-list {
+		display: flex;
+		justify-content: center;
+
+    button {
+      background: none;
+    }
+	}
+
+	&-link {
+		border: 0;
+		color:black;
+		cursor:pointer;
+		font:normal 16px/18px $body-font;
+		text-transform:uppercase;
+		margin: 0 $space;
+		padding: 0 $halfspace;
+
+		&:hover,
+		&:focus {
+			border-bottom:2px solid $nav-link-hover;
+			color:$nav-link-hover;
+			outline: none;
+		}
+	}
+}
+
+.nav-home .nav-item--home a,
+.nav-about .nav-item--about a,
+.nav-work .nav-item--work a,
+.nav-contact .nav-item--contact a{
+	color:$blue;
+	border-bottom:2px solid $blue;
+}
+#nav-slider{
+	width:287px;
+	position:relative;
+	top: -1px;
+}
+.ui-slider-handle{
+	width:12px;
+	height:21px;
+	position:absolute;
+	top:-20px;
+	background:url(../../images/slider.png) no-repeat 0 0;
+	outline:0;
+}

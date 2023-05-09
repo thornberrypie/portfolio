@@ -1,29 +1,24 @@
 {
-  "name": "sass-boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "Gulpfile.js",
-  "dependencies": {
-    "gulp-cli": "^2.0.1",
-    "gulp-sass": "^2.3.2"
-  },
-  "devDependencies": {
-    "breakpoint-sass": "^2.7.0",
-    "browser-sync": "^2.18.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^2.2.0",
-    "gulp-uglify": "^3.0.1",
-    "pump": "^3.0.0",
-    "run-sequence": "^2.2.1"
-  },
+  "name": "thornberrypie.com",
+  "version": "3.0.0",
+  "description": "Portfolio of New Zealand Web Engineer Graeme Thornber",
+  "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "uglifyjs src/js/vendor/jquery-2.1.4.min.js src/js/vendor/jquery-ui-1.11.4.min.js src/js/app.js -o dist/js/app.min.js && sass --watch src/scss/index.scss dist/css/styles.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thornberrypie/portfolio.git"
+  },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thornberrypie/portfolio/issues"
+  },
+  "homepage": "https://github.com/thornberrypie/portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "uglify-js": "^3.3.11"
+  }
 }
