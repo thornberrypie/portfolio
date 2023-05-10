@@ -616,7 +616,9 @@ noscript {
 }
 .work .worktext {
   display: block;
+  font-size: 0.95rem;
   line-height: 1.4;
+  margin-top: 12px;
   padding: 0 24px;
   text-align: left;
 }
@@ -722,10 +724,6 @@ strong .work .worktext a {
   z-index: 33;
   background-image: url(../../images/thumbs-2023.jpg);
 }
-.work ul li .button {
-  background: url(../../images/play.png) no-repeat center;
-  z-index: 39;
-}
 .work ul li .bg1 {
   background: url(../../images/diag-left.png) no-repeat 0 0;
   z-index: 55;
@@ -744,21 +742,10 @@ strong .work .worktext a {
 .work ul li.active .img {
   opacity: 0.5;
 }
-.work ul li.active .button {
-  background: url(../../images/pause.png) no-repeat center;
-  opacity: 0.55;
-}
-.work ul li.active.over .button {
-  opacity: 1;
-}
-.work ul li.active.paused .button {
-  background: url(../../images/play.png) no-repeat center;
-  z-index: 39;
-}
 .work ul li.active h3, .work ul li.active h4 {
   opacity: 0;
 }
-.work ul li.site-sff .img {
+.work ul li.site-touwriter .img {
   background-position: 0 0;
 }
 .work ul li.site-scopevisio .img {
@@ -809,64 +796,22 @@ strong .work .worktext a {
 }
 
 #sitebg {
-  width: 1000%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../../images/screens/websites1y515.jpg) repeat center 0;
+  background: url(../../images/websites-2132x745.jpg) repeat 0 0;
   opacity: 0.07;
   z-index: 94;
   display: block;
 }
-#sitebg.roche-bg {
-  background-image: url(../../images/screens/websites2y515.jpg);
-  background-position: left -1030px;
+#sitebg.site-tourwriter {
+  background-position: -256px 0;
 }
-#sitebg.ffs-bg {
-  background-image: url(../../images/screens/websites3y515.jpg);
-  background-position: left -515px;
-}
-#sitebg.schoolz-bg {
-  background-image: url(../../images/screens/websites3y515.jpg);
-  background-position: center -1545px;
-}
-#sitebg.mc-bg {
-  background-image: url(../../images/screens/websites3y515.jpg);
-  background-position: center -1030px;
-}
-#sitebg.placetrace-bg {
-  background-image: url(../../images/screens/websites3y515.jpg);
-  background-position: left 0;
-}
-#sitebg.oysterbay-bg {
-  background-image: url(../../images/screens/websites1y515.jpg);
-  background-position: center -1030px;
-}
-#sitebg.sff-bg {
-  background-image: url(../../images/screens/websites1y515.jpg);
-  background-position: center 0;
-}
-#sitebg.scopevisio-bg {
-  background-image: url(../../images/screens/websites1y515.jpg);
-  background-position: left -515px;
-}
-#sitebg.nzso-bg {
-  background-image: url(../../images/screens/websites2y515.jpg);
-  background-position: left 0;
-}
-#sitebg.kiwirail-bg {
-  background-image: url(../../images/screens/websites1y515.jpg);
-  background-position: center -1545px;
-}
-#sitebg.hito-bg {
-  background-image: url(../../images/screens/websites2y515.jpg);
-  background-position: center -515px;
-}
-#sitebg.dryitonline-bg {
-  background-image: url(../../images/screens/websites2y515.jpg);
-  background-position: left -1545px;
+#sitebg.site-placetrace {
+  background-position: -2132px 0;
 }
 
 .contact .flex.container {

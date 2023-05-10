@@ -65,7 +65,6 @@ jQuery(document).ready(function($){
 	//Show site info and bg when site thumbnail is clicked
 	$('.work li').click(function(){
 		var clicked = $(this);
-		var bg = $('#sitebg');
 		$('p.selection').hide();
 		clicked.removeClass('over');
 
@@ -76,36 +75,15 @@ jQuery(document).ready(function($){
 			}
 		});
 
-		//Pause bg instead of changing if same item is clicked
-		if(clicked.hasClass('active')){
-			if(clicked.hasClass('paused')){
-				clicked.removeClass('paused');
-				animateBackground(bg);
-			}else{
-				bg.stop();
-				clicked.addClass('paused');
-			}
-		} else {
+		// Switch to other site if not clicking on the same site
+		if(!clicked.hasClass('active')) {
       //Change/show bg and text when first/ different item is clicked
       var clickedClass = clicked.attr('class');
-			$('.work li').removeClass('active').removeClass('paused');
-		//Fade bg and change image if a different item is selected
-			if(bg.hasClass('hidden')){
-				bg.attr('class','').css('left',0).addClass(clickedClass+'-bg');
-				$('#sitebg-wrap').css('display','none').fadeIn(999);
-			}else{
-				$('#sitebg-wrap').fadeOut(222, function(){
-					bg.attr('class','').css('left',0).addClass(clickedClass+'-bg');
-					$('#sitebg-wrap').fadeIn(222);
-				});
-			}
+			$('.work li').removeClass('active');
+
 			clicked.addClass('active');
 		//Show site description
 			showSiteText(clicked);
-		//Animate background image
-			animateBackground(bg);
-		//Animate to "work" page in case not there already
-			animateNavPage('work');
 		}
 	}); //end $('.work li').click(function(){
 
@@ -155,20 +133,6 @@ function activateContactItem(itemType) {
     trigger.addClass('hidden');
     reveal.addClass('showing').html(html);
   });
-}
-
-function animateBackground(bg){
-	var speed = siteImgWidth*10;
-	var leftVal = bg.css('left');
-
-	// Calculate speed to set using left value of bg if animation has been paused
-	leftVal = parseFloat(leftVal.replace('-', '').replace('px', ''));
-	speed = (siteImgWidth - leftVal)*10;
-
-	bg.stop().animate({'left':'-'+siteImgWidth+'px'}, speed, 'linear', function(){
-		bg.css('left',0);
-		animateBackground(bg);
-	});
 }
 
 function animateNavPage(id){

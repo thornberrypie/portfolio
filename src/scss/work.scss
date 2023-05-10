@@ -11,14 +11,17 @@
 		justify-content: center;
 		max-width: 960px;
 		z-index:95;
-		& .selection{
+
+		.selection{
 			text-align: center;
 			font: normal 21px/25px $heading-font;
 		}
 	}
 	.worktext{
 		display: block;
+		font-size: 0.95rem;
     line-height: 1.4;
+		margin-top: $space;
 		padding: 0 $space*2;
 		text-align: left;
 
@@ -107,10 +110,6 @@
 				z-index:33;
 				background-image: url(../../images/thumbs-2023.jpg);
 			}
-			.button{
-				background:url(../../images/play.png) no-repeat center;
-				z-index:39;
-			}
 			.bg1{
 				background:url(../../images/diag-left.png) no-repeat 0 0;
 				z-index:55;
@@ -132,27 +131,12 @@
 				.img{
 					opacity:0.5;
 				}
-				.button{
-					background:url(../../images/pause.png) no-repeat center;
-					opacity:0.55;
-				}
-				&.over{
-					.button{
-						opacity:1;
-					}
-				}
-				&.paused{
-					.button{
-						background:url(../../images/play.png) no-repeat center;
-						z-index:39;
-					}
-				}
 				h3, h4{
 					opacity: 0;
 				}
 			}
 
-			&.site-sff .img{
+			&.site-touwriter .img{
 				background-position:0 0;
 			}
 			&.site-scopevisio .img{
@@ -207,62 +191,69 @@
 
 
 #sitebg{
-	width:1000%;
+	width: 100%;
 	height:100%;
 	overflow:hidden;
 	position:absolute;
 	top:0;
 	left:0;
-	background:url(../../images/screens/websites1y515.jpg) repeat center 0;
+	background:url(../../images/websites-2132x745.jpg) repeat 0 0;
 	opacity:0.07;
 	z-index:94;
 	display:block;
-	&.roche-bg{
-		background-image:url(../../images/screens/websites2y515.jpg);
-		background-position: left -1030px;
+
+
+	&.site-tourwriter{
+		background-position: -256px 0;
 	}
-	&.ffs-bg{
-		background-image:url(../../images/screens/websites3y515.jpg);
-		background-position: left -515px;
+	&.site-placetrace{
+		background-position: -2132px 0;
 	}
-	&.schoolz-bg{
-		background-image:url(../../images/screens/websites3y515.jpg);
-		background-position: center -1545px;
-	}
-	&.mc-bg{
-		background-image:url(../../images/screens/websites3y515.jpg);
-		background-position: center -1030px;
-	}
-	&.placetrace-bg{
-		background-image:url(../../images/screens/websites3y515.jpg);
-		background-position: left 0;
-	}
-	&.oysterbay-bg{
-		background-image:url(../../images/screens/websites1y515.jpg);
-		background-position: center -1030px;
-	}
-	&.sff-bg{
-		background-image:url(../../images/screens/websites1y515.jpg);
-		background-position: center 0;
-	}
-	&.scopevisio-bg{
-		background-image:url(../../images/screens/websites1y515.jpg);
-		background-position: left -515px;
-	}
-	&.nzso-bg{
-		background-image:url(../../images/screens/websites2y515.jpg);
-		background-position: left 0;
-	}
-	&.kiwirail-bg{
-		background-image:url(../../images/screens/websites1y515.jpg);
-		background-position: center -1545px;
-	}
-	&.hito-bg{
-		background-image:url(../../images/screens/websites2y515.jpg);
-		background-position: center -515px;
-	}
-	&.dryitonline-bg{
-		background-image:url(../../images/screens/websites2y515.jpg);
-		background-position: left -1545px;
-	}
+	
+	// &.roche-bg{
+	// 	background-position: left -1030px;
+	// }
+	// &.ffs-bg{
+	// 	background-position: left -515px;
+	// }
+	// &.schoolz-bg{
+	// 	background-image:url(../../images/screens/websites3y515.jpg);
+	// 	background-position: center -1545px;
+	// }
+	// &.mc-bg{
+	// 	background-image:url(../../images/screens/websites3y515.jpg);
+	// 	background-position: center -1030px;
+	// }
+	// &.placetrace-bg{
+	// 	background-image:url(../../images/screens/websites3y515.jpg);
+	// 	background-position: left 0;
+	// }
+	// &.oysterbay-bg{
+	// 	background-image:url(../../images/screens/websites1y515.jpg);
+	// 	background-position: center -1030px;
+	// }
+	// &.sff-bg{
+	// 	background-image:url(../../images/screens/websites1y515.jpg);
+	// 	background-position: center 0;
+	// }
+	// &.scopevisio-bg{
+	// 	background-image:url(../../images/screens/websites1y515.jpg);
+	// 	background-position: left -515px;
+	// }
+	// &.nzso-bg{
+	// 	background-image:url(../../images/screens/websites2y515.jpg);
+	// 	background-position: left 0;
+	// }
+	// &.kiwirail-bg{
+	// 	background-image:url(../../images/screens/websites1y515.jpg);
+	// 	background-position: center -1545px;
+	// }
+	// &.hito-bg{
+	// 	background-image:url(../../images/screens/websites2y515.jpg);
+	// 	background-position: center -515px;
+	// }
+	// &.dryitonline-bg{
+	// 	background-image:url(../../images/screens/websites2y515.jpg);
+	// 	background-position: left -1545px;
+	// }
 }
