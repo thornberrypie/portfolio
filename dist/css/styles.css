@@ -356,6 +356,9 @@ noscript {
 .home-intro li strong {
   font-size: 1.6rem;
 }
+.home-intro a:hover {
+  text-decoration: underline;
+}
 .home-acronyms span {
   display: none;
 }
@@ -562,7 +565,7 @@ noscript {
 
 .a28 {
   top: 226px;
-  left: 104px;
+  left: 96px;
   font-size: 24px;
 }
 
